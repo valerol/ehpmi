@@ -13,97 +13,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.min.css" integrity="sha512-b42SanD3pNHoihKwgABd18JUZ2g9j423/frxIP5/gtYgfBz/0nDHGdY/3hi+3JwhSckM3JLklQ/T6tJmV7mZEw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/animated.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/51d28c3d4c.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-        $(document).ready(function(){
-            $('.dropdown-toggle').dropdown();
-            $('.carousel').carousel();
-
-            $("#testimonials-carousel .owl-carousel").owlCarousel({
-                loop:true,
-                margin:10,
-                nav:true,
-                responsive:{
-                    0:{
-                        items:1
-                    },
-                    600:{
-                        items:3
-                    },
-                    1000:{
-                        items:3
-                    }
-                }
-            });
-
-            $("#partner-carousel .owl-carousel").owlCarousel({
-                loop:true,
-                margin:10,
-                nav:true,
-                responsive:{
-                    0:{
-                        items:1
-                    },
-                    600:{
-                        items:3
-                    },
-                    1000:{
-                        items:5
-                    }
-                }
-            });
-
-            /* scrolling */
-            var $animation_elements = $('.animation-element');
-            var $window = $(window);
-
-            function check_if_in_view() {
-                var window_height = $window.height();
-                var window_top_position = $window.scrollTop();
-                var window_bottom_position = (window_top_position + window_height);
-
-                $.each($animation_elements, function() {
-                    var $element = $(this);
-                    var element_height = $element.outerHeight();
-                    var element_top_position = $element.offset().top;
-                    var element_bottom_position = (element_top_position + element_height);
-
-                    //check to see if this current container is within viewport
-                    if ((element_bottom_position >= window_top_position) &&
-                        (element_top_position <= window_bottom_position)) {
-                        $element.addClass('in-view');
-                    } else {
-                        $element.removeClass('in-view');
-                    }
-                });
-            }
-
-            $window.on('scroll resize', check_if_in_view);
-            $window.trigger('scroll');
-
-
-            $(window).on('load resize scroll', function() {
-                $('.hero').each(function() {
-                    var windowTop = $(window).scrollTop();
-                    var elementTop = $(this).offset().top;
-                    var margin = windowTop - elementTop;
-                    $(this).find('img').css({ 'margin-top': margin/5 });
-                    $(this).find('.text').css({ 'margin-top': 30 - margin/10 });
-                    $(this).find('.text').css({ 'margin-bottom': 30 + margin/10 });
-                });
-            });
-        });
-
-
-
-
-
-    </script>
+    <script src="onload.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -115,7 +30,7 @@
             <img src="images/sample_logo.png">
         </a>
 
-        <ul class="nav">
+        <nav class="nav">
             <li class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Who we are</a>
                 <ul class="dropdown-menu">
@@ -149,15 +64,58 @@
                     <li><a class="dropdown-item" href="#">Заготовка подраздела для видеоматериалов</a></li>
                 </ul>
             </li>
-        </ul>
+        </nav>
 
-        <form class="search col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-            <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
+        <form class="search" id="header-search">
+            <span class="search-icon"></span>
+            <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+            <input type="submit" class="btn btn-outline-secondary">
         </form>
 
-        <div class="text-end">
-            <button type="button" class="btn btn-primary">Be a Volunteer</button>
-        </div>
+        <button type="button" class="btn btn-primary">Be a Volunteer</button>
+
+        <nav class="navbar">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+                    aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Who we are</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">About us</a></li>
+                            <li><a class="dropdown-item" href="#">Mission and goals</a></li>
+                            <li><a class="dropdown-item" href="#">Organization Structure</a></li>
+                            <li><a class="dropdown-item" href="#">Staff (consultants and experts)</a></li>
+                            <li><a class="dropdown-item" href="#">Partners</a></li>
+                            <li><a class="dropdown-item" href="#">Strategic Documents</a></li>
+                            <li><a class="dropdown-item" href="#">Contacts</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">What we do</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Тяжелые металлы</a></li>
+                            <li><a class="dropdown-item" href="#">СОЗ (стойкие органические загрязнители)</a></li>
+                            <li><a class="dropdown-item" href="#">Радиация</a></li>
+                            <li><a class="dropdown-item" href="#">Экологическое образование и просвещение</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Country offices</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Library</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Отчеты, доклады о проведенных проектах</a></li>
+                            <li><a class="dropdown-item" href="#">Информационные материалы для учителей, медиков, родителей, населения</a></li>
+                            <li><a class="dropdown-item" href="#">Информационные материалы для детей</a></li>
+                            <li><a class="dropdown-item" href="#">Заготовка подраздела для видеоматериалов</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <button type="button" class="btn btn-primary">Be a Volunteer</button>
+            </div>
+        </nav>
     </div>
 </header>
 
@@ -186,18 +144,41 @@
 </section>
 
 <!--Map-->
-<section class="map animation-element slide-bottom align-items-center">
+<section class="map animation-element slide-bottom">
     <div class="container">
-        <div class="image col-lg-6 overflow-hidden shadow-lg">
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7229bd2499f4a139d7d5411f3f5d370ae4bb65ab89e27eb57ab595eb29a8dfb1&amp;width=800&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+        <div class="image">
+            <img class="map-image" src="images/map.png" alt="map">
+            <details class="point point-1"><summary class="marker"></summary>
+                <p class="address">Address</p>
+            </details>
+            <details class="point point-2"><summary class="marker"></summary>
+                <p class="address">Address</p>
+            </details>
+            <details class="point point-3"><summary class="marker"></summary>
+                <p class="address">Address</p>
+            </details>
+            <details class="point point-4"><summary class="marker"></summary>
+                <p class="address">Address</p>
+            </details>
+            <details class="point point-5"><summary class="marker"></summary>
+                <p class="address">Address</p>
+            </details>
+            <details class="point point-6"><summary class="marker"></summary>
+                <p class="address">Address</p>
+            </details>
+            <details class="point point-7"><summary class="marker"></summary>
+                <p class="address">Address</p>
+            </details>
+            <details class="point point-8"><summary class="marker"></summary>
+                <p class="address">Address</p>
+            </details>
+            <details class="point point-9"><summary class="marker"></summary>
+                <p class="address">Address</p>
+            </details>
         </div>
-        <div class="text col-lg-6">
-            <h2 class="display-4 fw-bold lh-1">Border hero with cropped image and shadows</h2>
-            <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-            <div class="buttons">
-                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Primary</button>
-                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
-            </div>
+        <div class="text">
+            <h2>Border hero with cropped image and shadows</h2>
+            <p>Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
         </div>
     </div>
 </section>
@@ -208,67 +189,64 @@
         <h2>Latest Projects</h2>
     </header>
     <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-            <div class="col">
-                <div class="card">
-                    <img src="images/slide1.jpeg">
-                    <div class="card-body">
-                        <h3 class="title"><a href="#">This content is a little bit longer</a></h3>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <small class="text-muted">9 mins</small>
-                    </div>
-                </div>
+        <div class="news-block">
+            <div class="image">
+                <img src="images/slide1.jpeg">
             </div>
-            <div class="col">
-                <div class="card">
-                    <img src="images/slide2.jpeg">
-                    <div class="card-body">
-                        <h3 class="title"><a href="#">This content is a little bit longer</a></h3>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <small class="text-muted">9 mins</small>
-                    </div>
-                </div>
+            <div class="news-text">
+                <h3 class="title"><a href="#">This content is a little bit longer</a></h3>
+                <p class="description">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <small class="date">9 mins</small>
             </div>
-            <div class="col">
-                <div class="card">
-                    <img src="images/slide3.jpeg">
-                    <div class="card-body">
-                        <h3 class="title"><a href="#">This content is a little bit longer</a></h3>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <small class="text-muted">9 mins</small>
-                    </div>
-                </div>
+        </div>
+        <div class="news-block">
+            <div class="image">
+                <img src="images/slide2.jpeg">
             </div>
-
-            <div class="col">
-                <div class="card">
-                    <img src="images/slide4.jpeg">
-                    <div class="card-body">
-                        <h3 class="title"><a href="#">This content is a little bit longer</a></h3>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <small class="text-muted">9 mins</small>
-                    </div>
-                </div>
+            <div class="news-text">
+                <h3 class="title"><a href="#">This content is a little bit longer</a></h3>
+                <p class="description">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <small class="date">9 mins</small>
             </div>
-            <div class="col">
-                <div class="card">
-                    <img src="images/slide5.jpeg">
-                    <div class="card-body">
-                        <h3 class="title"><a href="#">This content is a little bit longer</a></h3>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <small class="text-muted">9 mins</small>
-                    </div>
-                </div>
+        </div>
+        <div class="news-block">
+            <div class="image">
+                <img src="images/slide3.jpeg">
             </div>
-            <div class="col">
-                <div class="card">
-                    <img src="images/slide6.jpeg">
-                    <div class="card-body">
-                        <h3 class="title"><a href="#">This content is a little bit longer</a></h3>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <small class="text-muted">9 mins</small>
-                    </div>
-                </div>
+            <div class="news-text">
+                <h3 class="title"><a href="#">This content is a little bit longer</a></h3>
+                <p class="description">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <small class="date">9 mins</small>
+            </div>
+        </div>
+        <div class="news-block">
+            <div class="image">
+                <img src="images/slide4.jpeg">
+            </div>
+            <div class="news-text">
+                <h3 class="title"><a href="#">This content is a little bit longer</a></h3>
+                <p class="description">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <small class="date">9 mins</small>
+            </div>
+        </div>
+        <div class="news-block">
+            <div class="image">
+                <img src="images/slide5.jpeg">
+            </div>
+            <div class="news-text">
+                <h3 class="title"><a href="#">This content is a little bit longer</a></h3>
+                <p class="description">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <small class="date">9 mins</small>
+            </div>
+        </div>
+        <div class="news-block">
+            <div class="image">
+                <img src="images/slide6.jpeg">
+            </div>
+            <div class="news-text">
+                <h3 class="title"><a href="#">This content is a little bit longer</a></h3>
+                <p class="description">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <small class="date">9 mins</small>
             </div>
         </div>
     </div>
@@ -301,134 +279,37 @@
 <section class="contact animation-element slide-left">
     <div class="container">
         <div class="contact-block">
-            <!--Section heading-->
-            <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
-            <!--Section description-->
-            <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+            <h2>Contact us</h2>
+            <p>Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
                 a matter of hours to help you.</p>
-
-            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-
-                    <!--Grid row-->
-                    <div class="row">
-
-                        <!--Grid column-->
-                        <div class="col-md-6">
-                            <div class="md-form mb-0">
-                                <input type="text" id="name" name="name" class="form-control">
-                                <label for="name" class="">Your name</label>
-                            </div>
-                        </div>
-                        <!--Grid column-->
-
-                        <!--Grid column-->
-                        <div class="col-md-6">
-                            <div class="md-form mb-0">
-                                <input type="text" id="email" name="email" class="form-control">
-                                <label for="email" class="">Your email</label>
-                            </div>
-                        </div>
-                        <!--Grid column-->
-
-                    </div>
-                    <!--Grid row-->
-
-                    <!--Grid row-->
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="md-form mb-0">
-                                <input type="text" id="subject" name="subject" class="form-control">
-                                <label for="subject" class="">Subject</label>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Grid row-->
-
-                    <!--Grid row-->
-                    <div class="row">
-
-                        <!--Grid column-->
-                        <div class="col-md-12">
-
-                            <div class="md-form">
-                                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                                <label for="message">Your message</label>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!--Grid row-->
-                    <div class="text-center text-md-left">
-                        <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
-                    </div>
-                    <div class="status"></div>
-
+            <form id="contact-form" name="contact-form" action="/" method="POST">
+                <label for="name" class="">Your name</label>
+                <input type="text" id="name" name="name" class="form-control">
+                <label for="email" class="">Your email</label>
+                <input type="text" id="email" name="email" class="form-control">
+                <label for="subject" class="">Subject</label>
+                <input type="text" id="subject" name="subject" class="form-control">
+                <label for="message">Your message</label>
+                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+                <div class="status"></div>
             </form>
         </div>
-
         <div class="contact-block">
-            <!--Section heading-->
-            <h2 class="h1-responsive font-weight-bold text-center my-4">Be a volunteer</h2>
-            <!--Section description-->
-            <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+            <h2>Be a volunteer</h2>
+            <p>Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
                 a matter of hours to help you.</p>
-
-            <form id="contact-form-volunteer" name="contact-form" action="mail.php" method="POST">
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="text" id="volunteer-name" name="name" class="form-control">
-                            <label for="name" class="">Your name</label>
-                        </div>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="text" id="volunteer-email" name="email" class="form-control">
-                            <label for="email" class="">Your email</label>
-                        </div>
-                    </div>
-                    <!--Grid column-->
-
-                </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="md-form mb-0">
-                            <input type="text" id="volunteer-subject" name="subject" class="form-control">
-                            <label for="subject" class="">Subject</label>
-                        </div>
-                    </div>
-                </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-12">
-
-                        <div class="md-form">
-                            <textarea type="text" id="volunteer-message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                            <label for="message">Your message</label>
-                        </div>
-
-                    </div>
-                </div>
-                <!--Grid row-->
-                <div class="text-center text-md-left">
-                    <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
-                </div>
+            <form id="contact-form-volunteer" name="contact-form" action="/" method="POST">
+                <label for="name" class="">Your name</label>
+                <input type="text" id="name-volunteer" name="name" class="form-control">
+                <label for="email" class="">Your email</label>
+                <input type="text" id="email-volunteer" name="email" class="form-control">
+                <label for="subject" class="">Subject</label>
+                <input type="text" id="subject-volunteer" name="subject" class="form-control">
+                <label for="message">Your message</label>
+                <textarea type="text" id="message-volunteer" name="message" rows="2" class="form-control md-textarea"></textarea>
+                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
                 <div class="status"></div>
-
             </form>
         </div>
     </div>
@@ -515,27 +396,27 @@
 <!--Footer-->
 <footer class="footer">
     <section class="container footer-nav">
-        <div class="col-5">
-            <h6><i class="fas fa-gem me-3"></i>Company name</h6>
+        <div class="footer-nav-block">
+            <h3>Company name</h3>
             <p>Here you can use rows and columns to organize your footer content. Lorem ipsum
                 dolor sit amet, consectetur adipisicing elit.</p>
         </div>
-        <div class="col-2">
-            <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+        <div class="footer-nav-block">
+            <h3>Products</h3>
             <p><a href="#" class="text-reset">Angular</a></p>
             <p><a href="#" class="text-reset">React</a></p>
             <p><a href="#" class="text-reset">Vue</a></p>
             <p><a href="#" class="text-reset">Laravel</a></p>
         </div>
-        <div class="col-2">
-            <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+        <div class="footer-nav-block">
+            <h3>Useful links</h3>
             <p><a href="#" class="text-reset">Pricing</a></p>
             <p><a href="#" class="text-reset">Settings</a></p>
             <p><a href="#" class="text-reset">Orders</a></p>
             <p><a href="#" class="text-reset">Help</a></p>
         </div>
-        <div class="col-3">
-            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+        <div class="footer-nav-block">
+            <h3>Contact</h3>
             <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
             <p><i class="fas fa-envelope me-3"></i>info@example.com</p>
             <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
