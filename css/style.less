@@ -152,19 +152,20 @@ section {
 .hero {
   .container {
     display: flex;
+    align-items: center;
   }
   .carousel {
     .carousel-item {
       filter: grayscale(1);
-      height: 550px;
+      height: 437px;
     }
   }
   .text {
     background: @green;
     color: @yellow;
-    margin-right: -10rem;
+    margin-right: -5rem;
     z-index: 10;
-    padding: 3rem;
+    padding: 2rem;
     text-align: center;
   }
 }
@@ -173,12 +174,20 @@ section {
   padding: 3rem 0;
   .container {
     display: flex;
+    align-items: center;
   }
   h2 {
     color: @green;
   }
   .text {
     padding: 2rem;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-left: -5rem;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.7);
+    justify-content: center;
   }
   .image {
     position: relative;
@@ -256,10 +265,10 @@ section {
   .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .news-block {
-    width: calc(33.3% - 1.5rem);
+    width: calc(33.3% - 2rem);
     border-radius: unset;
     border: none;
     background: @white;
@@ -283,7 +292,7 @@ section {
       transform:scale(1.15);
     }
     .news-text {
-      padding: 1.5rem;
+      padding: 2rem;
     }
   }
   h3 {
@@ -295,7 +304,7 @@ section {
 }
 
 .partners {
-  padding: 2rem 0;
+  padding: 3rem 0;
   #partner-carousel {
     &.container {
       padding: 0 3rem;
@@ -312,14 +321,14 @@ section {
 }
 
 .contact {
-  background: @beige;
+  background: @white;
   padding: 3rem 0;
   .container {
     display: flex;
     justify-content: space-between;
   }
   .contact-block {
-    width: calc(50% - 3rem);
+    width: calc(50% - 3.7rem);
     padding: 3rem;
     background: @green;
     display: flex;
@@ -344,16 +353,21 @@ section {
 }
 
 .newsletter {
+  background: @beige;
   .container {
-    padding: 2rem 0;
+    padding: 3rem 0;
     display: flex;
     align-items: center;
   }
   .text {
-    max-width: 60%;
+    max-width: 55%;
+    padding-right: 5rem;
   }
   form {
     display: flex;
+    .form-control {
+      background: @lighter-green;
+    }
   }
   .logo {
     max-height: 70px;
@@ -364,20 +378,29 @@ section {
 
 .testimonials {
   background: @beige;
-  padding: 3rem 0;
-  .container {
-    padding: 0 3rem;
+  padding: 3rem 0 1.5rem;
+  .owl-nav {
+    button {
+      &.owl-prev {
+        margin-left: 0;
+      }
+      &.owl-next {
+        margin-right: 0;
+      }
+    }
   }
   .testimonial {
     display: flex;
-    margin: 2rem;
-    padding: 1.5rem 1rem;
+    margin: 2rem 0;
+    padding: 1.5rem 3rem;
     background: @white;
     position: relative;
-    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
+
     &:hover {
-      transform: scale(1.1);
+      transform: scale(1.05);
     }
+
     &::before {
       font-family: FontAwesome;
       content: '\f10e';
@@ -387,22 +410,26 @@ section {
       right: 1rem;
       color: @green;
     }
+
     img {
       max-height: 90px;
       border-radius: 50%;
       width: auto;
     }
+
     .text {
       padding-left: 1.5rem;
       font-size: 14px;
       line-height: 1.8;
       color: @darker-grey;
+
       .name {
         font-weight: 500;
         font-size: 16px;
         color: @dark-grey;
         margin-top: 1rem;
       }
+
       .position {
         font-size: 13px;
         color: @green;

@@ -21,8 +21,8 @@ $(document).ready(function(){
                 var elementTop = $(this).offset().top;
                 var margin = windowTop - elementTop;
                 $(this).find('img').css({ 'margin-top': margin/5 });
-                $(this).find('.text').css({ 'margin-top': 30 - margin/10 });
-                $(this).find('.text').css({ 'margin-bottom': 30 + margin/10 });
+                $(this).find('.text').css({ 'margin-top': 10 - margin/10 });
+                $(this).find('.text').css({ 'margin-bottom': 10 + margin/10 });
             });
         });
 
@@ -73,7 +73,7 @@ $(document).ready(function(){
     // testimonials carousel init
     $("#testimonials-carousel .owl-carousel").owlCarousel({
         loop:true,
-        margin:10,
+        margin:50,
         nav:true,
         responsive:{
             0: {
