@@ -29,8 +29,9 @@ Recovery status: `QA-D NOT PASSED` until the mandatory isolated restoration rehe
 
 - All `46` theme files match the dev server SHA-256 list in `ops/theme-files.sha256`.
 - All theme PHP files pass `php -l`.
+- WordPress.org checksums pass for all `13` ordinary plugins.
 - No credential values or private keys were found in the theme baseline.
-- The Markdown domain protocol copied into Git is byte-identical to accepted v0.1.0.
+- The canonical Markdown domain protocol in Git is version `v0.2.0`; the workspace copy is byte-identical.
 
 ## Visual baseline
 
@@ -45,6 +46,20 @@ Mobile, 390 × 844:
 ![EHPMI mobile baseline](visual/home-mobile-390x844.png)
 
 The captures verify the current logo, desktop navigation, mobile menu affordance, hero typography, current slider image, and responsive text flow. Full-page capture exceeded the browser capture limit, so reproducible fixed viewports are the acceptance references.
+
+## Drive backup readback
+
+- Dev DB file ID: `1JHMUumOFjfWbbglg4GQ_egUTm42V0gN-`; size `376438` bytes.
+- Site-content folder ID: `1DR-t5xCPPPY7sS-OmLWttjWcCta9OkZo`.
+- Media transport: `52` unique numbered parts, no missing numbers and no duplicates.
+- Aggregate media part size: `1348580659` bytes, exactly matching the verified logical archive.
+- Full logical archive SHA-256: `c575a634fe9fb45c983e15a360df86f2685a1e139fd07c6e6e766728ba3453f6`.
+- Root manifest file ID: `1JUKEJTql6mqCHByjUS5pz2R1e2vh-WuY`; size `3480` bytes.
+- Parts manifest file ID: `1YaJKxxcVHBNTlOBSme_a9DhEgRJ40ERA`; size `17641` bytes.
+- Parts checksum file ID: `133JH11TiEKMdRctmpl-rgwNPW7EOM75E`; size `6916` bytes.
+- SHA256SUMS file ID: `1jn9qzSMbaFGoy0HfNxZSpLvemnb3Njhy`; size `7501` bytes.
+
+The Drive connector has a per-file transfer limit, so the single verified `.tar.gz` is stored as byte-concatenated transport parts. `site-content-parts.yml` records the SHA-256 and Drive ID of every part. Concatenating them in lexical order reproduces the original archive and its full SHA-256.
 
 ## Known baseline debts
 

@@ -1,6 +1,6 @@
 # Доменный протокол EHPMI
 
-Версия: `v0.1.0`  
+Версия: `v0.2.0`  
 Статус: `DRAFT`  
 Дата снимка: `2026-08-25`  
 Уровень доменного применения: `D3`  
@@ -47,7 +47,7 @@
 - браузер и WordPress Admin для контентного и визуального QA;
 - Contact Form 7, Newsletter и другие WordPress plugins.
 
-На снимке `2026-08-25` WordPress CLI сообщает PHP `8.5.9`, тогда как `.htaccess` объявляет web handler `ea-php81`. Версия web PHP должна быть проверена отдельно и зафиксирована в release manifest до первого production release.
+На снимке `2026-08-25` WordPress CLI сообщает PHP `8.5.9`, shell — PHP `8.1.34`, а web runtime независимо подтверждён временным HTTP probe как PHP `8.1.34`. Probe удалён сразу после проверки. Эти версии зафиксированы в baseline manifest и должны перепроверяться перед production release.
 
 ### 0.4. Источник методологии
 
@@ -320,7 +320,7 @@ EHPMI/
 └── site-content/
 ```
 
-Media snapshot хранится единым `.tar.gz`, внутри которого пути идут относительно WordPress root:
+Media snapshot является единым логическим `.tar.gz`, внутри которого пути идут относительно WordPress root:
 
 ```text
 files/...
@@ -328,12 +328,24 @@ images/...
 wp-content/uploads/...
 ```
 
+Если транспортный лимит Drive не позволяет загрузить логический архив одним объектом, допускаются только его последовательные byte-for-byte части `.part-000`, `.part-001` и далее. Это не отдельные архивы. Обязательны:
+
+- полный `.tar.gz` и его SHA-256 до разбиения;
+- непрерывная нумерация с нуля без пропусков и дублей;
+- размер, SHA-256 и Drive file ID каждой части в parts manifest;
+- отдельный машинно-проверяемый `PARTS_SHA256SUMS`;
+- склейка частей в лексикографическом порядке;
+- повторная проверка полной SHA-256 и `tar -tzf` после склейки.
+
 ### 9.3. Имена
 
 ```text
 YYYY-MM-DD_HHMMSSZ_ehpmi-<environment>-database.sql.gz
 YYYY-MM-DD_HHMMSSZ_ehpmi-site-content.tar.gz
+YYYY-MM-DD_HHMMSSZ_ehpmi-site-content.tar.gz.part-NNN
 YYYY-MM-DD_HHMMSSZ_ehpmi-<environment>-manifest.yml
+YYYY-MM-DD_HHMMSSZ_ehpmi-site-content-parts.yml
+YYYY-MM-DD_HHMMSSZ_SITE_CONTENT_PARTS_SHA256SUMS
 YYYY-MM-DD_HHMMSSZ_SHA256SUMS
 ```
 
@@ -544,11 +556,19 @@ Credentials запрашиваются во время выполнения и �
 
 ```bash
 export EHPMI_RECOVERY_PACKAGE=/absolute/path/to/recovery-package
+export EHPMI_STAMP=YYYY-MM-DD_HHMMSSZ
+export EHPMI_MEDIA_ARCHIVE="$EHPMI_RECOVERY_PACKAGE/site-content/${EHPMI_STAMP}_ehpmi-site-content.tar.gz"
 
 cd "$EHPMI_RECOVERY_PACKAGE"
-shasum -a 256 -c SHA256SUMS
-gzip -t ./*.sql.gz
-tar -tzf ./*site-content.tar.gz
+
+if test -f "${EHPMI_MEDIA_ARCHIVE}.part-000"; then
+  shasum -a 256 -c "${EHPMI_STAMP}_SITE_CONTENT_PARTS_SHA256SUMS"
+  cat "${EHPMI_MEDIA_ARCHIVE}".part-* > "$EHPMI_MEDIA_ARCHIVE"
+fi
+
+shasum -a 256 -c "${EHPMI_STAMP}_SHA256SUMS"
+gzip -t database/*/*.sql.gz
+tar -tzf "$EHPMI_MEDIA_ARCHIVE"
 ```
 
 Любое несовпадение включает `STOP-CHECKSUM`. Архив не импортируется.
@@ -843,21 +863,21 @@ Rollback получает собственный recovery evidence. Возвра
 7. исправить инструкцию по реальным отклонениям;
 8. выпустить следующую версию protocol и PDF.
 
-## 19. Открытые долги версии v0.1.0
+## 19. Долги версии v0.2.0
 
 | ID | Долг | Статус | Условие закрытия |
 |---|---|---|---|
-| `EH-D001` | Web PHP не подтверждён независимо от CLI | OPEN | Runtime PHP записан в manifest и проверен HTTP/runtime probe |
-| `EH-D002` | GitHub содержит старый статический прототип | OPEN | Baseline branch содержит актуальную тему и protocol |
+| `EH-D001` | Web PHP не подтверждён независимо от CLI | CLOSED | Web PHP 8.1.34 подтверждён временным HTTP probe; файл удалён |
+| `EH-D002` | GitHub содержит старый статический прототип | CLOSED | `baseline/dev-2026-08-25` содержит актуальную тему и protocol; baseline commit `9ba82b7` |
 | `EH-D003` | Plugin update ещё не выполнен | OPEN | Новый plugin manifest и dev QA |
 | `EH-D004` | ACF groups хранятся только в БД | OPEN | Local JSON/PHP registration зафиксированы в Git |
 | `EH-D005` | Active slides находятся в корневом `/images` | OPEN | Slides перенесены в theme assets, ссылки проверены |
-| `EH-D006` | Первый Drive backup package не создан | OPEN | DB/media/manifest/checksums загружены и проверены |
+| `EH-D006` | Первый Drive backup package не создан | CLOSED | DB, 52 media parts, manifests и checksums загружены; Drive readback прошёл |
 | `EH-D007` | Recovery rehearsal не выполнена | OPEN | QA-D PASS и recovery evidence |
 | `EH-D008` | Production release procedure не испытана | OPEN | Первый принятый release с rollback evidence |
 
 ## 20. Статус принятия
 
-Версия `v0.1.0` фиксирует согласованные архитектурные, backup и recovery решения до начала refactor. Она не разрешает production deployment и не заявляет QA-D.
+Версия `v0.2.0` фиксирует baseline актуальной dev-темы, runtime probe и первый проверенный Git/Drive backup package до начала refactor. Она не разрешает production deployment и не заявляет QA-D.
 
-Следующая версия создаётся после baseline Git/Drive package и уточнения фактических runtime versions. Версия `v1.0.0` допускается только после практической репетиции восстановления.
+Следующая версия создаётся после очередного принятого этапа refactor. Версия `v1.0.0` допускается только после практической репетиции восстановления.

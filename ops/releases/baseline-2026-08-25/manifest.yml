@@ -1,0 +1,108 @@
+schema_version: 1
+backup_id: "2026-08-25_013726Z_ehpmi-dev-baseline"
+created_at_utc: "2026-08-25T01:37:26Z"
+environment: dev
+
+source:
+  domain: "https://dev.ehpmi.org"
+  document_root: "/home2/nykvymmy/dev.ehpmi.org"
+  database_name: "nykvymmy_ehpmidev"
+  table_prefix: "wp_"
+  wordpress_version: "7.0.4"
+  locale: "en_US"
+
+runtime:
+  web_php: "8.1.34"
+  shell_php: "8.1.34"
+  wp_cli_php: "8.5.9"
+  wp_cli: "2.9.0"
+  database_server: "Percona Server 8.0.46-37"
+
+git:
+  repository: "https://github.com/valerol/ehpmi"
+  branch: "baseline/dev-2026-08-25"
+  baseline_commit: "9ba82b7c72cd4ac50db310a072ecd764ea89447f"
+  release_tag: null
+
+theme:
+  slug: ehpmi
+  version: "1.2"
+  file_count: 46
+  checksums: "ops/theme-files.sha256"
+
+plugins_manifest: "ops/plugins.yml"
+
+drive:
+  root_folder_id: "1-WIPkuWZYLcTlhUbb50nQOrjPngwvfox"
+  database_folder_id: "1GaKyaYVTOcWXrifJy82ru2k75vJx9Dgo"
+  dev_database_folder_id: "1d0pVYifHrEsCJbH4Ox6ueqfyvQeGeYFj"
+  production_database_folder_id: "12QNIP7Itkbgqip5tl9mEFBFL8dMzPBHC"
+  site_content_folder_id: "1DR-t5xCPPPY7sS-OmLWttjWcCta9OkZo"
+
+artifacts:
+  database:
+    path: "database/dev/2026-08-25_013726Z_ehpmi-dev-database.sql.gz"
+    size_bytes: 376438
+    sha256: "bece2eb13aa4ef1f079cb174ad8d49e35db22580b4af6c2ddf0773285191ae49"
+    table_count: 53
+    drive_file_id: "1JHMUumOFjfWbbglg4GQ_egUTm42V0gN-"
+    drive_url: "https://drive.google.com/file/d/1JHMUumOFjfWbbglg4GQ_egUTm42V0gN-/view"
+  site_content:
+    path: "site-content/2026-08-25_013726Z_ehpmi-site-content.tar.gz"
+    size_bytes: 1348580659
+    sha256: "c575a634fe9fb45c983e15a360df86f2685a1e139fd07c6e6e766728ba3453f6"
+    file_count: 2356
+    archive_entry_count: 2423
+    includes:
+      - "files/"
+      - "images/"
+      - "wp-content/uploads/"
+    transport: "multipart byte-concatenation"
+    part_count: 52
+    parts_manifest: "ops/releases/baseline-2026-08-25/site-content-parts.yml"
+    parts_checksum_file: "2026-08-25_013726Z_SITE_CONTENT_PARTS_SHA256SUMS"
+    drive_folder_id: "1DR-t5xCPPPY7sS-OmLWttjWcCta9OkZo"
+    drive_url: "https://drive.google.com/drive/folders/1DR-t5xCPPPY7sS-OmLWttjWcCta9OkZo"
+  checksum_file: "2026-08-25_013726Z_SHA256SUMS"
+
+content_counts:
+  posts: 47
+  pages: 23
+  attachments: 464
+  testimonials: 7
+  member_organizations: 7
+  partner_organizations: 1
+  materials: 19
+  staff_members: 20
+  users: 2
+  newsletter_total: 172
+  newsletter_unique_email: 172
+  newsletter_confirmed: 172
+  newsletter_unsubscribed: 0
+
+creator_role: "Contractor / Maintainer"
+
+qa:
+  baseline_capture: "PASS"
+  database_gzip_test: "PASS"
+  database_table_count: "PASS"
+  theme_server_checksum_match: "PASS"
+  plugin_wordpress_org_checksums: "PASS (13/13)"
+  php_lint: "PASS"
+  desktop_visual_capture: "PASS"
+  mobile_visual_capture: "PASS"
+  drive_readback: "PASS (52 unique parts; exact aggregate size)"
+  recovery_rehearsal: "NOT PASSED"
+
+known_exclusions:
+  - "WordPress core is restored separately in the recorded version."
+  - "Ordinary plugins are restored from ops/plugins.yml and are not archived."
+  - "Hosting-specific wp-content/mu-plugins/sso.php is not copied automatically."
+  - "Credentials, wp-config.php, salts and private keys are excluded."
+
+open_debts:
+  - "Plugin update and post-update dev QA are not yet performed."
+  - "ACF field groups are still database-only."
+  - "Active slides remain under root images/."
+  - "Recovery rehearsal is not yet performed."
+  - "Production release and rollback procedure are not yet exercised."
