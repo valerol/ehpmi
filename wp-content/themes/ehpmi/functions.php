@@ -1,21 +1,85 @@
 <?php
 
-require get_template_directory() . '/classes/class-menu-dropdown.php';
+require_once get_template_directory() . '/classes/class-menu-dropdown.php';
 
-function ehpmi_enqueue_styles() {
-    wp_enqueue_style('theme', get_template_directory_uri() . '/style.css', array(), filemtime(get_template_directory() . '/style.css'));
-    wp_enqueue_style('ehpmi', get_template_directory_uri() . '/css/style.css', array(), filemtime(get_template_directory() . '/css/style.css'));
+/**
+ * Return a cache-safe version for a theme asset.
+ */
+function ehpmi_asset_version( $relative_path ) {
+    $absolute_path = get_theme_file_path( $relative_path );
+
+    return file_exists( $absolute_path )
+        ? (string) filemtime( $absolute_path )
+        : wp_get_theme()->get( 'Version' );
 }
-add_action('wp_enqueue_scripts', 'ehpmi_enqueue_styles');
+
+/**
+ * Register the accepted frontend stack through the WordPress lifecycle.
+ *
+ * Library versions intentionally match the visual baseline. Version alignment
+ * and removal of jQuery are separate refactor stages.
+ */
+function ehpmi_enqueue_assets() {
+    wp_enqueue_style(
+        'ehpmi-fonts',
+        'https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap',
+        array(),
+        null
+    );
+    wp_enqueue_style( 'ehpmi-bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css', array(), '5.1.3' );
+    wp_enqueue_style( 'ehpmi-owl-carousel', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css', array(), '2.3.4' );
+    wp_enqueue_style( 'ehpmi-owl-theme', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css', array( 'ehpmi-owl-carousel' ), '2.3.4' );
+    wp_enqueue_style( 'ehpmi-animate', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.min.css', array(), '4.1.1' );
+    wp_enqueue_style( 'ehpmi-theme', get_stylesheet_uri(), array( 'ehpmi-bootstrap' ), ehpmi_asset_version( '/style.css' ) );
+    wp_enqueue_style( 'ehpmi-site', get_theme_file_uri( '/css/style.css' ), array( 'ehpmi-theme', 'ehpmi-owl-theme', 'ehpmi-animate' ), ehpmi_asset_version( '/css/style.css' ) );
+
+    wp_enqueue_script( 'ehpmi-font-awesome', 'https://kit.fontawesome.com/51d28c3d4c.js', array(), null, false );
+    wp_enqueue_script( 'ehpmi-popper', 'https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js', array(), '1.12.9', true );
+    wp_enqueue_script( 'ehpmi-bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js', array( 'jquery', 'ehpmi-popper' ), '4.0.0', true );
+    wp_enqueue_script( 'ehpmi-owl-carousel', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js', array( 'jquery' ), '2.3.4', true );
+    wp_enqueue_script(
+        'ehpmi-site',
+        get_theme_file_uri( '/onload.js' ),
+        array( 'jquery', 'ehpmi-bootstrap', 'ehpmi-owl-carousel' ),
+        ehpmi_asset_version( '/onload.js' ),
+        true
+    );
+}
+add_action( 'wp_enqueue_scripts', 'ehpmi_enqueue_assets' );
+
+/**
+ * Preserve the font connection hints that used to be hardcoded in header.php.
+ */
+function ehpmi_resource_hints( $urls, $relation_type ) {
+    if ( 'preconnect' !== $relation_type ) {
+        return $urls;
+    }
+
+    $urls[] = 'https://fonts.googleapis.com';
+    $urls[] = array(
+        'href'        => 'https://fonts.gstatic.com',
+        'crossorigin' => 'anonymous',
+    );
+
+    return $urls;
+}
+add_filter( 'wp_resource_hints', 'ehpmi_resource_hints', 10, 2 );
 
 function ehpmi_theme_setup() {
     add_theme_support('custom-logo');
     add_theme_support('widgets');
     add_theme_support('post-thumbnails');
     add_theme_support('title-tag');
+    add_theme_support(
+        'html5',
+        array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption', 'style', 'script' )
+    );
+    add_theme_support( 'responsive-embeds' );
     
     register_nav_menus([
         'top-menu' => __( 'Top Menu', 'ehpmi' ), // key = theme_location, value = label in admin
+        'footer-menu-1' => __( 'Footer Menu 1', 'ehpmi' ),
+        'footer-menu-2' => __( 'Footer Menu 2', 'ehpmi' ),
     ]);
 }
 add_action('after_setup_theme','ehpmi_theme_setup');
@@ -85,20 +149,6 @@ function ehpmi_posttype() {
 }
 // Hooking up our function to theme setup
 add_action( 'init', 'ehpmi_posttype' );
-
-// Menus
-add_theme_support( 'menus' );
-
-add_action( 'init', 'ehpmi_menus' );
-
-function ehpmi_menus() {
-    register_nav_menus(
-        array(
-            'footer-menu-1' => __( 'Footer Menu 1' ),
-            'footer-menu-2' => __( 'Footer Menu 2' )
-        )
-    );
-}
 
 // Custom widgets
 function register_custom_widget_area() {

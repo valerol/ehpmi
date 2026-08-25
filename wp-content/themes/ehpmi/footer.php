@@ -9,12 +9,13 @@
 
     <div class="footer-bottom">
         <div class="container">
-            <p class="copyright">© 2022-<?php echo date("Y"); ?> Copyright: <?php
+            <p class="copyright">© 2022-<?php echo esc_html( wp_date( 'Y' ) ); ?> Copyright: <?php
                 dynamic_sidebar( 'footer-copyright' ); ?></p>
             <?php dynamic_sidebar( 'footer-social' ); ?>
         </div>
     </div>
 </footer>
 
+<?php wp_footer(); ?>
 </body>
 </html>
