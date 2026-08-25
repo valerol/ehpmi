@@ -870,8 +870,8 @@ Rollback получает собственный recovery evidence. Возвра
 | `EH-D001` | Web PHP не подтверждён независимо от CLI | CLOSED | Web PHP 8.1.34 подтверждён временным HTTP probe; файл удалён |
 | `EH-D002` | GitHub содержит старый статический прототип | CLOSED | `baseline/dev-2026-08-25` содержит актуальную тему и protocol; baseline commit `9ba82b7` |
 | `EH-D003` | Plugin update ещё не выполнен | OPEN | Новый plugin manifest и dev QA |
-| `EH-D004` | ACF groups хранятся только в БД | OPEN | Local JSON/PHP registration зафиксированы в Git |
-| `EH-D005` | Active slides находятся в корневом `/images` | OPEN | Slides перенесены в theme assets, ссылки проверены |
+| `EH-D004` | ACF groups хранятся только в БД | CLOSED | Четыре Local JSON group и восемь fields зафиксированы в Git и распознаны ACF на dev |
+| `EH-D005` | Active slides находятся в корневом `/images` | CLOSED | Три source asset зафиксированы в теме; три управляемые записи и Media Library attachments опубликованы на dev, хеши и frontend URLs проверены |
 | `EH-D006` | Первый Drive backup package не создан | CLOSED | DB, 52 media parts, manifests и checksums загружены; Drive readback прошёл |
 | `EH-D007` | Recovery rehearsal не выполнена | OPEN | QA-D PASS и recovery evidence |
 | `EH-D008` | Production release procedure не испытана | OPEN | Первый принятый release с rollback evidence |
