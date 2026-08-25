@@ -1,3 +1,4 @@
+(function ($) {
 $(document).ready(function(){
     // Desktop screen effects
     if (screen.width > 1024){
@@ -129,3 +130,4 @@ $(document).ready(function(){
         }
     });
 });
+})(jQuery);
