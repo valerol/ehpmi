@@ -141,6 +141,7 @@ iframe {
 }
 .owl-carousel .owl-nav button::before {
   font-family: FontAwesome;
+  font-weight: 900;
   font-size: 1.5rem;
   color: #363636;
 }
@@ -198,12 +199,16 @@ iframe {
   color: #363636;
 }
 .header .nav .dropdown-toggle::after {
-  font-family: FontAwesome;
-  margin-left: 1em;
+  display: inline-block;
+  width: 0.35em;
+  height: 0.35em;
+  margin-left: 0.8em;
   vertical-align: 0.2em;
-  content: "\f078";
-  border: none;
-  font-size: 0.5em;
+  content: "";
+  border: 0;
+  border-right: 0.12em solid currentColor;
+  border-bottom: 0.12em solid currentColor;
+  transform: rotate(45deg);
 }
 .header .nav .dropdown-menu {
   background: #fefefe;
@@ -243,6 +248,7 @@ iframe {
 }
 .header .navbar .navbar-toggler:before {
   font-family: FontAwesome;
+  font-weight: 900;
   font-size: 2rem;
   content: '\f0c9';
 }
@@ -302,6 +308,7 @@ iframe {
 }
 .header .search-icon:before {
   font-family: 'FontAwesome';
+  font-weight: 900;
   content: '\f002';
   color: #363636;
   font-size: 1.5rem;
@@ -1043,6 +1050,7 @@ article.partner .brand img {
 }
 .testimonials .testimonial::before {
   font-family: FontAwesome;
+  font-weight: 900;
   content: '\f10e';
   position: absolute;
   top: -2rem;

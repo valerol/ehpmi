@@ -133,6 +133,7 @@ img {
       background: green;
       &::before {
         font-family: FontAwesome;
+        font-weight: 900;
         font-size: 1.5rem;
         color: @dark-grey;
       }
@@ -188,12 +189,16 @@ img {
       color: @dark-grey;
     }
     .dropdown-toggle::after {
-      font-family: FontAwesome;
-      margin-left: 1em;
+      display: inline-block;
+      width: 0.35em;
+      height: 0.35em;
+      margin-left: 0.8em;
       vertical-align: 0.2em;
-      content: "\f078";
-      border: none;
-      font-size: 0.5em;
+      content: "";
+      border: 0;
+      border-right: 0.12em solid currentColor;
+      border-bottom: 0.12em solid currentColor;
+      transform: rotate(45deg);
     }
     .dropdown-menu {
       background: @light-grey;
@@ -233,6 +238,7 @@ img {
     .navbar-toggler {
       &:before {
         font-family: FontAwesome;
+        font-weight: 900;
         font-size: 2rem;
         content: '\f0c9';
         @media (max-width: @tablet) {
@@ -294,6 +300,7 @@ img {
     align-items: center;
     &:before {
       font-family: 'FontAwesome';
+      font-weight: 900;
       content: '\f002';
       color: @dark-grey;
       font-size: 1.5rem;
@@ -991,6 +998,7 @@ article.partner {
 
     &::before {
       font-family: FontAwesome;
+      font-weight: 900;
       content: '\f10e';
       position: absolute;
       top: -2rem;
@@ -1278,5 +1286,3 @@ aside {
     }
   }
 }
-
-
