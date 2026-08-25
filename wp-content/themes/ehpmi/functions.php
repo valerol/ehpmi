@@ -178,6 +178,28 @@ add_action('after_setup_theme','ehpmi_theme_setup');
 // Our custom post type function
 function ehpmi_posttype() {
 
+    register_post_type(
+        'hero_slide',
+        array(
+            'labels' => array(
+                'name'          => __( 'Hero slides', 'ehpmi' ),
+                'singular_name' => __( 'Hero slide', 'ehpmi' ),
+                'add_new_item'  => __( 'Add hero slide', 'ehpmi' ),
+                'edit_item'     => __( 'Edit hero slide', 'ehpmi' ),
+            ),
+            'description'         => __( 'Homepage carousel images ordered by the Order field.', 'ehpmi' ),
+            'public'              => false,
+            'publicly_queryable'  => false,
+            'exclude_from_search' => true,
+            'show_ui'             => true,
+            'show_in_rest'        => true,
+            'menu_icon'           => 'dashicons-images-alt2',
+            'supports'            => array( 'title', 'thumbnail', 'page-attributes' ),
+            'rewrite'             => false,
+            'query_var'           => false,
+        )
+    );
+
     register_post_type( 'testimonial',
         array(
             'labels' => [
