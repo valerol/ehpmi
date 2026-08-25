@@ -148,6 +148,14 @@ function ehpmi_resource_hints( $urls, $relation_type ) {
 }
 add_filter( 'wp_resource_hints', 'ehpmi_resource_hints', 10, 2 );
 
+/**
+ * Keep ACF field-group structure in Git for deterministic deployments.
+ */
+function ehpmi_acf_json_save_path( $path ) {
+    return get_theme_file_path( '/acf-json' );
+}
+add_filter( 'acf/settings/save_json', 'ehpmi_acf_json_save_path' );
+
 function ehpmi_theme_setup() {
     add_theme_support('custom-logo');
     add_theme_support('widgets');
