@@ -48,6 +48,89 @@ function ehpmi_enqueue_assets() {
 add_action( 'wp_enqueue_scripts', 'ehpmi_enqueue_assets' );
 
 /**
+ * Retain the integrity attributes from the accepted baseline stylesheet tags.
+ */
+function ehpmi_style_loader_tag( $html, $handle ) {
+    $attributes = array(
+        'ehpmi-bootstrap' => array(
+            'integrity'   => 'sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3',
+            'crossorigin' => 'anonymous',
+        ),
+        'ehpmi-owl-carousel' => array(
+            'integrity'      => 'sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==',
+            'crossorigin'    => 'anonymous',
+            'referrerpolicy' => 'no-referrer',
+        ),
+        'ehpmi-owl-theme' => array(
+            'integrity'      => 'sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==',
+            'crossorigin'    => 'anonymous',
+            'referrerpolicy' => 'no-referrer',
+        ),
+        'ehpmi-animate' => array(
+            'integrity'      => 'sha512-b42SanD3pNHoihKwgABd18JUZ2g9j423/frxIP5/gtYgfBz/0nDHGdY/3hi+3JwhSckM3JLklQ/T6tJmV7mZEw==',
+            'crossorigin'    => 'anonymous',
+            'referrerpolicy' => 'no-referrer',
+        ),
+    );
+
+    if ( ! isset( $attributes[ $handle ] ) ) {
+        return $html;
+    }
+
+    $processor = new WP_HTML_Tag_Processor( $html );
+    if ( ! $processor->next_tag( 'link' ) ) {
+        return $html;
+    }
+
+    foreach ( $attributes[ $handle ] as $attribute => $value ) {
+        $processor->set_attribute( $attribute, $value );
+    }
+
+    return $processor->get_updated_html();
+}
+add_filter( 'style_loader_tag', 'ehpmi_style_loader_tag', 10, 2 );
+
+/**
+ * Retain the integrity attributes from the accepted baseline script tags.
+ */
+function ehpmi_script_loader_tag( $tag, $handle ) {
+    $attributes = array(
+        'ehpmi-font-awesome' => array(
+            'crossorigin' => 'anonymous',
+        ),
+        'ehpmi-popper' => array(
+            'integrity'   => 'sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q',
+            'crossorigin' => 'anonymous',
+        ),
+        'ehpmi-bootstrap' => array(
+            'integrity'   => 'sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl',
+            'crossorigin' => 'anonymous',
+        ),
+        'ehpmi-owl-carousel' => array(
+            'integrity'      => 'sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==',
+            'crossorigin'    => 'anonymous',
+            'referrerpolicy' => 'no-referrer',
+        ),
+    );
+
+    if ( ! isset( $attributes[ $handle ] ) ) {
+        return $tag;
+    }
+
+    $processor = new WP_HTML_Tag_Processor( $tag );
+    if ( ! $processor->next_tag( 'script' ) ) {
+        return $tag;
+    }
+
+    foreach ( $attributes[ $handle ] as $attribute => $value ) {
+        $processor->set_attribute( $attribute, $value );
+    }
+
+    return $processor->get_updated_html();
+}
+add_filter( 'script_loader_tag', 'ehpmi_script_loader_tag', 10, 2 );
+
+/**
  * Preserve the font connection hints that used to be hardcoded in header.php.
  */
 function ehpmi_resource_hints( $urls, $relation_type ) {

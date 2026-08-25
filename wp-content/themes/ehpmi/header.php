@@ -11,7 +11,7 @@
             array(
                 '@context' => 'https://schema.org',
                 '@type'    => 'Organization',
-                'name'     => get_bloginfo( 'name' ),
+                'name'     => get_bloginfo( 'name', 'raw' ),
                 'url'      => home_url( '/' ),
                 'logo'     => get_theme_file_uri( '/images/logo.svg' ),
             ),
