@@ -3,7 +3,9 @@ $(document).ready(function(){
     // Desktop screen effects
     if (screen.width > 1024){
         // Menu dropdown toggle
-        $('.dropdown-toggle').dropdown();
+        document.querySelectorAll('.dropdown-toggle').forEach(function(toggle) {
+            bootstrap.Dropdown.getOrCreateInstance(toggle);
+        });
         // SlideDown animation to dropdown when expanding
         $('.dropdown').on('show.bs.dropdown', function() {
             $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
@@ -14,7 +16,9 @@ $(document).ready(function(){
         });
 
         // hero carousel
-        $('.carousel').carousel();
+        document.querySelectorAll('.carousel').forEach(function(carousel) {
+            bootstrap.Carousel.getOrCreateInstance(carousel);
+        });
         // hero scrolling effects
         $(window).on('load resize scroll', function() {
             $('.hero').each(function() {

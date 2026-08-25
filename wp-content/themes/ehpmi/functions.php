@@ -16,8 +16,8 @@ function ehpmi_asset_version( $relative_path ) {
 /**
  * Register the accepted frontend stack through the WordPress lifecycle.
  *
- * Library versions intentionally match the visual baseline. Version alignment
- * and removal of jQuery are separate refactor stages.
+ * Bootstrap CSS and JavaScript share the same release. jQuery remains scoped
+ * to the legacy effects and Owl Carousel until those features are replaced.
  */
 function ehpmi_enqueue_assets() {
     wp_enqueue_style(
@@ -34,8 +34,7 @@ function ehpmi_enqueue_assets() {
     wp_enqueue_style( 'ehpmi-site', get_theme_file_uri( '/css/style.css' ), array( 'ehpmi-theme', 'ehpmi-owl-theme', 'ehpmi-animate' ), ehpmi_asset_version( '/css/style.css' ) );
 
     wp_enqueue_script( 'ehpmi-font-awesome', 'https://kit.fontawesome.com/51d28c3d4c.js', array(), null, false );
-    wp_enqueue_script( 'ehpmi-popper', 'https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js', array(), '1.12.9', true );
-    wp_enqueue_script( 'ehpmi-bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js', array( 'jquery', 'ehpmi-popper' ), '4.0.0', true );
+    wp_enqueue_script( 'ehpmi-bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js', array(), '5.1.3', true );
     wp_enqueue_script( 'ehpmi-owl-carousel', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js', array( 'jquery' ), '2.3.4', true );
     wp_enqueue_script(
         'ehpmi-site',
@@ -98,12 +97,8 @@ function ehpmi_script_loader_tag( $tag, $handle ) {
         'ehpmi-font-awesome' => array(
             'crossorigin' => 'anonymous',
         ),
-        'ehpmi-popper' => array(
-            'integrity'   => 'sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q',
-            'crossorigin' => 'anonymous',
-        ),
         'ehpmi-bootstrap' => array(
-            'integrity'   => 'sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl',
+            'integrity'   => 'sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p',
             'crossorigin' => 'anonymous',
         ),
         'ehpmi-owl-carousel' => array(

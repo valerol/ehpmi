@@ -35,7 +35,7 @@ class Top_Nav extends Walker_Nav_Menu {
 
         if ( in_array('menu-item-has-children', $classes) ) {
             $atts['class']         = 'nav-link dropdown-toggle';
-            $atts['data-toggle']   = 'dropdown';
+            $atts['data-bs-toggle'] = 'dropdown';
             $atts['aria-haspopup'] = 'true';
             $atts['aria-expanded'] = 'false';
             $atts['role']          = 'button';
