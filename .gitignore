@@ -1,0 +1,33 @@
+# Operating-system and editor artifacts
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# WordPress core and environment-specific runtime files
+/wp-admin/
+/wp-includes/
+/wp-config.php
+/.htaccess
+/wp-cli.yml
+
+# Installed dependencies are restored from ops/plugins.yml
+/wp-content/plugins/
+/wp-content/mu-plugins/
+
+# Dynamic content belongs to the verified Google Drive backup package
+/wp-content/uploads/
+/files/
+/images/
+
+# Local backup and secret material
+/backups/
+*.sql
+*.sql.gz
+*.tar
+*.tar.gz
+*.zip
+*.env
+*.key
+*.pem
+

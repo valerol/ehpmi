@@ -1,0 +1,52 @@
+schema_version: 1
+captured_at_utc: "2026-08-25T01:36:08Z"
+source_environment: dev
+wordpress_version: "7.0.4"
+plugins:
+  - slug: advanced-custom-fields
+    status: active
+    version: "6.7.0"
+  - slug: akismet
+    status: active
+    version: "5.6"
+  - slug: breadcrumb-navxt
+    status: active
+    version: "7.5.1"
+  - slug: contact-form-7
+    status: active
+    version: "6.1.4"
+  - slug: youtube-embed-plus
+    status: active
+    version: "14.2.5"
+  - slug: force-regenerate-thumbnails
+    status: active
+    version: "2.2.2"
+  - slug: allow-html-in-category-descriptions
+    status: active
+    version: "1.2.4"
+  - slug: newsletter
+    status: active
+    version: "9.1.1"
+  - slug: real-media-library-lite
+    status: active
+    version: "4.22.62"
+  - slug: wpcf7-recaptcha
+    status: active
+    version: "1.4.9"
+  - slug: remove-category-url
+    status: active
+    version: "1.2.0"
+  - slug: wp-optimize
+    status: active
+    version: "4.5.3"
+  - slug: wp-robots-txt
+    status: active
+    version: "1.3.5"
+hosting_specific:
+  - path: wp-content/mu-plugins/sso.php
+    version: "0.5"
+    tracked_in_git: false
+    restore_policy: obtain or recreate for the target hosting; do not copy automatically
+notes:
+  - This is a reproducibility baseline, not authorization to retain outdated plugin versions indefinitely.
+  - Plugin updates are a separate tested stage after the baseline is accepted.

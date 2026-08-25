@@ -1,0 +1,114 @@
+/*
+Theme Name: EHPMI
+Theme URI: https://ehpmi.org/
+Version: 1.2
+*/
+
+.spider_popup_wrap {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#spider_popup_left-ico {
+	background-color: unset;
+}
+
+/* Social links widget */
+ul.wp-block-social-links {
+    display: flex;
+	list-style: none;
+}
+.wp-social-link {
+    margin: 0 0.5rem;
+	color: #aacc60 !important;
+}
+.wp-block-social-link svg,
+.wp-block-social-link svg path {
+    fill: #aacc60 !important;
+}
+
+/* Contact forms */
+.wpcf7 form .wpcf7-response-output {
+    color: white;
+    border: none;
+}
+textarea.wpcf7-form-control.wpcf7-textarea {
+  height: 200px;
+}
+
+/* Gallery */
+.wp-block-gallery.has-nested-images figure.wp-block-image figcaption {
+    background: unset;
+	display: block;
+    height: 3em;
+	margin-bottom: -3em;
+    color: black;
+    font-size: 13px;
+    font-style: italic;
+	padding: 0;
+}
+.wp-block-gallery.has-nested-images figure.wp-block-image:has(figcaption):before {
+    -webkit-backdrop-filter: unset;
+    backdrop-filter: unset;
+}
+.wp-block-gallery {
+    margin-bottom: 3em;
+}
+figure {
+  margin: 1rem 0;
+}
+.wp-block-gallery img {
+	max-width: 100%;
+}
+@media (min-width: 600px) {
+.wp-block-gallery.group-3 {
+	gap: 0.5em !important;
+}}
+
+
+/* ??? */
+.wp-block-post-excerpt {
+	display: none;
+}
+
+/* Newsletter subscription widget */
+.tnp-subscription label {
+	display: none;
+}
+
+/* Search widget */ 
+button.wp-block-search__button.wp-element-button {
+    background-color: #aacc60;
+    border: none;
+    padding: 3px 10px;
+}
+
+/* Special editor classes */
+.column-special {
+	padding: 1em;
+	margin-top: 0.8em !important;
+}
+
+/* Editor created columns */
+.wp-block-media-text,
+.wp-block-gallery,
+.wp-block-columns {
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+	column-gap: 2rem;
+	align-items: center;
+}
+.wp-block-gallery.one-column,
+.wp-block-columns .wp-block-gallery {
+    grid-template-columns: 1fr;
+}
+.wp-block-gallery.three-column,
+.wp-block-columns.three-column {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+@media (max-width: 900px) {
+    .wp-block-media-text,
+	.wp-block-gallery,
+	.wp-block-columns {
+        grid-template-columns: 1fr;
+    }
+}
