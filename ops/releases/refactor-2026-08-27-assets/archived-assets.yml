@@ -1,0 +1,65 @@
+archive:
+  name: "2026-08-27_070900Z_ehpmi-unused-theme-assets.tar.gz"
+  compressed_bytes: 5480868
+  sha256: "cb6d8a2adaf00d70167def255c01afa5cdfe90b1ae6e7c195774b00ffbc32d6d"
+  md5: "aa9472135665af9a363d906bf716a8b0"
+  drive_folder_id: "1DR-t5xCPPPY7sS-OmLWttjWcCta9OkZo"
+  drive_file_id: "19RWT50jja9Myg93_Is8-g7slM1mcHaM0"
+  drive_url: "https://drive.google.com/file/d/19RWT50jja9Myg93_Is8-g7slM1mcHaM0/view?usp=drivesdk"
+  drive_readback_bytes: 5480868
+  gzip_test: "PASS"
+  extracted_file_comparison: "PASS (13/13)"
+inventory:
+  format_version: 1
+  created_utc: "2026-08-27T07:09:00Z"
+  project: "EHPMI"
+  environment_source: "dev"
+  classification: "historical_unreferenced_theme_assets"
+  source_git_commit: "418123313a12dac5379e30cabda6551eda4ff00e"
+  paths_relative_to: "WordPress root"
+  files_count: 13
+  uncompressed_bytes: 5919438
+  active_assets_retained:
+    - "wp-content/themes/ehpmi/images/logo.svg"
+    - "wp-content/themes/ehpmi/images/map9-01.webp"
+    - "wp-content/themes/ehpmi/images/marker.svg"
+  files:
+    - path: "wp-content/themes/ehpmi/images/EHPMI.svg"
+      size: 24530
+      sha256: "d45a60dd4c8cd64865441dbcbe75ede7fcfac87926b334a84da14af195690d6a"
+    - path: "wp-content/themes/ehpmi/images/logo1.svg"
+      size: 34998
+      sha256: "5abe5e4eee4a49683453976f2ae7046781ed7a0be3f3b25bbb3fd97dd8627ed9"
+    - path: "wp-content/themes/ehpmi/images/map.png"
+      size: 522335
+      sha256: "bf146f69eb3a846f3efc199ce7906e947885f1d65e80452cdb58ee00843965d8"
+    - path: "wp-content/themes/ehpmi/images/map1.jpg"
+      size: 684689
+      sha256: "316b8f19970814bd52c6d0a69283128db22fcc40e3a1d0247c17e2972b4d1a6d"
+    - path: "wp-content/themes/ehpmi/images/map3.jpg"
+      size: 798537
+      sha256: "f84fb23067c8e652f591063e5de9e5a9d57588d1598fc1031bce5ac7a7ed1dbf"
+    - path: "wp-content/themes/ehpmi/images/map4.jpg"
+      size: 790817
+      sha256: "526f91435b219c355de4cde4617973c7a3d07e70ea432d021cd1a51cbaf5387a"
+    - path: "wp-content/themes/ehpmi/images/map6.jpg"
+      size: 695941
+      sha256: "b9a6b9a5c4ddf93b8c30b863a19d5077e3cf5fa5f002b5a3bcdbe2232f3ad758"
+    - path: "wp-content/themes/ehpmi/images/map7.jpg"
+      size: 322610
+      sha256: "d0667d876bfd44c7fff5fc197bf8a2bdaa169ffd1a4d0b648c57ea9d307c58b9"
+    - path: "wp-content/themes/ehpmi/images/map7.png"
+      size: 761121
+      sha256: "3aceedc2a907d9b7d107372b5582c65dd959364984781db9f7f2a3cde1b3da5a"
+    - path: "wp-content/themes/ehpmi/images/map8.jpg"
+      size: 470662
+      sha256: "ca8d6a560e4c2875bab89f64dea78375379ef3542dae929176fba163bf8bfb57"
+    - path: "wp-content/themes/ehpmi/images/map9-01.png"
+      size: 793743
+      sha256: "96fb58385842d6f3c490702d8812d3efd36e96d162b0d9756e6904120637c39d"
+    - path: "wp-content/themes/ehpmi/images/marker.png"
+      size: 1064
+      sha256: "ed4de9b35a83ae7c46c13d38cc991bd8beecf9f11d718d079ae426f2f6ef7901"
+    - path: "wp-content/themes/ehpmi/images/style.css"
+      size: 18391
+      sha256: "526f5fe9718a3e728e6d26954e595f1fd11b49f89d3cf3d4d35242bead40898e"
