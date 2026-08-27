@@ -9,14 +9,24 @@ if ($partners) {
     <header>
         <h2>Member Organizations</h2>
     </header>
-    <div id="partner-carousel" class="partner-carousel container">
-        <div class="owl-carousel">
+    <div id="partner-carousel" class="partner-carousel container ehpmi-carousel" role="region"
+         aria-label="Member organizations" aria-roledescription="carousel" data-carousel-loop="true"
+         data-carousel-gap="10" data-carousel-medium-breakpoint="600" data-carousel-medium-items="3"
+         data-carousel-large-breakpoint="1000" data-carousel-large-items="5">
+        <div class="ehpmi-carousel__viewport" tabindex="0">
+            <div class="ehpmi-carousel__track">
             <?php foreach ($partners as $partner) : ?><?php if (get_the_post_thumbnail($partner->ID)) : ?>
-            <div class="item"><?php if (get_post_meta($partner->ID, 'url', true)) : ?><a href="<?= get_post_meta($partner->ID, 'url', true) ?>"><?php endif; ?>
+            <div class="item ehpmi-carousel__item"><?php if (get_post_meta($partner->ID, 'url', true)) : ?><a href="<?= get_post_meta($partner->ID, 'url', true) ?>"><?php endif; ?>
                 <?= get_the_post_thumbnail($partner->ID) ?><?php if (get_post_meta($partner->ID, 'url', true)) : ?></a><?php endif; ?>
             </div><?php endif; ?>
             <?php endforeach; ?>
+            </div>
         </div>
+        <div class="ehpmi-carousel__nav" aria-label="Member organization controls">
+            <button class="ehpmi-carousel__control ehpmi-carousel__control--prev" type="button" aria-label="Previous member organization"></button>
+            <button class="ehpmi-carousel__control ehpmi-carousel__control--next" type="button" aria-label="Next member organization"></button>
+        </div>
+        <p class="ehpmi-carousel__status screen-reader-text" aria-live="polite"></p>
     </div>
 </section><?php else: ?>
 <section class="partners"><?php if (isset($args['heading'])) : ?>

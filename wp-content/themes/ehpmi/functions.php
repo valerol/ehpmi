@@ -16,8 +16,8 @@ function ehpmi_asset_version( $relative_path ) {
 /**
  * Register the accepted frontend stack through the WordPress lifecycle.
  *
- * Bootstrap CSS and JavaScript share the same release. jQuery remains scoped
- * to the legacy effects and Owl Carousel until those features are replaced.
+ * Bootstrap CSS and JavaScript share the same release. Theme interactions use
+ * native browser APIs and have no legacy frontend script dependencies.
  */
 function ehpmi_enqueue_assets() {
     wp_enqueue_style(
@@ -27,19 +27,15 @@ function ehpmi_enqueue_assets() {
         null
     );
     wp_enqueue_style( 'ehpmi-bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css', array(), '5.1.3' );
-    wp_enqueue_style( 'ehpmi-owl-carousel', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css', array(), '2.3.4' );
-    wp_enqueue_style( 'ehpmi-owl-theme', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css', array( 'ehpmi-owl-carousel' ), '2.3.4' );
-    wp_enqueue_style( 'ehpmi-animate', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.min.css', array(), '4.1.1' );
     wp_enqueue_style( 'ehpmi-theme', get_stylesheet_uri(), array( 'ehpmi-bootstrap' ), ehpmi_asset_version( '/style.css' ) );
-    wp_enqueue_style( 'ehpmi-site', get_theme_file_uri( '/css/style.css' ), array( 'ehpmi-theme', 'ehpmi-owl-theme', 'ehpmi-animate' ), ehpmi_asset_version( '/css/style.css' ) );
+    wp_enqueue_style( 'ehpmi-site', get_theme_file_uri( '/css/style.css' ), array( 'ehpmi-theme' ), ehpmi_asset_version( '/css/style.css' ) );
 
     wp_enqueue_script( 'ehpmi-font-awesome', 'https://kit.fontawesome.com/51d28c3d4c.js', array(), null, false );
     wp_enqueue_script( 'ehpmi-bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js', array(), '5.1.3', true );
-    wp_enqueue_script( 'ehpmi-owl-carousel', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js', array( 'jquery' ), '2.3.4', true );
     wp_enqueue_script(
         'ehpmi-site',
         get_theme_file_uri( '/onload.js' ),
-        array( 'jquery', 'ehpmi-bootstrap', 'ehpmi-owl-carousel' ),
+        array( 'ehpmi-bootstrap' ),
         ehpmi_asset_version( '/onload.js' ),
         true
     );
@@ -54,21 +50,6 @@ function ehpmi_style_loader_tag( $html, $handle ) {
         'ehpmi-bootstrap' => array(
             'integrity'   => 'sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3',
             'crossorigin' => 'anonymous',
-        ),
-        'ehpmi-owl-carousel' => array(
-            'integrity'      => 'sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==',
-            'crossorigin'    => 'anonymous',
-            'referrerpolicy' => 'no-referrer',
-        ),
-        'ehpmi-owl-theme' => array(
-            'integrity'      => 'sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==',
-            'crossorigin'    => 'anonymous',
-            'referrerpolicy' => 'no-referrer',
-        ),
-        'ehpmi-animate' => array(
-            'integrity'      => 'sha512-b42SanD3pNHoihKwgABd18JUZ2g9j423/frxIP5/gtYgfBz/0nDHGdY/3hi+3JwhSckM3JLklQ/T6tJmV7mZEw==',
-            'crossorigin'    => 'anonymous',
-            'referrerpolicy' => 'no-referrer',
         ),
     );
 
@@ -100,11 +81,6 @@ function ehpmi_script_loader_tag( $tag, $handle ) {
         'ehpmi-bootstrap' => array(
             'integrity'   => 'sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p',
             'crossorigin' => 'anonymous',
-        ),
-        'ehpmi-owl-carousel' => array(
-            'integrity'      => 'sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==',
-            'crossorigin'    => 'anonymous',
-            'referrerpolicy' => 'no-referrer',
         ),
     );
 
