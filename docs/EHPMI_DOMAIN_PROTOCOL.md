@@ -415,27 +415,27 @@ Backup считается сохранённым только после:
 
 Обычные plugins не копируются в backup. Они переустанавливаются по manifest.
 
-Baseline `2026-08-25` до согласованного этапа обновлений:
+Проверенный dev manifest после этапа обновлений `2026-08-28`:
 
 | Plugin slug | Version |
 |---|---:|
-| `advanced-custom-fields` | 6.7.0 |
-| `akismet` | 5.6 |
+| `advanced-custom-fields` | 6.8.8 |
+| `akismet` | 5.7.2 |
 | `breadcrumb-navxt` | 7.5.1 |
-| `contact-form-7` | 6.1.4 |
-| `youtube-embed-plus` | 14.2.5 |
-| `force-regenerate-thumbnails` | 2.2.2 |
-| `allow-html-in-category-descriptions` | 1.2.4 |
-| `newsletter` | 9.1.1 |
-| `real-media-library-lite` | 4.22.62 |
-| `wpcf7-recaptcha` | 1.4.9 |
-| `remove-category-url` | 1.2.0 |
-| `wp-optimize` | 4.5.3 |
-| `wp-robots-txt` | 1.3.5 |
+| `contact-form-7` | 6.1.7 |
+| `youtube-embed-plus` | 14.2.6 |
+| `force-regenerate-thumbnails` | 2.3.0 |
+| `allow-html-in-category-descriptions` | 1.2.5 |
+| `newsletter` | 9.3.5 |
+| `real-media-library-lite` | 4.23.0 |
+| `wpcf7-recaptcha` | 1.5.0 |
+| `remove-category-url` | 1.2.4 |
+| `wp-optimize` | 4.6.1 |
+| `wp-robots-txt` | 1.3.6 |
 
 `wp-content/mu-plugins/sso.php` версии 0.5 является hosting-specific integration и не переносится автоматически на новый hosting.
 
-После plugin update этот список заменяется новым проверенным manifest. Baseline-таблица не является разрешением всегда устанавливать устаревшие версии.
+Текущий машинно-читаемый список хранится в `ops/plugins.yml`; перед каждым следующим обновлением он заменяется только после независимого backup и post-update QA. Исторический baseline остаётся в `ops/releases/baseline-2026-08-25/manifest.yml`.
 
 ## 11. Change procedure
 

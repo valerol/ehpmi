@@ -1,0 +1,104 @@
+schema_version: 1
+captured_at_utc: "2026-08-28"
+
+environment:
+  name: dev
+  url: "https://dev.ehpmi.org"
+  document_root: "/home2/nykvymmy/dev.ehpmi.org"
+  database_name: "nykvymmy_ehpmidev"
+  wordpress_version: "7.0.4"
+  php_version: "8.1.34"
+  git_baseline: "d8f0ba1d519c6eeedad3d46cca28fb62126fbf27"
+
+plugins:
+  - slug: advanced-custom-fields
+    before: "6.7.0"
+    after: "6.8.8"
+    state: active
+    auto_update: false
+    updated: true
+  - slug: akismet
+    before: "5.6"
+    after: "5.7.2"
+    state: active
+    auto_update: true
+    updated: true
+  - slug: allow-html-in-category-descriptions
+    before: "1.2.4"
+    after: "1.2.5"
+    state: active
+    auto_update: false
+    updated: true
+  - slug: breadcrumb-navxt
+    before: "7.5.1"
+    after: "7.5.1"
+    state: active
+    auto_update: false
+    updated: false
+  - slug: contact-form-7
+    before: "6.1.4"
+    after: "6.1.7"
+    state: active
+    auto_update: true
+    updated: true
+  - slug: youtube-embed-plus
+    before: "14.2.5"
+    after: "14.2.6"
+    state: active
+    auto_update: false
+    updated: true
+  - slug: force-regenerate-thumbnails
+    before: "2.2.2"
+    after: "2.3.0"
+    state: active
+    auto_update: false
+    updated: true
+  - slug: newsletter
+    before: "9.1.1"
+    after: "9.3.5"
+    state: active
+    auto_update: true
+    updated: true
+  - slug: real-media-library-lite
+    before: "4.22.62"
+    after: "4.23.0"
+    state: active
+    auto_update: true
+    updated: true
+  - slug: wpcf7-recaptcha
+    before: "1.4.9"
+    after: "1.5.0"
+    state: active
+    auto_update: false
+    updated: true
+  - slug: remove-category-url
+    before: "1.2.0"
+    after: "1.2.4"
+    state: active
+    auto_update: false
+    updated: true
+  - slug: wp-optimize
+    before: "4.5.3"
+    after: "4.6.1"
+    state: active
+    auto_update: false
+    updated: true
+  - slug: wp-robots-txt
+    before: "1.3.5"
+    after: "1.3.6"
+    state: active
+    auto_update: false
+    updated: true
+  - slug: sso
+    before: "0.5"
+    after: "0.5"
+    state: must-use
+    auto_update: false
+    updated: false
+
+result:
+  requested_updates: 12
+  successful_updates: 12
+  failed_updates: 0
+  remaining_updates: 0
+  wordpress_org_checksum_verification: "PASS (13/13)"
