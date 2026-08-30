@@ -411,7 +411,9 @@ Backup считается сохранённым только после:
 4. наличия manifest и SHA-256;
 5. тестового скачивания/проверки при первом выпуске процедуры.
 
-## 10. Plugin manifest
+## 10. Core and plugin manifest
+
+Текущая проверенная версия WordPress Core на dev: `7.1`. Backup, QA и процедура возврата на `7.0.4` зафиксированы в `ops/releases/wordpress-core-7.1-2026-08-30/`.
 
 Обычные plugins не копируются в backup. Они переустанавливаются по manifest.
 

@@ -1,7 +1,7 @@
 schema_version: 1
-captured_at_utc: "2026-08-30T07:56:23Z"
+captured_at_utc: "2026-08-30T08:36:06Z"
 source_environment: dev
-wordpress_version: "7.0.4"
+wordpress_version: "7.1"
 plugins:
   - slug: advanced-custom-fields
     status: active
@@ -48,5 +48,5 @@ hosting_specific:
     tracked_in_git: false
     restore_policy: obtain or recreate for the target hosting; do not copy automatically
 notes:
-  - This is the tested dev manifest after the 2026-08-30 follow-up plugin-update stage.
-  - The original update stage is under ops/releases/plugin-updates-2026-08-28; the follow-up evidence is under ops/releases/plugin-updates-2026-08-30-followup.
+  - This is the tested dev dependency manifest after the 2026-08-30 WordPress 7.1 core-update stage.
+  - Core backup, version, QA and recovery evidence is under ops/releases/wordpress-core-7.1-2026-08-30.

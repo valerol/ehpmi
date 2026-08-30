@@ -1,0 +1,40 @@
+schema_version: 1
+captured_at_utc: "2026-08-30T08:36:06Z"
+
+environment:
+  name: dev
+  url: "https://dev.ehpmi.org"
+  document_root: "/home2/nykvymmy/dev.ehpmi.org"
+  database_name: "nykvymmy_ehpmidev"
+  php_version: "8.1.34"
+  git_baseline: "bbb68d9ef49fdef70af694801911de6c44772c68"
+
+wordpress_core:
+  before: "7.0.4"
+  after: "7.1"
+  locale: en_US
+  update_type: major
+  source_package: "https://downloads.wordpress.org/release/wordpress-7.1.zip"
+  update_status: success
+  checksum_verification: PASS
+  remaining_core_updates: 0
+
+database:
+  version_before: "61833"
+  version_after: "61833"
+  migration_required: false
+  check_after_update: "PASS (53/53 tables)"
+
+dependencies:
+  plugin_updates_applied: 0
+  remaining_plugin_updates: 0
+  plugin_checksum_verification: "PASS (13/13)"
+  active_theme: ehpmi
+  active_theme_version: "1.2"
+  theme_updated: false
+  inactive_theme_updates_deferred: 6
+
+scope:
+  production_changed: false
+  newsletter_sends: 0
+  form_submissions: 0
