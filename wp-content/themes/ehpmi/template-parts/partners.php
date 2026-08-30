@@ -1,10 +1,26 @@
 <?php
-$post_type = $post->ID == 1453 ? 'partner2' : 'partner';
+$requested_post_type = isset( $args['post_type'] ) ? $args['post_type'] : 'member';
+$post_type = in_array( $requested_post_type, array( 'member', 'partner' ), true )
+    ? $requested_post_type
+    : 'member';
 
-$partners = isset($args['partners']) ? $args['partners'] : get_posts(['post_type' => $post_type, 'numberposts' => 50]);
-if ($partners) {
+$organizations = isset( $args['organizations'] )
+    ? $args['organizations']
+    : get_posts(
+        array(
+            'post_type'      => $post_type,
+            'post_status'    => 'publish',
+            'posts_per_page' => 50,
+        )
+    );
+
+if ( ! $organizations ) {
+    return;
+}
+
+$is_directory = ! empty( $args['inner'] ) || is_page( array( 'members', 'partners' ) );
 ?>
-<?php if (!isset($args['inner']) && !in_array($post->ID, [29, 1453])) : ?>
+<?php if ( ! $is_directory ) : ?>
 <section class="partners animation-element slide-bottom">
     <header>
         <h2>Member Organizations</h2>
@@ -15,10 +31,18 @@ if ($partners) {
          data-carousel-large-breakpoint="1000" data-carousel-large-items="5">
         <div class="ehpmi-carousel__viewport" tabindex="0">
             <div class="ehpmi-carousel__track">
-            <?php foreach ($partners as $partner) : ?><?php if (get_the_post_thumbnail($partner->ID)) : ?>
-            <div class="item ehpmi-carousel__item"><?php if (get_post_meta($partner->ID, 'url', true)) : ?><a href="<?= get_post_meta($partner->ID, 'url', true) ?>"><?php endif; ?>
-                <?= get_the_post_thumbnail($partner->ID) ?><?php if (get_post_meta($partner->ID, 'url', true)) : ?></a><?php endif; ?>
-            </div><?php endif; ?>
+            <?php foreach ( $organizations as $organization ) : ?>
+                <?php
+                $organization_id = $organization instanceof WP_Post ? $organization->ID : absint( $organization );
+                $site_url        = get_post_meta( $organization_id, 'url', true );
+                ?>
+                <?php if ( $organization_id && get_the_post_thumbnail( $organization_id ) ) : ?>
+                <div class="item ehpmi-carousel__item">
+                    <?php if ( $site_url ) : ?><a href="<?php echo esc_url( $site_url ); ?>"><?php endif; ?>
+                    <?php echo get_the_post_thumbnail( $organization_id ); ?>
+                    <?php if ( $site_url ) : ?></a><?php endif; ?>
+                </div>
+                <?php endif; ?>
             <?php endforeach; ?>
             </div>
         </div>
@@ -28,24 +52,44 @@ if ($partners) {
         </div>
         <p class="ehpmi-carousel__status screen-reader-text" aria-live="polite"></p>
     </div>
-</section><?php else: ?>
-<section class="partners"><?php if (isset($args['heading'])) : ?>
+</section>
+<?php else : ?>
+<section class="partners">
+    <?php if ( isset( $args['heading'] ) ) : ?>
     <header>
-        <h2><?= $args['heading'] ?></h2>
-    </header><?php endif ?>
-    <div class="container"><?php foreach ($partners as $partner) : ?>
+        <h2><?php echo esc_html( $args['heading'] ); ?></h2>
+    </header>
+    <?php endif; ?>
+    <div class="container">
+        <?php foreach ( $organizations as $organization ) : ?>
+            <?php
+            $organization_id = $organization instanceof WP_Post ? $organization->ID : absint( $organization );
+            if ( ! $organization_id ) {
+                continue;
+            }
+
+            $site_url         = get_post_meta( $organization_id, 'url', true );
+            $additional_image = get_post_meta( $organization_id, 'additonal_image', true );
+            $content          = get_post_field( 'post_content', $organization_id );
+            ?>
         <article class="partner">
-            <div class="brand"><?php if (get_the_post_thumbnail($partner)) : ?>
-                <?= get_the_post_thumbnail($partner) ?><?php endif; ?><?php if (get_post_field('url', $partner)) : ?>
-                <a href="<?= get_post_field('url', $partner); ?>"><?= get_post_field('url', $partner); ?></a><?php endif; ?><?php if (get_post_field('additonal_image', $partner)) : ?>
-                <?= wp_get_attachment_image(get_post_field('additonal_image', $partner)); ?><?php endif; ?>
+            <div class="brand">
+                <?php if ( get_the_post_thumbnail( $organization_id ) ) : ?>
+                    <?php echo get_the_post_thumbnail( $organization_id ); ?>
+                <?php endif; ?>
+                <?php if ( $site_url ) : ?>
+                    <a href="<?php echo esc_url( $site_url ); ?>"><?php echo esc_html( $site_url ); ?></a>
+                <?php endif; ?>
+                <?php if ( $additional_image ) : ?>
+                    <?php echo wp_get_attachment_image( $additional_image ); ?>
+                <?php endif; ?>
             </div>
             <div class="text">
-                <h3><?= get_the_title($partner); ?></h3>    
-                <?= get_post_field('post_content', $partner); ?>
+                <h3><?php echo esc_html( get_the_title( $organization_id ) ); ?></h3>
+                <?php echo wp_kses_post( $content ); ?>
             </div>
-        </article><?php endforeach; ?>
+        </article>
+        <?php endforeach; ?>
     </div>
 </section>
-<?php endif ?><?php
-}
+<?php endif; ?>

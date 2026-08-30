@@ -1,6 +1,6 @@
 {
     "key": "group_6336c6465a962",
-    "title": "Partner custom fields",
+    "title": "Member fields",
     "fields": [
         {
             "key": "field_6336c64641339",
@@ -17,7 +17,7 @@
         },
         {
             "key": "field_6576b42d8de48",
-            "label": "Additonal image",
+            "label": "Additional image",
             "name": "additonal_image",
             "aria-label": "",
             "type": "image",
@@ -38,7 +38,7 @@
         }
     ],
     "location": [
-        [ { "param": "post_type", "operator": "==", "value": "partner" } ]
+        [ { "param": "post_type", "operator": "==", "value": "member" } ]
     ],
     "menu_order": 0,
     "position": "normal",

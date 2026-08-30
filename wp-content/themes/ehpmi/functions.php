@@ -127,6 +127,28 @@ function ehpmi_acf_json_save_path( $path ) {
 }
 add_filter( 'acf/settings/save_json', 'ehpmi_acf_json_save_path' );
 
+/**
+ * Resolve the Country fields parent page by slug instead of a database ID.
+ */
+function ehpmi_acf_country_fields_location( $field_group ) {
+    $offices_page = get_page_by_path( 'offices' );
+
+    if ( ! $offices_page instanceof WP_Post || empty( $field_group['location'] ) ) {
+        return $field_group;
+    }
+
+    foreach ( $field_group['location'] as &$rule_group ) {
+        foreach ( $rule_group as &$rule ) {
+            if ( 'page_parent' === $rule['param'] ) {
+                $rule['value'] = (string) $offices_page->ID;
+            }
+        }
+    }
+
+    return $field_group;
+}
+add_filter( 'acf/load_field_group/key=group_633fd14d6b279', 'ehpmi_acf_country_fields_location' );
+
 function ehpmi_theme_setup() {
     add_theme_support('custom-logo');
     add_theme_support('widgets');
@@ -182,25 +204,49 @@ function ehpmi_posttype() {
         )
     );
 
-    register_post_type( 'partner',
+    register_post_type(
+        'member',
         array(
-            'labels' => [
-                'name' => __( 'Members' ),
-                'singular_name' => __( 'Member' )
-            ],
-            'supports' => [ 'title', 'thumbnail', 'editor', 'custom-fields' ],
-            'public' => true,
+            'labels' => array(
+                'name'          => __( 'Members', 'ehpmi' ),
+                'singular_name' => __( 'Member', 'ehpmi' ),
+                'add_new_item'  => __( 'Add member', 'ehpmi' ),
+                'edit_item'     => __( 'Edit member', 'ehpmi' ),
+            ),
+            'description'         => __( 'EHPMI member organizations.', 'ehpmi' ),
+            'supports'            => array( 'title', 'thumbnail', 'editor', 'custom-fields' ),
+            'public'              => false,
+            'publicly_queryable'  => false,
+            'exclude_from_search' => true,
+            'show_ui'             => true,
+            'show_in_rest'        => false,
+            'menu_icon'           => 'dashicons-groups',
+            'has_archive'         => false,
+            'rewrite'             => false,
+            'query_var'           => false,
         )
     );
-    
-    register_post_type( 'partner2',
+
+    register_post_type(
+        'partner',
         array(
-            'labels' => [
-                'name' => __( 'Partners' ),
-                'singular_name' => __( 'Partner' )
-            ],
-            'supports' => [ 'title', 'thumbnail', 'editor', 'custom-fields' ],
-            'public' => true,
+            'labels' => array(
+                'name'          => __( 'Partners', 'ehpmi' ),
+                'singular_name' => __( 'Partner', 'ehpmi' ),
+                'add_new_item'  => __( 'Add partner', 'ehpmi' ),
+                'edit_item'     => __( 'Edit partner', 'ehpmi' ),
+            ),
+            'description'         => __( 'External EHPMI partner organizations.', 'ehpmi' ),
+            'supports'            => array( 'title', 'thumbnail', 'editor', 'custom-fields' ),
+            'public'              => false,
+            'publicly_queryable'  => false,
+            'exclude_from_search' => true,
+            'show_ui'             => true,
+            'show_in_rest'        => false,
+            'menu_icon'           => 'dashicons-businessperson',
+            'has_archive'         => false,
+            'rewrite'             => false,
+            'query_var'           => false,
         )
     );
     
@@ -210,7 +256,7 @@ function ehpmi_posttype() {
                 'name' => __( 'Materials' ),
                 'singular_name' => __( 'Material' )
             ],
-            'supports' => [ 'title', 'thumbnail', 'editor', 'custom-fields' ],
+            'supports' => [ 'title', 'thumbnail', 'custom-fields' ],
             'public' => true,
             'taxonomies' => [ 'category' ],
         )

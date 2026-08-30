@@ -46,32 +46,29 @@ if ($is_page) {
     // Page types
     $parent_id = wp_get_post_parent_id($post->ID);
     
-    // Staff page
+    // Staff page.
     if ($post->post_name == 'staff') {
         get_template_part( 'template-parts/staff');
-        
-        $organization = get_post_meta($post->ID, 'organization');
+    }
 
-        if (!empty($organization[0])) {
-            get_template_part( 'template-parts/partners', '', ['partners' => $organization, 'inner' => true]);
-        }
+    // Organization directories use separate, admin-only content types.
+    if ( 'members' === $post->post_name ) {
+        get_template_part( 'template-parts/partners', '', array( 'post_type' => 'member' ) );
+    } elseif ( 'partners' === $post->post_name ) {
+        get_template_part( 'template-parts/partners', '', array( 'post_type' => 'partner' ) );
     }
-    
-    // Partners page
-    if (in_array($post->ID, [29, 1453])) {
-        get_template_part( 'template-parts/partners');
-    }
-    
+
     // Offices page map
-    if ($post->ID == 17) {
+    if ( 'offices' === $post->post_name ) {
         get_template_part( 'template-parts/map');
     }
-    
-    // Country offices staff and partners
-    if ($parent_id == 17) {
+
+    // Country offices staff and member organizations.
+    $parent_slug = $parent_id ? get_post_field( 'post_name', $parent_id ) : '';
+    if ( 'offices' === $parent_slug ) {
         $leader_id = get_post_meta($post->ID, 'leader', true);
         $staff_members = get_post_meta($post->ID, 'team', true);
-        $partners = get_post_meta($post->ID, 'partner', true);
+        $members = get_post_meta($post->ID, 'member', true);
         
         if (!empty($leader_id)) {
             get_template_part( 'template-parts/leader', '', ['leader_id' => $leader_id] );
@@ -81,8 +78,16 @@ if ($is_page) {
             get_template_part( 'template-parts/staff', '', ['staff_members' => $staff_members, 'classes' => 'country-staff'] );
         }
 
-        if (!empty($partners[0])) {
-            get_template_part( 'template-parts/partners', '', ['partners' => $partners, 'inner' => true] );
+        if (!empty($members[0])) {
+            get_template_part(
+                'template-parts/partners',
+                '',
+                array(
+                    'organizations' => $members,
+                    'post_type'     => 'member',
+                    'inner'         => true,
+                )
+            );
         }
     }
     
@@ -103,7 +108,5 @@ if ($is_page) {
     }
 
 }
-
-get_template_part( 'template-parts/footer-menus-widgets' );
 
 get_footer();

@@ -1,5 +1,5 @@
 <?php
-$projects = isset($args['projects']) ? $args['projects'] : get_posts(['numberposts' => 3, 'category' => 4]);
+$projects = isset($args['projects']) ? $args['projects'] : get_posts(array('numberposts' => 3, 'category_name' => 'projects'));
 ?>
 <section class="news <?= isset($args['category_name']) ? 
     'inner' :

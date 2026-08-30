@@ -1,6 +1,5 @@
 <?php
-//$news = $args['materials'] ? $args['materials'] : get_posts(['category' => 33]);
-$news = get_posts(['category' => 33, 'numberposts' => 100]);
+$news = get_posts( array( 'category_name' => 'news', 'numberposts' => 100 ) );
 ?>
 <?php if (!isset($args['category_name'])) : // Homepage block ?>
 <section class="latest news news-grid <?= isset($args['category_name']) ? 'inner' : 'animation-element slide-left' ?>">

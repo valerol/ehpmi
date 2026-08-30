@@ -46,15 +46,15 @@
         },
         {
             "key": "field_634109faf9126",
-            "label": "Partner organization",
-            "name": "partner",
+            "label": "Member organization",
+            "name": "member",
             "aria-label": "",
             "type": "post_object",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": { "width": "", "class": "", "id": "" },
-            "post_type": [ "partner" ],
+            "post_type": [ "member" ],
             "taxonomy": "",
             "return_format": "id",
             "multiple": 1,
@@ -82,7 +82,7 @@
         }
     ],
     "location": [
-        [ { "param": "page_parent", "operator": "==", "value": "17" } ]
+        [ { "param": "page_parent", "operator": "==", "value": "offices" } ]
     ],
     "menu_order": 0,
     "position": "normal",
