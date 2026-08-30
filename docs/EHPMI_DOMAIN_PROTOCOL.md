@@ -415,13 +415,13 @@ Backup считается сохранённым только после:
 
 Обычные plugins не копируются в backup. Они переустанавливаются по manifest.
 
-Проверенный dev manifest после этапа обновлений `2026-08-28`:
+Проверенный dev manifest после follow-up этапа обновлений `2026-08-30`:
 
 | Plugin slug | Version |
 |---|---:|
-| `advanced-custom-fields` | 6.8.8 |
+| `advanced-custom-fields` | 6.8.9 |
 | `akismet` | 5.7.2 |
-| `breadcrumb-navxt` | 7.5.1 |
+| `breadcrumb-navxt` | 7.5.2 |
 | `contact-form-7` | 6.1.7 |
 | `youtube-embed-plus` | 14.2.6 |
 | `force-regenerate-thumbnails` | 2.3.0 |

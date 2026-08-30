@@ -1,0 +1,31 @@
+schema_version: 1
+captured_at_utc: "2026-08-30T07:56:23Z"
+
+environment:
+  name: dev
+  url: "https://dev.ehpmi.org"
+  document_root: "/home2/nykvymmy/dev.ehpmi.org"
+  database_name: "nykvymmy_ehpmidev"
+  wordpress_version: "7.0.4"
+  git_baseline: "7a41e6b7f3a88bb8a1fb6d64dcdf58e0dc838c04"
+
+updates:
+  - slug: advanced-custom-fields
+    before: "6.8.8"
+    after: "6.8.9"
+    state: active
+    updated: true
+  - slug: breadcrumb-navxt
+    before: "7.5.1"
+    after: "7.5.2"
+    state: active
+    updated: true
+
+result:
+  requested_updates: 2
+  successful_updates: 2
+  failed_updates: 0
+  remaining_plugin_updates: 0
+  wordpress_org_checksum_verification: "PASS (13/13)"
+  core_updated: false
+  themes_updated: false

@@ -1,0 +1,41 @@
+schema_version: 1
+backup_id: "2026-08-30_074215Z_ehpmi-dev-before-plugin-followup"
+created_at_utc: "2026-08-30T07:42:15Z"
+purpose: "Dev database immediately before the follow-up ACF and Breadcrumb NavXT updates"
+
+source:
+  environment: dev
+  url: "https://dev.ehpmi.org"
+  document_root: "/home2/nykvymmy/dev.ehpmi.org"
+  database_name: "nykvymmy_ehpmidev"
+  table_prefix: "wp_"
+  wordpress_version: "7.0.4"
+
+artifact:
+  filename: "2026-08-30_074215Z_ehpmi-dev-before-plugin-followup.sql.gz"
+  temporary_local_path: "/private/tmp/2026-08-30_074215Z_ehpmi-dev-before-plugin-followup.sql.gz"
+  size_bytes: 640341
+  sha256: "0e6a3b263239033d7a8b300e8eda53327148089bccaee5d862243b6eb43e72ee"
+  md5: "7dd8a30fcc4b7fa7ec5f26609c07be9c"
+  create_table_statements: 53
+  dump_completed_at_server_time: "2026-08-30 01:42:58"
+  gzip_test: PASS
+  database_check_before_export: "PASS (53/53 tables)"
+
+drive:
+  dev_database_folder_id: "1d0pVYifHrEsCJbH4Ox6ueqfyvQeGeYFj"
+  file_id: "117OP9GiafNlV0G7IxYbAYYZ1nIzzqoIU"
+  url: "https://drive.google.com/file/d/117OP9GiafNlV0G7IxYbAYYZ1nIzzqoIU/view?usp=drivesdk"
+  metadata_readback: "PASS (filename, size, parent folder and MIME type)"
+
+content_counts_before_update:
+  wp_newsletter: 172
+  wp_newsletter_sent: 0
+  wp_newsletter_emails: 0
+  wp_posts: 692
+  wp_users: 2
+
+retention:
+  canonical_copy: "Google Drive database/dev"
+  repository_copy: false
+  encrypted: false
