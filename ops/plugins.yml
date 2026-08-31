@@ -1,8 +1,12 @@
 schema_version: 1
-captured_at_utc: "2026-08-30T08:36:06Z"
+captured_at_utc: "2026-08-31T06:32:10Z"
 source_environment: dev
 wordpress_version: "7.1"
 plugins:
+  - slug: ehpmi-core
+    status: active
+    version: "1.0.0"
+    source: repository
   - slug: advanced-custom-fields
     status: active
     version: "6.8.9"
@@ -22,7 +26,7 @@ plugins:
     status: active
     version: "2.3.0"
   - slug: allow-html-in-category-descriptions
-    status: active
+    status: inactive
     version: "1.2.5"
   - slug: newsletter
     status: active
@@ -34,7 +38,7 @@ plugins:
     status: active
     version: "1.5.0"
   - slug: remove-category-url
-    status: active
+    status: inactive
     version: "1.2.4"
   - slug: wp-optimize
     status: active
@@ -48,5 +52,7 @@ hosting_specific:
     tracked_in_git: false
     restore_policy: obtain or recreate for the target hosting; do not copy automatically
 notes:
-  - This is the tested dev dependency manifest after the 2026-08-30 WordPress 7.1 core-update stage.
+  - This is the tested dev dependency manifest after the 2026-08-31 routing-model refactor.
+  - ehpmi-core is unique project code restored from Git, not from WordPress.org.
+  - Remove Category URL and Allow HTML in Category Descriptions remain installed only for rollback history and are intentionally inactive.
   - Core backup, version, QA and recovery evidence is under ops/releases/wordpress-core-7.1-2026-08-30.

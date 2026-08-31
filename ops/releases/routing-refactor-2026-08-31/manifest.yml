@@ -1,0 +1,121 @@
+schema_version: 1
+release_id: "routing-refactor-2026-08-31"
+captured_at_utc: "2026-08-31T12:10:07Z"
+environment: dev
+status: PASS_WITH_OPEN_ADMIN_AND_MOBILE_ROUND_TRIPS
+
+target:
+  url: "https://dev.ehpmi.org"
+  document_root: "/home2/nykvymmy/dev.ehpmi.org"
+  database_name: "nykvymmy_ehpmidev"
+  wordpress_version: "7.1"
+  theme: "ehpmi"
+  theme_version: "1.4"
+  site_plugin: "ehpmi-core"
+  site_plugin_version: "1.0.0"
+  branch: "refactor/dev-2026-08-25"
+  implementation_commit: "dbba503b0439c28d2019b4bf9d62a548c7228157"
+  rollback_code_commit: "f8ddf9bbe1e2d6cb5091256a535b889f062739cc"
+
+content_model:
+  projects:
+    post_type: project
+    published: 28
+    canonical_pattern: "/projects/<slug>/"
+    status_taxonomy: project_status
+    status_counts:
+      current: 6
+      past: 13
+      potential: 9
+  news:
+    post_type: post
+    published: 13
+    canonical_pattern: "/blog/<slug>/"
+  library_intros:
+    source_posts_retired_to_draft: 5
+    destination_pages: 5
+  materials:
+    post_type: material
+    published: 19
+    public_singles: false
+    public_rest_api: false
+    type_taxonomy: material_type
+    type_counts:
+      health-and-pollution: 14
+      action-plans: 3
+      lead-health-risk-assessment: 2
+      publications-and-co-authored-publications: 0
+      videos: 0
+  structural_pages_created: 12
+  published_pages_after: 34
+  menu_category_items_converted_to_pages: 12
+  legacy_category_relationships_retained_for_rollback: true
+
+routing:
+  permalink_structure: "/blog/%postname%/"
+  explicit_legacy_redirects: 141
+  unique_redirect_destinations: 72
+  redirect_status: 301
+  breadcrumb_roots:
+    post: "/blog/"
+    project: "/projects/"
+  public_category_routes: false
+  material_sitemap: false
+  category_sitemap: false
+  project_sitemap_urls: 28
+  post_sitemap_urls: 13
+  page_sitemap_urls_including_home: 35
+
+plugins_changed:
+  activated:
+    - "ehpmi-core 1.0.0"
+  deactivated:
+    - "remove-category-url 1.2.4"
+    - "allow-html-in-category-descriptions 1.2.5"
+
+backup:
+  metadata: "backup.yml"
+  sha256: "a3db8ee8f47a36a2cf5e890d4e004a3e64b2bda9e1f362d0047294e7007e121d"
+  drive_file_id: "1v-lQ0vDeysjrpL65tOrro7XgoqJsRd8-"
+  drive_url: "https://drive.google.com/file/d/1v-lQ0vDeysjrpL65tOrro7XgoqJsRd8-/view?usp=drivesdk"
+
+verification:
+  migration_verify_script: PASS
+  database_check: "PASS (53/53 tables)"
+  core_checksums: PASS_WITH_PREEXISTING_EXTRA_OPERATIONAL_FILES
+  wordpress_org_plugin_checksums: "PASS (13/13)"
+  custom_site_plugin_checksum: PASS_VIA_PROJECT_CODE_MANIFEST
+  plugin_updates_available: 0
+  maintenance_mode: INACTIVE
+  local_equals_deployed_project_code: "PASS (38/38 files)"
+  project_code_manifest: "project-code.sha256"
+  redirects: "PASS (141/141 exact status and Location)"
+  redirect_destinations: "PASS (72/72 HTTP 200)"
+  canonical_tags: PASS
+  breadcrumbs: PASS
+  sitemap: PASS
+  public_browser_desktop: PASS
+  public_rest_materials: "PASS (404 rest_no_route)"
+  authenticated_admin_save_round_trip: NOT_RUN_NO_AUTHENTICATED_SESSION
+  mobile_visual_round_trip: NOT_RUN_RUNTIME_HAS_NO_VIEWPORT_EMULATION
+  recovery_rehearsal: NOT_RUN
+
+scope_control:
+  production_changed: false
+  production_url: "https://ehpmi.org"
+  production_database_name: "nykvymmy_ehpmi"
+  production_wordpress_version: "7.0.4"
+  production_theme_version: "1.2"
+  production_permalink_structure: "/%category%/%postname%/"
+  production_migration_marker_present: false
+  production_site_plugin_active: false
+  newsletter_subscribers_after: 172
+  newsletter_sends: 0
+  form_submissions: 0
+
+evidence:
+  migration: "migrate.php"
+  verification: "verify.php"
+  backup: "backup.yml"
+  qa: "qa.md"
+  code_checksums: "project-code.sha256"

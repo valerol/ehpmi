@@ -1,6 +1,6 @@
 # Доменный протокол EHPMI
 
-Версия: `v0.3.0`
+Версия: `v0.4.0`
 Статус: `DRAFT`  
 Дата снимка: `2026-08-31`
 Уровень доменного применения: `D3`  
@@ -161,6 +161,7 @@
 ### 4.1. Код
 
 - `wp-content/themes/ehpmi` — уникальная тема проекта;
+- `wp-content/plugins/ehpmi-core` — уникальный site plugin с типами данных, внутренними классификациями, каноническими маршрутами и redirect-контрактом;
 - ACF Local JSON или PHP registration после их внедрения;
 - `theme.json`, patterns, build configuration и compiled theme assets;
 - настоящий протокол, plugin manifest и release/restore documentation.
@@ -202,10 +203,15 @@
 4. Контент hero, map intro, contacts и footer должен редактироваться из WordPress Admin.
 5. `testimonial` сохраняется как будущая функция и рефакторится без публикации draft-записей.
 6. `member` означает Member Organizations; `partner` означает внешние Partner Organizations. Они остаются разными admin-managed типами данных и не имеют публичных single pages.
-7. `material` содержит title, category и file; свободный текстовый редактор ему не нужен.
-8. Classic menu сохраняется на первом этапе. Navigation Block рассматривается отдельным выпуском.
-9. Внешние CDN-зависимости заменяются локальными или зафиксированными build dependencies без изменения дизайна.
-10. Plugin updates выполняются отдельным этапом и не смешиваются с theme refactor.
+7. `project` является отдельным публичным типом данных с каноническим single URL `/projects/<slug>/`; его внутренний `project_status` принимает `current`, `past` или `potential` и не создаёт публичных taxonomy URL.
+8. `material` содержит title, thumbnail, file и внутренний `material_type`; свободный текстовый редактор, публичные single/archive и REST endpoint ему не нужны.
+9. Публичную структуру Projects, Blog и Library задают иерархические Pages. Категории больше не выполняют роль страниц и не участвуют в permalink или breadcrumbs.
+10. Posts являются новостями и имеют канонический URL `/blog/<slug>/`. Старые category, flat, news, project и material URL обслуживаются явной картой `301` redirects из БД.
+11. Breadcrumb NavXT получает стабильные Page roots: Blog для Posts и What we do для Projects. Category и private taxonomy sitemap entries отключены.
+12. `Remove Category URL` и `Allow HTML in Category Descriptions` сохраняются установленными только как rollback history, но не активируются в текущей модели.
+13. Classic menu сохраняется на первом этапе. Navigation Block рассматривается отдельным выпуском.
+14. Внешние CDN-зависимости заменяются локальными или зафиксированными build dependencies без изменения дизайна.
+15. Plugin updates выполняются отдельным этапом и не смешиваются с theme refactor.
 
 ## 6. Проектные правила
 
@@ -219,7 +225,7 @@ Contractor не меняет production без явного разрешения
 
 ### EH-R003 — Git является источником кода
 
-Theme-код, build configuration, ACF definitions и протокол признаются сохранёнными только после фиксации в Git.
+Theme/site-plugin код, build configuration, ACF definitions и протокол признаются сохранёнными только после фиксации в Git.
 
 ### EH-R004 — Отдельность БД
 
@@ -417,23 +423,24 @@ Backup считается сохранённым только после:
 
 Обычные plugins не копируются в backup. Они переустанавливаются по manifest.
 
-Проверенный dev manifest после follow-up этапа обновлений `2026-08-30`:
+Проверенный dev manifest после routing refactor `2026-08-31`:
 
-| Plugin slug | Version |
-|---|---:|
-| `advanced-custom-fields` | 6.8.9 |
-| `akismet` | 5.7.2 |
-| `breadcrumb-navxt` | 7.5.2 |
-| `contact-form-7` | 6.1.7 |
-| `youtube-embed-plus` | 14.2.6 |
-| `force-regenerate-thumbnails` | 2.3.0 |
-| `allow-html-in-category-descriptions` | 1.2.5 |
-| `newsletter` | 9.3.5 |
-| `real-media-library-lite` | 4.23.0 |
-| `wpcf7-recaptcha` | 1.5.0 |
-| `remove-category-url` | 1.2.4 |
-| `wp-optimize` | 4.6.1 |
-| `wp-robots-txt` | 1.3.6 |
+| Plugin slug | Version | State/source |
+|---|---:|---|
+| `ehpmi-core` | 1.0.0 | active; Git repository |
+| `advanced-custom-fields` | 6.8.9 | active; WordPress.org |
+| `akismet` | 5.7.2 | active; WordPress.org |
+| `breadcrumb-navxt` | 7.5.2 | active; WordPress.org |
+| `contact-form-7` | 6.1.7 | active; WordPress.org |
+| `youtube-embed-plus` | 14.2.6 | active; WordPress.org |
+| `force-regenerate-thumbnails` | 2.3.0 | active; WordPress.org |
+| `allow-html-in-category-descriptions` | 1.2.5 | inactive; rollback history |
+| `newsletter` | 9.3.5 | active; WordPress.org |
+| `real-media-library-lite` | 4.23.0 | active; WordPress.org |
+| `wpcf7-recaptcha` | 1.5.0 | active; WordPress.org |
+| `remove-category-url` | 1.2.4 | inactive; rollback history |
+| `wp-optimize` | 4.6.1 | active; WordPress.org |
+| `wp-robots-txt` | 1.3.6 | active; WordPress.org |
 
 `wp-content/mu-plugins/sso.php` версии 0.5 является hosting-specific integration и не переносится автоматически на новый hosting.
 
@@ -479,7 +486,7 @@ Production deployment допускается только если:
 
 ### QA-A — структура
 
-- Git содержит тему, protocol, build config и manifests;
+- Git содержит тему, `ehpmi-core`, protocol, build config и manifests;
 - нет credentials;
 - версии и зависимости указаны;
 - DB/media package имеет manifest и checksums.
@@ -506,6 +513,10 @@ Production deployment допускается только если:
 | `EH-AC-08` | No-JS/degraded assets | Основной контент остаётся доступным при отказе JS/CDN |
 | `EH-AC-09` | Search/404/archive | Нет пустого fallback из-за `index.php` |
 | `EH-AC-10` | Admin editing | Hero/map/footer/content regions редактируются без правки PHP |
+| `EH-AC-11` | Projects routing | Root/status Pages, Project singles и `project_status` дают один канонический URL и корректные breadcrumbs |
+| `EH-AC-12` | Blog routing | Blog/News Pages и Post singles работают без Category dependency; старые News URL возвращают один `301` |
+| `EH-AC-13` | Library routing | Page intro и filtered Materials отображаются; Material legacy single ведёт одним `301` на файл |
+| `EH-AC-14` | Legacy URL contract | Category и flat URL ведут одним `301` на соответствующую Page; redirect loops и sitemap duplicates отсутствуют |
 
 ### QA-D — восстановление
 
@@ -620,23 +631,33 @@ Core не берётся из старого server archive.
 wp db check --path="$EHPMI_RESTORE_ROOT"
 ```
 
-### Шаг 6. Развернуть тему
+### Шаг 6. Развернуть уникальный проектный код
 
-Repository root должен являться WordPress theme root после baseline migration:
+Repository является частичным WordPress project tree, а не директорией темы. Клонировать его в отдельную task-specific staging directory, проверить commit и затем перенести обе уникальные части в подготовленный WordPress root:
 
 ```bash
+export EHPMI_REPOSITORY_WORK=/absolute/task-specific/repository
+
 git clone \
   --branch <release-tag> \
   --depth 1 \
   https://github.com/valerol/ehpmi.git \
+  "$EHPMI_REPOSITORY_WORK"
+
+cp -R \
+  "$EHPMI_REPOSITORY_WORK/wp-content/themes/ehpmi" \
   "$EHPMI_RESTORE_ROOT/wp-content/themes/ehpmi"
+
+cp -R \
+  "$EHPMI_REPOSITORY_WORK/wp-content/plugins/ehpmi-core" \
+  "$EHPMI_RESTORE_ROOT/wp-content/plugins/ehpmi-core"
 ```
 
-Проверить commit против manifest.
+Проверить commit и checksums theme/site-plugin против release manifest. Не копировать `wp-config.php`, Core или ordinary plugin directories из произвольного runtime.
 
 ### Шаг 7. Установить plugins
 
-Для каждого обязательного plugin выполнить установку версии из manifest:
+Для каждого обязательного WordPress.org plugin выполнить установку версии из manifest. `ehpmi-core` на этом шаге не скачивается: он уже восстановлен из Git в шаге 6.
 
 ```bash
 wp plugin install <plugin-slug> \
@@ -678,6 +699,7 @@ wp db check --path="$EHPMI_RESTORE_ROOT"
 ### Шаг 10. Восстановить active state
 
 ```bash
+wp plugin activate ehpmi-core --path="$EHPMI_RESTORE_ROOT"
 wp theme activate ehpmi --path="$EHPMI_RESTORE_ROOT"
 wp plugin list --path="$EHPMI_RESTORE_ROOT"
 wp theme list --path="$EHPMI_RESTORE_ROOT"
@@ -716,19 +738,20 @@ Checksum exceptions допустимы только для пакетов, ко�
 Проверить:
 
 1. homepage desktop/mobile;
-2. page, post, category, search, 404;
+2. Page, Post, Project, search и 404;
 3. menus и mobile navigation;
 4. images, PDFs и `/files` paths;
 5. Member Organizations и Partner Organizations;
-6. Materials downloads;
-7. staff, projects и countries;
-8. Breadcrumb NavXT;
-9. CF7 marked test;
-10. Newsletter без отправки реальным subscribers;
-11. WordPress Admin login и редактирование;
-12. database counts против manifest;
-13. browser console/server logs;
-14. visual parity.
+6. Materials downloads и прямой redirect старой Material single на файл;
+7. staff, Projects root/status Pages и countries;
+8. Breadcrumb NavXT с Page roots Blog/What we do;
+9. старые Category/flat URL и отсутствие redirect loops;
+10. CF7 marked test;
+11. Newsletter без отправки реальным subscribers;
+12. WordPress Admin login и редактирование;
+13. database counts против manifest;
+14. browser console/server logs;
+15. visual parity.
 
 Только после PASS восстановленный экземпляр может стать текущим runtime.
 
@@ -865,7 +888,7 @@ Rollback получает собственный recovery evidence. Возвра
 7. исправить инструкцию по реальным отклонениям;
 8. выпустить следующую версию protocol и PDF.
 
-## 19. Долги версии v0.3.0
+## 19. Долги версии v0.4.0
 
 | ID | Долг | Статус | Условие закрытия |
 |---|---|---|---|
@@ -881,9 +904,10 @@ Rollback получает собственный recovery evidence. Возвра
 | `EH-D010` | Для LESS/CSS нет воспроизводимой build configuration | OPEN | Зафиксированный build command и совпадающий compiled CSS |
 | `EH-D011` | Authenticated Admin edit/save round-trip не выполнен | OPEN | Проверено сохранение Hero, Member, Partner, Material и block widgets без изменения production |
 | `EH-D012` | Миграция organization content model | CLOSED | Dev содержит 7 `member`, 1 `partner`, 0 `partner2`; ACF, templates и Materials проверены в `ops/releases/content-model-2026-08-31/` |
+| `EH-D013` | Category-based routing и зависимость от Remove Category URL | CLOSED | Dev использует Pages + `project`/private taxonomies, 141 явный redirect и стабильные breadcrumb roots; evidence находится в `ops/releases/routing-refactor-2026-08-31/` |
 
 ## 20. Статус принятия
 
-Версия `v0.3.0` фиксирует проверенное состояние dev после обновлений, P0 theme refactor и миграции organization content model. Она не разрешает production deployment и не заявляет QA-D.
+Версия `v0.4.0` фиксирует проверенное состояние dev после обновлений, P0 theme refactor, миграции organization content model и отказа от Category-based public routing. Она не разрешает production deployment и не заявляет QA-D.
 
 Следующая версия создаётся после очередного принятого этапа refactor. Версия `v1.0.0` допускается только после практической репетиции восстановления.
