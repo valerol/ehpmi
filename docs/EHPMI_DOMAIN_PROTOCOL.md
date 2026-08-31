@@ -1,8 +1,8 @@
 # Доменный протокол EHPMI
 
-Версия: `v0.2.0`  
+Версия: `v0.3.0`
 Статус: `DRAFT`  
-Дата снимка: `2026-08-25`  
+Дата снимка: `2026-08-31`
 Уровень доменного применения: `D3`  
 Роль документа: нормативная проектно-доменная инструкция эксплуатации, передачи и восстановления сайта EHPMI
 
@@ -172,7 +172,7 @@
 - полная база данных WordPress, включая custom plugin tables;
 - `wp-content/uploads`;
 - корневой `/files`;
-- корневой `/images`, пока используемые элементы не перенесены в тему;
+- корневой `/images` как legacy media history; активные hero assets уже перенесены в тему и Media Library;
 - два Google site verification файла, если действующая интеграция требует их сохранения.
 
 На снимке `2026-08-25`:
@@ -181,7 +181,7 @@
 |---|---:|---:|---|
 | `wp-content/uploads` | около 1.2 ГБ | 2310 | Основная медиатека и generated plugin content |
 | `/files` | около 142 МБ | 17 | Публикации PDF/JPG; часть дублирует uploads |
-| `/images` | около 1.8 МБ | 29 | Legacy assets; `slide1-3.jpeg` используются текущей темой |
+| `/images` | около 1.8 МБ | 29 | Legacy media history; активные слайды больше не зависят от этого каталога |
 
 ### 4.3. Исключения из backup package
 
@@ -201,7 +201,7 @@
 3. Sidebar regions сохраняются как PHP-точки вывода, но контент постепенно переводится на Core blocks.
 4. Контент hero, map intro, contacts и footer должен редактироваться из WordPress Admin.
 5. `testimonial` сохраняется как будущая функция и рефакторится без публикации draft-записей.
-6. `partner` означает Member Organizations; `partner2` означает Partner Organizations. Они остаются разными типами данных и не требуют отдельных публичных single pages.
+6. `member` означает Member Organizations; `partner` означает внешние Partner Organizations. Они остаются разными admin-managed типами данных и не имеют публичных single pages.
 7. `material` содержит title, category и file; свободный текстовый редактор ему не нужен.
 8. Classic menu сохраняется на первом этапе. Navigation Block рассматривается отдельным выпуском.
 9. Внешние CDN-зависимости заменяются локальными или зафиксированными build dependencies без изменения дизайна.
@@ -294,7 +294,7 @@ DB snapshot, media snapshot и Git release образуют комплект т�
 
 Рекомендуемые имена:
 
-- ветка: `refactor/dev-baseline`;
+- ветка: `refactor/dev-2026-08-25`;
 - протокол: `docs/EHPMI_DOMAIN_PROTOCOL.md`;
 - manifest: `ops/releases/<release>/manifest.yml`;
 - plugin manifest: `ops/plugins.yml`;
@@ -865,21 +865,25 @@ Rollback получает собственный recovery evidence. Возвра
 7. исправить инструкцию по реальным отклонениям;
 8. выпустить следующую версию protocol и PDF.
 
-## 19. Долги версии v0.2.0
+## 19. Долги версии v0.3.0
 
 | ID | Долг | Статус | Условие закрытия |
 |---|---|---|---|
 | `EH-D001` | Web PHP не подтверждён независимо от CLI | CLOSED | Web PHP 8.1.34 подтверждён временным HTTP probe; файл удалён |
 | `EH-D002` | GitHub содержит старый статический прототип | CLOSED | `baseline/dev-2026-08-25` содержит актуальную тему и protocol; baseline commit `9ba82b7` |
-| `EH-D003` | Plugin update ещё не выполнен | OPEN | Новый plugin manifest и dev QA |
+| `EH-D003` | Plugin update ещё не выполнен | CLOSED | Основной и follow-up plugin update прошли dev QA; manifests находятся в `ops/releases/plugin-updates-2026-08-28/` и `ops/releases/plugin-updates-2026-08-30-followup/` |
 | `EH-D004` | ACF groups хранятся только в БД | CLOSED | Четыре Local JSON group и восемь fields зафиксированы в Git и распознаны ACF на dev |
 | `EH-D005` | Active slides находятся в корневом `/images` | CLOSED | Три source asset зафиксированы в теме; три управляемые записи и Media Library attachments опубликованы на dev, хеши и frontend URLs проверены |
 | `EH-D006` | Первый Drive backup package не создан | CLOSED | DB, 52 media parts, manifests и checksums загружены; Drive readback прошёл |
 | `EH-D007` | Recovery rehearsal не выполнена | OPEN | QA-D PASS и recovery evidence |
 | `EH-D008` | Production release procedure не испытана | OPEN | Первый принятый release с rollback evidence |
+| `EH-D009` | Внешние Google Fonts, Bootstrap и Font Awesome ещё загружаются через CDN | OPEN | Локальные либо воспроизводимо собираемые assets с visual QA |
+| `EH-D010` | Для LESS/CSS нет воспроизводимой build configuration | OPEN | Зафиксированный build command и совпадающий compiled CSS |
+| `EH-D011` | Authenticated Admin edit/save round-trip не выполнен | OPEN | Проверено сохранение Hero, Member, Partner, Material и block widgets без изменения production |
+| `EH-D012` | Миграция organization content model | CLOSED | Dev содержит 7 `member`, 1 `partner`, 0 `partner2`; ACF, templates и Materials проверены в `ops/releases/content-model-2026-08-31/` |
 
 ## 20. Статус принятия
 
-Версия `v0.2.0` фиксирует baseline актуальной dev-темы, runtime probe и первый проверенный Git/Drive backup package до начала refactor. Она не разрешает production deployment и не заявляет QA-D.
+Версия `v0.3.0` фиксирует проверенное состояние dev после обновлений, P0 theme refactor и миграции organization content model. Она не разрешает production deployment и не заявляет QA-D.
 
 Следующая версия создаётся после очередного принятого этапа refactor. Версия `v1.0.0` допускается только после практической репетиции восстановления.
