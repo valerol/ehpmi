@@ -1,12 +1,18 @@
 <?php
-$materials = ! empty( $args['materials'] )
+$materials = array_key_exists( 'materials', $args )
     ? $args['materials']
-    : get_posts( array( 'post_type' => 'material', 'numberposts' => 50 ) );
+    : get_posts(
+        array(
+            'post_type'      => 'material',
+            'post_status'    => 'publish',
+            'posts_per_page' => 50,
+        )
+    );
 if ($materials) {
 ?>
-<section class="materials"><?php if (isset($args['category_name'])) : ?><?php if (isset($args['breadcrumbs'])) : ?><div id="breadcrumbs" class="container"><?= $args['breadcrumbs'] ?></div><?php endif; ?>
+<section class="materials"><?php if ( isset( $args['heading'] ) ) : ?>
     <header>
-        <h2><?= $args['category_name'] ?></h2>
+        <h1><?php echo esc_html( $args['heading'] ); ?></h1>
     </header><?php endif ?>
     <div class="container"><?php foreach ($materials as $material) : ?>
         <article class="material"><?php if (get_the_post_thumbnail($material)) : ?>

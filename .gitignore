@@ -11,8 +11,11 @@ Thumbs.db
 /.htaccess
 /wp-cli.yml
 
-# Installed dependencies are restored from ops/plugins.yml
-/wp-content/plugins/
+# Installed dependencies are restored from ops/plugins.yml. The project-owned
+# site plugin is source code and is the only tracked plugin.
+/wp-content/plugins/*
+!/wp-content/plugins/ehpmi-core/
+!/wp-content/plugins/ehpmi-core/**
 /wp-content/mu-plugins/
 
 # Dynamic content belongs to the verified Google Drive backup package
@@ -30,4 +33,3 @@ Thumbs.db
 *.env
 *.key
 *.pem
-

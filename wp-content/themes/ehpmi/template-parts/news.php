@@ -1,10 +1,20 @@
 <?php
-$news = get_posts( array( 'category_name' => 'news', 'numberposts' => 100 ) );
+$is_inner = ! empty( $args['inner'] );
+$heading  = isset( $args['heading'] ) ? $args['heading'] : __( 'Latest from EHPMI', 'ehpmi' );
+$news     = get_posts(
+    array(
+        'post_type'      => 'post',
+        'post_status'    => 'publish',
+        'posts_per_page' => isset( $args['numberposts'] ) ? (int) $args['numberposts'] : 100,
+        'orderby'        => 'date',
+        'order'          => 'DESC',
+    )
+);
 ?>
-<?php if (!isset($args['category_name'])) : // Homepage block ?>
-<section class="latest news news-grid <?= isset($args['category_name']) ? 'inner' : 'animation-element slide-left' ?>">
+<?php if ( ! $is_inner ) : // Homepage block. ?>
+<section class="latest news news-grid animation-element slide-left">
     <header>
-        <h2>Latest from EHPMI</h2>
+        <h2><?php echo esc_html( $heading ); ?></h2>
     </header>
     <div id="latest-carousel" class="latest-carousel container ehpmi-carousel" role="region"
          aria-label="Latest news" aria-roledescription="carousel" data-carousel-gap="30"
@@ -20,9 +30,8 @@ $news = get_posts( array( 'category_name' => 'news', 'numberposts' => 100 ) );
                     </div>
                     <?php endif; ?>
                     <div class="news-text">
-                        <h3 class="title"><a href="<?= get_post_permalink($news_item->ID,
-                                true) ?>"><?= $news_item->post_title ?></a></h3>
-                        <small class="date"><?= date('F j, Y', strtotime($news_item->post_date)); ?></small>
+                        <h3 class="title"><a href="<?php echo esc_url( get_permalink( $news_item ) ); ?>"><?php echo esc_html( $news_item->post_title ); ?></a></h3>
+                        <small class="date"><?php echo esc_html( wp_date( 'F j, Y', strtotime( $news_item->post_date ) ) ); ?></small>
                     </div>
                 </div>
             </div>
@@ -36,10 +45,9 @@ $news = get_posts( array( 'category_name' => 'news', 'numberposts' => 100 ) );
         <p class="ehpmi-carousel__status screen-reader-text" aria-live="polite"></p>
     </div>
 </section><?php else: ?>
-<section class="news news-grid <?= isset($args['category_name']) ? 'inner' : 'animation-element slide-left' ?>">
-    <?php if (isset($args['breadcrumbs'])) : ?><div id="breadcrumbs" class="container"><?= $args['breadcrumbs'] ?></div><?php endif; ?>
+<section class="news news-grid inner">
     <header>
-        <h2><?= isset($args['category_name']) ? $args['category_name'] : "News" ?></h2>
+        <h1><?php echo esc_html( $heading ); ?></h1>
     </header>
     <div class="container">
         <?php foreach ($news as $news_item) : ?>
@@ -50,11 +58,11 @@ $news = get_posts( array( 'category_name' => 'news', 'numberposts' => 100 ) );
             </div>
             <?php endif; ?>
             <div class="news-text">
-                <h3 class="title"><a href="<?= get_post_permalink($news_item->ID,
-                        true) ?>"><?= $news_item->post_title ?></a></h3>
-                <p class="description"><?= $news_item->post_excerpt ? $news_item->post_excerpt :
-                        get_the_content(null, true, $news_item->ID) ?></p>
-                <small class="date"><?= date('F j, Y', strtotime($news_item->post_date)); ?></small>
+                <h3 class="title"><a href="<?php echo esc_url( get_permalink( $news_item ) ); ?>"><?php echo esc_html( $news_item->post_title ); ?></a></h3>
+                <div class="description"><?php echo $news_item->post_excerpt
+                    ? wp_kses_post( wpautop( $news_item->post_excerpt ) )
+                    : wp_kses_post( apply_filters( 'the_content', $news_item->post_content ) ); ?></div>
+                <small class="date"><?php echo esc_html( wp_date( 'F j, Y', strtotime( $news_item->post_date ) ) ); ?></small>
             </div>
         </div>
         <?php endforeach; ?>
