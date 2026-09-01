@@ -1,0 +1,37 @@
+schema_version: 1
+backup_id: "2026-09-01_102040Z_ehpmi-dev-before-naiman-media-layout"
+created_at_utc: "2026-09-01T10:20:40Z"
+purpose: "Dev database immediately before the Naiman project media-layout and alt-text migration"
+
+source:
+  environment: dev
+  url: "https://dev.ehpmi.org"
+  document_root: "/home2/nykvymmy/dev.ehpmi.org"
+  database_name: "nykvymmy_ehpmidev"
+  wordpress_version: "7.1"
+
+database_artifact:
+  filename: "2026-09-01_102040Z_ehpmi-dev-before-naiman-media-layout.sql.gz"
+  remote_path: "/home2/nykvymmy/backups/2026-09-01_102040Z_ehpmi-dev-before-naiman-media-layout.sql.gz"
+  temporary_local_path: "/private/tmp/2026-09-01_102040Z_ehpmi-dev-before-naiman-media-layout.sql.gz"
+  size_bytes: 421028
+  sha256: "62db014e6889632ac98be61d74044b8a2f25f948ff42460e0c996c1fd6ba37cd"
+  md5: "06cea1b1d68a6ffbe968fb9bf060acf0"
+  create_table_statements: 53
+  gzip_test: PASS
+
+drive:
+  dev_database_folder_id: "1d0pVYifHrEsCJbH4Ox6ueqfyvQeGeYFj"
+  file_id: "1TsusrrQy5yBf0cbKCzLa7Yvenu0fxvCH"
+  url: "https://drive.google.com/file/d/1TsusrrQy5yBf0cbKCzLa7Yvenu0fxvCH/view?usp=drivesdk"
+  metadata_readback: "PASS (filename, parent, size and MIME type)"
+
+code_and_cache_recovery:
+  theme_archive: "/home2/nykvymmy/backups/2026-09-01_102040Z_ehpmi-dev-theme-before-naiman-media-layout.tar.gz"
+  theme_archive_gzip_test: PASS
+  previous_wpo_minify_cache: "/home2/nykvymmy/backups/2026-09-01_102040Z_ehpmi-dev-wpo-minify-before-purge"
+
+retention:
+  canonical_database_copy: "Google Drive database/dev"
+  repository_copy: false
+  encrypted: false

@@ -196,6 +196,27 @@ function ehpmi_register_media_block_styles() {
             'label' => __( 'EHPMI image pair', 'ehpmi' ),
         )
     );
+    register_block_style(
+        'core/columns',
+        array(
+            'name'  => 'ehpmi-photo-pair-4x3',
+            'label' => __( 'EHPMI photo pair 4:3', 'ehpmi' ),
+        )
+    );
+    register_block_style(
+        'core/columns',
+        array(
+            'name'  => 'ehpmi-photo-pair-3x2',
+            'label' => __( 'EHPMI photo pair 3:2', 'ehpmi' ),
+        )
+    );
+    register_block_style(
+        'core/columns',
+        array(
+            'name'  => 'ehpmi-photo-pair-3x4',
+            'label' => __( 'EHPMI photo pair 3:4', 'ehpmi' ),
+        )
+    );
 }
 add_action( 'init', 'ehpmi_register_media_block_styles' );
 

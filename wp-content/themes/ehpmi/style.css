@@ -1,7 +1,7 @@
 /*
 Theme Name: EHPMI
 Theme URI: https://ehpmi.org/
-Version: 1.5
+Version: 1.6
 */
 
 .spider_popup_wrap {
@@ -54,7 +54,7 @@ textarea.wpcf7-form-control.wpcf7-textarea {
 }
 
 .main-article .text > .wp-block-image img,
-.main-article .wp-block-columns.is-style-ehpmi-image-pair .wp-block-image img,
+.main-article .wp-block-columns:is(.is-style-ehpmi-image-pair, .is-style-ehpmi-photo-pair-4x3, .is-style-ehpmi-photo-pair-3x2, .is-style-ehpmi-photo-pair-3x4) .wp-block-image img,
 .main-article .wp-block-gallery .wp-block-image img {
     display: block;
     width: auto;
@@ -79,19 +79,50 @@ textarea.wpcf7-form-control.wpcf7-textarea {
     text-align: center;
 }
 
-.main-article .wp-block-columns.is-style-ehpmi-image-pair {
+.main-article .wp-block-columns:is(.is-style-ehpmi-image-pair, .is-style-ehpmi-photo-pair-4x3, .is-style-ehpmi-photo-pair-3x2, .is-style-ehpmi-photo-pair-3x4) {
     display: grid !important;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1rem;
     align-items: start;
-    margin: 2rem 0 3rem;
+    margin: 2rem auto 3rem;
 }
 
-.main-article .wp-block-columns.is-style-ehpmi-image-pair > .wp-block-column,
-.main-article .wp-block-columns.is-style-ehpmi-image-pair .wp-block-image {
+.main-article .wp-block-columns:is(.is-style-ehpmi-image-pair, .is-style-ehpmi-photo-pair-4x3, .is-style-ehpmi-photo-pair-3x2, .is-style-ehpmi-photo-pair-3x4) > .wp-block-column,
+.main-article .wp-block-columns:is(.is-style-ehpmi-image-pair, .is-style-ehpmi-photo-pair-4x3, .is-style-ehpmi-photo-pair-3x2, .is-style-ehpmi-photo-pair-3x4) .wp-block-image {
     min-width: 0;
     margin: 0;
     text-align: center;
+}
+
+/* Editorial photo pairs: equal-height crops on wide screens, with a measure
+ * that does not visibly enlarge the older source photographs. */
+.main-article .wp-block-columns:is(.is-style-ehpmi-photo-pair-4x3, .is-style-ehpmi-photo-pair-3x2) {
+    width: min(100%, 65rem);
+}
+
+.main-article .wp-block-columns.is-style-ehpmi-photo-pair-3x4 {
+    width: min(100%, 52rem);
+}
+
+.main-article .wp-block-columns.is-style-ehpmi-photo-pair-4x3 figure.wp-block-image {
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+}
+
+.main-article .wp-block-columns.is-style-ehpmi-photo-pair-3x2 figure.wp-block-image {
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+}
+
+.main-article .wp-block-columns.is-style-ehpmi-photo-pair-3x4 figure.wp-block-image {
+    aspect-ratio: 3 / 4;
+    overflow: hidden;
+}
+
+.main-article .wp-block-columns:is(.is-style-ehpmi-photo-pair-4x3, .is-style-ehpmi-photo-pair-3x2, .is-style-ehpmi-photo-pair-3x4) .wp-block-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .main-article .text > .wp-block-gallery {
@@ -116,9 +147,20 @@ textarea.wpcf7-form-control.wpcf7-textarea {
 }
 
 @media (max-width: 700px) {
-    .main-article .wp-block-columns.is-style-ehpmi-image-pair,
+    .main-article .wp-block-columns:is(.is-style-ehpmi-image-pair, .is-style-ehpmi-photo-pair-4x3, .is-style-ehpmi-photo-pair-3x2, .is-style-ehpmi-photo-pair-3x4),
     .main-article .text > .wp-block-gallery {
         grid-template-columns: 1fr;
+    }
+
+    .main-article .wp-block-columns:is(.is-style-ehpmi-photo-pair-4x3, .is-style-ehpmi-photo-pair-3x2, .is-style-ehpmi-photo-pair-3x4) figure.wp-block-image {
+        aspect-ratio: auto;
+        overflow: visible;
+    }
+
+    .main-article .wp-block-columns:is(.is-style-ehpmi-photo-pair-4x3, .is-style-ehpmi-photo-pair-3x2, .is-style-ehpmi-photo-pair-3x4) .wp-block-image img {
+        width: auto;
+        height: auto;
+        object-fit: contain;
     }
 
     /* Bootstrap's width:100% plus the legacy breadcrumb margin overflowed
@@ -156,7 +198,7 @@ button.wp-block-search__button.wp-element-button {
 
 /* General editorial layout; image pairs and galleries are defined above. */
 .wp-block-media-text,
-.wp-block-columns:not(.is-style-ehpmi-image-pair) {
+.wp-block-columns:not(.is-style-ehpmi-image-pair):not(.is-style-ehpmi-photo-pair-4x3):not(.is-style-ehpmi-photo-pair-3x2):not(.is-style-ehpmi-photo-pair-3x4) {
     column-gap: 2rem;
     align-items: center;
 }

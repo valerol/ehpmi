@@ -1,6 +1,6 @@
 # Доменный протокол EHPMI
 
-Версия: `v0.6.0`
+Версия: `v0.6.1`
 Статус: `DRAFT`  
 Дата снимка: `2026-09-01`
 Уровень доменного применения: `D3`  
@@ -442,12 +442,15 @@ ehpmi--logo--dark.svg
 |---|---|---|
 | Одна иллюстрация | Core Image | По центру, до `880px`, без увеличения сверх фактической ширины выбранного файла |
 | Одна качественная схема или панорама | Core Image, style `EHPMI wide image` | По центру, до `1200px`; применяется осознанно, а не для компенсации низкого качества |
-| Два связанных изображения | Core Columns, style `EHPMI image pair`, по одному Image в колонке | Две равные колонки на desktop, одна колонка ниже `700px` |
+| Два связанных изображения одинаковой смысловой важности | Core Columns, по одному Image в колонке; style `EHPMI photo pair 4:3`, `EHPMI photo pair 3:2` или `EHPMI photo pair 3:4` | Одинаковые рамки и `object-fit: cover` на desktop; одна колонка и естественные пропорции без crop ниже `700px` |
+| Два изображения, для которых crop недопустим | Core Columns, style `EHPMI image pair` | Две колонки с естественными пропорциями; одна колонка ниже `700px` |
 | Три и более связанных изображения | Core Gallery | Три колонки на desktop, две ниже `900px`, одна ниже `700px` |
 | Квадратная карточка Projects/Blog | Featured image / attachment ID, size `thumbnail` | Квадратный crop для согласованной сетки карточек |
 | Компактная карточка Library | Featured image / attachment ID, display box `[200,150]` | Переиспользуется ближайший существующий derivative; отдельный generated size не создаётся |
 
 Gallery с одним или двумя изображениями запрещена: она создаёт ложную семантику коллекции и усложняет responsive layout. Изображение не растягивается до ширины контейнера, если выбранный generated file меньше контейнера. Caption находится в обычном потоке документа и не перекрывает изображение.
+
+Выбор пропорции пары определяется содержанием, а не исходным размером файлов. `4:3` используется для большинства документальных кадров, `3:2` — когда более широкий кадр сохраняет людей или важные объекты у краёв, `3:4` — для согласованной пары вертикальных фотографий. Photo pair ограничивается шириной `1040px`, вертикальная пара — `832px`; crop обязателен к визуальной проверке на desktop. На мобильном crop отключается, чтобы не терять смысловые детали.
 
 Набор создаваемых WordPress размеров ограничен вариантами, которые реально используются темой:
 
@@ -473,6 +476,8 @@ Gallery с одним или двумя изображениями запрещ�
 Для каждого смыслового изображения обязателен краткий alt, описывающий назначение в контексте материала. Decorative image получает пустой alt осознанно. Caption используется только для подписи, источника или пояснения и не заменяет alt.
 
 Миграция dev `2026-09-01` преобразовала 56 одноэлементных Gallery в Image и 87 двухэлементных Gallery в `EHPMI image pair`. В 116 проверенных записях осталось 260 Image blocks, 87 image pairs и 2 настоящих Gallery по три изображения; 248 уникальных attachments продолжают ссылаться по ID. Attachment count (`467`) не изменился. Evidence хранится в `ops/releases/media-layout-2026-09-01/`.
+
+Точечный follow-up `2026-09-01` для project `761` применил смысловые photo-pair styles к семи парам, расширил техническую карту до wide layout, добавил ей поясняющий caption и записал 15 контекстных alt одновременно в block HTML и attachment metadata. Desktop QA подтвердил равную высоту изображений во всех семи парах, mobile QA — переход в одну колонку без crop и без горизонтального overflow. Evidence хранится в `ops/releases/naiman-media-layout-2026-09-01/`.
 
 ### 9.7. Имена backup-артефактов
 
@@ -1022,7 +1027,7 @@ Rollback получает собственный recovery evidence. Возвра
 7. исправить инструкцию по реальным отклонениям;
 8. выпустить следующую версию protocol и PDF.
 
-## 19. Долги версии v0.6.0
+## 19. Долги версии v0.6.1
 
 | ID | Долг | Статус | Условие закрытия |
 |---|---|---|---|
@@ -1041,10 +1046,10 @@ Rollback получает собственный recovery evidence. Возвра
 | `EH-D013` | Category-based routing и зависимость от Remove Category URL | CLOSED | Dev использует Pages + `project`/private taxonomies, 141 явный redirect и стабильные breadcrumb roots; evidence находится в `ops/releases/routing-refactor-2026-08-31/` |
 | `EH-D014` | Real Media Library ещё активен на dev | OPEN | Экспортирована карта 31 папки/401 связи; создан DB backup; выполнены dev deactivation, reference scan, frontend/admin QA и отдельно подтверждённое удаление plugin files; обновлён manifest |
 | `EH-D015` | 309 из 450 images на dev не имеют alt | OPEN | Смысловые изображения получили корректный alt, decorative классифицированы явно; frontend accessibility QA пройден |
-| `EH-D016` | Gallery использовалась для одиночных изображений и пар, отсутствовал размерный контракт | CLOSED | 56 одиночных Gallery преобразованы в Image, 87 пар — в `EHPMI image pair`; responsive desktop/mobile QA и release verifier пройдены на dev |
+| `EH-D016` | Gallery использовалась для одиночных изображений и пар, отсутствовал размерный контракт | CLOSED | 56 одиночных Gallery преобразованы в Image, 87 пар — в Columns; специализированные photo-pair styles `4:3`, `3:2`, `3:4` проверены на project 761; responsive desktop/mobile QA и release verifier пройдены на dev |
 
 ## 20. Статус принятия
 
-Версия `v0.6.0` фиксирует проверенное состояние dev после обновлений, P0 theme refactor, миграций organization/routing content model и рефакторинга editorial media layout, а также принятую нативную media architecture и Codex-only workflow для новых материалов. Она не разрешает production deployment, не заявляет QA-D и не считает Real Media Library уже удалённым.
+Версия `v0.6.1` фиксирует проверенное состояние dev после обновлений, P0 theme refactor, миграций organization/routing content model и рефакторинга editorial media layout, включая форматы photo pair `4:3`, `3:2`, `3:4`, а также принятую нативную media architecture и Codex-only workflow для новых материалов. Она не разрешает production deployment, не заявляет QA-D и не считает Real Media Library уже удалённым.
 
 Следующая версия создаётся после очередного принятого этапа refactor. Версия `v1.0.0` допускается только после практической репетиции восстановления.

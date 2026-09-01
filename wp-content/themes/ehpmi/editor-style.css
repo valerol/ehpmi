@@ -12,7 +12,7 @@
 }
 
 .editor-styles-wrapper .wp-block-image img,
-.editor-styles-wrapper .wp-block-columns.is-style-ehpmi-image-pair .wp-block-image img,
+.editor-styles-wrapper .wp-block-columns:is(.is-style-ehpmi-image-pair, .is-style-ehpmi-photo-pair-4x3, .is-style-ehpmi-photo-pair-3x2, .is-style-ehpmi-photo-pair-3x4) .wp-block-image img,
 .editor-styles-wrapper .wp-block-gallery .wp-block-image img {
     width: auto;
     max-width: 100%;
@@ -21,17 +21,47 @@
     object-fit: contain;
 }
 
-.editor-styles-wrapper .wp-block-columns.is-style-ehpmi-image-pair {
+.editor-styles-wrapper .wp-block-columns:is(.is-style-ehpmi-image-pair, .is-style-ehpmi-photo-pair-4x3, .is-style-ehpmi-photo-pair-3x2, .is-style-ehpmi-photo-pair-3x4) {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1rem;
     align-items: start;
+    margin-inline: auto;
 }
 
-.editor-styles-wrapper .wp-block-columns.is-style-ehpmi-image-pair > .wp-block-column,
-.editor-styles-wrapper .wp-block-columns.is-style-ehpmi-image-pair .wp-block-image {
+.editor-styles-wrapper .wp-block-columns:is(.is-style-ehpmi-image-pair, .is-style-ehpmi-photo-pair-4x3, .is-style-ehpmi-photo-pair-3x2, .is-style-ehpmi-photo-pair-3x4) > .wp-block-column,
+.editor-styles-wrapper .wp-block-columns:is(.is-style-ehpmi-image-pair, .is-style-ehpmi-photo-pair-4x3, .is-style-ehpmi-photo-pair-3x2, .is-style-ehpmi-photo-pair-3x4) .wp-block-image {
     min-width: 0;
     margin: 0;
+}
+
+.editor-styles-wrapper .wp-block-columns:is(.is-style-ehpmi-photo-pair-4x3, .is-style-ehpmi-photo-pair-3x2) {
+    max-width: 65rem;
+}
+
+.editor-styles-wrapper .wp-block-columns.is-style-ehpmi-photo-pair-3x4 {
+    max-width: 52rem;
+}
+
+.editor-styles-wrapper .wp-block-columns.is-style-ehpmi-photo-pair-4x3 figure.wp-block-image {
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+}
+
+.editor-styles-wrapper .wp-block-columns.is-style-ehpmi-photo-pair-3x2 figure.wp-block-image {
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+}
+
+.editor-styles-wrapper .wp-block-columns.is-style-ehpmi-photo-pair-3x4 figure.wp-block-image {
+    aspect-ratio: 3 / 4;
+    overflow: hidden;
+}
+
+.editor-styles-wrapper .wp-block-columns:is(.is-style-ehpmi-photo-pair-4x3, .is-style-ehpmi-photo-pair-3x2, .is-style-ehpmi-photo-pair-3x4) .wp-block-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .editor-styles-wrapper .wp-block-gallery {
