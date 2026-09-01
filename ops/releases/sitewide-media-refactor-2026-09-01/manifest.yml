@@ -1,0 +1,70 @@
+schema_version: 1
+release_id: "sitewide-media-refactor-2026-09-01"
+environment: dev
+status: PASS
+applied_at_utc: "2026-09-01T12:24:13Z"
+
+boundary:
+  dev_url: "https://dev.ehpmi.org"
+  dev_document_root: "/home2/nykvymmy/dev.ehpmi.org"
+  dev_database: "nykvymmy_ehpmidev"
+  production_url: "https://ehpmi.org"
+  production_database: "nykvymmy_ehpmi"
+  production_write_performed: false
+  excluded_post_id: 761
+  exclusion_reason: "Naiman was completed and verified in naiman-media-layout-2026-09-01"
+
+backup:
+  manifest: "backup.yml"
+  drive_file_id: "1Rt6s6WrLTw0_I7fbC4SnzFeTol6qGTnF"
+  sha256: "7d2cc288ae0f9ae6e76d47c1ab5b6a75c6cee2f11b84740cb36bf8138de36ac9"
+  gzip_test: PASS
+  create_table_statements: 53
+
+migrations:
+  - script: "migrate.php"
+    marker: "2026-09-01-v1"
+    dry_run: PASS
+    apply: PASS
+  - script: "migrate-embedded.php"
+    marker: "2026-09-01-v2"
+    dry_run: PASS
+    apply: PASS
+
+results:
+  audited_records: 44
+  changed_records_base: 40
+  changed_records_media_text_followup: 11
+  content_images_verified: 270
+  core_image_blocks: 245
+  core_media_text_images: 25
+  meaningful_block_alts: 270
+  new_core_image_block_alts: 124
+  new_media_text_block_alts: 17
+  attachment_metadata_updates: 157
+  unique_used_attachment_ids_with_alt: 258
+  styled_pairs: 81
+  wide_maps_diagrams_and_charts: 30
+  uploads_files_changed: 0
+
+qa:
+  php_lint: PASS
+  release_verifier: PASS
+  frontend_http_200: "44/44"
+  representative_desktop_pages: 5
+  representative_desktop_empty_alts: 0
+  representative_pair_height_delta_px: 0
+  representative_pair_object_fit: "cover"
+  representative_mobile_width_px: 390
+  representative_mobile_horizontal_overflow_px: 0
+  production_marker: null
+  production_control_pair_style_count: 0
+  temporary_server_files_removed: PASS
+
+rollback:
+  database_archive: "/home2/nykvymmy/backups/2026-09-01_120025Z_ehpmi-dev-before-sitewide-media-refactor.sql.gz"
+  scope: "Restore dev database only; no uploads or theme files changed in this release"
+
+documentation:
+  protocol: "docs/EHPMI_DOMAIN_PROTOCOL.md v0.6.2"
+  qa: "qa.md"

@@ -1,6 +1,6 @@
 # Доменный протокол EHPMI
 
-Версия: `v0.6.1`
+Версия: `v0.6.2`
 Статус: `DRAFT`  
 Дата снимка: `2026-09-01`
 Уровень доменного применения: `D3`  
@@ -478,6 +478,8 @@ Gallery с одним или двумя изображениями запрещ�
 Миграция dev `2026-09-01` преобразовала 56 одноэлементных Gallery в Image и 87 двухэлементных Gallery в `EHPMI image pair`. В 116 проверенных записях осталось 260 Image blocks, 87 image pairs и 2 настоящих Gallery по три изображения; 248 уникальных attachments продолжают ссылаться по ID. Attachment count (`467`) не изменился. Evidence хранится в `ops/releases/media-layout-2026-09-01/`.
 
 Точечный follow-up `2026-09-01` для project `761` применил смысловые photo-pair styles к семи парам, расширил техническую карту до wide layout, добавил ей поясняющий caption и записал 15 контекстных alt одновременно в block HTML и attachment metadata. Desktop QA подтвердил равную высоту изображений во всех семи парах, mobile QA — переход в одну колонку без crop и без горизонтального overflow. Evidence хранится в `ops/releases/naiman-media-layout-2026-09-01/`.
+
+Общесайтовый follow-up `2026-09-01` применил тот же контракт к остальным 44 материалам. В проверенном scope находятся 270 изображений: 245 Core Image и 25 изображений внутри Core Media & Text; все имеют непустой контекстный alt. Для 81 пары выбраны смысловые форматы `4:3`, `3:2` или `3:4`, 30 карт, диаграмм и организационных схем переведены в wide layout без crop. В metadata заполнены или синхронизированы alt для 157 attachments, включая 17 Media & Text и 6 featured images; 258 уникальных attachment ID, реально используемых этим scope, имеют непустой metadata alt. Все 44 URL вернули HTTP 200; выборочный desktop QA подтвердил равную высоту и `object-fit: cover` в парах, mobile QA на ширине `390px` — одну колонку без горизонтального overflow. Production проверен только на чтение: отдельная БД, migration marker отсутствует, новые pair styles в контрольной записи отсутствуют. Evidence хранится в `ops/releases/sitewide-media-refactor-2026-09-01/`.
 
 ### 9.7. Имена backup-артефактов
 
@@ -1027,7 +1029,7 @@ Rollback получает собственный recovery evidence. Возвра
 7. исправить инструкцию по реальным отклонениям;
 8. выпустить следующую версию protocol и PDF.
 
-## 19. Долги версии v0.6.1
+## 19. Долги версии v0.6.2
 
 | ID | Долг | Статус | Условие закрытия |
 |---|---|---|---|
@@ -1045,11 +1047,11 @@ Rollback получает собственный recovery evidence. Возвра
 | `EH-D012` | Миграция organization content model | CLOSED | Dev содержит 7 `member`, 1 `partner`, 0 `partner2`; ACF, templates и Materials проверены в `ops/releases/content-model-2026-08-31/` |
 | `EH-D013` | Category-based routing и зависимость от Remove Category URL | CLOSED | Dev использует Pages + `project`/private taxonomies, 141 явный redirect и стабильные breadcrumb roots; evidence находится в `ops/releases/routing-refactor-2026-08-31/` |
 | `EH-D014` | Real Media Library ещё активен на dev | OPEN | Экспортирована карта 31 папки/401 связи; создан DB backup; выполнены dev deactivation, reference scan, frontend/admin QA и отдельно подтверждённое удаление plugin files; обновлён manifest |
-| `EH-D015` | 309 из 450 images на dev не имеют alt | OPEN | Смысловые изображения получили корректный alt, decorative классифицированы явно; frontend accessibility QA пройден |
-| `EH-D016` | Gallery использовалась для одиночных изображений и пар, отсутствовал размерный контракт | CLOSED | 56 одиночных Gallery преобразованы в Image, 87 пар — в Columns; специализированные photo-pair styles `4:3`, `3:2`, `3:4` проверены на project 761; responsive desktop/mobile QA и release verifier пройдены на dev |
+| `EH-D015` | Alt metadata вне проверенного scope опубликованных материалов ещё не классифицированы полностью | OPEN | Для остальных 44 материалов проверены 270 content images и 258 уникальных attachments; для закрытия долга нужно отдельно классифицировать неиспользуемые attachments и иные административные media как meaningful, decorative или orphaned |
+| `EH-D016` | Gallery использовалась для одиночных изображений и пар, отсутствовал размерный контракт | CLOSED | 56 одиночных Gallery преобразованы в Image, 87 пар — в Columns; специализированные photo-pair styles `4:3`, `3:2`, `3:4` применены к project 761 и ещё 81 паре в остальных 44 материалах; responsive desktop/mobile QA и release verifiers пройдены на dev |
 
 ## 20. Статус принятия
 
-Версия `v0.6.1` фиксирует проверенное состояние dev после обновлений, P0 theme refactor, миграций organization/routing content model и рефакторинга editorial media layout, включая форматы photo pair `4:3`, `3:2`, `3:4`, а также принятую нативную media architecture и Codex-only workflow для новых материалов. Она не разрешает production deployment, не заявляет QA-D и не считает Real Media Library уже удалённым.
+Версия `v0.6.2` фиксирует проверенное состояние dev после обновлений, P0 theme refactor, миграций organization/routing content model и общесайтового рефакторинга editorial media layout, включая форматы photo pair `4:3`, `3:2`, `3:4`, wide layout для технических изображений, контекстные alt для опубликованных материалов, принятую нативную media architecture и Codex-only workflow для новых материалов. Она не разрешает production deployment, не заявляет QA-D и не считает Real Media Library уже удалённым.
 
 Следующая версия создаётся после очередного принятого этапа refactor. Версия `v1.0.0` допускается только после практической репетиции восстановления.

@@ -1,0 +1,32 @@
+schema_version: 1
+backup_id: "2026-09-01_120025Z_ehpmi-dev-before-sitewide-media-refactor"
+created_at_utc: "2026-09-01T12:00:25Z"
+purpose: "Dev database immediately before the site-wide media-layout and alt-text migration"
+
+source:
+  environment: dev
+  url: "https://dev.ehpmi.org"
+  document_root: "/home2/nykvymmy/dev.ehpmi.org"
+  database_name: "nykvymmy_ehpmidev"
+  wordpress_version: "7.1"
+
+database_artifact:
+  filename: "2026-09-01_120025Z_ehpmi-dev-before-sitewide-media-refactor.sql.gz"
+  remote_path: "/home2/nykvymmy/backups/2026-09-01_120025Z_ehpmi-dev-before-sitewide-media-refactor.sql.gz"
+  temporary_local_path: "/private/tmp/2026-09-01_120025Z_ehpmi-dev-before-sitewide-media-refactor.sql.gz"
+  size_bytes: 430624
+  sha256: "7d2cc288ae0f9ae6e76d47c1ab5b6a75c6cee2f11b84740cb36bf8138de36ac9"
+  md5: "431d261380319d668e4829c024f5a114"
+  create_table_statements: 53
+  gzip_test: PASS
+
+drive:
+  dev_database_folder_id: "1d0pVYifHrEsCJbH4Ox6ueqfyvQeGeYFj"
+  file_id: "1Rt6s6WrLTw0_I7fbC4SnzFeTol6qGTnF"
+  url: "https://drive.google.com/file/d/1Rt6s6WrLTw0_I7fbC4SnzFeTol6qGTnF/view?usp=drivesdk"
+  metadata_readback: "PASS (filename, parent, size and MIME type)"
+
+retention:
+  canonical_database_copy: "Google Drive database/dev"
+  repository_copy: false
+  encrypted: false
