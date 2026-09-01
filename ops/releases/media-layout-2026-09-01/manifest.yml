@@ -1,0 +1,87 @@
+schema_version: 1
+release_id: "media-layout-2026-09-01"
+captured_at_utc: "2026-09-01T04:27:41Z"
+environment: dev
+status: PASS_WITH_OPEN_AUTHENTICATED_EDITOR_ROUND_TRIP
+
+target:
+  url: "https://dev.ehpmi.org"
+  document_root: "/home2/nykvymmy/dev.ehpmi.org"
+  database_name: "nykvymmy_ehpmidev"
+  wordpress_version: "7.1"
+  theme: "ehpmi"
+  theme_version: "1.5"
+  site_plugin: "ehpmi-core"
+  site_plugin_version: "1.1.0"
+  branch: "refactor/dev-2026-08-25"
+
+migration:
+  posts_scanned: 116
+  posts_changed: 41
+  image_blocks_after: 260
+  one_image_gallery_to_image: 56
+  two_image_gallery_to_pair: 87
+  real_galleries_retained: 2
+  unsupported_blocks: 0
+  referenced_attachment_ids: 248
+  attachments_before: 467
+  attachments_after: 467
+  marker: "2026-09-01-v1"
+
+media_contract:
+  single_image_max_width_px: 880
+  intentional_wide_max_width_px: 1200
+  pair_columns_desktop: 2
+  pair_columns_mobile: 1
+  gallery_minimum_images: 3
+  gallery_columns_desktop_tablet_mobile: "3/2/1"
+  retained_sizes:
+    - "thumbnail 530x530 crop"
+    - "medium 650x1000"
+    - "medium_large 768"
+    - "large 1320x2000"
+    - original
+  disabled_sizes:
+    - 1536x1536
+    - 2048x2048
+  jpeg_webp_quality: 82
+  format_conversion: "Codex preprocessing before import; no runtime conversion and no legacy bulk conversion"
+
+backup:
+  metadata: "backup.yml"
+  sha256: "750fbb0b3081677ca7d7eb8a765388f900d7a260f0f8ba6545d700dc3546f582"
+  drive_file_id: "1yePxYN2gZ4e3vn3UXxCtd-s6krsHwZGi"
+  drive_url: "https://drive.google.com/file/d/1yePxYN2gZ4e3vn3UXxCtd-s6krsHwZGi/view?usp=drivesdk"
+  pre_stage_code_archive: "/home2/nykvymmy/backups/2026-09-01_042741Z_ehpmi-dev-before-media-layout-code.tar.gz"
+
+verification:
+  migration_dry_run: PASS
+  migration_apply: PASS
+  migration_verify_script: PASS
+  database_check: "PASS (53/53 tables before export)"
+  local_equals_deployed_project_code: "PASS (7/7 changed runtime files)"
+  project_code_manifest: "project-code.sha256"
+  public_browser_desktop: PASS
+  public_browser_mobile_390x844: PASS
+  media_horizontal_overflow: false
+  maintenance_mode: INACTIVE
+  authenticated_admin_save_round_trip: NOT_RUN_NO_AUTHENTICATED_SESSION
+  recovery_rehearsal: NOT_RUN
+
+scope_control:
+  production_changed: false
+  production_url: "https://ehpmi.org"
+  production_database_name: "nykvymmy_ehpmi"
+  production_wordpress_version: "7.0.4"
+  production_theme_version: "1.2"
+  production_media_migration_marker_present: false
+  production_site_plugin_active: false
+  newsletter_subscribers_after: 172
+  newsletter_sends: 0
+
+evidence:
+  migration: "migrate.php"
+  verification: "verify.php"
+  backup: "backup.yml"
+  qa: "qa.md"
+  code_checksums: "project-code.sha256"

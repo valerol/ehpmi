@@ -42,7 +42,7 @@ if ( isset( $args['projects'] ) && is_array( $args['projects'] ) ) {
         <div class="news-block">
             <?php if (get_the_post_thumbnail($project->ID)) : ?>
             <div class="image">
-                <?= get_the_post_thumbnail($project->ID, [530,530]) ?>
+                <?= get_the_post_thumbnail($project->ID, 'thumbnail') ?>
             </div>
             <?php endif; ?>
             <div class="news-text">

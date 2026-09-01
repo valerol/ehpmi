@@ -1,8 +1,8 @@
 <?php
 /**
  * Plugin Name: EHPMI Core
- * Description: Project-owned content types, classifications, canonical routes and breadcrumb roots.
- * Version: 1.0.0
+ * Description: Project-owned content types, classifications, canonical routes, media policy and breadcrumb roots.
+ * Version: 1.1.0
  * Author: EHPMI
  * Text Domain: ehpmi-core
  */
@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-define( 'EHPMI_CORE_VERSION', '1.0.0' );
+define( 'EHPMI_CORE_VERSION', '1.1.0' );
 
 /**
  * Register content types independently from the active theme.
@@ -308,6 +308,37 @@ function ehpmi_core_breadcrumb_roots( $trail ) {
     }
 }
 add_action( 'bcn_before_fill', 'ehpmi_core_breadcrumb_roots' );
+
+/**
+ * Keep only the responsive variants used by the EHPMI frontend.
+ *
+ * WordPress retains the original plus thumbnail, medium, medium_large and
+ * large. The redundant 1536px and 2048px derivatives are omitted; the source
+ * file remains available above the 1320px large breakpoint when required.
+ */
+function ehpmi_core_image_sizes( $sizes ) {
+    unset( $sizes['1536x1536'], $sizes['2048x2048'] );
+
+    return $sizes;
+}
+add_filter( 'intermediate_image_sizes_advanced', 'ehpmi_core_image_sizes' );
+
+/**
+ * One explicit quality contract for imported and regenerated images.
+ *
+ * Format conversion is deliberately performed before WordPress import. Core's
+ * image_editor_output_format filter is not used because regenerating legacy
+ * attachments through that filter can change attachment metadata while saved
+ * block URLs still point at JPEG files.
+ */
+function ehpmi_core_image_quality( $quality, $mime_type ) {
+    if ( in_array( $mime_type, array( 'image/jpeg', 'image/webp' ), true ) ) {
+        return 82;
+    }
+
+    return $quality;
+}
+add_filter( 'wp_editor_set_quality', 'ehpmi_core_image_quality', 10, 2 );
 
 /**
  * Flush routes only on lifecycle changes, never on each request.

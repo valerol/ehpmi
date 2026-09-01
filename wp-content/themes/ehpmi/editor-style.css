@@ -1,0 +1,56 @@
+/* Match the frontend media grammar inside the block editor. */
+.editor-styles-wrapper .wp-block-image {
+    max-width: 55rem;
+    margin-block: 2rem 3rem;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.editor-styles-wrapper .wp-block-image.alignwide,
+.editor-styles-wrapper .wp-block-image.is-style-ehpmi-wide {
+    max-width: 75rem;
+}
+
+.editor-styles-wrapper .wp-block-image img,
+.editor-styles-wrapper .wp-block-columns.is-style-ehpmi-image-pair .wp-block-image img,
+.editor-styles-wrapper .wp-block-gallery .wp-block-image img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin-inline: auto;
+    object-fit: contain;
+}
+
+.editor-styles-wrapper .wp-block-columns.is-style-ehpmi-image-pair {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    align-items: start;
+}
+
+.editor-styles-wrapper .wp-block-columns.is-style-ehpmi-image-pair > .wp-block-column,
+.editor-styles-wrapper .wp-block-columns.is-style-ehpmi-image-pair .wp-block-image {
+    min-width: 0;
+    margin: 0;
+}
+
+.editor-styles-wrapper .wp-block-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    align-items: start;
+}
+
+.editor-styles-wrapper .wp-block-image figcaption,
+.editor-styles-wrapper .wp-block-gallery figcaption {
+    position: static;
+    height: auto;
+    margin-top: 0.65rem;
+    padding: 0;
+    background: none;
+    color: #363636;
+    font-size: 0.85rem;
+    line-height: 1.45;
+    font-style: italic;
+    text-align: center;
+}

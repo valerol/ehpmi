@@ -1,6 +1,6 @@
 # Доменный протокол EHPMI
 
-Версия: `v0.5.0`
+Версия: `v0.6.0`
 Статус: `DRAFT`  
 Дата снимка: `2026-09-01`
 Уровень доменного применения: `D3`  
@@ -217,6 +217,8 @@
 16. Media Library остаётся нативной для WordPress: runtime-файлы хранятся в `wp-content/uploads/YYYY/MM`, а смысловая структура задаётся владеющим типом контента, а не plugin-папками.
 17. Real Media Library не заменяется другим folder plugin. Его вывод выполняется отдельным dev release после экспорта старой карты папок и проверки всех media references.
 18. Новые медиа публикуются через управляемый Codex workflow; прямая ручная загрузка Content Operator считается исключением и документируется.
+19. Одиночная иллюстрация хранится как Image block, ровно два связанных изображения — как Columns с проектным стилем `EHPMI image pair`, Gallery используется только для трёх и более связанных изображений.
+20. Runtime не выполняет скрытую конвертацию форматов. Codex готовит публикуемую копию до импорта; WordPress отвечает за ограниченный набор responsive sizes и единый quality contract.
 
 ## 6. Проектные правила
 
@@ -432,7 +434,47 @@ ehpmi--logo--dark.svg
 
 Прямое копирование файла в `wp-content/uploads` без WordPress import запрещено. Операция с новыми медиа на production по-прежнему требует отдельного разрешения.
 
-### 9.6. Имена backup-артефактов
+### 9.6. Стандарт изображений внутри материалов
+
+Каноническая модель блока зависит от количества и смысла изображений:
+
+| Сценарий | WordPress block | Frontend contract |
+|---|---|---|
+| Одна иллюстрация | Core Image | По центру, до `880px`, без увеличения сверх фактической ширины выбранного файла |
+| Одна качественная схема или панорама | Core Image, style `EHPMI wide image` | По центру, до `1200px`; применяется осознанно, а не для компенсации низкого качества |
+| Два связанных изображения | Core Columns, style `EHPMI image pair`, по одному Image в колонке | Две равные колонки на desktop, одна колонка ниже `700px` |
+| Три и более связанных изображения | Core Gallery | Три колонки на desktop, две ниже `900px`, одна ниже `700px` |
+| Квадратная карточка Projects/Blog | Featured image / attachment ID, size `thumbnail` | Квадратный crop для согласованной сетки карточек |
+| Компактная карточка Library | Featured image / attachment ID, display box `[200,150]` | Переиспользуется ближайший существующий derivative; отдельный generated size не создаётся |
+
+Gallery с одним или двумя изображениями запрещена: она создаёт ложную семантику коллекции и усложняет responsive layout. Изображение не растягивается до ширины контейнера, если выбранный generated file меньше контейнера. Caption находится в обычном потоке документа и не перекрывает изображение.
+
+Набор создаваемых WordPress размеров ограничен вариантами, которые реально используются темой:
+
+| Size | Геометрия | Назначение |
+|---|---:|---|
+| `thumbnail` | `530x530`, hard crop | карточки Projects, Blog и другие квадратные previews |
+| `medium` | до `650x1000`, без crop | одна колонка image pair и компактные иллюстрации |
+| `medium_large` | до `768px` по ширине | responsive промежуточный вариант |
+| `large` | до `1320x2000`, без crop | качественная широкая иллюстрация и Gallery |
+| original | без изменения WordPress | recovery source и редкие случаи, когда `large` недостаточен |
+
+Автоматические `1536x1536` и `2048x2048` отключены для новых и регенерируемых attachments. В theme templates используется именованный size (`thumbnail`, `medium`, `large`) там, где нужен отдельный generated variant. Library является зафиксированным исключением: display box `[200,150]` переиспользует ближайший существующий файл и не увеличивает набор derivatives.
+
+Формат и сжатие:
+
+1. для новой фотографии Codex подготавливает WebP до WordPress import; ориентир качества — `82`, после преобразования обязательна визуальная проверка;
+2. если WebP больше исходного JPEG или создаёт видимые артефакты, сохраняется JPEG с тем же quality contract;
+3. PNG сохраняется для прозрачности, схем и lossless-графики; автоматическая конвертация PNG запрещена;
+4. source-файл не удаляется из recovery package; публикуемая копия и source различаются в manifest;
+5. существующие attachments не конвертируются массово только ради расширения: требуется отдельная миграция с проверкой attachment MIME, metadata, сохранённых block URLs, размера до/после и rollback;
+6. runtime filter `image_editor_output_format` не используется, поскольку при регенерации legacy media он может изменить attachment metadata, оставив старые URL внутри block content.
+
+Для каждого смыслового изображения обязателен краткий alt, описывающий назначение в контексте материала. Decorative image получает пустой alt осознанно. Caption используется только для подписи, источника или пояснения и не заменяет alt.
+
+Миграция dev `2026-09-01` преобразовала 56 одноэлементных Gallery в Image и 87 двухэлементных Gallery в `EHPMI image pair`. В 116 проверенных записях осталось 260 Image blocks, 87 image pairs и 2 настоящих Gallery по три изображения; 248 уникальных attachments продолжают ссылаться по ID. Attachment count (`467`) не изменился. Evidence хранится в `ops/releases/media-layout-2026-09-01/`.
+
+### 9.7. Имена backup-артефактов
 
 ```text
 YYYY-MM-DD_HHMMSSZ_ehpmi-<environment>-database.sql.gz
@@ -446,7 +488,7 @@ YYYY-MM-DD_HHMMSSZ_SHA256SUMS
 
 Время фиксируется в UTC. Суффиксы `final`, `fixed`, `new` и `latest` не используются.
 
-### 9.7. Manifest
+### 9.8. Manifest
 
 Manifest содержит:
 
@@ -468,7 +510,7 @@ Manifest содержит:
 
 Media inventory хранится на Drive рядом с backup package, а не как вручную поддерживаемый динамический файл в Git. Минимальные поля: relative runtime path, SHA-256, bytes, MIME type, WordPress attachment ID, title, alt, owner type/slug, media role, source/credit/license по применимости.
 
-### 9.8. Создание DB snapshot
+### 9.9. Создание DB snapshot
 
 Команды выполняются из проверенного WordPress root. Значение root не задаётся через `~`, `$HOME` или непроверенный glob.
 
@@ -486,7 +528,7 @@ shasum -a 256 "$EHPMI_BACKUP_WORK/ehpmi.sql.gz"
 
 Дамп должен включать все таблицы текущей БД, в том числе Newsletter и другие plugin tables.
 
-### 9.9. Создание media snapshot
+### 9.10. Создание media snapshot
 
 ```bash
 export EHPMI_WP_ROOT=/absolute/verified/wordpress/root
@@ -499,7 +541,7 @@ shasum -a 256 "$EHPMI_MEDIA_ARCHIVE"
 
 После создания архив проверяется через `tar -tzf`, а SHA-256 записывается в общий `SHA256SUMS`.
 
-### 9.10. Проверка Drive
+### 9.11. Проверка Drive
 
 Backup считается сохранённым только после:
 
@@ -515,11 +557,11 @@ Backup считается сохранённым только после:
 
 Обычные plugins не копируются в backup. Они переустанавливаются по manifest.
 
-Проверенный dev manifest после routing refactor `2026-08-31`:
+Проверенный dev manifest после media-layout refactor `2026-09-01`:
 
 | Plugin slug | Version | State/source |
 |---|---:|---|
-| `ehpmi-core` | 1.0.0 | active; Git repository |
+| `ehpmi-core` | 1.1.0 | active; Git repository |
 | `advanced-custom-fields` | 6.8.9 | active; WordPress.org |
 | `akismet` | 5.7.2 | active; WordPress.org |
 | `breadcrumb-navxt` | 7.5.2 | active; WordPress.org |
@@ -980,7 +1022,7 @@ Rollback получает собственный recovery evidence. Возвра
 7. исправить инструкцию по реальным отклонениям;
 8. выпустить следующую версию protocol и PDF.
 
-## 19. Долги версии v0.5.0
+## 19. Долги версии v0.6.0
 
 | ID | Долг | Статус | Условие закрытия |
 |---|---|---|---|
@@ -999,9 +1041,10 @@ Rollback получает собственный recovery evidence. Возвра
 | `EH-D013` | Category-based routing и зависимость от Remove Category URL | CLOSED | Dev использует Pages + `project`/private taxonomies, 141 явный redirect и стабильные breadcrumb roots; evidence находится в `ops/releases/routing-refactor-2026-08-31/` |
 | `EH-D014` | Real Media Library ещё активен на dev | OPEN | Экспортирована карта 31 папки/401 связи; создан DB backup; выполнены dev deactivation, reference scan, frontend/admin QA и отдельно подтверждённое удаление plugin files; обновлён manifest |
 | `EH-D015` | 309 из 450 images на dev не имеют alt | OPEN | Смысловые изображения получили корректный alt, decorative классифицированы явно; frontend accessibility QA пройден |
+| `EH-D016` | Gallery использовалась для одиночных изображений и пар, отсутствовал размерный контракт | CLOSED | 56 одиночных Gallery преобразованы в Image, 87 пар — в `EHPMI image pair`; responsive desktop/mobile QA и release verifier пройдены на dev |
 
 ## 20. Статус принятия
 
-Версия `v0.5.0` фиксирует проверенное состояние dev после обновлений, P0 theme refactor, миграции organization content model и отказа от Category-based public routing, а также принятую нативную media architecture и Codex-only workflow для новых материалов. Она не разрешает production deployment, не заявляет QA-D и не считает Real Media Library уже удалённым.
+Версия `v0.6.0` фиксирует проверенное состояние dev после обновлений, P0 theme refactor, миграций organization/routing content model и рефакторинга editorial media layout, а также принятую нативную media architecture и Codex-only workflow для новых материалов. Она не разрешает production deployment, не заявляет QA-D и не считает Real Media Library уже удалённым.
 
 Следующая версия создаётся после очередного принятого этапа refactor. Версия `v1.0.0` допускается только после практической репетиции восстановления.

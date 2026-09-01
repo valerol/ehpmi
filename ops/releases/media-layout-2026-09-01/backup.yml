@@ -1,0 +1,45 @@
+schema_version: 1
+backup_id: "2026-09-01_042741Z_ehpmi-dev-before-media-layout"
+created_at_utc: "2026-09-01T04:27:41Z"
+purpose: "Dev database immediately before the editorial media-layout migration"
+
+source:
+  environment: dev
+  url: "https://dev.ehpmi.org"
+  document_root: "/home2/nykvymmy/dev.ehpmi.org"
+  database_name: "nykvymmy_ehpmidev"
+  table_prefix: "wp_"
+  wordpress_version: "7.1"
+
+artifact:
+  filename: "2026-09-01_042741Z_ehpmi-dev-before-media-layout.sql.gz"
+  remote_path: "/home2/nykvymmy/backups/2026-09-01_042741Z_ehpmi-dev-before-media-layout.sql.gz"
+  temporary_local_path: "/private/tmp/2026-09-01_042741Z_ehpmi-dev-before-media-layout.sql.gz"
+  size_bytes: 637279
+  sha256: "750fbb0b3081677ca7d7eb8a765388f900d7a260f0f8ba6545d700dc3546f582"
+  md5: "cba9210397ef9ac6bbf5c01dd9dd2895"
+  create_table_statements: 53
+  gzip_test: PASS
+  database_check_before_export: "PASS (53/53 tables)"
+
+drive:
+  dev_database_folder_id: "1d0pVYifHrEsCJbH4Ox6ueqfyvQeGeYFj"
+  file_id: "1yePxYN2gZ4e3vn3UXxCtd-s6krsHwZGi"
+  url: "https://drive.google.com/file/d/1yePxYN2gZ4e3vn3UXxCtd-s6krsHwZGi/view?usp=drivesdk"
+  metadata_readback: "PASS (filename, size and MIME type)"
+
+content_counts_before_migration:
+  image_blocks: 260
+  gallery_blocks: 145
+  one_image_galleries: 56
+  two_image_galleries: 87
+  three_image_galleries: 2
+  referenced_attachment_ids: 248
+  attachments_total: 467
+  newsletter_subscribers: 172
+  newsletter_sends: 0
+
+retention:
+  canonical_copy: "Google Drive database/dev"
+  repository_copy: false
+  encrypted: false

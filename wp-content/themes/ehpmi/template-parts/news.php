@@ -26,7 +26,7 @@ $news     = get_posts(
                 <div class="news-block">
                     <?php if (get_the_post_thumbnail($news_item->ID)) : ?>
                     <div class="image">
-                        <?= get_the_post_thumbnail($news_item->ID, [530,530]) ?>
+                        <?= get_the_post_thumbnail($news_item->ID, 'thumbnail') ?>
                     </div>
                     <?php endif; ?>
                     <div class="news-text">
@@ -54,7 +54,7 @@ $news     = get_posts(
         <div class="news-block">
             <?php if (get_the_post_thumbnail($news_item->ID)) : ?>
             <div class="image">
-                <?= get_the_post_thumbnail($news_item->ID, [530,530]) ?>
+                <?= get_the_post_thumbnail($news_item->ID, 'thumbnail') ?>
             </div>
             <?php endif; ?>
             <div class="news-text">

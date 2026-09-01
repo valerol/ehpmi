@@ -1,7 +1,7 @@
 /*
 Theme Name: EHPMI
 Theme URI: https://ehpmi.org/
-Version: 1.4
+Version: 1.5
 */
 
 .spider_popup_wrap {
@@ -35,34 +35,100 @@ textarea.wpcf7-form-control.wpcf7-textarea {
   height: 200px;
 }
 
-/* Gallery */
-.wp-block-gallery.has-nested-images figure.wp-block-image figcaption {
-    background: unset;
-	display: block;
-    height: 3em;
-	margin-bottom: -3em;
-    color: black;
-    font-size: 13px;
+/* Article media
+ *
+ * A single image is editorial content, not a one-item gallery. It is centred
+ * in a readable 880px measure and is never enlarged above its selected file.
+ * Two related images use the EHPMI Image pair Columns style. Gallery remains
+ * reserved for three or more images that form one visual sequence.
+ */
+.main-article .text > .wp-block-image {
+    width: min(100%, 55rem);
+    margin: 2rem auto 3rem;
+    text-align: center;
+}
+
+.main-article .text > .wp-block-image.alignwide,
+.main-article .text > .wp-block-image.is-style-ehpmi-wide {
+    width: min(100%, 75rem);
+}
+
+.main-article .text > .wp-block-image img,
+.main-article .wp-block-columns.is-style-ehpmi-image-pair .wp-block-image img,
+.main-article .wp-block-gallery .wp-block-image img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin-inline: auto;
+    object-fit: contain;
+}
+
+.main-article .wp-block-image figcaption,
+.main-article .wp-block-gallery.has-nested-images figure.wp-block-image figcaption {
+    position: static;
+    display: block;
+    height: auto;
+    margin: 0.65rem 0 0;
+    padding: 0;
+    background: none;
+    color: #363636;
+    font-size: 0.85rem;
+    line-height: 1.45;
     font-style: italic;
-	padding: 0;
+    text-align: center;
 }
-.wp-block-gallery.has-nested-images figure.wp-block-image:has(figcaption):before {
-    -webkit-backdrop-filter: unset;
-    backdrop-filter: unset;
+
+.main-article .wp-block-columns.is-style-ehpmi-image-pair {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    align-items: start;
+    margin: 2rem 0 3rem;
 }
-.wp-block-gallery {
-    margin-bottom: 3em;
+
+.main-article .wp-block-columns.is-style-ehpmi-image-pair > .wp-block-column,
+.main-article .wp-block-columns.is-style-ehpmi-image-pair .wp-block-image {
+    min-width: 0;
+    margin: 0;
+    text-align: center;
 }
-figure {
-  margin: 1rem 0;
+
+.main-article .text > .wp-block-gallery {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem !important;
+    align-items: start;
+    margin: 2rem 0 3rem;
 }
-.wp-block-gallery img {
-	max-width: 100%;
+
+.main-article .text > .wp-block-gallery.has-nested-images figure.wp-block-image {
+    display: block;
+    width: 100% !important;
+    min-width: 0;
+    margin: 0 !important;
 }
-@media (min-width: 600px) {
-.wp-block-gallery.group-3 {
-	gap: 0.5em !important;
-}}
+
+@media (max-width: 900px) {
+    .main-article .text > .wp-block-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 700px) {
+    .main-article .wp-block-columns.is-style-ehpmi-image-pair,
+    .main-article .text > .wp-block-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    /* Bootstrap's width:100% plus the legacy breadcrumb margin overflowed
+     * narrow viewports by 20px on each side. Keep the margin inside the page. */
+    body > #breadcrumbs.container {
+        width: auto;
+        margin: 20px 16px !important;
+        padding: 0;
+    }
+}
 
 
 /* ??? */
@@ -88,27 +154,15 @@ button.wp-block-search__button.wp-element-button {
 	margin-top: 0.8em !important;
 }
 
-/* Editor created columns */
+/* General editorial layout; image pairs and galleries are defined above. */
 .wp-block-media-text,
-.wp-block-gallery,
-.wp-block-columns {
-	display: grid;
-    grid-template-columns: 1fr 1fr;
-	column-gap: 2rem;
-	align-items: center;
+.wp-block-columns:not(.is-style-ehpmi-image-pair) {
+    column-gap: 2rem;
+    align-items: center;
 }
-.wp-block-gallery.one-column,
-.wp-block-columns .wp-block-gallery {
-    grid-template-columns: 1fr;
-}
-.wp-block-gallery.three-column,
-.wp-block-columns.three-column {
-    grid-template-columns: 1fr 1fr 1fr;
-}
+
 @media (max-width: 900px) {
-    .wp-block-media-text,
-	.wp-block-gallery,
-	.wp-block-columns {
-        grid-template-columns: 1fr;
+    .wp-block-media-text {
+        grid-template-columns: 1fr !important;
     }
 }

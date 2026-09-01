@@ -154,6 +154,9 @@ function ehpmi_theme_setup() {
     add_theme_support('widgets');
     add_theme_support('post-thumbnails');
     add_theme_support('title-tag');
+    add_theme_support('align-wide');
+    add_theme_support('editor-styles');
+    add_editor_style('editor-style.css');
     add_theme_support(
         'html5',
         array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption', 'style', 'script' )
@@ -167,6 +170,34 @@ function ehpmi_theme_setup() {
     ]);
 }
 add_action('after_setup_theme','ehpmi_theme_setup');
+
+/**
+ * Expose the accepted EHPMI media layouts in the block editor.
+ */
+function ehpmi_register_media_block_styles() {
+    register_block_style(
+        'core/image',
+        array(
+            'name'  => 'ehpmi-contained',
+            'label' => __( 'EHPMI contained', 'ehpmi' ),
+        )
+    );
+    register_block_style(
+        'core/image',
+        array(
+            'name'  => 'ehpmi-wide',
+            'label' => __( 'EHPMI wide', 'ehpmi' ),
+        )
+    );
+    register_block_style(
+        'core/columns',
+        array(
+            'name'  => 'ehpmi-image-pair',
+            'label' => __( 'EHPMI image pair', 'ehpmi' ),
+        )
+    );
+}
+add_action( 'init', 'ehpmi_register_media_block_styles' );
 
 // Custom widgets
 function register_custom_widget_area() {
