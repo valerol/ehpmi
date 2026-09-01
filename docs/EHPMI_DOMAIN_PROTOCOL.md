@@ -1,8 +1,8 @@
 # Доменный протокол EHPMI
 
-Версия: `v0.4.0`
+Версия: `v0.5.0`
 Статус: `DRAFT`  
-Дата снимка: `2026-08-31`
+Дата снимка: `2026-09-01`
 Уровень доменного применения: `D3`  
 Роль документа: нормативная проектно-доменная инструкция эксплуатации, передачи и восстановления сайта EHPMI
 
@@ -92,6 +92,8 @@
 1. Media archive, указанный в release manifest.
 2. Более новый полный проверенный media snapshot.
 3. Файлы работающего сервера, если их происхождение подтверждено.
+
+Смысловая принадлежность медиа определяется связью с записью WordPress, ACF field, featured image или block content. Виртуальная папка Real Media Library не является source of truth и не входит в обязательный recovery contract.
 
 ### 1.5. Протокол
 
@@ -212,6 +214,9 @@
 13. Classic menu сохраняется на первом этапе. Navigation Block рассматривается отдельным выпуском.
 14. Внешние CDN-зависимости заменяются локальными или зафиксированными build dependencies без изменения дизайна.
 15. Plugin updates выполняются отдельным этапом и не смешиваются с theme refactor.
+16. Media Library остаётся нативной для WordPress: runtime-файлы хранятся в `wp-content/uploads/YYYY/MM`, а смысловая структура задаётся владеющим типом контента, а не plugin-папками.
+17. Real Media Library не заменяется другим folder plugin. Его вывод выполняется отдельным dev release после экспорта старой карты папок и проверки всех media references.
+18. Новые медиа публикуются через управляемый Codex workflow; прямая ручная загрузка Content Operator считается исключением и документируется.
 
 ## 6. Проектные правила
 
@@ -271,6 +276,14 @@ DB snapshot, media snapshot и Git release образуют комплект т�
 
 Незакрытая миграция, несовместимость, непроверенная ссылка или отсутствующий тест остаются в реестре долгов до доказанного закрытия.
 
+### EH-R015 — Медиа имеет владельца и роль
+
+Новое вложение не публикуется, пока не определены владеющая запись или служебная группа, роль файла, title и alt для смыслового изображения. Декоративное изображение получает пустой alt только после явной классификации как decorative.
+
+### EH-R016 — Media archive сохраняет runtime paths
+
+Архивная организация Google Drive не меняет серверные пути. Восстанавливаемая копия обязана сохранять `files`, `images` и `wp-content/uploads` относительно WordPress root без тематической перекладки.
+
 ## 7. STOP-сигналы
 
 | STOP | Условие | Действие |
@@ -320,11 +333,28 @@ DB snapshot, media snapshot и Git release образуют комплект т�
 
 ```text
 EHPMI/
+├── incoming/
+│   ├── projects/<project-slug>/
+│   ├── news/<YYYY-MM-DD>-<post-slug>/
+│   ├── materials/<material-slug>/
+│   ├── people/<person-slug>/
+│   ├── organizations/
+│   │   ├── members/<member-slug>/
+│   │   └── partners/<partner-slug>/
+│   └── brand/
+├── sources/
 ├── database/
 │   ├── dev/
 │   └── production/
-└── site-content/
+├── site-content/
+└── migration-evidence/
 ```
+
+- `incoming` — временная зона приёма новых файлов; она не является recovery source;
+- `sources` — опциональное хранение оригиналов до сжатия или преобразования;
+- `database` — проверенные DB snapshots с разделением dev и production;
+- `site-content` — канонические восстанавливаемые media snapshots;
+- `migration-evidence` — карты миграций, отчёты и контрольные списки, но не credentials.
 
 Media snapshot является единым логическим `.tar.gz`, внутри которого пути идут относительно WordPress root:
 
@@ -343,7 +373,66 @@ wp-content/uploads/...
 - склейка частей в лексикографическом порядке;
 - повторная проверка полной SHA-256 и `tar -tzf` после склейки.
 
-### 9.3. Имена
+### 9.3. Runtime-структура Media Library
+
+Физические runtime-файлы хранятся в нативной структуре WordPress:
+
+```text
+wp-content/uploads/YYYY/MM/<filename>
+```
+
+Тематические физические папки не создаются. Существующие файлы не переименовываются и не переносятся ради новой классификации: такое действие меняет attachment metadata, generated sizes и публичные URL.
+
+Смысловой владелец определяется так:
+
+| Вид медиа | Каноническая связь |
+|---|---|
+| Изображения проекта | `project`: featured image, gallery или ACF field |
+| Файл и thumbnail материала | `material` |
+| Фото сотрудника | `staff_member` |
+| Логотип участника | `member` |
+| Логотип партнёра | `partner` |
+| Новостные фотографии | соответствующий `post` |
+| Слайд главной | `hero_slide` |
+| Общий логотип или brand asset | служебная группа `brand` |
+
+`post_parent = 0` сам по себе не доказывает, что attachment не используется: ссылка может находиться в ACF, featured image, block content или plugin metadata. Удаление «неприкреплённых» файлов без полного reference scan запрещено.
+
+На dev на снимке `2026-08-31` имеется 467 attachments; Real Media Library хранит 401 связь с 31 плоской виртуальной папкой. Эти папки не меняют физические пути и не должны стать новой доменной моделью.
+
+### 9.4. Имена новых media files
+
+Для новых файлов используются lowercase ASCII, дефисы и стабильный slug владеющего контента:
+
+```text
+<content-slug>--<role>--<number>.<ext>
+akhtala--gallery--01.jpg
+akhtala--map--01.webp
+2026-08-31-workshop--gallery--03.jpg
+lead-exposure-report--en--v2.pdf
+john-smith--portrait.jpg
+ehpmi--logo--dark.svg
+```
+
+Дата добавляется для новости или события, язык и версия — для публикации. Суффиксы `final`, `fixed`, `new` и `latest`, пробелы и транслитерация в разном регистре не используются. Существующие runtime-файлы под это правило массово не переименовываются.
+
+### 9.5. Публикация медиа через Codex
+
+Для каждой партии Contractor / Maintainer:
+
+1. подтверждает dev domain, document root и database;
+2. фиксирует владеющую запись, media role, language, source, credit и license, если они применимы;
+3. проверяет MIME type, размер, разрешение, имя и SHA-256 на дубликат;
+4. оптимизирует публикуемую копию, а оригинал при необходимости сохраняет в `sources`;
+5. импортирует файл через WordPress API или WP-CLI, чтобы WordPress создал attachment metadata и generated image sizes;
+6. заполняет title, alt, caption/description и attribution по применимости;
+7. связывает attachment с контентом по WordPress attachment ID через featured image, ACF или block, а не через вручную собранный filesystem URL;
+8. проверяет frontend, responsive image variants, download, alt и admin edit/save;
+9. переносит одобренный файл из `incoming` в согласованный media snapshot и связывает его с DB snapshot через manifest.
+
+Прямое копирование файла в `wp-content/uploads` без WordPress import запрещено. Операция с новыми медиа на production по-прежнему требует отдельного разрешения.
+
+### 9.6. Имена backup-артефактов
 
 ```text
 YYYY-MM-DD_HHMMSSZ_ehpmi-<environment>-database.sql.gz
@@ -357,7 +446,7 @@ YYYY-MM-DD_HHMMSSZ_SHA256SUMS
 
 Время фиксируется в UTC. Суффиксы `final`, `fixed`, `new` и `latest` не используются.
 
-### 9.4. Manifest
+### 9.7. Manifest
 
 Manifest содержит:
 
@@ -370,13 +459,16 @@ Manifest содержит:
 - theme name/version;
 - обязательные plugins и версии;
 - DB archive и media archive;
+- `media-manifest.csv` или эквивалентный машиночитаемый inventory при добавлении или удалении media;
 - SHA-256 каждого файла;
 - counts основных post types, users, Newsletter subscribers и DB tables;
 - creator role;
 - QA status;
 - известные исключения и открытые долги.
 
-### 9.5. Создание DB snapshot
+Media inventory хранится на Drive рядом с backup package, а не как вручную поддерживаемый динамический файл в Git. Минимальные поля: relative runtime path, SHA-256, bytes, MIME type, WordPress attachment ID, title, alt, owner type/slug, media role, source/credit/license по применимости.
+
+### 9.8. Создание DB snapshot
 
 Команды выполняются из проверенного WordPress root. Значение root не задаётся через `~`, `$HOME` или непроверенный glob.
 
@@ -394,7 +486,7 @@ shasum -a 256 "$EHPMI_BACKUP_WORK/ehpmi.sql.gz"
 
 Дамп должен включать все таблицы текущей БД, в том числе Newsletter и другие plugin tables.
 
-### 9.6. Создание media snapshot
+### 9.9. Создание media snapshot
 
 ```bash
 export EHPMI_WP_ROOT=/absolute/verified/wordpress/root
@@ -407,7 +499,7 @@ shasum -a 256 "$EHPMI_MEDIA_ARCHIVE"
 
 После создания архив проверяется через `tar -tzf`, а SHA-256 записывается в общий `SHA256SUMS`.
 
-### 9.7. Проверка Drive
+### 9.10. Проверка Drive
 
 Backup считается сохранённым только после:
 
@@ -436,7 +528,7 @@ Backup считается сохранённым только после:
 | `force-regenerate-thumbnails` | 2.3.0 | active; WordPress.org |
 | `allow-html-in-category-descriptions` | 1.2.5 | inactive; rollback history |
 | `newsletter` | 9.3.5 | active; WordPress.org |
-| `real-media-library-lite` | 4.23.0 | active; WordPress.org |
+| `real-media-library-lite` | 4.23.0 | active on dev; temporary migration dependency, not recovery architecture |
 | `wpcf7-recaptcha` | 1.5.0 | active; WordPress.org |
 | `remove-category-url` | 1.2.4 | inactive; rollback history |
 | `wp-optimize` | 4.6.1 | active; WordPress.org |
@@ -888,7 +980,7 @@ Rollback получает собственный recovery evidence. Возвра
 7. исправить инструкцию по реальным отклонениям;
 8. выпустить следующую версию protocol и PDF.
 
-## 19. Долги версии v0.4.0
+## 19. Долги версии v0.5.0
 
 | ID | Долг | Статус | Условие закрытия |
 |---|---|---|---|
@@ -905,9 +997,11 @@ Rollback получает собственный recovery evidence. Возвра
 | `EH-D011` | Authenticated Admin edit/save round-trip не выполнен | OPEN | Проверено сохранение Hero, Member, Partner, Material и block widgets без изменения production |
 | `EH-D012` | Миграция organization content model | CLOSED | Dev содержит 7 `member`, 1 `partner`, 0 `partner2`; ACF, templates и Materials проверены в `ops/releases/content-model-2026-08-31/` |
 | `EH-D013` | Category-based routing и зависимость от Remove Category URL | CLOSED | Dev использует Pages + `project`/private taxonomies, 141 явный redirect и стабильные breadcrumb roots; evidence находится в `ops/releases/routing-refactor-2026-08-31/` |
+| `EH-D014` | Real Media Library ещё активен на dev | OPEN | Экспортирована карта 31 папки/401 связи; создан DB backup; выполнены dev deactivation, reference scan, frontend/admin QA и отдельно подтверждённое удаление plugin files; обновлён manifest |
+| `EH-D015` | 309 из 450 images на dev не имеют alt | OPEN | Смысловые изображения получили корректный alt, decorative классифицированы явно; frontend accessibility QA пройден |
 
 ## 20. Статус принятия
 
-Версия `v0.4.0` фиксирует проверенное состояние dev после обновлений, P0 theme refactor, миграции organization content model и отказа от Category-based public routing. Она не разрешает production deployment и не заявляет QA-D.
+Версия `v0.5.0` фиксирует проверенное состояние dev после обновлений, P0 theme refactor, миграции organization content model и отказа от Category-based public routing, а также принятую нативную media architecture и Codex-only workflow для новых материалов. Она не разрешает production deployment, не заявляет QA-D и не считает Real Media Library уже удалённым.
 
 Следующая версия создаётся после очередного принятого этапа refactor. Версия `v1.0.0` допускается только после практической репетиции восстановления.
