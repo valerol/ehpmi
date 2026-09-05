@@ -26,25 +26,27 @@
 </head>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
+<a class="screen-reader-text skip-link" href="#main-content"><?php esc_html_e( 'Skip to content', 'ehpmi' ); ?></a>
 
 <!--Header Nav-->
 <header class="header">
     <div class="container">
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="custom-logo-link" rel="home"<?php echo is_front_page() ? ' aria-current="page"' : ''; ?>><img width="500" height="179" src="<?php echo esc_url( get_theme_file_uri( '/images/logo.svg' ) ); ?>" class="custom-logo" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" decoding="async"></a>
 
-        <?php
-        
-        wp_nav_menu([
-            'theme_location' => 'top-menu',
-            'menu_class'     => 'nav',
-            'container'      => 'ul',
-            'walker'         => new Top_Nav(),
-            'depth'          => 2, // adjust depth for submenus
-            'fallback_cb'    => false,
-        ]);
-        ?>
+        <nav class="primary-navigation" aria-label="<?php esc_attr_e( 'Primary navigation', 'ehpmi' ); ?>">
+            <?php
+            wp_nav_menu([
+                'theme_location' => 'top-menu',
+                'menu_class'     => 'nav',
+                'container'      => 'ul',
+                'walker'         => new Top_Nav(),
+                'depth'          => 2,
+                'fallback_cb'    => false,
+            ]);
+            ?>
+        </nav>
 
-        <nav class="navbar">
+        <nav class="navbar" aria-label="<?php esc_attr_e( 'Mobile navigation', 'ehpmi' ); ?>">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent1"
                     aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"></button>
                 <?php
@@ -65,4 +67,4 @@
     </div>
 </header>
 <?php if (function_exists('bcn_display') && !is_front_page()) : ?>
-    <div id="breadcrumbs" class="container"><?php bcn_display(); ?></div><?php endif ?>
+    <nav id="breadcrumbs" class="container" aria-label="<?php esc_attr_e( 'Breadcrumb', 'ehpmi' ); ?>"><?php bcn_display(); ?></nav><?php endif ?>

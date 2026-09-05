@@ -11,11 +11,17 @@
  * @since Twenty Twenty 1.0
  */
 $is_staff_member = (get_post_type() === 'staff_member');
+$is_news_post     = is_singular( 'post' );
 ?>
-<article class="main-article<?php echo $is_staff_member ? ' staff' : ''; ?>">
-    <header>
+<article <?php post_class( 'main-article' . ( $is_staff_member ? ' staff' : '' ) ); ?> id="post-<?php the_ID(); ?>">
+    <header class="entry-header">
         <div class="container">
             <h1><?php the_title(); ?></h1>
+            <?php if ( $is_news_post ) : ?>
+                <p class="entry-meta">
+                    <time datetime="<?php echo esc_attr( get_the_date( DATE_W3C ) ); ?>"><?php echo esc_html( get_the_date( 'F j, Y' ) ); ?></time>
+                </p>
+            <?php endif; ?>
         </div>
     </header>
     <div class="container">
@@ -24,9 +30,9 @@ $is_staff_member = (get_post_type() === 'staff_member');
                 <?php echo get_the_post_thumbnail(); ?>
             </div>
         <?php endif; ?>
-        <div class="text"><?php if ($is_staff_member) : ?>
-            <p class="position"><?php echo esc_html( get_the_excerpt() ); ?></p><?php else: ?>
-            <?php echo wp_kses_post( get_the_excerpt() ); ?><?php endif ?>
+        <div class="text entry-content"><?php if ($is_staff_member) : ?>
+            <p class="position"><?php echo esc_html( get_the_excerpt() ); ?></p><?php elseif ( $is_news_post && has_excerpt() ) : ?>
+            <div class="entry-summary"><?php echo wp_kses_post( wpautop( get_the_excerpt() ) ); ?></div><?php endif; ?>
             <?php the_content(); ?>
         </div>
     </div>

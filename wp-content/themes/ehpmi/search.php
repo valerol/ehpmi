@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="main container">
+<main id="main-content" class="main container">
 <?php if (have_posts()) : ?>
     <header>
         <h1>Search Results</h1>
@@ -8,23 +8,23 @@
 
     <?php while (have_posts()) : the_post(); ?>
 
-    <div <?php post_class() ?> id="post-<?php the_ID(); ?>">
+    <article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 
-        <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+        <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
         <div class="entry">
             <?php the_excerpt(); ?>
         </div>
 
-    </div>
+    </article>
 
     <?php endwhile; ?>
 
 <?php else : ?>
 
-    <h3>No posts found.</h3>
+    <h2>No posts found.</h2>
 
 <?php endif; ?>
-</section>
+</main>
 
 <?php get_footer();

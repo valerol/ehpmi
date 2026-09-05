@@ -6,7 +6,7 @@
 get_header();
 ?>
 
-<main class="main container">
+<main id="main-content" class="main container">
     <?php if ( is_404() ) : ?>
         <header>
             <h1><?php esc_html_e( 'Page not found', 'ehpmi' ); ?></h1>

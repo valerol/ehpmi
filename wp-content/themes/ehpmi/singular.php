@@ -10,6 +10,9 @@
  */
 
 get_header();
+?>
+<main id="main-content" class="site-main">
+<?php
 
 $is_page               = is_page();
 $structural_page_slugs = array( 'projects', 'blog', 'library' );
@@ -124,6 +127,7 @@ if ( $is_page ) {
                 'inner'       => true,
                 'heading'     => get_the_title( $post ),
                 'numberposts' => 3,
+                'show_heading' => ! $has_page_content,
             )
         );
     } elseif ( 'blog' === $parent_slug && 'news' === $post->post_name ) {
@@ -134,6 +138,7 @@ if ( $is_page ) {
                 'inner'       => true,
                 'heading'     => get_the_title( $post ),
                 'numberposts' => -1,
+                'show_heading' => ! $has_page_content,
             )
         );
     }
@@ -183,4 +188,7 @@ if ( $is_page ) {
     }
 }
 
+?>
+</main>
+<?php
 get_footer();

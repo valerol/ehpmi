@@ -1,8 +1,8 @@
 # Доменный протокол EHPMI
 
-Версия: `v0.6.2`
+Версия: `v0.6.3`
 Статус: `DRAFT`  
-Дата снимка: `2026-09-01`
+Дата снимка: `2026-09-05`
 Уровень доменного применения: `D3`  
 Роль документа: нормативная проектно-доменная инструкция эксплуатации, передачи и восстановления сайта EHPMI
 
@@ -219,6 +219,11 @@
 18. Новые медиа публикуются через управляемый Codex workflow; прямая ручная загрузка Content Operator считается исключением и документируется.
 19. Одиночная иллюстрация хранится как Image block, ровно два связанных изображения — как Columns с проектным стилем `EHPMI image pair`, Gallery используется только для трёх и более связанных изображений.
 20. Runtime не выполняет скрытую конвертацию форматов. Codex готовит публикуемую копию до импорта; WordPress отвечает за ограниченный набор responsive sizes и единый quality contract.
+21. Каждый публичный шаблон содержит ровно один `<main id="main-content">`; самостоятельная запись выводится как `<article id="post-ID">` с `post_class()`, а карточка списка — как отдельный `article` с уникальным ID.
+22. Основная и мобильная навигация, а также breadcrumbs имеют именованные `<nav>` landmarks; переход к содержимому доступен через skip link.
+23. Дата новости выводится элементом `<time datetime="...">`. Заголовки следуют порядку H1 → H2 → H3 без пустых уровней и скачков.
+24. Краткие сведения Project хранятся в группе ACF `Project facts`. `post_excerpt` остаётся кратким источником для карточек, но не вставляется Gutenberg-блоком в тело материала и не парсится шаблоном во время каждого запроса.
+25. Таблица данных содержит `caption`, `thead`, заголовочные `th` и `scope`; iframe карты содержит `title`, `loading="lazy"` и `referrerpolicy`.
 
 ## 6. Проектные правила
 
@@ -285,6 +290,23 @@ DB snapshot, media snapshot и Git release образуют комплект т�
 ### EH-R016 — Media archive сохраняет runtime paths
 
 Архивная организация Google Drive не меняет серверные пути. Восстанавливаемая копия обязана сохранять `files`, `images` и `wp-content/uploads` относительно WordPress root без тематической перекладки.
+
+### EH-R017 — Семантическая структура принадлежит шаблону
+
+Граница документа (`main`, `article`, `header`, именованные `nav`, дата и заголовок записи) задаётся PHP-шаблоном. Редактор управляет содержанием записи, но не повторяет template-owned элементы через Custom HTML или служебные Gutenberg-блоки.
+
+Project summary редактируется в ACF `Project facts`: introduction, dates/duration, people at risk, pollution source, implementers, budget и funding. Шаблон выводит эти данные как `<dl>`; пустые поля пропускаются. Для нового Project не следует вручную воспроизводить этот список в начале body content.
+
+Перед публикацией или массовой миграцией проверяются:
+
+- ровно один H1 и один `main` на публичной странице;
+- отсутствие пустых headings и скачка более чем на один уровень;
+- уникальные article IDs в листингах;
+- машинно-читаемая дата новости;
+- caption и header cells у таблиц данных;
+- доступное имя iframe;
+- отсутствие горизонтального overflow на `390px`;
+- сохранение editability через WordPress Admin/ACF, а не hardcoded content в шаблоне.
 
 ## 7. STOP-сигналы
 
@@ -658,6 +680,7 @@ Production deployment допускается только если:
 | `EH-AC-12` | Blog routing | Blog/News Pages и Post singles работают без Category dependency; старые News URL возвращают один `301` |
 | `EH-AC-13` | Library routing | Page intro и filtered Materials отображаются; Material legacy single ведёт одним `301` на файл |
 | `EH-AC-14` | Legacy URL contract | Category и flat URL ведут одним `301` на соответствующую Page; redirect loops и sitemap duplicates отсутствуют |
+| `EH-AC-15` | Semantic content structure | Один `main`/H1, article IDs/classes, именованные nav, последовательные headings, `time`, доступные iframe и таблицы; Project facts редактируются через ACF |
 
 ### QA-D — восстановление
 
@@ -1029,29 +1052,31 @@ Rollback получает собственный recovery evidence. Возвра
 7. исправить инструкцию по реальным отклонениям;
 8. выпустить следующую версию protocol и PDF.
 
-## 19. Долги версии v0.6.2
+## 19. Долги версии v0.6.3
 
 | ID | Долг | Статус | Условие закрытия |
 |---|---|---|---|
 | `EH-D001` | Web PHP не подтверждён независимо от CLI | CLOSED | Web PHP 8.1.34 подтверждён временным HTTP probe; файл удалён |
 | `EH-D002` | GitHub содержит старый статический прототип | CLOSED | `baseline/dev-2026-08-25` содержит актуальную тему и protocol; baseline commit `9ba82b7` |
 | `EH-D003` | Plugin update ещё не выполнен | CLOSED | Основной и follow-up plugin update прошли dev QA; manifests находятся в `ops/releases/plugin-updates-2026-08-28/` и `ops/releases/plugin-updates-2026-08-30-followup/` |
-| `EH-D004` | ACF groups хранятся только в БД | CLOSED | Четыре Local JSON group и восемь fields зафиксированы в Git и распознаны ACF на dev |
+| `EH-D004` | ACF groups хранятся только в БД | CLOSED | Пять Local JSON groups и пятнадцать fields зафиксированы в Git и распознаны ACF на dev |
 | `EH-D005` | Active slides находятся в корневом `/images` | CLOSED | Три source asset зафиксированы в теме; три управляемые записи и Media Library attachments опубликованы на dev, хеши и frontend URLs проверены |
 | `EH-D006` | Первый Drive backup package не создан | CLOSED | DB, 52 media parts, manifests и checksums загружены; Drive readback прошёл |
 | `EH-D007` | Recovery rehearsal не выполнена | OPEN | QA-D PASS и recovery evidence |
 | `EH-D008` | Production release procedure не испытана | OPEN | Первый принятый release с rollback evidence |
 | `EH-D009` | Внешние Google Fonts, Bootstrap и Font Awesome ещё загружаются через CDN | OPEN | Локальные либо воспроизводимо собираемые assets с visual QA |
 | `EH-D010` | Для LESS/CSS нет воспроизводимой build configuration | OPEN | Зафиксированный build command и совпадающий compiled CSS |
-| `EH-D011` | Authenticated Admin edit/save round-trip не выполнен | OPEN | Проверено сохранение Hero, Member, Partner, Material и block widgets без изменения production |
+| `EH-D011` | Authenticated Admin edit/save round-trip не выполнен | OPEN | Проверено сохранение Hero, Member, Partner, Material, Project facts и block widgets без изменения production |
 | `EH-D012` | Миграция organization content model | CLOSED | Dev содержит 7 `member`, 1 `partner`, 0 `partner2`; ACF, templates и Materials проверены в `ops/releases/content-model-2026-08-31/` |
 | `EH-D013` | Category-based routing и зависимость от Remove Category URL | CLOSED | Dev использует Pages + `project`/private taxonomies, 141 явный redirect и стабильные breadcrumb roots; evidence находится в `ops/releases/routing-refactor-2026-08-31/` |
 | `EH-D014` | Real Media Library ещё активен на dev | OPEN | Экспортирована карта 31 папки/401 связи; создан DB backup; выполнены dev deactivation, reference scan, frontend/admin QA и отдельно подтверждённое удаление plugin files; обновлён manifest |
 | `EH-D015` | Alt metadata вне проверенного scope опубликованных материалов ещё не классифицированы полностью | OPEN | Для остальных 44 материалов проверены 270 content images и 258 уникальных attachments; для закрытия долга нужно отдельно классифицировать неиспользуемые attachments и иные административные media как meaningful, decorative или orphaned |
 | `EH-D016` | Gallery использовалась для одиночных изображений и пар, отсутствовал размерный контракт | CLOSED | 56 одиночных Gallery преобразованы в Image, 87 пар — в Columns; специализированные photo-pair styles `4:3`, `3:2`, `3:4` применены к project 761 и ещё 81 паре в остальных 44 материалах; responsive desktop/mobile QA и release verifiers пройдены на dev |
+| `EH-D017` | Семантическая структура записей и листингов зависела от generic template и дублирующих excerpt blocks | CLOSED | Dev release `html-structure-2026-09-04`: отдельные single templates, один main, article/time/nav landmarks, 28 ACF Project facts, 39 дублирующих блоков удалены, 17 карт и 2 таблицы исправлены; desktop/mobile frontend QA пройден |
+| `EH-D018` | WP-Optimize 4.6.1 выдаёт PHP warning при массовом `wp_update_post()` | OPEN | Обновление или локально проверенное исправление `class-wpo-cache-rules.php`: дата должна разбираться через `explode`, после чего CLI migration проходит без warning и frontend regression |
 
 ## 20. Статус принятия
 
-Версия `v0.6.2` фиксирует проверенное состояние dev после обновлений, P0 theme refactor, миграций organization/routing content model и общесайтового рефакторинга editorial media layout, включая форматы photo pair `4:3`, `3:2`, `3:4`, wide layout для технических изображений, контекстные alt для опубликованных материалов, принятую нативную media architecture и Codex-only workflow для новых материалов. Она не разрешает production deployment, не заявляет QA-D и не считает Real Media Library уже удалённым.
+Версия `v0.6.3` фиксирует проверенное состояние dev после обновлений, P0 theme refactor, миграций organization/routing content model, общесайтового рефакторинга editorial media layout и стандартизации HTML-структуры News/Projects. Project facts теперь являются управляемыми ACF-данными, а шаблоны владеют document landmarks, датами и структурой записей. Версия не разрешает production deployment, не заявляет QA-D и не считает Real Media Library уже удалённым.
 
 Следующая версия создаётся после очередного принятого этапа refactor. Версия `v1.0.0` допускается только после практической репетиции восстановления.

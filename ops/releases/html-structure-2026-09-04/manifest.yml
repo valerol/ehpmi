@@ -1,0 +1,86 @@
+schema_version: 1
+release_id: "html-structure-2026-09-04"
+environment: dev
+status: PASS_WITH_EXCEPTIONS
+verified_at_utc: "2026-09-04T23:40:18Z"
+
+boundary:
+  dev_url: "https://dev.ehpmi.org"
+  dev_document_root: "/home2/nykvymmy/dev.ehpmi.org"
+  dev_database: "nykvymmy_ehpmidev"
+  production_url: "https://ehpmi.org"
+  production_database: "nykvymmy_ehpmi"
+  production_write_performed: false
+  production_marker: null
+  production_theme_release_absent: true
+
+backup:
+  manifest: "backup.yml"
+  drive_file_id: "1MNtmAPIsnt7FqZ8xtq7Vgo6HNlK_YHZM"
+  sha256: "5f7297617590644b875aad790bd22fe867e8960a0e1c7a93d544de5c20686d95"
+  gzip_test: PASS
+  create_table_statements: 53
+
+migration:
+  marker: "2026-09-05-v1"
+  preflight: PASS
+  apply: PASS
+  verification: PASS
+  changed_content_records: 40
+  removed_post_excerpt_blocks: 39
+  project_records: 28
+  project_acf_meta_pairs: 196
+  accessible_map_iframes: 17
+  removed_empty_headings: 2
+  corrected_h3_headings: 2
+  semantic_tables: 2
+  featured_image_alts: 4
+  uploads_files_changed: 0
+
+theme:
+  version: "1.7"
+  php_lint: PASS
+  tracked_files: 42
+  local_remote_sha256_match: PASS
+  removed_appledouble_metadata_files: 6
+  acf_group: "group_ehpmi_project_facts"
+  acf_fields: 7
+
+qa:
+  database_verifier: PASS
+  frontend_urls_http_200: "41/41"
+  frontend_single_main: "41/41"
+  frontend_single_h1: "41/41"
+  frontend_single_article: "41/41"
+  representative_browser_pages: 7
+  representative_browser_console_errors: 0
+  news_archive_cards: 13
+  project_archive_cards: 28
+  mobile_width_px: 390
+  mobile_horizontal_overflow: false
+  authenticated_admin_ui: NOT_RUN
+  admin_reason: "The available browser session was not authenticated; ACF registration, keys and stored values were verified through WordPress/ACF APIs."
+  screenshot_capture: NOT_AVAILABLE
+  screenshot_reason: "The selected in-app browser rendered and exposed computed layout successfully but did not return image captures."
+  temporary_server_files_removed: PASS
+
+known_warning:
+  component: "WP-Optimize 4.6.1"
+  symptom: "Cannot use string as array in class-wpo-cache-rules.php line 242 during wp_update_post()"
+  migration_effect: "none; transaction committed and post-migration/frontend verifiers passed"
+  debt: "EH-D018"
+
+rollback:
+  code: "Restore the theme from Git commit 1bc9d36f67fa967ef4713921b00207e50fe26031."
+  database_archive: "/home2/nykvymmy/backups/ehpmi-dev-html-structure-pre-20260904T224219Z.sql.gz"
+  scope: "Restore dev theme and dev database; no uploads were changed."
+
+documentation:
+  protocol: "docs/EHPMI_DOMAIN_PROTOCOL.md v0.6.3"
+  protocol_pdf_pages: 35
+  protocol_pdf_size_bytes: 230296
+  protocol_pdf_sha256: "348c92324cfb7e3c3de1890e1136d508a260ae9dec14a60ac8917490f7b8ea1c"
+  protocol_pdf_drive_file_id: "1Ye0_tuHlMZclLOyMyxa_3NOBl-vQ0dy9"
+  protocol_pdf_drive_url: "https://drive.google.com/file/d/1Ye0_tuHlMZclLOyMyxa_3NOBl-vQ0dy9/view?usp=drivesdk"
+  protocol_pdf_render_qa: PASS
+  qa: "qa.md"

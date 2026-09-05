@@ -1,5 +1,6 @@
 # Operating-system and editor artifacts
 .DS_Store
+._*
 Thumbs.db
 *.swp
 *.swo
@@ -25,6 +26,8 @@ Thumbs.db
 
 # Local backup and secret material
 /backups/
+/output/
+/tmp/
 *.sql
 *.sql.gz
 *.tar

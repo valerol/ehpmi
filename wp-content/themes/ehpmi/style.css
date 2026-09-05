@@ -1,7 +1,7 @@
 /*
 Theme Name: EHPMI
 Theme URI: https://ehpmi.org/
-Version: 1.6
+Version: 1.7
 */
 
 .spider_popup_wrap {
@@ -173,11 +173,6 @@ textarea.wpcf7-form-control.wpcf7-textarea {
 }
 
 
-/* ??? */
-.wp-block-post-excerpt {
-	display: none;
-}
-
 /* Newsletter subscription widget */
 .tnp-subscription label {
 	display: none;
@@ -206,5 +201,130 @@ button.wp-block-search__button.wp-element-button {
 @media (max-width: 900px) {
     .wp-block-media-text {
         grid-template-columns: 1fr !important;
+    }
+}
+
+/* Semantic document structure. The site-main wrapper must not change the
+ * accepted section spacing supplied by the existing theme. */
+main.site-main {
+    margin: 0 !important;
+}
+
+.skip-link:focus {
+    position: fixed;
+    z-index: 10000;
+    top: 1rem;
+    left: 1rem;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0.75rem 1rem;
+    clip: auto;
+    overflow: visible;
+    background: #fefefe;
+    color: #363636;
+    box-shadow: 0 0 0 3px #435d2d;
+    white-space: normal;
+}
+
+.main-article .entry-header .entry-meta {
+    margin: 0.5rem 0 0;
+    color: #5f5f5f;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.main-article .entry-summary {
+    margin-bottom: 2rem;
+}
+
+.main-article .entry-summary > :first-child {
+    margin-top: 0;
+}
+
+.project-summary__intro {
+    font-style: italic;
+}
+
+.project-facts {
+    margin: 1.5rem 0 2.5rem;
+    padding: 0;
+    background: #e3e3e2;
+}
+
+.project-facts__item {
+    display: grid;
+    grid-template-columns: minmax(12rem, 28%) minmax(0, 1fr);
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #c8c8c7;
+}
+
+.project-facts__item:last-child {
+    border-bottom: 0;
+}
+
+.project-facts dt {
+    font-weight: 700;
+}
+
+.project-facts dd {
+    margin: 0;
+}
+
+.news article.news-block {
+    padding: 0;
+}
+
+.news .news-block .news-text .title {
+    font-size: 1.75rem;
+    line-height: 1.2;
+}
+
+.news.latest .news-block .news-text .title {
+    font-size: 1.5rem;
+}
+
+.news .news-block .news-text .title a {
+    color: #363636;
+    text-decoration: none;
+}
+
+.news .news-block .news-text .date {
+    display: block;
+}
+
+.ehpmi-data-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #cfcfcf;
+}
+
+.ehpmi-data-table caption,
+.wp-block-table caption {
+    padding: 0.75rem 0;
+    color: #363636;
+    font-weight: 600;
+    text-align: left;
+    caption-side: top;
+}
+
+.ehpmi-data-table th,
+.ehpmi-data-table td {
+    padding: 0.75rem;
+    border: 1px solid #cfcfcf;
+    text-align: left;
+    vertical-align: top;
+}
+
+.ehpmi-data-table th {
+    background: #f2f2f2;
+}
+
+@media (max-width: 700px) {
+    .project-facts__item {
+        grid-template-columns: 1fr;
+        gap: 0.25rem;
     }
 }

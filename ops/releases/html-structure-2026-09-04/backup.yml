@@ -1,0 +1,31 @@
+schema_version: 1
+backup_id: "ehpmi-dev-html-structure-pre-20260904T224219Z"
+created_at_utc: "2026-09-04T22:42:19Z"
+purpose: "Dev database immediately before the semantic HTML and Project facts migration"
+
+source:
+  environment: dev
+  url: "https://dev.ehpmi.org"
+  document_root: "/home2/nykvymmy/dev.ehpmi.org"
+  database_name: "nykvymmy_ehpmidev"
+  wordpress_version: "7.1"
+
+database_artifact:
+  filename: "ehpmi-dev-html-structure-pre-20260904T224219Z.sql.gz"
+  remote_path: "/home2/nykvymmy/backups/ehpmi-dev-html-structure-pre-20260904T224219Z.sql.gz"
+  temporary_local_path: "/private/tmp/ehpmi-dev-html-structure-pre-20260904T224219Z.sql.gz"
+  size_bytes: 465508
+  sha256: "5f7297617590644b875aad790bd22fe867e8960a0e1c7a93d544de5c20686d95"
+  create_table_statements: 53
+  gzip_test: PASS
+
+drive:
+  database_folder_id: "1GaKyaYVTOcWXrifJy82ru2k75vJx9Dgo"
+  file_id: "1MNtmAPIsnt7FqZ8xtq7Vgo6HNlK_YHZM"
+  url: "https://drive.google.com/file/d/1MNtmAPIsnt7FqZ8xtq7Vgo6HNlK_YHZM/view?usp=drivesdk"
+  metadata_readback: "PASS (filename, parent, size and MIME type)"
+
+retention:
+  canonical_database_copy: "Google Drive EHPMI/database"
+  repository_copy: false
+  encrypted: false

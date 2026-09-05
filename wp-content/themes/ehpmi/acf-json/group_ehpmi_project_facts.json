@@ -1,0 +1,115 @@
+{
+    "key": "group_ehpmi_project_facts",
+    "title": "Project facts",
+    "fields": [
+        {
+            "key": "field_ehpmi_project_intro",
+            "label": "Project introduction",
+            "name": "project_intro",
+            "type": "wysiwyg",
+            "instructions": "A short introductory statement shown above the structured project facts on the project page.",
+            "required": 0,
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_ehpmi_project_dates",
+            "label": "Project dates or duration",
+            "name": "project_dates",
+            "type": "text",
+            "instructions": "For example: 2023–2024 or 2 years.",
+            "required": 0,
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_ehpmi_people_at_risk",
+            "label": "People at risk",
+            "name": "people_at_risk",
+            "type": "text",
+            "instructions": "Population or residents potentially affected by the pollution.",
+            "required": 0,
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_ehpmi_pollution_source",
+            "label": "Pollution source",
+            "name": "pollution_source",
+            "type": "textarea",
+            "instructions": "Source of pollution and relevant contaminants.",
+            "required": 0,
+            "default_value": "",
+            "maxlength": "",
+            "rows": 2,
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_ehpmi_project_implementers",
+            "label": "Implementers",
+            "name": "project_implementers",
+            "type": "textarea",
+            "instructions": "Organizations responsible for project implementation.",
+            "required": 0,
+            "default_value": "",
+            "maxlength": "",
+            "rows": 2,
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_ehpmi_project_budget",
+            "label": "Budget",
+            "name": "project_budget",
+            "type": "textarea",
+            "instructions": "Total or projected cost and funding details.",
+            "required": 0,
+            "default_value": "",
+            "maxlength": "",
+            "rows": 2,
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_ehpmi_project_funding",
+            "label": "Funding",
+            "name": "project_funding",
+            "type": "textarea",
+            "instructions": "Funding organization or funding source when it is stated separately from the budget.",
+            "required": 0,
+            "default_value": "",
+            "maxlength": "",
+            "rows": 2,
+            "placeholder": "",
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "project"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Structured, editable project information used by the single-project template.",
+    "show_in_rest": 1,
+    "modified": 1788480000
+}

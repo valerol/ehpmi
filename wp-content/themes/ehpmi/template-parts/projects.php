@@ -27,7 +27,7 @@ if ( isset( $args['projects'] ) && is_array( $args['projects'] ) ) {
     $projects = get_posts( $query_args );
 }
 ?>
-<section class="news <?php echo $is_inner ? 'inner' : 'animation-element slide-left'; ?>">
+<section class="news projects <?php echo $is_inner ? 'inner' : 'animation-element slide-left'; ?>"<?php echo $show_heading ? '' : ' aria-label="' . esc_attr( $heading ) . '"'; ?>>
     <?php if ( $show_heading ) : ?>
     <header>
         <?php if ( $is_inner ) : ?>
@@ -39,19 +39,23 @@ if ( isset( $args['projects'] ) && is_array( $args['projects'] ) ) {
     <?php endif; ?>
     <div class="container">
         <?php foreach ($projects as $project) : ?>
-        <div class="news-block">
+        <article <?php post_class( 'news-block', $project->ID ); ?> id="project-card-<?php echo esc_attr( $project->ID ); ?>">
             <?php if (get_the_post_thumbnail($project->ID)) : ?>
             <div class="image">
                 <?= get_the_post_thumbnail($project->ID, 'thumbnail') ?>
             </div>
             <?php endif; ?>
             <div class="news-text">
-                <h3 class="title"><a href="<?php echo esc_url( get_permalink( $project ) ); ?>"><?php echo esc_html( $project->post_title ); ?></a></h3>
+                <?php if ( $is_inner ) : ?>
+                    <h2 class="title"><a href="<?php echo esc_url( get_permalink( $project ) ); ?>"><?php echo esc_html( $project->post_title ); ?></a></h2>
+                <?php else : ?>
+                    <h3 class="title"><a href="<?php echo esc_url( get_permalink( $project ) ); ?>"><?php echo esc_html( $project->post_title ); ?></a></h3>
+                <?php endif; ?>
                 <div class="description"><?php echo $project->post_excerpt
                     ? wp_kses_post( wpautop( $project->post_excerpt ) )
-                    : wp_kses_post( apply_filters( 'the_content', $project->post_content ) ); ?></div>
+                    : '<p>' . esc_html( wp_trim_words( wp_strip_all_tags( strip_shortcodes( $project->post_content ) ), 55 ) ) . '</p>'; ?></div>
             </div>
-        </div>
+        </article>
         <?php endforeach; ?>
     </div>
 </section>

@@ -8,7 +8,7 @@
 
 get_header();
 ?>
-<main class="main container">
+<main id="main-content" class="main container">
     <header>
         <h1><?php single_cat_title(); ?></h1>
         <?php the_archive_description( '<div class="taxonomy-description">', '</div>' ); ?>
