@@ -1,0 +1,16 @@
+release: news-pagination-2026-09-07
+environment: dev
+database: nykvymmy_ehpmidev
+created_utc: 2026-09-07T05:33:03Z
+archive:
+  server_path: /home2/nykvymmy/backups/ehpmi-dev-news-pagination-pre-20260907T053303Z.sql.gz
+  drive_file_id: 1mmIHreftJts1smNquk5leMkr9jE7HAp-
+  drive_parent_id: 1GaKyaYVTOcWXrifJy82ru2k75vJx9Dgo
+  bytes: 490331
+  sha256: 153f07b1383783310d7694ad600a67898031d9fc27da84314f6fdb288a5d15ea
+verification:
+  gzip_test: passed
+  database_tables: 53
+notes:
+  - The release changes theme files only and does not migrate content.
+  - The database archive is a precautionary pre-deployment restore point.

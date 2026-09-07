@@ -637,6 +637,16 @@ main,
 .news.latest header h2 {
   display: none;
 }
+.news.news--paginated .container {
+  justify-content: space-between;
+}
+.news.news--paginated .news-block .news-text {
+  justify-content: flex-start;
+}
+.news.news--paginated .title a {
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
 .news .container {
   display: flex;
   flex-wrap: wrap;
@@ -705,6 +715,39 @@ main,
 .news h3 a {
   text-decoration: none;
   color: #363636;
+}
+.news .news-pagination {
+  flex: 0 0 100%;
+  width: 100%;
+  margin: 0 0 3rem;
+}
+.news .news-pagination ul.page-numbers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.news .news-pagination a.page-numbers,
+.news .news-pagination span.page-numbers {
+  display: inline-flex;
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.45rem 0.75rem;
+  border: 1px solid #363636;
+  color: #363636;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.news .news-pagination a.page-numbers:hover,
+.news .news-pagination a.page-numbers:focus-visible,
+.news .news-pagination span.page-numbers.current {
+  background: #363636;
+  color: #fefefe;
 }
 .staff {
   padding: 3rem 0;

@@ -1,0 +1,28 @@
+release: news-pagination-2026-09-07
+environment: dev
+baseline_commit: 7d003f05d9fefc997f9f5e9a523d401d61fa44ec
+branch: refactor/dev-2026-08-25
+scope:
+  site_url: https://dev.ehpmi.org/blog/news/
+  document_root: /home2/nykvymmy/dev.ehpmi.org
+  database: nykvymmy_ehpmidev
+  production_document_root: /home2/nykvymmy/public_html
+  production_database: nykvymmy_ehpmi
+changed_files:
+  - wp-content/themes/ehpmi/template-parts/news.php
+  - wp-content/themes/ehpmi/singular.php
+  - wp-content/themes/ehpmi/style.css
+  - wp-content/themes/ehpmi/css/style.css
+  - wp-content/themes/ehpmi/css/style.less
+behavior:
+  - The complete News index queries 12 published posts per page.
+  - WordPress pagination is rendered as an accessible navigation landmark.
+  - News archive titles are underlined and card text starts at the top.
+  - A partial final row is aligned to the left through space-between layout.
+deployment:
+  method: exact-file scp to dev theme
+  cache: WP-Optimize cache and WordPress object cache flushed
+  production_write: false
+rollback:
+  files: Redeploy the five theme files from baseline_commit.
+  database: No restore is required because this release did not migrate content.

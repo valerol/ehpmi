@@ -2,15 +2,23 @@
 $is_inner = ! empty( $args['inner'] );
 $heading  = isset( $args['heading'] ) ? $args['heading'] : __( 'Latest from EHPMI', 'ehpmi' );
 $show_heading = ! isset( $args['show_heading'] ) || (bool) $args['show_heading'];
-$news     = get_posts(
+$paginate = ! empty( $args['paginate'] );
+$paged    = $paginate
+    ? max( 1, absint( get_query_var( 'paged' ) ), absint( get_query_var( 'page' ) ) )
+    : 1;
+
+$news_query = new WP_Query(
     array(
-        'post_type'      => 'post',
-        'post_status'    => 'publish',
-        'posts_per_page' => isset( $args['numberposts'] ) ? (int) $args['numberposts'] : 100,
-        'orderby'        => 'date',
-        'order'          => 'DESC',
+        'post_type'           => 'post',
+        'post_status'         => 'publish',
+        'posts_per_page'      => isset( $args['numberposts'] ) ? (int) $args['numberposts'] : 100,
+        'paged'               => $paged,
+        'orderby'             => 'date',
+        'order'               => 'DESC',
+        'ignore_sticky_posts' => true,
     )
 );
+$news = $news_query->posts;
 ?>
 <?php if ( ! $is_inner ) : // Homepage block. ?>
 <section class="latest news news-grid animation-element slide-left">
@@ -46,7 +54,7 @@ $news     = get_posts(
         <p class="ehpmi-carousel__status screen-reader-text" aria-live="polite"></p>
     </div>
 </section><?php else: ?>
-<section class="news news-grid inner"<?php echo $show_heading ? '' : ' aria-label="' . esc_attr( $heading ) . '"'; ?>>
+<section class="news news-grid inner<?php echo $paginate ? ' news--paginated' : ''; ?>"<?php echo $show_heading ? '' : ' aria-label="' . esc_attr( $heading ) . '"'; ?>>
     <?php if ( $show_heading ) : ?>
     <header>
         <h1><?php echo esc_html( $heading ); ?></h1>
@@ -69,5 +77,25 @@ $news     = get_posts(
             </div>
         </article>
         <?php endforeach; ?>
+        <?php if ( $paginate && $news_query->max_num_pages > 1 ) : ?>
+        <nav class="news-pagination" aria-label="<?php esc_attr_e( 'News pages', 'ehpmi' ); ?>">
+            <?php
+            echo wp_kses_post(
+                paginate_links(
+                    array(
+                        'base'      => str_replace( 999999999, '%#%', esc_url( get_pagenum_link( 999999999 ) ) ),
+                        'current'   => $paged,
+                        'total'     => (int) $news_query->max_num_pages,
+                        'mid_size'  => 1,
+                        'end_size'  => 1,
+                        'prev_text' => __( 'Previous', 'ehpmi' ),
+                        'next_text' => __( 'Next', 'ehpmi' ),
+                        'type'      => 'list',
+                    )
+                )
+            );
+            ?>
+        </nav>
+        <?php endif; ?>
     </div>
 </section><?php endif; ?>

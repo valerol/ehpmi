@@ -137,7 +137,8 @@ if ( $is_page ) {
             array(
                 'inner'       => true,
                 'heading'     => get_the_title( $post ),
-                'numberposts' => -1,
+                'numberposts' => 12,
+                'paginate'    => true,
                 'show_heading' => ! $has_page_content,
             )
         );
