@@ -7,6 +7,7 @@ This repository preserves the unique, reproducible part of the EHPMI WordPress s
 - WordPress theme: `wp-content/themes/ehpmi/`.
 - Project-owned site plugin: `wp-content/plugins/ehpmi-core/`.
 - Domain and recovery protocol: `docs/EHPMI_DOMAIN_PROTOCOL.md`.
+- Ordered entity-refactoring backlog: `docs/ENTITY_REFACTOR_PLAN.md`.
 - Dependency and release metadata: `ops/`.
 - Database and dynamic media: verified Google Drive backup packages, not Git.
 
