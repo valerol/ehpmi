@@ -1,0 +1,122 @@
+# Read-only dev inventory captured 2026-09-17. Empty cells mean no stored value. team_raw/member_raw retain WordPress serialized relationship order.
+ID	post_type	post_status	menu_order	thumbnail_id	file_id	legacy_additional_image_id	organization_id	leader_id	team_raw	member_raw	point
+2370	hero_slide	publish	10	2369							
+2372	hero_slide	publish	20	2371							
+2374	hero_slide	publish	30	2373							
+482	material	publish	0	484	483						
+485	material	publish	0	487	486						
+488	material	publish	0	490	489						
+491	material	publish	0	493	492						
+494	material	publish	0	1885	495						
+498	material	publish	0	1535	1105						
+501	material	publish	0	1535	1106						
+504	material	publish	0	506	505						
+507	material	publish	0	509	508						
+510	material	publish	0	512	511						
+513	material	publish	0	515	514						
+516	material	publish	0	518	517						
+520	material	publish	0	522	521						
+523	material	publish	0	525	524						
+526	material	publish	0	528	527						
+529	material	publish	0	531	530						
+532	material	publish	0	1887	533						
+1739	material	publish	0	1743	1740						
+1852	material	publish	0	1854	1855						
+103	member	publish	0	151							
+116	member	publish	0	613							
+117	member	publish	0	612							
+118	member	publish	0	148							
+119	member	publish	0	147							
+1493	member	publish	0	1494		1498					
+1735	member	publish	0	1737							
+13	page	publish	10								
+17	page	publish	30								
+21	page	publish	10								
+23	page	publish	20								
+25	page	publish	30								
+27	page	publish	40								
+29	page	publish	50								
+31	page	draft	60								
+33	page	publish	70								
+75	page	publish	0								
+327	page	publish	10						a:1:{i:0;s:3:"166";}		3
+347	page	publish	20						a:4:{i:0;s:3:"261";i:1;s:3:"249";i:2;s:3:"246";i:3;s:3:"252";}	a:1:{i:0;s:3:"118";}	2
+355	page	publish	30						a:1:{i:0;s:3:"234";}	a:1:{i:0;s:3:"119";}	5
+362	page	publish	40						a:1:{i:0;s:3:"183";}	a:1:{i:0;s:3:"116";}	7
+374	page	publish	50						a:1:{i:0;s:3:"243";}	a:1:{i:0;s:3:"103";}	6
+378	page	publish	60						a:1:{i:0;s:3:"197";}	a:1:{i:0;s:3:"117";}	8
+647	page	publish	70								1
+656	page	publish	15						a:1:{i:0;s:3:"193";}	a:1:{i:0;s:4:"1735";}	4
+1453	page	publish	60								
+1480	page	publish	20								
+1647	page	publish	80					1516		a:1:{i:0;s:4:"1493";}	9
+1841	page	publish	0								
+1844	page	publish	0								
+2378	page	publish	0								
+2379	page	publish	0								
+2380	page	publish	0								
+2381	page	publish	0								
+2382	page	publish	0								
+2383	page	publish	0								
+2384	page	publish	0								
+2385	page	publish	0								
+2386	page	publish	0								
+2387	page	publish	0								
+2388	page	publish	0								
+2389	page	publish	0								
+1455	partner	publish	0	1456							
+448	project	publish	0	449							
+455	project	publish	0								
+457	project	publish	0	619							
+461	project	publish	0	462							
+558	project	publish	0	591							
+717	project	publish	0	744							
+761	project	publish	0	779							
+803	project	publish	0	805							
+811	project	publish	0	813							
+821	project	publish	0	822							
+832	project	publish	0	833							
+857	project	publish	0	877							
+892	project	publish	0	902							
+1039	project	publish	0	1054							
+1061	project	publish	0	1069							
+1073	project	publish	0	1086							
+1113	project	publish	0	1260							
+1420	project	publish	0	1421							
+1545	project	publish	0	1558							
+1690	project	publish	0	1700							
+1692	project	publish	0	1699							
+1694	project	publish	0	1698							
+1770	project	publish	0	1779							
+1873	project	publish	0	1875							
+1888	project	publish	0	1893							
+1899	project	publish	0	1902							
+1953	project	publish	0	1963							
+1988	project	publish	0	1995							
+166	staff_member	publish	0	212							
+176	staff_member	publish	0	214							
+183	staff_member	publish	0	216			116				
+188	staff_member	publish	0	217							
+193	staff_member	publish	0	1099							
+197	staff_member	publish	0	221							
+234	staff_member	publish	0	273							
+236	staff_member	publish	0	290							
+240	staff_member	publish	0	275							
+243	staff_member	publish	0	276							
+246	staff_member	publish	0	278							
+249	staff_member	publish	0	280							
+252	staff_member	publish	0	283							
+257	staff_member	publish	0	1882							
+261	staff_member	publish	0	279							
+551	staff_member	publish	0	557							
+757	staff_member	publish	0	759							
+911	staff_member	publish	0	912							
+1516	staff_member	publish	0	1518							
+2344	staff_member	publish	0	2346							
+127	testimonial	draft	0	155							
+133	testimonial	draft	0	162							
+134	testimonial	draft	0	154							
+135	testimonial	draft	0	156							
+136	testimonial	draft	0	158							
+160	testimonial	draft	0	157							
+161	testimonial	draft	0	159							

@@ -1,0 +1,21 @@
+schema_version: 1
+release_id: entity-stage1-2026-09-17
+environment: dev
+database:
+  name: nykvymmy_ehpmidev
+  archive: /home2/nykvymmy/backups/2026-09-17_015053Z_ehpmi-dev-database.sql.gz
+  bytes: 498889
+  sha256: c574bd4fb43828c7ca6c87a2b7dd1b963727a1053d8242560342e9c7884eeecf
+  drive_file_id: 1kPzBmN-DDPcyZKO6WW-clTjOR2fH2_KL
+  drive_folder_id: 1d0pVYifHrEsCJbH4Ox6ueqfyvQeGeYFj
+  scope: Entire dev database, prior to Stage 1 mutation
+  isolated_restore_test: NOT_RUN
+project_files:
+  location: /home2/nykvymmy/backups/ehpmi-stage1-files-2026-09-17
+  mode: '0700'
+  files:
+    group_6336c6465a962.json: 769be358b194aaaace486b62aaa06c68ee723e17696b406250081830be80126b
+    partners.php: 37602ec756373b8bceaa8bcd185b3d11f5d42d899091060f562953b0dd14439b
+    style.less: 866197a33c340a93e6f6819df64f17f730c3a62233a03b16b76f10a1af6e24de
+    style.css: 2130df38969e34bf8ab29e770380789d8e55973043c0ce49fd64dad505062d08
+notes: Do not restore the entire archive over current dev content without assessing intervening edits. The guarded key-level rollback is the first option.

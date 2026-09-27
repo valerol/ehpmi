@@ -1,6 +1,6 @@
 {
     "key": "group_6336c6465a962",
-    "title": "Member fields",
+    "title": "Organization fields",
     "fields": [
         {
             "key": "field_6336c64641339",
@@ -18,7 +18,7 @@
         {
             "key": "field_6576b42d8de48",
             "label": "Additional image",
-            "name": "additonal_image",
+            "name": "additional_image",
             "aria-label": "",
             "type": "image",
             "instructions": "",
@@ -38,7 +38,8 @@
         }
     ],
     "location": [
-        [ { "param": "post_type", "operator": "==", "value": "member" } ]
+        [ { "param": "post_type", "operator": "==", "value": "member" } ],
+        [ { "param": "post_type", "operator": "==", "value": "partner" } ]
     ],
     "menu_order": 0,
     "position": "normal",

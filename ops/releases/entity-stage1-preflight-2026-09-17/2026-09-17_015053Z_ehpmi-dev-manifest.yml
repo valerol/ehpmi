@@ -1,0 +1,67 @@
+schema_version: 1
+backup_id: "2026-09-17_015053Z_ehpmi-dev-database"
+archive_completed_at_utc: "2026-09-17T01:52:40Z"
+purpose: "Verified dev database snapshot before Stage 1 member/partner refactor"
+environment:
+  name: dev
+  source_url: "https://dev.ehpmi.org"
+  document_root: "/home2/nykvymmy/dev.ehpmi.org"
+  database_name: "nykvymmy_ehpmidev"
+  table_prefix: "wp_"
+  production_document_root_read_only: "/home2/nykvymmy/public_html"
+  production_database_name_read_only: "nykvymmy_ehpmi"
+software:
+  wordpress_version: "7.1"
+  cli_php_version: "8.1.34"
+  database_server_version: "8.0.46-37"
+repository:
+  branch: "refactor/dev-2026-08-25"
+  commit: "ae17f21c8f616843104575103eaf4d903dc3426a"
+  note: "Stage 0 evidence and this preflight manifest are local uncommitted additions."
+database_archive:
+  filename: "2026-09-17_015053Z_ehpmi-dev-database.sql.gz"
+  server_path: "/home2/nykvymmy/backups/2026-09-17_015053Z_ehpmi-dev-database.sql.gz"
+  temporary_local_path: "/private/tmp/2026-09-17_015053Z_ehpmi-dev-database.sql.gz"
+  size_bytes: 498889
+  uncompressed_sql_bytes: 3037026
+  sha256: "c574bd4fb43828c7ca6c87a2b7dd1b963727a1053d8242560342e9c7884eeecf"
+  drive_folder_id: "1d0pVYifHrEsCJbH4Ox6ueqfyvQeGeYFj"
+  drive_file_id: "1kPzBmN-DDPcyZKO6WW-clTjOR2fH2_KL"
+  drive_url: "https://drive.google.com/file/d/1kPzBmN-DDPcyZKO6WW-clTjOR2fH2_KL/view?usp=drivesdk"
+validation:
+  database_check_before_export: "PASS (53 tables)"
+  gzip_test_server: PASS
+  gzip_test_local: PASS
+  sha256_server_local_match: PASS
+  create_table_statements: 53
+  insert_statements: 22
+  critical_tables: "wp_posts and wp_newsletter schemas; nonempty INSERT data"
+  drive_metadata_readback: "PASS (name, size, application/gzip, exact dev folder)"
+  drive_download_reference_readback: PASS
+  drive_download_sha256_recheck: NOT_PERFORMED
+  isolated_restore_test: NOT_PERFORMED
+read_only_counts_after_export:
+  wp_posts: 766
+  wp_users: 2
+  wp_newsletter: 172
+  wp_newsletter_sent: 0
+  in_scope_entities:
+    hero_slide_publish: 3
+    material_publish: 19
+    member_publish: 7
+    page_publish: 34
+    page_draft: 1
+    partner_publish: 1
+    project_publish: 28
+    staff_member_publish: 20
+    testimonial_draft: 7
+retention:
+  canonical_database_copy: "Google Drive EHPMI/database/dev"
+  repository_database_copy: false
+  encrypted: false
+  media_archive_in_this_preflight: false
+  note: "This is a DB-only restore point, not a complete site recovery package. Pair with compatible project files and media snapshot per domain protocol."
+scope:
+  stage1_data_or_code_changes: false
+  production_changes: false
+  creator_role: "Codex on operator authorization"

@@ -1,0 +1,63 @@
+schema_version: 1
+release_id: entity-stage1-2026-09-17
+captured_at_utc: '2026-09-27T12:55:55Z'
+environment: dev
+status: ACCEPTED
+target:
+  url: https://dev.ehpmi.org
+  document_root: /home2/nykvymmy/dev.ehpmi.org
+  database_name: nykvymmy_ehpmidev
+  branch: refactor/dev-2026-08-25
+  preceding_commit: ae17f21c8f616843104575103eaf4d903dc3426a
+  implementation_commit: null
+changes:
+  acf_group: Organization fields on Member and Partner, Site URL and Additional image
+  data: 5 value keys and 5 ACF companion keys renamed, stored values unchanged
+  admin_round_trip: Member 1493 and Partner 1455 edited, saved, and reloaded by the authenticated operator
+  post_save_inventory: 6 corrected value rows and 6 corrected companion rows; Partner 1455 added the expected empty pair
+  template: Neutral organization classes, attachment alt metadata, accessible linked logos, and no legacy metadata fallback
+  css: Neutral selectors in LESS and compiled CSS, geometry unchanged
+deployed_file_sha256:
+  wp-content/themes/ehpmi/acf-json/group_6336c6465a962.json: 9810d5d421af9ceabcaab58a09d88bb97b8c99e83a1c8277babe38add27018e5
+  wp-content/themes/ehpmi/template-parts/partners.php: 6085e700c555a758645f8b36640d36b20004ce9a78444a3792a898feec09d0ae
+  wp-content/themes/ehpmi/css/style.less: 2bb1a6b2b254b137aca0ca3fb924897cb905ae0383d61e082ca6ba36323c1c92
+  wp-content/themes/ehpmi/css/style.css: c9b2d3d541d3b89af0ae27530aa97d6514ff72d0937fab97339ceaabe3574640
+evidence_sha256:
+  verify.php: 202d79a5dc8a5e9733ed8b33a91ca37a419f31dab02a3c3069f02e0aa6da679a
+  screenshots/ehpmi-stage1-home-1280x720.png: ba5b822cc56eb30e60feb6ed941c2e34e80f94c04b349b4c8915a6bf810e5eaf
+  screenshots/ehpmi-stage1-home-390x844.png: 9c4d39852a7b14e0853b39fd5e603471cbe0e7380370f99d006b7c55a7342aa1
+  screenshots/ehpmi-stage1-members-1280x720.png: 2a46f9e3242fb85332acea3c2041c9a572d018b4694608a881638cc8ee4ac1c6
+  screenshots/ehpmi-stage1-members-390x844.png: e79752bf1e19d2df91a0769b7df09c3291be6b195f991b92b60b6e7d0eac4edd
+  screenshots/ehpmi-stage1-partners-1280x720.png: 58bbf6458c54443cf259467f3b07d52004ab7d2efcc2468a1c629eba6b572001
+  screenshots/ehpmi-stage1-partners-390x844.png: 47ef84a655684ab81daa6b60d85129d62759bb6600e0f3bbe7eb462192d43547
+verification:
+  migration_dry_run: PASS
+  migration_apply: PASS_EXACTLY_10_KEYS
+  authenticated_admin_member_1493: PASS_OPERATOR_OBSERVED_SAVE_RELOAD
+  authenticated_admin_partner_1455: PASS_OPERATOR_OBSERVED_SAVE_RELOAD
+  final_preserved_data_verifier: PASS_FAILURES_EMPTY
+  final_corrected_metadata: PASS_6_VALUE_6_COMPANION_0_LEGACY
+  compatibility_read_removed: PASS
+  rollback_dry_run: PASS
+  public_http: PASS_3_LISTING_ROUTES_2_DIRECT_404
+  responsive_1280x720: PASS_HOME_MEMBERS_PARTNERS
+  responsive_390x844: PASS_HOME_MEMBERS_PARTNERS
+  broken_images: PASS_FULL_BROWSER_RUN
+  production_isolation: PASS_READ_ONLY
+  recovery_rehearsal: NOT_RUN
+rollback:
+  final_template_backup: /home2/nykvymmy/backups/ehpmi-stage1-final-2026-09-27/partners.php.before-fallback-removal
+  final_template_backup_sha256: 9fadf8d47406ba7e1446475b075f83cfb048259dc19406e65c422d4a84e372ba
+scope_control:
+  production_changed: false
+  production_database_name: nykvymmy_ehpmi
+  stage2_started: false
+  newsletter_sends: 0
+  form_submissions: 0
+  plugin_updates: 0
+evidence:
+  backup: backup.yml
+  migration: migrate.php
+  verification: verify.php
+  qa: qa.md
+  screenshots: screenshots/

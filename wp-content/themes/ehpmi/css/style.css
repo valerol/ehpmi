@@ -909,82 +909,82 @@ main,
     text-align: center;
   }
 }
-.partners {
+.organizations {
   background: #fefefe;
 }
-.partners.animation-element {
+.organizations.animation-element {
   padding: 3rem 0;
 }
-.partners h2 {
+.organizations h2 {
   color: #aacc60;
 }
-.partners #partner-carousel.container {
+.organizations #organization-carousel.container {
   padding: 0 3rem;
 }
-.partners #partner-carousel .item {
+.organizations #organization-carousel .item {
   display: flex;
   justify-content: center;
 }
-.partners #partner-carousel .item img {
+.organizations #organization-carousel .item img {
   width: auto;
   height: auto;
   max-width: 150px;
 }
-.partners #partner-carousel .ehpmi-carousel__track {
+.organizations #organization-carousel .ehpmi-carousel__track {
   display: flex;
   align-items: center;
 }
-article.partner {
+article.organization-card {
   display: flex;
   align-items: flex-start;
   padding: 2em 0;
 }
 @media (max-width: 1024px) {
-  article.partner {
+  article.organization-card {
     padding: 0;
     flex-direction: column;
   }
 }
-article.partner > img {
+article.organization-card > img {
   max-width: 300px;
   height: auto;
 }
 @media (max-width: 1024px) {
-  article.partner > img {
+  article.organization-card > img {
     align-self: center;
   }
 }
-article.partner .text {
+article.organization-card .text {
   margin-left: 3rem;
   font-size: 1.2rem;
 }
 @media (max-width: 1024px) {
-  article.partner .text {
+  article.organization-card .text {
     margin-left: 0;
     margin-top: 2em;
   }
 }
 @media (max-width: 1024px) {
-  article.partner .text h3 {
+  article.organization-card .text h3 {
     text-align: center;
   }
 }
-article.partner .brand {
+article.organization-card .brand {
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: unset;
 }
 @media (max-width: 1024px) {
-  article.partner .brand {
+  article.organization-card .brand {
     width: 100%;
     max-width: unset;
   }
 }
-article.partner .brand a {
+article.organization-card .brand a {
   font-size: 24px;
 }
-article.partner .brand img {
+article.organization-card .brand img {
   max-width: 300px;
   height: auto;
   margin-bottom: 1em;
