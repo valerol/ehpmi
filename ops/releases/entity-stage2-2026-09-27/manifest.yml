@@ -10,7 +10,7 @@ target:
   database_name: nykvymmy_ehpmidev
   branch: refactor/dev-2026-08-25
   preceding_commit: 13c6e44db889a59c05b9ee728e6c16f1e1deb13f
-  implementation_commit: null
+  implementation_commit: 96ab80181508dea2ff55dd48441bcc3eb7969af7
 changes:
   acf_group: Staff Position or title, Country role, and retained Organization relationship
   data: 20 positions with ACF companions, one country role with companion, and 20 deterministic menu_order values
