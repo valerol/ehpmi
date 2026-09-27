@@ -9,7 +9,7 @@ target:
   database_name: nykvymmy_ehpmidev
   branch: refactor/dev-2026-08-25
   preceding_commit: ae17f21c8f616843104575103eaf4d903dc3426a
-  implementation_commit: null
+  implementation_commit: 326010de6c6f068060fa37d8dec0036b91432952
 changes:
   acf_group: Organization fields on Member and Partner, Site URL and Additional image
   data: 5 value keys and 5 ACF companion keys renamed, stored values unchanged
