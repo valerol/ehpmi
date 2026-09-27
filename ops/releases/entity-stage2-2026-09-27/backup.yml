@@ -1,0 +1,15 @@
+schema_version: 1
+release_id: entity-stage2-2026-09-27
+environment: dev
+database:
+  name: nykvymmy_ehpmidev
+  archive: /home2/nykvymmy/backups/entity-stage2-2026-09-27/20260927T140252Z_nykvymmy_ehpmidev_pre-stage2.sql.gz
+  bytes: 659036
+  sha256: 97dc867a1acab3d34f328116b18c6784259dad633ca350ff060e8da64df0fe92
+  gzip_test: PASS
+  drive_file_id: 16knGXu4LbBOQfrE3IRQGxeWPUtaj-j0r
+  drive_folder_id: 1d0pVYifHrEsCJbH4Ox6ueqfyvQeGeYFj
+  drive_readback: PASS_FILENAME_MIME_SIZE_PARENT
+  scope: Entire dev database immediately before the Stage 2 mutation
+  isolated_restore_test: NOT_RUN
+notes: Do not restore the whole archive over current dev without assessing intervening edits. Use the guarded field-level rollback first.

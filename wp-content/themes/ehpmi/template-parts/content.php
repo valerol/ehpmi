@@ -12,6 +12,7 @@
  */
 $is_staff_member = (get_post_type() === 'staff_member');
 $is_news_post     = is_singular( 'post' );
+$staff_position  = $is_staff_member ? trim( (string) get_post_meta( get_the_ID(), 'position', true ) ) : '';
 ?>
 <article <?php post_class( 'main-article' . ( $is_staff_member ? ' staff' : '' ) ); ?> id="post-<?php the_ID(); ?>">
     <header class="entry-header">
@@ -30,8 +31,8 @@ $is_news_post     = is_singular( 'post' );
                 <?php echo get_the_post_thumbnail(); ?>
             </div>
         <?php endif; ?>
-        <div class="text entry-content"><?php if ($is_staff_member) : ?>
-            <p class="position"><?php echo esc_html( get_the_excerpt() ); ?></p><?php elseif ( $is_news_post && has_excerpt() ) : ?>
+        <div class="text entry-content"><?php if ( $is_staff_member && '' !== $staff_position ) : ?>
+            <p class="position"><?php echo esc_html( $staff_position ); ?></p><?php elseif ( $is_news_post && has_excerpt() ) : ?>
             <div class="entry-summary"><?php echo wp_kses_post( wpautop( get_the_excerpt() ) ); ?></div><?php endif; ?>
             <?php the_content(); ?>
         </div>

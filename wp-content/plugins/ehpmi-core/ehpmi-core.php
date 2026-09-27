@@ -160,7 +160,7 @@ function ehpmi_core_register_content_types() {
                 'slug'       => 'about/staff',
                 'with_front' => false,
             ),
-            'supports'     => array( 'title', 'editor', 'excerpt', 'thumbnail', 'custom-fields' ),
+            'supports'     => array( 'title', 'editor', 'excerpt', 'thumbnail', 'custom-fields', 'page-attributes' ),
             'show_in_rest' => true,
         )
     );

@@ -1,0 +1,56 @@
+schema_version: 1
+release_id: entity-stage2-2026-09-27
+captured_at_utc: '2026-09-27T15:10:11Z'
+environment: dev
+status: ACCEPTED
+accepted_at_utc: '2026-09-27T15:39:51Z'
+target:
+  url: https://dev.ehpmi.org
+  document_root: /home2/nykvymmy/dev.ehpmi.org
+  database_name: nykvymmy_ehpmidev
+  branch: refactor/dev-2026-08-25
+  preceding_commit: 13c6e44db889a59c05b9ee728e6c16f1e1deb13f
+  implementation_commit: null
+changes:
+  acf_group: Staff Position or title, Country role, and retained Organization relationship
+  data: 20 positions with ACF companions, one country role with companion, and 20 deterministic menu_order values
+  templates: Structured position and role output, stable IDs and classes, preserved relationship order, filtered body HTML, and image alt fallback
+  post_type: Staff page-attributes support exposes the Admin Order control
+deployed_file_sha256:
+  wp-content/plugins/ehpmi-core/ehpmi-core.php: 3f8e5b77a19b0aac26b2dfa3919a51438bc7bdd3f01411c2e589f8397c9056b0
+  wp-content/themes/ehpmi/template-parts/staff.php: 44866be51f99a533e26636d1481becd61c3596043056b7b8829730c27baa9c23
+  wp-content/themes/ehpmi/template-parts/leader.php: 9931807a9193ef44a1658d2ee21e04d239de72f686ec582d4ed8ad5a753c5032
+  wp-content/themes/ehpmi/template-parts/content.php: 819c4e2bf5aecb1a56b852d0f444f049520b53d0e05423c6ef70763ea6c517af
+  wp-content/themes/ehpmi/acf-json/group_634161e50d969.json: 0e2313733ea9812d660dc097b98bcac50706d2047f69e9a4160ad3d6d2907a77
+evidence_sha256:
+  migrate.php: 918c9b71f2c3d7a2b21fb59f044b292cbe953f8a5c29343cc93aee11bed26b1f
+  verify.php: 2f1ae75b5b4963c8e95615d37f9660245866e6a25eb0ea2997d4449569163688
+verification:
+  migration_dry_run: PASS_EXPECTED_62_WRITES
+  migration_apply: PASS_EXACTLY_62_WRITES
+  rollback_dry_run: PASS
+  final_preserved_data_verifier: PASS_FAILURES_EMPTY
+  public_http: PASS_4_ROUTES
+  public_dom: PASS_DIRECTORY_COUNTRY_SINGLE
+  authenticated_admin_staff_save_reload: PASS_OPERATOR_CONFIRMED
+  responsive_desktop_visual: PASS_OPERATOR_CONFIRMED
+  responsive_390px_visual: PASS_OPERATOR_CONFIRMED
+  post_acceptance_verifier_rerun: UNAVAILABLE_SSH_AUTHENTICATION
+  production_isolation: PASS_READ_ONLY
+  recovery_rehearsal: NOT_RUN
+scope_control:
+  production_changed: false
+  production_database_name: nykvymmy_ehpmi
+  stage3_started: false
+  newsletter_sends: 0
+  form_submissions: 0
+  plugin_updates: 0
+evidence:
+  backup: backup.yml
+  migration: migrate.php
+  verification: verify.php
+  qa: qa.md
+acceptance:
+  operator_confirmation: Authenticated Staff 1516 save/reload and responsive desktop and 390px visual QA passed
+  automated_verifier_basis: Immediately pre-confirmation verifier PASS with failures=[]
+  post_confirmation_rerun: Attempted once with BatchMode and IdentitiesOnly; SSH authentication was unavailable
