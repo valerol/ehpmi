@@ -10,7 +10,7 @@ target:
   database_name: nykvymmy_ehpmidev
   branch: refactor/dev-2026-08-25
   preceding_commit: 1645de8725f8affb6ed1ebb3127d2577f4dbf493
-  implementation_commit: null
+  implementation_commit: 43b1d65d7c1475560bd4022db44d687adf14ce33
 changes:
   - Project pagination rewrite rules preserve structural Page ownership.
   - Project Page-owned listings use WP_Query with 12 published Projects per page.
