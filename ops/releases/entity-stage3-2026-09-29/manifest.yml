@@ -1,0 +1,80 @@
+schema_version: 1
+release_id: entity-stage3-2026-09-29
+captured_at_utc: "2026-09-29"
+environment: dev
+status: ACCEPTED
+accepted_on: "2026-10-14"
+target:
+  url: https://dev.ehpmi.org
+  document_root: /home2/nykvymmy/dev.ehpmi.org
+  database_name: nykvymmy_ehpmidev
+  branch: refactor/dev-2026-08-25
+  preceding_commit: 1645de8725f8affb6ed1ebb3127d2577f4dbf493
+  implementation_commit: null
+changes:
+  - Project pagination rewrite rules preserve structural Page ownership.
+  - Project Page-owned listings use WP_Query with 12 published Projects per page.
+  - Root, Current, Past, and Potential listings preserve date order and project_status filters.
+  - Project listings reuse the accepted News pagination component and left-aligned final-row behavior.
+  - Paginated Project Pages emit their own canonical URL.
+changed_files:
+  - wp-content/plugins/ehpmi-core/ehpmi-core.php
+  - wp-content/themes/ehpmi/template-parts/projects.php
+  - wp-content/themes/ehpmi/singular.php
+evidence_files:
+  - ops/releases/entity-stage3-2026-09-29/manifest.yml
+  - ops/releases/entity-stage3-2026-09-29/inventory.php
+  - ops/releases/entity-stage3-2026-09-29/verify.php
+  - ops/releases/entity-stage3-2026-09-29/backup.yml
+  - ops/releases/entity-stage3-2026-09-29/qa.md
+pre_stage_public_inventory:
+  all: [1988, 1953, 1899, 1888, 1873, 1770, 1690, 1692, 1694, 1545, 1420, 717, 558, 1073, 1113, 1061, 1039, 892, 857, 832, 821, 811, 803, 761, 461, 448, 457, 455]
+  current: [1888, 1873, 1770, 1690, 1692, 1694]
+  past: [1988, 1953, 1899, 1545, 1420, 717, 558, 1073, 1113, 1061, 1039, 857, 761]
+  potential: [892, 832, 821, 811, 803, 461, 448, 457, 455]
+deployment:
+  status: DEPLOYED_DEV_ONLY
+  method: Staged files with validation and atomic renames
+  production_write: false
+  deployed_file_sha256:
+    wp-content/plugins/ehpmi-core/ehpmi-core.php: 21f03b4838dc6d12735c7ade1987b48d7b46c8d70884e15e7dc10dac3778feb3
+    wp-content/themes/ehpmi/template-parts/projects.php: d9425e9be2fda4e7541f15610d49fa5f48f963ebfbc2fdd7d232bc806407665c
+    wp-content/themes/ehpmi/singular.php: 4d73bac0004299678c6716a3f94b53a21923b600e8b0909032669a8852de66f6
+  rollback: See backup.yml for the verified archive and exact pre-deployment file copies.
+verification:
+  local_php_lint: PASS_5_FILES
+  local_yaml_parse: PASS
+  local_diff_check: PASS
+  public_pre_stage_routes: PASS_4_HTTP_200_WITH_EXPECTED_CANONICALS_AND_BREADCRUMBS
+  public_pre_stage_inventory: PASS_28_UNIQUE_IDS_STATUS_PARTITION_6_13_9
+  public_pre_stage_sitemap_index: PASS_EXPECTED_PROVIDERS_NO_TAXONOMIES
+  remote_inventory_before_after_equal: PASS
+  remote_verifier: PASS_FAILURES_EMPTY
+  page_sizes:
+    all: [12, 12, 4]
+    current: [6]
+    past: [12, 1]
+    potential: [9]
+  pagination_rewrite_rules: PASS_BOTH_PRESENT
+  public_project_routes: PASS_7_HTTP_200_EXACT_IDS_SELF_CANONICALS_BREADCRUMBS
+  legacy_redirects: PASS_141_EXACT_301_LOCATIONS
+  homepage_projects: PASS_3_UNPAGINATED
+  news_regression: PASS_12_PLUS_1
+  sitemap_regression: PASS_PROJECT_28_STAFF_MEMBER_20_NO_TAXONOMY_PROVIDER
+  responsive_visual_desktop: PASS_OPERATOR_CONFIRMED_2026_10_14
+  responsive_visual_390px: PASS_OPERATOR_CONFIRMED_2026_10_14
+production_isolation:
+  database_name: nykvymmy_ehpmi
+  home: https://ehpmi.org
+  siteurl: https://ehpmi.org
+  core_file: ABSENT
+  file_sha256:
+    wp-content/themes/ehpmi/template-parts/projects.php: db1580c3838903e275a197e39794d5e666df88eb160bfec7a7cc4712baa73b1a
+    wp-content/themes/ehpmi/singular.php: c85d9dfbbb65f5a2ba46b995f08fc5492c2d801d66875af760a97088d311b040
+  result: PASS_READ_ONLY_UNCHANGED
+scope_control:
+  production_changed: false
+  stage4_started: false
+  database_mutation: false
+  newsletter_sends: 0
+  form_submissions: 0

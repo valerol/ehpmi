@@ -2,6 +2,11 @@
 $is_inner = ! empty( $args['inner'] );
 $heading  = isset( $args['heading'] ) ? $args['heading'] : __( 'Our Projects', 'ehpmi' );
 $show_heading = ! isset( $args['show_heading'] ) || (bool) $args['show_heading'];
+$paginate = ! empty( $args['paginate'] );
+$paged    = $paginate
+    ? max( 1, absint( get_query_var( 'paged' ) ), absint( get_query_var( 'page' ) ) )
+    : 1;
+$projects_query = null;
 
 if ( isset( $args['projects'] ) && is_array( $args['projects'] ) ) {
     $projects = $args['projects'];
@@ -24,10 +29,15 @@ if ( isset( $args['projects'] ) && is_array( $args['projects'] ) ) {
         );
     }
 
-    $projects = get_posts( $query_args );
+    if ( $paginate ) {
+        $query_args['paged'] = $paged;
+    }
+
+    $projects_query = new WP_Query( $query_args );
+    $projects       = $projects_query->posts;
 }
 ?>
-<section class="news projects <?php echo $is_inner ? 'inner' : 'animation-element slide-left'; ?>"<?php echo $show_heading ? '' : ' aria-label="' . esc_attr( $heading ) . '"'; ?>>
+<section class="news projects <?php echo $is_inner ? 'inner' : 'animation-element slide-left'; ?><?php echo $paginate ? ' news--paginated projects--paginated' : ''; ?>"<?php echo $show_heading ? '' : ' aria-label="' . esc_attr( $heading ) . '"'; ?>>
     <?php if ( $show_heading ) : ?>
     <header>
         <?php if ( $is_inner ) : ?>
@@ -57,5 +67,25 @@ if ( isset( $args['projects'] ) && is_array( $args['projects'] ) ) {
             </div>
         </article>
         <?php endforeach; ?>
+        <?php if ( $paginate && $projects_query instanceof WP_Query && $projects_query->max_num_pages > 1 ) : ?>
+        <nav class="news-pagination projects-pagination" aria-label="<?php esc_attr_e( 'Project pages', 'ehpmi' ); ?>">
+            <?php
+            echo wp_kses_post(
+                paginate_links(
+                    array(
+                        'base'      => str_replace( 999999999, '%#%', esc_url( get_pagenum_link( 999999999 ) ) ),
+                        'current'   => $paged,
+                        'total'     => (int) $projects_query->max_num_pages,
+                        'mid_size'  => 1,
+                        'end_size'  => 1,
+                        'prev_text' => __( 'Previous', 'ehpmi' ),
+                        'next_text' => __( 'Next', 'ehpmi' ),
+                        'type'      => 'list',
+                    )
+                )
+            );
+            ?>
+        </nav>
+        <?php endif; ?>
     </div>
 </section>

@@ -219,12 +219,44 @@ add_action( 'init', 'ehpmi_core_detach_legacy_categories', 100 );
  */
 function ehpmi_core_page_rewrite_rules() {
     add_rewrite_rule(
+        '^projects/(current|past|potential)/page/([0-9]+)/?$',
+        'index.php?pagename=projects/$matches[1]&paged=$matches[2]',
+        'top'
+    );
+    add_rewrite_rule(
+        '^projects/page/([0-9]+)/?$',
+        'index.php?pagename=projects&paged=$matches[1]',
+        'top'
+    );
+    add_rewrite_rule(
         '^projects/(current|past|potential)/?$',
         'index.php?pagename=projects/$matches[1]',
         'top'
     );
 }
 add_action( 'init', 'ehpmi_core_page_rewrite_rules', 20 );
+
+/**
+ * Give paginated Project Pages their own canonical URL.
+ */
+function ehpmi_core_project_page_canonical( $canonical_url, $post ) {
+    if ( ! $post instanceof WP_Post || 'page' !== $post->post_type ) {
+        return $canonical_url;
+    }
+
+    $page_uri = get_page_uri( $post );
+    if ( ! in_array( $page_uri, array( 'projects', 'projects/current', 'projects/past', 'projects/potential' ), true ) ) {
+        return $canonical_url;
+    }
+
+    $page_number = max( absint( get_query_var( 'paged' ) ), absint( get_query_var( 'page' ) ) );
+    if ( $page_number < 2 ) {
+        return $canonical_url;
+    }
+
+    return trailingslashit( get_permalink( $post ) ) . user_trailingslashit( 'page/' . $page_number, 'paged' );
+}
+add_filter( 'get_canonical_url', 'ehpmi_core_project_page_canonical', 10, 2 );
 
 /**
  * Redirect every recorded legacy route to its single canonical destination.

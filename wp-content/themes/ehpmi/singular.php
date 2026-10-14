@@ -104,7 +104,8 @@ if ( $is_page ) {
         $project_args = array(
             'inner'       => true,
             'heading'     => get_the_title( $post ),
-            'numberposts' => -1,
+            'numberposts' => 12,
+            'paginate'    => true,
         );
 
         if ( 'projects' === $parent_slug ) {

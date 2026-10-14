@@ -1,0 +1,37 @@
+schema_version: 1
+release_id: entity-stage3-2026-09-29
+environment: dev
+status: VERIFIED
+database:
+  name: nykvymmy_ehpmidev
+  mutation_planned: false
+  archive: /home2/nykvymmy/backups/entity-stage3-2026-09-29/20260929T110513Z_nykvymmy_ehpmidev_pre-stage3.sql.gz
+  bytes: 491605
+  sha256: b65de52535d6bbf6a226750152d0f0a5202a71611eb06f6e2e8d4ec5a75632cf
+  gzip_test: PASS
+  drive_file_id: 1ECk2rilFMjKG3FRL_qEpIezU9iOFhfj_
+  note: Precautionary full dev database backup; Stage 3 itself performed no database mutation.
+rollback:
+  directory: /home2/nykvymmy/backups/entity-stage3-2026-09-29/files-20260929T110513Z
+  status: VERIFIED_PRESENT
+  files:
+    projects_before_stage3:
+      path: /home2/nykvymmy/backups/entity-stage3-2026-09-29/files-20260929T110513Z/projects.php.before-stage3
+      bytes: 2676
+      sha256: df5e8bdb713cb13960d587c150c399341a6698d73dd7df609ee9f68836de9c2a
+    singular_before_stage3:
+      path: /home2/nykvymmy/backups/entity-stage3-2026-09-29/files-20260929T110513Z/singular.php.before-stage3
+      bytes: 6134
+      sha256: d97a0606803fd670c44ebfdefd7e49ad7d6fa48211a3a663b7b9abe7e3c7d7c4
+    core_before_pagination_fix:
+      path: /home2/nykvymmy/backups/entity-stage3-2026-09-29/files-20260929T110513Z/ehpmi-core.php.before-stage3-pagination-fix
+      bytes: 13016
+      sha256: 3f8e5b77a19b0aac26b2dfa3919a51438bc7bdd3f01411c2e589f8397c9056b0
+    core_before_canonical_fix:
+      path: /home2/nykvymmy/backups/entity-stage3-2026-09-29/files-20260929T110513Z/ehpmi-core.php.before-stage3-canonical-fix
+      bytes: 13329
+      sha256: 7801174b8c17e3ed5b3a239cad6f7278dfb0ef1c12e10a09c345f4955ab6ace8
+notes:
+  - Prefer exact file rollback because Stage 3 is code-only.
+  - Do not restore the full database archive over dev without assessing intervening changes.
+  - Production was not changed.
