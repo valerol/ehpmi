@@ -1126,36 +1126,98 @@ article.organization-card {
 .materials {
   background: @light-grey;
   .container {
-    -moz-column-count: 2;
-    -moz-column-gap: 20px;
-    -webkit-column-count: 2;
-    -webkit-column-gap: 20px;
-    column-count: 2;
-    column-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    align-items: start;
     @media (max-width: @tablet) {
-      -moz-column-count: 1;
-      -webkit-column-count: 1;
-      column-count: 1;
+      grid-template-columns: 1fr;
     }
   }
   .material {
+    min-width: 0;
+  }
+  .material__primary {
     display: flex;
+    align-items: flex-start;
+    width: 100%;
+    color: @dark-grey;
+    text-decoration: none;
     @media (max-width: @phone) {
       flex-direction: column;
       padding: 1.5rem 0;
       text-align: center;
+      align-items: center;
     }
   }
-  img {
+  .material__image {
+    flex: 0 0 200px;
     margin-right: 1.5rem;
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 0;
+    }
     @media (max-width: @phone) {
-      margin-right: 0;
-      margin-bottom: 1rem;
-      align-self: center;
+      margin: 0 0 1rem;
     }
   }
-  a.file {
+  .text {
+    min-width: 0;
+  }
+  .file {
+    margin: 0;
     font-size: 1.3rem;
+    line-height: 1.35;
+    color: @green;
+  }
+  a.material__primary:hover .file,
+  a.material__primary:focus-visible .file {
+    text-decoration: underline;
+    text-underline-offset: .12em;
+  }
+  .material__meta {
+    display: block;
+    margin-top: .5rem;
+    font-size: 1rem;
+    color: @dark-grey;
+  }
+  .material--unavailable .material__meta {
+    font-weight: 500;
+  }
+  .news-pagination {
+    grid-column: 1 / -1;
+    width: 100%;
+    margin: 0 0 3rem;
+    ul.page-numbers {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem;
+      justify-content: flex-start;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    a.page-numbers,
+    span.page-numbers {
+      display: inline-flex;
+      min-width: 2.75rem;
+      min-height: 2.75rem;
+      align-items: center;
+      justify-content: center;
+      padding: .45rem .75rem;
+      border: 1px solid @dark-grey;
+      color: @dark-grey;
+      line-height: 1.2;
+      text-decoration: none;
+    }
+    a.page-numbers:hover,
+    a.page-numbers:focus-visible,
+    span.page-numbers.current {
+      background: @dark-grey;
+      color: @light-grey;
+    }
   }
 }
 

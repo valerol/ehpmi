@@ -1,0 +1,127 @@
+schema_version: 1
+release_id: entity-stage4-2026-10-14
+captured_at_utc: "2026-10-14T12:49:58Z"
+environment: dev
+status: ACCEPTED
+accepted_on: "2026-10-16"
+target:
+  url: https://dev.ehpmi.org
+  document_root: /home2/nykvymmy/dev.ehpmi.org
+  database_name: nykvymmy_ehpmidev
+  branch: refactor/dev-2026-08-25
+  preceding_commit: e3a4aaff55bfc073acd8cfe999e00bf00beaf40d
+  implementation_commit: PENDING_COMMIT
+changes:
+  - Library and type Pages query published Materials 12 per page in deterministic date DESC, ID DESC order.
+  - Material cards use a semantic heading and exactly one primary file link containing the decorative thumbnail and visible title.
+  - File labels are derived from attachment MIME type and physical file size.
+  - Missing or unresolved files remain visible without a link and show the exact text File temporarily unavailable.
+  - The ACF File field permits incomplete Draft saves, but is required before Publish and when updating an already published Material; Admin list and edit screens flag unavailable published files without changing content.
+  - Root and type pagination use Page-owned rewrite rules and self-canonical paginated URLs.
+  - Grid styling preserves left alignment of partial rows and a single-column mobile layout.
+changed_files:
+  - wp-content/plugins/ehpmi-core/ehpmi-core.php
+  - wp-content/themes/ehpmi/template-parts/library.php
+  - wp-content/themes/ehpmi/singular.php
+  - wp-content/themes/ehpmi/acf-json/group_6371e86e64aa0.json
+  - wp-content/themes/ehpmi/css/style.less
+  - wp-content/themes/ehpmi/css/style.css
+evidence_files:
+  - ops/releases/entity-stage4-2026-10-14/audit.md
+  - ops/releases/entity-stage4-2026-10-14/inventory.php
+  - ops/releases/entity-stage4-2026-10-14/inventory.json
+  - ops/releases/entity-stage4-2026-10-14/inventory-after.txt
+  - ops/releases/entity-stage4-2026-10-14/verify.php
+  - ops/releases/entity-stage4-2026-10-14/verify-output.txt
+  - ops/releases/entity-stage4-2026-10-14/public-qa.php
+  - ops/releases/entity-stage4-2026-10-14/public-qa.json
+  - ops/releases/entity-stage4-2026-10-14/file-http.tsv
+  - ops/releases/entity-stage4-2026-10-14/thumbnail-http.tsv
+  - ops/releases/entity-stage4-2026-10-14/legacy-single-http.tsv
+  - ops/releases/entity-stage4-2026-10-14/backup.yml
+  - ops/releases/entity-stage4-2026-10-14/manifest.yml
+  - ops/releases/entity-stage4-2026-10-14/qa.md
+pre_stage_inventory:
+  materials: 19
+  statuses:
+    publish: 19
+  material_types:
+    health-and-pollution: 14
+    action-plans: 3
+    lead-health-risk-assessment: 2
+    publications-and-co-authored-publications: 0
+    videos: 0
+  files_resolved: 19
+  thumbnails_resolved: 19
+  external_file_urls: 0
+deployment:
+  status: DEPLOYED_DEV_ONLY
+  method: Guarded baseline hashes, staged validation, and per-file atomic replacement
+  rewrite_rules_flush: PASS_ONCE_DEV_ONLY
+  content_migration: false
+  production_write: false
+  deployed_file_sha256:
+    wp-content/plugins/ehpmi-core/ehpmi-core.php: 6eeea72b2c6a37fb931784af7c20ad8acb062a22efc5a741fa3a411f66a77a35
+    wp-content/themes/ehpmi/template-parts/library.php: d6bff4fd5392ba29bdf93cf5e80f447a52e9fa80b19b02b40b6aaf5b42698740
+    wp-content/themes/ehpmi/singular.php: 3db612e6bf14873507bf578128761b0108a7cdd2f065a060364b4024ec4037fc
+    wp-content/themes/ehpmi/acf-json/group_6371e86e64aa0.json: 47fc3b2c37e14d260b6dd0d06cdb6179f9400da6f43fdaae9061ba630d3f2a36
+    wp-content/themes/ehpmi/css/style.less: 04c94275b819d592a5419a713422c43bd6e8512c263eac470312d82dfeb9c450
+    wp-content/themes/ehpmi/css/style.css: 20f62ccf02d47fcaa619cb3409a799eb6495109d43715a1f18f178ab97701487
+verification:
+  local_php_lint: PASS_6_FILES
+  local_json_parse: PASS_3_FILES_PLUS_POST_DEPLOY_INVENTORY
+  local_yaml_parse: PASS_2_FILES
+  local_recorded_checksums: PASS
+  local_diff_check: PASS
+  remote_verifier: PASS_FAILURES_EMPTY
+  remote_verifier_after_authenticated_admin_qa: NOT_RERUN_SOCKET_UNAVAILABLE
+  unavailable_file_probe: PASS_NON_MUTATING_NO_LINK_EXACT_TEXT_SEMANTIC_HEADING
+  listing_page_sizes:
+    library: [12, 7]
+    health-and-pollution: [12, 2]
+    action-plans: [3]
+    lead-health-risk-assessment: [2]
+    publications-and-co-authored-publications: [0]
+    videos: [0]
+  exact_material_ids: PASS_19_UNIQUE
+  attachment_relationships_preserved: PASS
+  public_library_routes: PASS_8_HTTP_200_EXACT_IDS_SELF_CANONICALS_BREADCRUMBS_RERUN_2026_10_16
+  card_accessibility: PASS_ONE_LINK_H2_DECORATIVE_IMAGE_DERIVED_LABEL
+  file_http: PASS_19_OF_19
+  thumbnail_http: PASS_19_OF_19
+  legacy_redirects: PASS_19_EXACT_301_LOCATIONS
+  private_surfaces: PASS_ARCHIVE_TAXONOMY_REST_POST_SITEMAP_TAXONOMY_SITEMAP_404
+  sitemap_and_search: PASS_NO_MATERIAL_PROVIDER_OR_SEARCH_RESULT
+  editorial_zero_card_routes: PASS_CONTENT_RETAINED
+  homepage_projects: PASS_3_UNPAGINATED
+  news_regression: PASS_12_PLUS_1
+  projects_regression: PASS_12_12_4_CURRENT_6_PAST_12_1_POTENTIAL_9
+  published_material_482_save_reload: PASS_OPERATOR_CONFIRMED_2026_10_16_FILE_THUMBNAIL_TYPE_PRESERVED_NO_WARNING
+  acf_required_publish_validation: PASS_OPERATOR_CONFIRMED_2026_10_16_EMPTY_FILE_BLOCKED_RECORD_REMAINED_DRAFT
+  draft_file_save_reload_replace: PASS_OPERATOR_CONFIRMED_2026_10_16_FILE_A_THEN_FILE_B_NEVER_PUBLISHED
+  test_drafts_cleanup: PASS_OPERATOR_CONFIRMED_2026_10_16_MOVED_TO_TRASH_MEDIA_RETAINED
+  public_test_draft_exposure: PASS_NONE_IN_EXACT_19_PUBLISHED_IDS
+  responsive_visual_desktop: PASS_OPERATOR_CONFIRMED_2026_10_16_ALL_8_ROUTES
+  responsive_visual_390px: PASS_OPERATOR_CONFIRMED_2026_10_16_ALL_8_ROUTES
+production_isolation:
+  database_name: nykvymmy_ehpmi
+  home: https://ehpmi.org
+  siteurl: https://ehpmi.org
+  core_file: ABSENT
+  acf_json_file: ABSENT
+  file_sha256:
+    wp-content/themes/ehpmi/template-parts/library.php: f7a7ffaeae81b0b781631072e76cc554270d1652232535251b8fd7c31daa9f8a
+    wp-content/themes/ehpmi/singular.php: c85d9dfbbb65f5a2ba46b995f08fc5492c2d801d66875af760a97088d311b040
+    wp-content/themes/ehpmi/css/style.less: 2e1bb1a8fcc111bb9ecc9497a481eae56e14a2dec508e30044cc94991c5d04dd
+    wp-content/themes/ehpmi/css/style.css: 79b70807af46ba11443fe1d4b255bd780254b934593eebbd3a4c04fa62102983
+  result: PASS_READ_ONLY_UNCHANGED
+scope_control:
+  production_changed: false
+  database_content_migration: false
+  stage5_started: false
+  plugin_updates: 0
+  newsletter_sends: 0
+  form_submissions: 0
+acceptance:
+  current_gate: COMPLETE
+  commit_and_push: PENDING_FINALIZATION

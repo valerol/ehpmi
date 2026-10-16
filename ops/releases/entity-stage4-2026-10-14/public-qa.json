@@ -1,0 +1,373 @@
+{
+    "result": "PASS",
+    "failures": [],
+    "library_routes": {
+        "/library/": {
+            "http": 200,
+            "ids": [
+                1852,
+                1739,
+                532,
+                529,
+                526,
+                523,
+                520,
+                516,
+                513,
+                510,
+                507,
+                504
+            ],
+            "bytes": 66777
+        },
+        "/library/page/2/": {
+            "http": 200,
+            "ids": [
+                501,
+                498,
+                494,
+                491,
+                488,
+                485,
+                482
+            ],
+            "bytes": 62484
+        },
+        "/library/health-and-pollution/": {
+            "http": 200,
+            "ids": [
+                523,
+                520,
+                516,
+                513,
+                510,
+                507,
+                504,
+                501,
+                498,
+                494,
+                491,
+                488
+            ],
+            "bytes": 67629
+        },
+        "/library/health-and-pollution/page/2/": {
+            "http": 200,
+            "ids": [
+                485,
+                482
+            ],
+            "bytes": 58955
+        },
+        "/library/action-plans/": {
+            "http": 200,
+            "ids": [
+                1852,
+                529,
+                526
+            ],
+            "bytes": 59138
+        },
+        "/library/lead-health-risk-assessment/": {
+            "http": 200,
+            "ids": [
+                1739,
+                532
+            ],
+            "bytes": 58524
+        },
+        "/library/publications-and-co-authored-publications/": {
+            "http": 200,
+            "ids": [],
+            "bytes": 60405
+        },
+        "/library/videos/": {
+            "http": 200,
+            "ids": [],
+            "bytes": 57331
+        }
+    },
+    "file_http": {
+        "1852": {
+            "http": 200,
+            "url": "https://dev.ehpmi.org/wp-content/uploads/2024/12/ESCM-activities-2023-2024-for-Hanoi-workshop-20-Nov-24.pdf"
+        },
+        "1739": {
+            "http": 200,
+            "url": "https://dev.ehpmi.org/wp-content/uploads/2024/05/1.BLL_rus2.pdf"
+        },
+        "532": {
+            "http": 200,
+            "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/lead-contamination-of-environment-in-rudnaya-pristan-russia-and-associated-health-risks.pdf"
+        },
+        "529": {
+            "http": 200,
+            "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/health-and-pollution-action-plan-for-azerbaijan.pdf"
+        },
+        "526": {
+            "http": 200,
+            "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/health-and-pollution-action-plan-for-tajikistan.pdf"
+        },
+        "523": {
+            "http": 200,
+            "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/poster-medical-wastes-ru-scaled.jpg"
+        },
+        "520": {
+            "http": 200,
+            "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/poster-chemical-safety-at-home-ru-scaled.jpg"
+        },
+        "516": {
+            "http": 200,
+            "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/calendar-for-2019-2020-with-information-about-danger-of-pesticides.jpg"
+        },
+        "513": {
+            "http": 200,
+            "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/booklet-what-are-pesticides-and-why-are-they-dangerous-for-human-health-ru.pdf"
+        },
+        "510": {
+            "http": 200,
+            "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/report-on-assessments-of-sites-contaminated-with-obsolete-pesticides-in-tajikistan-issue-3-ru.pdf"
+        },
+        "507": {
+            "http": 200,
+            "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/report-on-assessments-of-sites-contaminated-with-obsolete-pesticides-in-tajikistan-issue-2-ru.pdf"
+        },
+        "504": {
+            "http": 200,
+            "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/report-on-assessments-of-sites-contaminated-with-obsolete-pesticides-in-tajikistan-issue-1-ru.pdf"
+        },
+        "501": {
+            "http": 200,
+            "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/lead-health-risk-information-book-for-parents-and-teachers-ru-1.pdf"
+        },
+        "498": {
+            "http": 200,
+            "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/lead-health-risk-information-book-for-parents-and-teachers-ky-1.pdf"
+        },
+        "494": {
+            "http": 200,
+            "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/childrens-book-how-barsbek-and-his-friends-defeated-the-lead-danger-ru-ky.pdf"
+        },
+        "491": {
+            "http": 200,
+            "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/booklet-about-lead-chromate-in-spices-ge-scaled.jpg"
+        },
+        "488": {
+            "http": 200,
+            "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/booklet-about-lead-chromate-in-spices-ru-scaled.jpg"
+        },
+        "485": {
+            "http": 200,
+            "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/booklet-about-lead-chromate-in-spices-en-scaled.jpg"
+        },
+        "482": {
+            "http": 200,
+            "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/childrens-book-my-book-of-health-with-monkey-hero-en.pdf"
+        }
+    },
+    "thumbnail_http": {
+        "1852": {
+            "http": 200,
+            "url": "https://dev.ehpmi.org/wp-content/uploads/2024/12/image_2024-12-10_19-41-04-530x480.png"
+        },
+        "1739": {
+            "http": 200,
+            "url": "https://dev.ehpmi.org/wp-content/uploads/2024/05/childhood_blood_lead_screening-1-530x530.jpg"
+        },
+        "532": {
+            "http": 200,
+            "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.20.50-650x485-1-530x485.png"
+        },
+        "529": {
+            "http": 200,
+            "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.17.52-530x530.png"
+        },
+        "526": {
+            "http": 200,
+            "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.16.55-530x530.png"
+        },
+        "523": {
+            "http": 200,
+            "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.14.22-530x454.png"
+        },
+        "520": {
+            "http": 200,
+            "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.12.35-530x530.png"
+        },
+        "516": {
+            "http": 200,
+            "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.08.21-530x472.png"
+        },
+        "513": {
+            "http": 200,
+            "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.07.00-530x524.png"
+        },
+        "510": {
+            "http": 200,
+            "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.05.34-530x530.png"
+        },
+        "507": {
+            "http": 200,
+            "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.04.12-530x530.png"
+        },
+        "504": {
+            "http": 200,
+            "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.02.58-530x530.png"
+        },
+        "501": {
+            "http": 200,
+            "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/lead_health_risk_information_book_for_parents_and_teachers.jpg"
+        },
+        "498": {
+            "http": 200,
+            "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/lead_health_risk_information_book_for_parents_and_teachers.jpg"
+        },
+        "494": {
+            "http": 200,
+            "url": "https://dev.ehpmi.org/wp-content/uploads/2025/03/Screenshot-2022-11-14-at-19.09.37-650x492-1-530x492.png"
+        },
+        "491": {
+            "http": 200,
+            "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-18.54.11-530x530.png"
+        },
+        "488": {
+            "http": 200,
+            "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-18.31.04-530x530.png"
+        },
+        "485": {
+            "http": 200,
+            "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-18.19.04-530x530.png"
+        },
+        "482": {
+            "http": 200,
+            "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-17.19.19-530x530.png"
+        }
+    },
+    "legacy_http": {
+        "482": {
+            "http": 301,
+            "location": "https://dev.ehpmi.org/wp-content/uploads/2022/11/childrens-book-my-book-of-health-with-monkey-hero-en.pdf"
+        },
+        "485": {
+            "http": 301,
+            "location": "https://dev.ehpmi.org/wp-content/uploads/2022/11/booklet-about-lead-chromate-in-spices-en-scaled.jpg"
+        },
+        "488": {
+            "http": 301,
+            "location": "https://dev.ehpmi.org/wp-content/uploads/2022/11/booklet-about-lead-chromate-in-spices-ru-scaled.jpg"
+        },
+        "491": {
+            "http": 301,
+            "location": "https://dev.ehpmi.org/wp-content/uploads/2022/11/booklet-about-lead-chromate-in-spices-ge-scaled.jpg"
+        },
+        "494": {
+            "http": 301,
+            "location": "https://dev.ehpmi.org/wp-content/uploads/2022/11/childrens-book-how-barsbek-and-his-friends-defeated-the-lead-danger-ru-ky.pdf"
+        },
+        "498": {
+            "http": 301,
+            "location": "https://dev.ehpmi.org/wp-content/uploads/2022/11/lead-health-risk-information-book-for-parents-and-teachers-ky-1.pdf"
+        },
+        "501": {
+            "http": 301,
+            "location": "https://dev.ehpmi.org/wp-content/uploads/2022/11/lead-health-risk-information-book-for-parents-and-teachers-ru-1.pdf"
+        },
+        "504": {
+            "http": 301,
+            "location": "https://dev.ehpmi.org/wp-content/uploads/2022/11/report-on-assessments-of-sites-contaminated-with-obsolete-pesticides-in-tajikistan-issue-1-ru.pdf"
+        },
+        "507": {
+            "http": 301,
+            "location": "https://dev.ehpmi.org/wp-content/uploads/2022/11/report-on-assessments-of-sites-contaminated-with-obsolete-pesticides-in-tajikistan-issue-2-ru.pdf"
+        },
+        "510": {
+            "http": 301,
+            "location": "https://dev.ehpmi.org/wp-content/uploads/2022/11/report-on-assessments-of-sites-contaminated-with-obsolete-pesticides-in-tajikistan-issue-3-ru.pdf"
+        },
+        "513": {
+            "http": 301,
+            "location": "https://dev.ehpmi.org/wp-content/uploads/2022/11/booklet-what-are-pesticides-and-why-are-they-dangerous-for-human-health-ru.pdf"
+        },
+        "516": {
+            "http": 301,
+            "location": "https://dev.ehpmi.org/wp-content/uploads/2022/11/calendar-for-2019-2020-with-information-about-danger-of-pesticides.jpg"
+        },
+        "520": {
+            "http": 301,
+            "location": "https://dev.ehpmi.org/wp-content/uploads/2022/11/poster-chemical-safety-at-home-ru-scaled.jpg"
+        },
+        "523": {
+            "http": 301,
+            "location": "https://dev.ehpmi.org/wp-content/uploads/2022/11/poster-medical-wastes-ru-scaled.jpg"
+        },
+        "526": {
+            "http": 301,
+            "location": "https://dev.ehpmi.org/wp-content/uploads/2022/11/health-and-pollution-action-plan-for-tajikistan.pdf"
+        },
+        "529": {
+            "http": 301,
+            "location": "https://dev.ehpmi.org/wp-content/uploads/2022/11/health-and-pollution-action-plan-for-azerbaijan.pdf"
+        },
+        "532": {
+            "http": 301,
+            "location": "https://dev.ehpmi.org/wp-content/uploads/2022/11/lead-contamination-of-environment-in-rudnaya-pristan-russia-and-associated-health-risks.pdf"
+        },
+        "1739": {
+            "http": 301,
+            "location": "https://dev.ehpmi.org/wp-content/uploads/2024/05/1.BLL_rus2.pdf"
+        },
+        "1852": {
+            "http": 301,
+            "location": "https://dev.ehpmi.org/wp-content/uploads/2024/12/ESCM-activities-2023-2024-for-Hanoi-workshop-20-Nov-24.pdf"
+        }
+    },
+    "private_surfaces": {
+        "/material/": 404,
+        "/material-type/health-and-pollution/": 404,
+        "/wp-json/wp/v2/material": 404,
+        "/wp-sitemap-posts-material-1.xml": 404,
+        "/wp-sitemap-taxonomies-material_type-1.xml": 404
+    },
+    "regressions": {
+        "/": {
+            "http": 200,
+            "cards": 3
+        },
+        "/blog/news/": {
+            "http": 200,
+            "cards": 12
+        },
+        "/blog/news/page/2/": {
+            "http": 200,
+            "cards": 1
+        },
+        "/projects/": {
+            "http": 200,
+            "cards": 12
+        },
+        "/projects/page/2/": {
+            "http": 200,
+            "cards": 12
+        },
+        "/projects/page/3/": {
+            "http": 200,
+            "cards": 4
+        },
+        "/projects/current/": {
+            "http": 200,
+            "cards": 6
+        },
+        "/projects/past/": {
+            "http": 200,
+            "cards": 12
+        },
+        "/projects/past/page/2/": {
+            "http": 200,
+            "cards": 1
+        },
+        "/projects/potential/": {
+            "http": 200,
+            "cards": 9
+        }
+    }
+}

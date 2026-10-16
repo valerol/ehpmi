@@ -1,0 +1,57 @@
+schema_version: 1
+release_id: entity-stage4-2026-10-14
+environment: dev
+status: VERIFIED
+release_acceptance: ACCEPTED
+accepted_on: "2026-10-16"
+database:
+  name: nykvymmy_ehpmidev
+  content_migration_planned: false
+  rewrite_rules_option_flushed: true
+  archive: /home2/nykvymmy/backups/entity-stage4-2026-10-14/20261014T121904Z_nykvymmy_ehpmidev_pre-stage4.sql.gz
+  bytes: 491726
+  sha256: ad369ac2423a1b99ee8ef5912c82be84c178d6c1aac94d6a68ac01493dabb2b5
+  gzip_test_server: PASS
+  gzip_test_local: PASS
+  drive:
+    file_id: 14QbLrmkU1ALHcLbr-x7xQaDH1eiefpiW
+    name: 20261014T121904Z_nykvymmy_ehpmidev_pre-stage4.sql.gz
+    mime_type: application/gzip
+    bytes: 491726
+    parent_id: 1d0pVYifHrEsCJbH4Ox6ueqfyvQeGeYFj
+    metadata_readback: PASS
+    created_at_utc: "2026-10-14T12:26:29.321Z"
+  note: Full pre-stage dev database backup. Stage 4 performed no Material content migration; the only database write was the authorized dev rewrite-rule flush.
+rollback:
+  directory: /home2/nykvymmy/backups/entity-stage4-2026-10-14/files-20261014T121904Z
+  status: VERIFIED_PRESENT
+  files:
+    core:
+      path: /home2/nykvymmy/backups/entity-stage4-2026-10-14/files-20261014T121904Z/ehpmi-core.php.before-stage4
+      bytes: 14132
+      sha256: 21f03b4838dc6d12735c7ade1987b48d7b46c8d70884e15e7dc10dac3778feb3
+    library_template:
+      path: /home2/nykvymmy/backups/entity-stage4-2026-10-14/files-20261014T121904Z/library.php.before-stage4
+      bytes: 1331
+      sha256: 54e072840447f178b271ee701c0063f42091f12f65dfd7845481e3b8b3a887fb
+    singular_template:
+      path: /home2/nykvymmy/backups/entity-stage4-2026-10-14/files-20261014T121904Z/singular.php.before-stage4
+      bytes: 6169
+      sha256: 4d73bac0004299678c6716a3f94b53a21923b600e8b0909032669a8852de66f6
+    acf_json:
+      path: /home2/nykvymmy/backups/entity-stage4-2026-10-14/files-20261014T121904Z/group_6371e86e64aa0.json.before-stage4
+      bytes: 942
+      sha256: 2397965326b3fbdc4a2df451f65f48c85d0cf384b96118342b76d1b7a1b38374
+    style_less:
+      path: /home2/nykvymmy/backups/entity-stage4-2026-10-14/files-20261014T121904Z/style.less.before-stage4
+      bytes: 26446
+      sha256: 2bb1a6b2b254b137aca0ca3fb924897cb905ae0383d61e082ca6ba36323c1c92
+    style_css:
+      path: /home2/nykvymmy/backups/entity-stage4-2026-10-14/files-20261014T121904Z/style.css.before-stage4
+      bytes: 27473
+      sha256: c9b2d3d541d3b89af0ae27530aa97d6514ff72d0937fab97339ceaabe3574640
+restore_notes:
+  - Prefer restoring the six exact files, then flush dev rewrite rules once.
+  - Do not restore the full database archive over dev without assessing intervening changes.
+  - Production was not changed.
+  - Stage 4 was accepted on 2026-10-16 after authenticated Admin and responsive visual QA passed.

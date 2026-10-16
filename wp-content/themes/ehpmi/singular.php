@@ -147,27 +147,15 @@ if ( $is_page ) {
 
     // Library Pages own the public hierarchy; the taxonomy is an internal filter.
     if ( 'library' === $post->post_name || 'library' === $parent_slug ) {
-        $material_query = array(
-            'post_type'      => 'material',
-            'post_status'    => 'publish',
-            'posts_per_page' => -1,
-            'orderby'        => 'date',
-            'order'          => 'DESC',
+        $library_args = array(
+            'heading'      => get_the_title( $post ),
+            'numberposts'  => 12,
+            'paginate'     => true,
+            'show_heading' => ! $has_page_content,
         );
 
         if ( 'library' === $parent_slug ) {
-            $material_query['tax_query'] = array(
-                array(
-                    'taxonomy' => 'material_type',
-                    'field'    => 'slug',
-                    'terms'    => $post->post_name,
-                ),
-            );
-        }
-
-        $library_args = array( 'materials' => get_posts( $material_query ) );
-        if ( ! $has_page_content ) {
-            $library_args['heading'] = get_the_title( $post );
+            $library_args['material_type'] = $post->post_name;
         }
 
         get_template_part( 'template-parts/library', '', $library_args );

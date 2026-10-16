@@ -2,7 +2,7 @@
 /**
  * Plugin Name: EHPMI Core
  * Description: Project-owned content types, classifications, canonical routes, media policy and breadcrumb roots.
- * Version: 1.1.0
+ * Version: 1.2.0
  * Author: EHPMI
  * Text Domain: ehpmi-core
  */
@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-define( 'EHPMI_CORE_VERSION', '1.1.0' );
+define( 'EHPMI_CORE_VERSION', '1.2.0' );
 
 /**
  * Register content types independently from the active theme.
@@ -218,6 +218,18 @@ add_action( 'init', 'ehpmi_core_detach_legacy_categories', 100 );
  * Preserve the structural Page routes that share the Projects prefix.
  */
 function ehpmi_core_page_rewrite_rules() {
+    $material_types = 'health-and-pollution|action-plans|lead-health-risk-assessment|publications-and-co-authored-publications|videos';
+
+    add_rewrite_rule(
+        '^library/(' . $material_types . ')/page/([0-9]+)/?$',
+        'index.php?pagename=library/$matches[1]&paged=$matches[2]',
+        'top'
+    );
+    add_rewrite_rule(
+        '^library/page/([0-9]+)/?$',
+        'index.php?pagename=library&paged=$matches[1]',
+        'top'
+    );
     add_rewrite_rule(
         '^projects/(current|past|potential)/page/([0-9]+)/?$',
         'index.php?pagename=projects/$matches[1]&paged=$matches[2]',
@@ -257,6 +269,178 @@ function ehpmi_core_project_page_canonical( $canonical_url, $post ) {
     return trailingslashit( get_permalink( $post ) ) . user_trailingslashit( 'page/' . $page_number, 'paged' );
 }
 add_filter( 'get_canonical_url', 'ehpmi_core_project_page_canonical', 10, 2 );
+
+/**
+ * Give paginated Library Pages their own canonical URL.
+ */
+function ehpmi_core_library_page_canonical( $canonical_url, $post ) {
+    if ( ! $post instanceof WP_Post || 'page' !== $post->post_type ) {
+        return $canonical_url;
+    }
+
+    $page_uri = get_page_uri( $post );
+    if (
+        ! in_array(
+            $page_uri,
+            array(
+                'library',
+                'library/health-and-pollution',
+                'library/action-plans',
+                'library/lead-health-risk-assessment',
+                'library/publications-and-co-authored-publications',
+                'library/videos',
+            ),
+            true
+        )
+    ) {
+        return $canonical_url;
+    }
+
+    $page_number = max( absint( get_query_var( 'paged' ) ), absint( get_query_var( 'page' ) ) );
+    if ( $page_number < 2 ) {
+        return $canonical_url;
+    }
+
+    return trailingslashit( get_permalink( $post ) ) . user_trailingslashit( 'page/' . $page_number, 'paged' );
+}
+add_filter( 'get_canonical_url', 'ehpmi_core_library_page_canonical', 10, 2 );
+
+/**
+ * Resolve a Material file from saved attachment data and the physical upload.
+ */
+function ehpmi_core_material_file_details( $material_id ) {
+    $file_id    = absint( get_post_meta( $material_id, 'file', true ) );
+    $attachment = $file_id ? get_post( $file_id ) : null;
+    $file_url   = $file_id ? wp_get_attachment_url( $file_id ) : '';
+    $file_path  = $file_id ? get_attached_file( $file_id, true ) : '';
+    $available  = (
+        $attachment instanceof WP_Post &&
+        'attachment' === $attachment->post_type &&
+        is_string( $file_url ) &&
+        '' !== $file_url &&
+        is_string( $file_path ) &&
+        is_file( $file_path )
+    );
+    $mime_type = $available ? (string) get_post_mime_type( $file_id ) : '';
+    $file_size = $available ? filesize( $file_path ) : false;
+
+    $type_labels = array(
+        'application/pdf' => 'PDF',
+        'image/jpeg'      => 'JPEG',
+        'image/png'       => 'PNG',
+        'image/webp'      => 'WebP',
+    );
+    $type_label = isset( $type_labels[ $mime_type ] ) ? $type_labels[ $mime_type ] : '';
+    if ( '' === $type_label && $available ) {
+        $extension  = pathinfo( $file_path, PATHINFO_EXTENSION );
+        $type_label = $extension ? strtoupper( $extension ) : __( 'File', 'ehpmi-core' );
+    }
+
+    return array(
+        'available' => $available && false !== $file_size,
+        'id'        => $file_id,
+        'url'       => $available ? $file_url : '',
+        'path'      => $available ? $file_path : '',
+        'mime_type' => $mime_type,
+        'bytes'     => false !== $file_size ? (int) $file_size : 0,
+        'label'     => $available && false !== $file_size
+            ? sprintf( '%1$s · %2$s', $type_label, size_format( (int) $file_size, 1 ) )
+            : '',
+    );
+}
+
+/**
+ * Keep the ACF File field required without requiring a database field sync.
+ */
+function ehpmi_core_material_file_field( $field ) {
+    $field['required']     = 1;
+    $field['instructions'] = __( 'Required when creating or editing a Material.', 'ehpmi-core' );
+
+    return $field;
+}
+add_filter( 'acf/load_field/key=field_6371e86e1de40', 'ehpmi_core_material_file_field' );
+
+/**
+ * Reject a newly selected file that cannot resolve to a physical attachment.
+ */
+function ehpmi_core_validate_material_file( $valid, $value ) {
+    if ( true !== $valid || empty( $value ) ) {
+        return $valid;
+    }
+
+    $file_id = is_array( $value ) && isset( $value['ID'] )
+        ? absint( $value['ID'] )
+        : absint( $value );
+    $file    = $file_id ? get_post( $file_id ) : null;
+    $path    = $file_id ? get_attached_file( $file_id, true ) : '';
+
+    if (
+        ! $file instanceof WP_Post ||
+        'attachment' !== $file->post_type ||
+        ! is_string( $path ) ||
+        ! is_file( $path ) ||
+        ! wp_get_attachment_url( $file_id )
+    ) {
+        return __( 'Select a valid uploaded file before saving this Material.', 'ehpmi-core' );
+    }
+
+    return $valid;
+}
+add_filter( 'acf/validate_value/key=field_6371e86e1de40', 'ehpmi_core_validate_material_file', 10, 2 );
+
+/**
+ * Flag unavailable files in the Material list without changing post status.
+ */
+function ehpmi_core_material_admin_columns( $columns ) {
+    $columns['ehpmi_material_file'] = __( 'File status', 'ehpmi-core' );
+
+    return $columns;
+}
+add_filter( 'manage_material_posts_columns', 'ehpmi_core_material_admin_columns' );
+
+function ehpmi_core_material_admin_column( $column, $post_id ) {
+    if ( 'ehpmi_material_file' !== $column ) {
+        return;
+    }
+
+    $file = ehpmi_core_material_file_details( $post_id );
+    if ( $file['available'] ) {
+        echo esc_html( $file['label'] );
+        return;
+    }
+
+    echo '<strong class="ehpmi-material-file-warning">' . esc_html__( 'File temporarily unavailable', 'ehpmi-core' ) . '</strong>';
+}
+add_action( 'manage_material_posts_custom_column', 'ehpmi_core_material_admin_column', 10, 2 );
+
+/**
+ * Warn on an affected published Material edit screen; never alter the record.
+ */
+function ehpmi_core_material_admin_notice() {
+    $screen  = function_exists( 'get_current_screen' ) ? get_current_screen() : null;
+    $post_id = isset( $_GET['post'] ) ? absint( wp_unslash( $_GET['post'] ) ) : 0;
+
+    if ( ! $screen || 'material' !== $screen->post_type || ! $post_id ) {
+        return;
+    }
+
+    $material = get_post( $post_id );
+    if (
+        ! $material instanceof WP_Post ||
+        'material' !== $material->post_type ||
+        'publish' !== $material->post_status ||
+        ehpmi_core_material_file_details( $post_id )['available']
+    ) {
+        return;
+    }
+
+    echo '<div class="notice notice-error"><p><strong>' .
+        esc_html__( 'File temporarily unavailable', 'ehpmi-core' ) .
+        '</strong> ' .
+        esc_html__( 'Select a valid uploaded file before saving this Material.', 'ehpmi-core' ) .
+        '</p></div>';
+}
+add_action( 'admin_notices', 'ehpmi_core_material_admin_notice' );
 
 /**
  * Redirect every recorded legacy route to its single canonical destination.
