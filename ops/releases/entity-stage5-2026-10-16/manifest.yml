@@ -17,5 +17,6 @@ newsletter_debt: EH-D019
 published_testimonials: 0
 activation: false
 production_writes: 0
-commit: pending-evidence-pointer
-push: pending-evidence-pointer
+implementation_commit: 166f8beb0054de591bb67624904c0fb9b086ef6a
+push_ref: origin/refactor/dev-2026-08-25
+push_status: ready
