@@ -10,7 +10,7 @@ target:
   database_name: nykvymmy_ehpmidev
   branch: refactor/dev-2026-08-25
   preceding_commit: e3a4aaff55bfc073acd8cfe999e00bf00beaf40d
-  implementation_commit: PENDING_COMMIT
+  implementation_commit: 6fd037d4234b9d2ec417c4f97b78db1fa1ef8220
 changes:
   - Library and type Pages query published Materials 12 per page in deterministic date DESC, ID DESC order.
   - Material cards use a semantic heading and exactly one primary file link containing the decorative thumbnail and visible title.
@@ -124,4 +124,4 @@ scope_control:
   form_submissions: 0
 acceptance:
   current_gate: COMPLETE
-  commit_and_push: PENDING_FINALIZATION
+  commit_and_push: COMPLETE
