@@ -122,7 +122,7 @@ Acceptance: slide order and fallback are deterministic, alt behavior is intentio
 3. Split the slug/parent dispatch in `singular.php` into explicit Page templates or small resolver functions while preserving URLs.
 4. Replace `<a name="...">` anchors with IDs on the owning heading/section.
 5. Give the map a meaningful accessibility contract and every marker summary an accessible country name.
-6. Review Slider text, Map text, Contact, Newsletter and Footer widget regions; retain PHP output points while moving content to Core blocks only where Admin editing becomes clearer.
+6. Review Slider text, Map text, Contact, Newsletter and Footer widget regions; retain PHP output points while moving content to Core blocks only where Admin editing becomes clearer. Diagnose and repair the visually broken homepage Newsletter form recorded as `EH-D019`; Stage 5 established no causal link and deliberately made no form/widget/CSS change.
 7. Verify Contact Form 7 labels, errors, status messages and keyboard order without sending test mail unless separately authorized.
 8. Test every affected Page and homepage section at desktop/mobile widths.
 
@@ -145,7 +145,7 @@ Acceptance: debts `EH-D009`, `EH-D010`, `EH-D014`, `EH-D015` and `EH-D018` are c
 ## Stage 9 — Integrated Admin and recovery acceptance
 
 1. Repeat authenticated save/reload for Hero, Member, Partner, Staff, Material, Project facts and all retained block/widget regions.
-2. Run a full public-route, redirect, breadcrumb, sitemap, desktop and mobile regression suite.
+2. Run a full public-route, redirect, breadcrumb, sitemap, desktop and mobile regression suite, including explicit desktop and 390 px acceptance of the Stage 7 Newsletter/widget-region repair.
 3. Restore an isolated empty environment using only GitHub plus the canonical Drive packages.
 4. Run QA-D, record actual RPO/RTO and correct the restoration instructions from observed results.
 5. Publish the next accepted protocol/PDF; reserve `v1.0.0` until the recovery rehearsal passes.

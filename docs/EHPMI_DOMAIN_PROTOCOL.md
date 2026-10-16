@@ -1,8 +1,8 @@
 # Доменный протокол EHPMI
 
-Версия: `v0.6.3`
+Версия: `v0.6.4`
 Статус: `DRAFT`  
-Дата снимка: `2026-09-05`
+Дата снимка: `2026-10-16`
 Уровень доменного применения: `D3`  
 Роль документа: нормативная проектно-доменная инструкция эксплуатации, передачи и восстановления сайта EHPMI
 
@@ -203,7 +203,7 @@
 2. Gutenberg остаётся основным редактором `post`, `page` и `staff_member`.
 3. Sidebar regions сохраняются как PHP-точки вывода, но контент постепенно переводится на Core blocks.
 4. Контент hero, map intro, contacts и footer должен редактироваться из WordPress Admin.
-5. `testimonial` сохраняется как будущая функция и рефакторится без публикации draft-записей.
+5. `testimonial` сохраняется как будущая функция: тип непубличный и не запрашивается публично, семь исторических записей остаются Draft, quotation хранится в editor, attribution — в структурированных name/role/organization fields, а homepage output выключен default-false activation filter. Публикация и активация требуют отдельного release/checklist.
 6. `member` означает Member Organizations; `partner` означает внешние Partner Organizations. Они остаются разными admin-managed типами данных и не имеют публичных single pages.
 7. `project` является отдельным публичным типом данных с каноническим single URL `/projects/<slug>/`; его внутренний `project_status` принимает `current`, `past` или `potential` и не создаёт публичных taxonomy URL.
 8. `material` содержит title, thumbnail, file и внутренний `material_type`; свободный текстовый редактор, публичные single/archive и REST endpoint ему не нужны.
@@ -670,7 +670,7 @@ Production deployment допускается только если:
 | `EH-AC-02` | Внутренняя page/post | Header, breadcrumbs, content, images и footer корректны |
 | `EH-AC-03` | Members/Partners | Два типа организаций не смешиваются |
 | `EH-AC-04` | Materials | Title/category/file доступны без пустого editor workflow |
-| `EH-AC-05` | Testimonial draft | Draft не появляется публично; функция готова к будущей публикации |
+| `EH-AC-05` | Testimonial draft | Семь Draft не появляются в single/archive/REST/search/sitemap или на homepage; Admin сохраняет editor и структурированные attribution fields; активация остаётся отдельным release |
 | `EH-AC-06` | CF7 | Маркированное тестовое сообщение доставлено или ошибка доказательно зафиксирована |
 | `EH-AC-07` | Newsletter | Реальные подписчики не затронуты; используется test user |
 | `EH-AC-08` | No-JS/degraded assets | Основной контент остаётся доступным при отказе JS/CDN |
@@ -1052,7 +1052,7 @@ Rollback получает собственный recovery evidence. Возвра
 7. исправить инструкцию по реальным отклонениям;
 8. выпустить следующую версию protocol и PDF.
 
-## 19. Долги версии v0.6.3
+## 19. Долги версии v0.6.4
 
 | ID | Долг | Статус | Условие закрытия |
 |---|---|---|---|
@@ -1074,9 +1074,10 @@ Rollback получает собственный recovery evidence. Возвра
 | `EH-D016` | Gallery использовалась для одиночных изображений и пар, отсутствовал размерный контракт | CLOSED | 56 одиночных Gallery преобразованы в Image, 87 пар — в Columns; специализированные photo-pair styles `4:3`, `3:2`, `3:4` применены к project 761 и ещё 81 паре в остальных 44 материалах; responsive desktop/mobile QA и release verifiers пройдены на dev |
 | `EH-D017` | Семантическая структура записей и листингов зависела от generic template и дублирующих excerpt blocks | CLOSED | Dev release `html-structure-2026-09-04`: отдельные single templates, один main, article/time/nav landmarks, 28 ACF Project facts, 39 дублирующих блоков удалены, 17 карт и 2 таблицы исправлены; desktop/mobile frontend QA пройден |
 | `EH-D018` | WP-Optimize 4.6.1 выдаёт PHP warning при массовом `wp_update_post()` | OPEN | Обновление или локально проверенное исправление `class-wpo-cache-rules.php`: дата должна разбираться через `explode`, после чего CLI migration проходит без warning и frontend regression |
+| `EH-D019` | Homepage Newsletter form визуально сломан на desktop/390 px; происхождение дефекта не установлено | OPEN | В Stage 7 выполнены diagnosis и исправление Newsletter/widget region без реальной рассылки, а Stage 9 desktop/390 px regression подтверждает принятую форму; Stage 5 не менял Newsletter, form, widget, CSS или JS code |
 
 ## 20. Статус принятия
 
-Версия `v0.6.3` фиксирует проверенное состояние dev после обновлений, P0 theme refactor, миграций organization/routing content model, общесайтового рефакторинга editorial media layout и стандартизации HTML-структуры News/Projects. Project facts теперь являются управляемыми ACF-данными, а шаблоны владеют document landmarks, датами и структурой записей. Версия не разрешает production deployment, не заявляет QA-D и не считает Real Media Library уже удалённым.
+Версия `v0.6.4` фиксирует также принятый Stage 5: Testimonials остаются непубличной, неактивированной функцией с семью Draft и структурированным будущим author contract. Визуальный дефект Newsletter, замеченный при Stage 5 QA, имеет неизвестное происхождение, не связан доказательствами со Stage 5 diff и вынесен в `EH-D019` для Stage 7/9. Версия не разрешает production deployment, не заявляет QA-D и не считает Real Media Library уже удалённым.
 
 Следующая версия создаётся после очередного принятого этапа refactor. Версия `v1.0.0` допускается только после практической репетиции восстановления.

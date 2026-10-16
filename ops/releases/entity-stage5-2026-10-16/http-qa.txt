@@ -1,0 +1,15 @@
+dev_home=200|https://dev.ehpmi.org/|88852
+query_id_127=404
+single_alena_temnikova=404
+testimonial_archive=404
+rest_testimonial=404
+sitemap=200|608
+search_alena_temnikova=200|56045
+home_testimonial_section_count=0
+home_testimonial_carousel_count=0
+home_testimonial_control_count=0
+sitemap_testimonial_reference_count=0
+search_testimonial_entry_count=0
+home_news_card_count=13
+home_project_card_count=3
+home_members_organizations_section_count=1

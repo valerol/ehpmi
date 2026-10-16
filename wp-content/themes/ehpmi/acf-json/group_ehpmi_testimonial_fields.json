@@ -1,0 +1,63 @@
+{
+  "key": "group_ehpmi_testimonial_fields",
+  "title": "Testimonial author",
+  "fields": [
+    {
+      "key": "field_ehpmi_testimonial_author_name",
+      "label": "Author name",
+      "name": "testimonial_author_name",
+      "aria-label": "",
+      "type": "text",
+      "instructions": "Name shown in the testimonial citation after the feature is separately activated.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": { "width": "", "class": "", "id": "" },
+      "default_value": "",
+      "maxlength": "",
+      "allow_in_bindings": 1,
+      "placeholder": "",
+      "prepend": "",
+      "append": ""
+    },
+    {
+      "key": "field_ehpmi_testimonial_author_role",
+      "label": "Author role",
+      "name": "testimonial_author_role",
+      "aria-label": "",
+      "type": "text",
+      "instructions": "Role or title shown with the author citation.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": { "width": "", "class": "", "id": "" },
+      "default_value": "",
+      "maxlength": "",
+      "allow_in_bindings": 1,
+      "placeholder": "",
+      "prepend": "",
+      "append": ""
+    },
+    {
+      "key": "field_ehpmi_testimonial_author_organization",
+      "label": "Author organization",
+      "name": "testimonial_author_organization",
+      "aria-label": "",
+      "type": "text",
+      "instructions": "Organization shown with the author citation.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": { "width": "", "class": "", "id": "" },
+      "default_value": "",
+      "maxlength": "",
+      "allow_in_bindings": 1,
+      "placeholder": "",
+      "prepend": "",
+      "append": ""
+    }
+  ],
+  "location": [
+    [
+      { "param": "post_type", "operator": "==", "value": "testimonial" }
+    ]
+  ],
+  "active": true
+}

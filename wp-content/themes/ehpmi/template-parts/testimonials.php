@@ -1,7 +1,32 @@
 <?php
-$testimonials = get_posts(['post_type' => 'testimonial', 'numberposts' => 50]);
+/**
+ * Dormant Testimonials homepage section.
+ *
+ * Stage 5 deliberately leaves this disabled. Activation requires a separate
+ * reviewed release that returns true from the filter below after its checklist
+ * has passed.
+ */
+if ( ! apply_filters( 'ehpmi_testimonials_active', false ) ) {
+    return;
+}
+
+$testimonials = get_posts(
+    array(
+        'post_type'      => 'testimonial',
+        'post_status'    => 'publish',
+        'posts_per_page' => 50,
+        'orderby'        => array(
+            'menu_order' => 'ASC',
+            'ID'         => 'ASC',
+        ),
+        'no_found_rows'  => true,
+    )
+);
+
+if ( ! $testimonials ) {
+    return;
+}
 ?>
-<?php if ($testimonials) : ?>
 <section class="testimonials animation-element slide-left">
     <header>
         <h2>Testimonials</h2>
@@ -12,17 +37,41 @@ $testimonials = get_posts(['post_type' => 'testimonial', 'numberposts' => 50]);
          data-carousel-large-breakpoint="1025" data-carousel-large-items="3">
         <div class="ehpmi-carousel__viewport" tabindex="0">
             <div class="ehpmi-carousel__track">
-            <?php foreach ($testimonials as $testimonial) : ?>
+            <?php foreach ( $testimonials as $testimonial ) :
+                $thumbnail_id = get_post_thumbnail_id( $testimonial->ID );
+                $author_name  = trim( (string) get_post_meta( $testimonial->ID, 'testimonial_author_name', true ) );
+                $author_role  = trim( (string) get_post_meta( $testimonial->ID, 'testimonial_author_role', true ) );
+                $organization = trim( (string) get_post_meta( $testimonial->ID, 'testimonial_author_organization', true ) );
+                $quote        = apply_filters( 'the_content', $testimonial->post_content );
+                ?>
             <div class="item ehpmi-carousel__item">
-                <div class="testimonial">
-                    <?php if (get_the_post_thumbnail($testimonial->ID)) : ?>
-                        <?= get_the_post_thumbnail($testimonial->ID) ?>
-                    <?php endif; ?>
+                <article id="testimonial-<?php echo esc_attr( $testimonial->ID ); ?>" class="testimonial">
+                    <?php if ( $thumbnail_id ) :
+                        $thumbnail_alt = trim( (string) get_post_meta( $thumbnail_id, '_wp_attachment_image_alt', true ) );
+                        echo wp_get_attachment_image(
+                            $thumbnail_id,
+                            'thumbnail',
+                            false,
+                            array( 'alt' => $thumbnail_alt )
+                        );
+                    endif; ?>
                     <div class="text">
-                        <div class="quote"><?= $testimonial->post_content ?></div>
-                        <div class="name"><?= $testimonial->post_title ?></div>
+                        <blockquote class="quote">
+                            <?php echo wp_kses_post( $quote ); ?>
+                            <footer>
+                                <cite>
+                                    <span class="name"><?php echo esc_html( $author_name ); ?></span>
+                                    <?php if ( '' !== $author_role ) : ?>
+                                        <span class="position"><?php echo esc_html( $author_role ); ?></span>
+                                    <?php endif; ?>
+                                    <?php if ( '' !== $organization ) : ?>
+                                        <span class="organization"><?php echo esc_html( $organization ); ?></span>
+                                    <?php endif; ?>
+                                </cite>
+                            </footer>
+                        </blockquote>
                     </div>
-                </div>
+                </article>
             </div>
             <?php endforeach; ?>
             </div>
@@ -34,4 +83,3 @@ $testimonials = get_posts(['post_type' => 'testimonial', 'numberposts' => 50]);
         <p class="ehpmi-carousel__status screen-reader-text" aria-live="polite"></p>
     </div>
 </section>
-<?php endif; ?>

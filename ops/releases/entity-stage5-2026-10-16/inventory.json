@@ -1,0 +1,98 @@
+{
+  "captured_at_utc": "2026-10-16T11:25:00Z",
+  "environment": {
+    "root": "/home2/nykvymmy/dev.ehpmi.org",
+    "database": "nykvymmy_ehpmidev",
+    "home": "https://dev.ehpmi.org"
+  },
+  "expected_migration_writes": 0,
+  "testimonials": [
+    {
+      "id": 127,
+      "status": "draft",
+      "title": "Alena Temnikova",
+      "slug": "alena-temnikova",
+      "menu_order": 0,
+      "content_sha256": "63cbfad155a5ccbf28e67dbf3376b7c1ea39d2d5b6cc3f17ff22fcb9c3727a37",
+      "content_bytes": 265,
+      "thumbnail_id": 155,
+      "thumbnail_mime": "image/png",
+      "thumbnail_alt": ""
+    },
+    {
+      "id": 133,
+      "status": "draft",
+      "title": "Photo 7",
+      "slug": "denis-richie-2",
+      "menu_order": 0,
+      "content_sha256": "2b46665d80f129b90a382f87b54d3789395b350dbc5d610cda2f49a4e3c34684",
+      "content_bytes": 146,
+      "thumbnail_id": 162,
+      "thumbnail_mime": "image/png",
+      "thumbnail_alt": ""
+    },
+    {
+      "id": 134,
+      "status": "draft",
+      "title": "Photo 5",
+      "slug": "denis-richie-3",
+      "menu_order": 0,
+      "content_sha256": "2b46665d80f129b90a382f87b54d3789395b350dbc5d610cda2f49a4e3c34684",
+      "content_bytes": 146,
+      "thumbnail_id": 154,
+      "thumbnail_mime": "image/png",
+      "thumbnail_alt": ""
+    },
+    {
+      "id": 135,
+      "status": "draft",
+      "title": "Photo 8",
+      "slug": "denis-richie-4",
+      "menu_order": 0,
+      "content_sha256": "2b46665d80f129b90a382f87b54d3789395b350dbc5d610cda2f49a4e3c34684",
+      "content_bytes": 146,
+      "thumbnail_id": 156,
+      "thumbnail_mime": "image/png",
+      "thumbnail_alt": ""
+    },
+    {
+      "id": 136,
+      "status": "draft",
+      "title": "Photo 10",
+      "slug": "denis-richie-5",
+      "menu_order": 0,
+      "content_sha256": "2b46665d80f129b90a382f87b54d3789395b350dbc5d610cda2f49a4e3c34684",
+      "content_bytes": 146,
+      "thumbnail_id": 158,
+      "thumbnail_mime": "image/png",
+      "thumbnail_alt": ""
+    },
+    {
+      "id": 160,
+      "status": "draft",
+      "title": "Photo 11",
+      "slug": "photo-11",
+      "menu_order": 0,
+      "content_sha256": "2b46665d80f129b90a382f87b54d3789395b350dbc5d610cda2f49a4e3c34684",
+      "content_bytes": 146,
+      "thumbnail_id": 157,
+      "thumbnail_mime": "image/png",
+      "thumbnail_alt": ""
+    },
+    {
+      "id": 161,
+      "status": "draft",
+      "title": "Photo 9",
+      "slug": "photo-9",
+      "menu_order": 0,
+      "content_sha256": "2b46665d80f129b90a382f87b54d3789395b350dbc5d610cda2f49a4e3c34684",
+      "content_bytes": 146,
+      "thumbnail_id": 159,
+      "thumbnail_mime": "image/png",
+      "thumbnail_alt": ""
+    }
+  ],
+  "status_counts": { "draft": 7, "publish": 0, "private": 0, "trash": 0 },
+  "structured_meta_nonempty": 0,
+  "attachment_alt_nonempty": 0
+}

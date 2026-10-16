@@ -1,0 +1,21 @@
+stage: 5
+release: entity-stage5-2026-10-16
+status: ACCEPTED_WITH_CROSS_STAGE_VISUAL_DEBT
+environment: dev.ehpmi.org
+baseline_commit: b0c3162
+runtime_files:
+  wp-content/plugins/ehpmi-core/ehpmi-core.php: d6d1a176abf5a6087bdec65d010b7e9c39be910496572de1dfc281c08f051032
+  wp-content/themes/ehpmi/template-parts/testimonials.php: e1a0c1bd1697fdb251758ff73982d51923ee860cbfc60d0fe8da00adb3edb362
+  wp-content/themes/ehpmi/acf-json/group_ehpmi_testimonial_fields.json: 31b03d805c4656500a04f9cc8dbb64bb92a07412e67125a6404503932b6a74ec
+verifier_sha256: 5815e845148d047f22be1b385e38f2e785ec1b6e3dee685f7c2fe752de4a4555
+rewrite_flush: PASS
+remote_verifier: PASS
+admin_save_reload: PASS
+admin_cleanup: PASS
+visual_desktop_390: PASS_WITH_ACCEPTED_NEWSLETTER_EXCEPTION
+newsletter_debt: EH-D019
+published_testimonials: 0
+activation: false
+production_writes: 0
+commit: pending-evidence-pointer
+push: pending-evidence-pointer

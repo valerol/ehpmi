@@ -45,10 +45,21 @@ function ehpmi_core_register_content_types() {
             'labels' => array(
                 'name'          => __( 'Testimonials', 'ehpmi-core' ),
                 'singular_name' => __( 'Testimonial', 'ehpmi-core' ),
+                'add_new_item'  => __( 'Add testimonial', 'ehpmi-core' ),
+                'edit_item'     => __( 'Edit testimonial', 'ehpmi-core' ),
             ),
-            'supports'     => array( 'title', 'thumbnail', 'editor' ),
-            'public'       => true,
-            'show_in_rest' => true,
+            'description'         => __( 'Dormant testimonial content. Public activation requires a separate release.', 'ehpmi-core' ),
+            'supports'            => array( 'title', 'thumbnail', 'editor', 'custom-fields', 'page-attributes' ),
+            'public'              => false,
+            'publicly_queryable'  => false,
+            'exclude_from_search' => true,
+            'show_ui'             => true,
+            'show_in_rest'        => false,
+            'show_in_nav_menus'   => false,
+            'menu_icon'           => 'dashicons-format-quote',
+            'has_archive'         => false,
+            'rewrite'             => false,
+            'query_var'           => false,
         )
     );
 

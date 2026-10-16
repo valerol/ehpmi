@@ -1,0 +1,14 @@
+database: nykvymmy_ehpmidev
+scope: dev-only pre-stage5
+created_utc: 2026-10-16T11:26:53Z
+remote_path: /home2/nykvymmy/backups/entity-stage5-2026-10-16/20261016T112653Z_nykvymmy_ehpmidev_pre-stage5.sql.gz
+local_verification_copy: /private/tmp/20261016T112653Z_nykvymmy_ehpmidev_pre-stage5.sql.gz
+bytes: 679281
+sha256: 8bbb55bc5829b4e05c631a148aec6bb64ce991ec215381af66563efb63887a05
+remote_gzip_test: PASS
+local_gzip_test: PASS
+drive:
+  file_id: 1Icre3piclgZyNG0Niqr2a-qepYNRraik
+  url: https://drive.google.com/file/d/1Icre3piclgZyNG0Niqr2a-qepYNRraik/view?usp=drivesdk
+  parent_id: 1d0pVYifHrEsCJbH4Ox6ueqfyvQeGeYFj
+  bytes_read_back: 679281

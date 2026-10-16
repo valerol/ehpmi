@@ -1,0 +1,11 @@
+PASS
+failures=[]
+testimonial_ids=[127,133,134,135,136,160,161]
+draft_count=7
+published_count=0
+migration_writes=0
+all_structured_author_fields_empty=true
+all_menu_order_zero=true
+default_markup_bytes=0
+activated_zero_markup_bytes=0
+semantic_probe_bytes=2557
