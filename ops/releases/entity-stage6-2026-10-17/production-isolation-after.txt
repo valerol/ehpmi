@@ -1,0 +1,9 @@
+root=/home2/nykvymmy/public_html
+database=nykvymmy_ehpmi
+home=https://ehpmi.org
+hero_rows=0
+slider_text_hash=264d3a5dea705381b45bb43be47b86e580407e5865c8cc11d23caee00b449e3e
+core_file=ABSENT
+ce65a04b8cf43162c29d8317f710e5ca37c9028729fb2fc04943e2676101f1ac  wp-content/themes/ehpmi/template-parts/slider.php
+4ffce96a0f96508fbdd21efc72694ab0745330e2b2e4ef038021de0897a1bd08  wp-content/themes/ehpmi/functions.php
+64c3e475da8db663aae3c59c7e0a2c3c1e0a66da8908ba470899619f92364009  wp-content/themes/ehpmi/home.php

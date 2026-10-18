@@ -1,0 +1,5 @@
+homepage_http=200
+hero_images=3
+1|Child wearing a mask near an industrial facility|eager|high
+2|Child wearing a mask and holding a teddy bear|lazy|
+3|Child coughing|lazy|

@@ -1,0 +1,8 @@
+homepage_http=200
+hero_images=3
+1|Child wearing a mask near an industrial facility|eager|high|https://dev.ehpmi.org/wp-content/uploads/2026/08/slide1.jpeg
+2|Child wearing a mask and holding a teddy bear|lazy||https://dev.ehpmi.org/wp-content/uploads/2026/08/slide2.jpeg
+3|Child coughing|lazy||https://dev.ehpmi.org/wp-content/uploads/2026/08/slide3.jpeg
+image_http=200|117542|https://dev.ehpmi.org/wp-content/uploads/2026/08/slide1.jpeg
+image_http=200|143978|https://dev.ehpmi.org/wp-content/uploads/2026/08/slide2.jpeg
+image_http=200|186409|https://dev.ehpmi.org/wp-content/uploads/2026/08/slide3.jpeg

@@ -1,0 +1,65 @@
+{
+    "status": "PASS",
+    "failures": [],
+    "default_orderby": {
+        "menu_order": "ASC",
+        "ID": "ASC"
+    },
+    "default_rows": [
+        {
+            "id": 2370,
+            "status": "publish",
+            "menu_order": 10,
+            "title": "Child wearing a mask near an industrial facility"
+        },
+        {
+            "id": 2458,
+            "status": "draft",
+            "menu_order": 15,
+            "title": "Title: Stage 6 validation test reordered"
+        },
+        {
+            "id": 2372,
+            "status": "publish",
+            "menu_order": 20,
+            "title": "Child wearing a mask and holding a teddy bear"
+        },
+        {
+            "id": 2374,
+            "status": "publish",
+            "menu_order": 30,
+            "title": "Child coughing"
+        }
+    ],
+    "columns": {
+        "cb": "Checkbox",
+        "title": "Title",
+        "ehpmi_hero_order": "Order",
+        "date": "Date"
+    },
+    "sortable_columns": {
+        "title": "title",
+        "date": "date",
+        "ehpmi_hero_order": "menu_order"
+    },
+    "temporary_order_output": "15",
+    "explicit_title_sort": {
+        "orderby": "title",
+        "order": "DESC"
+    },
+    "explicit_order_sort": {
+        "menu_order": "DESC",
+        "ID": "ASC"
+    },
+    "other_post_type_orderby": "",
+    "other_post_type_columns": {
+        "title": "Title",
+        "date": "Date"
+    },
+    "temporary_state_after_test": {
+        "id": 2458,
+        "status": "draft",
+        "menu_order": 15,
+        "title": "Title: Stage 6 validation test reordered"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "status": "PASS",
+    "failures": [],
+    "temporary_id": 2457,
+    "cleanup": "PASS",
+    "scope": "automated WordPress lifecycle; authenticated Admin UI remains a separate manual acceptance step"
+}

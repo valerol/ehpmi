@@ -2,7 +2,7 @@
 /**
  * Plugin Name: EHPMI Core
  * Description: Project-owned content types, classifications, canonical routes, media policy and breadcrumb roots.
- * Version: 1.2.0
+ * Version: 1.2.1
  * Author: EHPMI
  * Text Domain: ehpmi-core
  */
@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-define( 'EHPMI_CORE_VERSION', '1.2.0' );
+define( 'EHPMI_CORE_VERSION', '1.2.1' );
 
 /**
  * Register content types independently from the active theme.
@@ -423,6 +423,85 @@ function ehpmi_core_material_admin_column( $column, $post_id ) {
     echo '<strong class="ehpmi-material-file-warning">' . esc_html__( 'File temporarily unavailable', 'ehpmi-core' ) . '</strong>';
 }
 add_action( 'manage_material_posts_custom_column', 'ehpmi_core_material_admin_column', 10, 2 );
+
+/**
+ * Make the Hero slide Order field visible in the list table.
+ */
+function ehpmi_core_hero_slide_admin_columns( $columns ) {
+    $ordered_columns = array();
+
+    foreach ( $columns as $key => $label ) {
+        if ( 'date' === $key ) {
+            $ordered_columns['ehpmi_hero_order'] = __( 'Order', 'ehpmi-core' );
+        }
+
+        $ordered_columns[ $key ] = $label;
+    }
+
+    if ( ! isset( $ordered_columns['ehpmi_hero_order'] ) ) {
+        $ordered_columns['ehpmi_hero_order'] = __( 'Order', 'ehpmi-core' );
+    }
+
+    return $ordered_columns;
+}
+add_filter( 'manage_hero_slide_posts_columns', 'ehpmi_core_hero_slide_admin_columns' );
+
+function ehpmi_core_hero_slide_admin_column( $column, $post_id ) {
+    if ( 'ehpmi_hero_order' !== $column ) {
+        return;
+    }
+
+    echo esc_html( (string) (int) get_post_field( 'menu_order', $post_id ) );
+}
+add_action( 'manage_hero_slide_posts_custom_column', 'ehpmi_core_hero_slide_admin_column', 10, 2 );
+
+/**
+ * Let editors explicitly sort by Order.
+ */
+function ehpmi_core_hero_slide_sortable_columns( $columns ) {
+    $columns['ehpmi_hero_order'] = 'menu_order';
+
+    return $columns;
+}
+add_filter( 'manage_edit-hero_slide_sortable_columns', 'ehpmi_core_hero_slide_sortable_columns' );
+
+/**
+ * Match the default Hero list order to the frontend without overriding an
+ * editor's explicit Title, Date or other selected sort.
+ */
+function ehpmi_core_order_hero_slide_admin_query( $query ) {
+    if ( ! is_admin() || ! $query->is_main_query() || 'hero_slide' !== $query->get( 'post_type' ) ) {
+        return;
+    }
+
+    $orderby = $query->get( 'orderby' );
+    if ( empty( $orderby ) ) {
+        $query->set(
+            'orderby',
+            array(
+                'menu_order' => 'ASC',
+                'ID'         => 'ASC',
+            )
+        );
+        return;
+    }
+
+    if ( 'menu_order' === $orderby ) {
+        $direction = strtoupper( (string) $query->get( 'order' ) );
+        if ( ! in_array( $direction, array( 'ASC', 'DESC' ), true ) ) {
+            $direction = 'ASC';
+        }
+
+        $query->set(
+            'orderby',
+            array(
+                'menu_order' => $direction,
+                'ID'         => 'ASC',
+            )
+        );
+    }
+}
+add_action( 'pre_get_posts', 'ehpmi_core_order_hero_slide_admin_query' );
 
 /**
  * Warn on an affected published Material edit screen; never alter the record.

@@ -1,0 +1,118 @@
+{
+  "status": "FAIL",
+  "failures": [
+    "desktop Hero image loading failed"
+  ],
+  "targetUrl": "https://dev.ehpmi.org/",
+  "mobile": {
+    "viewport": [
+      390,
+      844
+    ],
+    "heroFound": true,
+    "heroDisplay": "none",
+    "textVisible": true,
+    "instanceExists": false,
+    "sourceSrcsets": [
+      "https://dev.ehpmi.org/wp-content/uploads/2026/08/slide1.jpeg 800w, https://dev.ehpmi.org/wp-content/uploads/2026/08/slide1-650x488.jpeg 650w, https://dev.ehpmi.org/wp-content/uploads/2026/08/slide1-768x576.jpeg 768w",
+      "https://dev.ehpmi.org/wp-content/uploads/2026/08/slide2.jpeg 800w, https://dev.ehpmi.org/wp-content/uploads/2026/08/slide2-650x488.jpeg 650w, https://dev.ehpmi.org/wp-content/uploads/2026/08/slide2-768x576.jpeg 768w",
+      "https://dev.ehpmi.org/wp-content/uploads/2026/08/slide3.jpeg 800w, https://dev.ehpmi.org/wp-content/uploads/2026/08/slide3-650x488.jpeg 650w, https://dev.ehpmi.org/wp-content/uploads/2026/08/slide3-768x576.jpeg 768w"
+    ],
+    "images": [
+      {
+        "alt": "Child wearing a mask near an industrial facility",
+        "currentSrc": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",
+        "src": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",
+        "width": "800",
+        "height": "600",
+        "loading": "eager",
+        "fetchpriority": "high"
+      },
+      {
+        "alt": "Child wearing a mask and holding a teddy bear",
+        "currentSrc": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",
+        "src": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",
+        "width": "800",
+        "height": "600",
+        "loading": "lazy",
+        "fetchpriority": ""
+      },
+      {
+        "alt": "Child coughing",
+        "currentSrc": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",
+        "src": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",
+        "width": "800",
+        "height": "600",
+        "loading": "lazy",
+        "fetchpriority": ""
+      }
+    ]
+  },
+  "mobileHeroRequests": [],
+  "desktopInitial": {
+    "viewport": [
+      1440,
+      900
+    ],
+    "heroDisplay": "block",
+    "instanceExists": true,
+    "intervalActive": true,
+    "activeIndex": 0,
+    "images": [
+      {
+        "currentSrc": "",
+        "complete": false,
+        "naturalWidth": 0
+      },
+      {
+        "currentSrc": "",
+        "complete": false,
+        "naturalWidth": 0
+      },
+      {
+        "currentSrc": "",
+        "complete": false,
+        "naturalWidth": 0
+      }
+    ]
+  },
+  "desktopTransition": {
+    "before": 0,
+    "after": 1,
+    "intervalActive": true
+  },
+  "desktopFinal": {
+    "instanceExists": true,
+    "intervalActive": true,
+    "images": [
+      {
+        "alt": "Child wearing a mask near an industrial facility",
+        "currentSrc": "https://dev.ehpmi.org/wp-content/uploads/2026/08/slide1.jpeg",
+        "complete": true,
+        "naturalWidth": 800
+      },
+      {
+        "alt": "Child wearing a mask and holding a teddy bear",
+        "currentSrc": "https://dev.ehpmi.org/wp-content/uploads/2026/08/slide2.jpeg",
+        "complete": false,
+        "naturalWidth": 800
+      },
+      {
+        "alt": "Child coughing",
+        "currentSrc": "https://dev.ehpmi.org/wp-content/uploads/2026/08/slide3.jpeg",
+        "complete": false,
+        "naturalWidth": 800
+      }
+    ]
+  },
+  "mobileAfterDesktop": {
+    "viewport": [
+      390,
+      844
+    ],
+    "heroDisplay": "none",
+    "instanceExists": false,
+    "textVisible": true
+  },
+  "requestCount": 56
+}

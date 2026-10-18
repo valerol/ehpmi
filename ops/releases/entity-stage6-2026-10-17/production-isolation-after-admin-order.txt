@@ -1,0 +1,4 @@
+root=/home2/nykvymmy/public_html
+database=nykvymmy_ehpmi
+core_file=ABSENT
+ce65a04b8cf43162c29d8317f710e5ca37c9028729fb2fc04943e2676101f1ac  wp-content/themes/ehpmi/template-parts/slider.php

@@ -8,9 +8,35 @@
             bootstrap.Dropdown.getOrCreateInstance(toggle);
         });
 
-        document.querySelectorAll('.carousel').forEach(function (carousel) {
+        document.querySelectorAll('.carousel:not([data-ehpmi-desktop-carousel])').forEach(function (carousel) {
             bootstrap.Carousel.getOrCreateInstance(carousel);
         });
+    }
+
+    function initializeHeroCarousels() {
+        var heroCarousels = document.querySelectorAll('[data-ehpmi-desktop-carousel]');
+
+        function updateHeroCarousels() {
+            heroCarousels.forEach(function (carousel) {
+                var instance = bootstrap.Carousel.getInstance(carousel);
+
+                if (desktopMedia.matches) {
+                    if (!instance) {
+                        instance = new bootstrap.Carousel(carousel, {
+                            interval: 5000,
+                            ride: false
+                        });
+                    }
+
+                    instance.cycle();
+                } else if (instance) {
+                    instance.dispose();
+                }
+            });
+        }
+
+        desktopMedia.addEventListener('change', updateHeroCarousels);
+        updateHeroCarousels();
     }
 
     function initializeParallax() {
@@ -292,6 +318,7 @@
 
     function initialize() {
         initializeBootstrapComponents();
+        initializeHeroCarousels();
         initializeParallax();
         initializeScrollAnimations();
         initializeSearchToggle();

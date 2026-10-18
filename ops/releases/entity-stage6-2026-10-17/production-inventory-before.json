@@ -1,0 +1,26 @@
+{
+    "identity": {
+        "abspath": "/home2/nykvymmy/public_html/",
+        "database": "nykvymmy_ehpmi",
+        "home": "https://ehpmi.org/",
+        "siteurl": "https://ehpmi.org/"
+    },
+    "slides": [],
+    "widgets": {
+        "slider_text_ids": [
+            "block-2"
+        ],
+        "slider_text": [
+            {
+                "id": "block-2",
+                "id_base": "block",
+                "number": 2,
+                "instance": {
+                    "content": "<h1>Decrease Pollution — Protect Health</h1>\n<p>Our team unites efforts of  professionals, experts, and nonprofit groups working in Eastern Europe and Central Asia to find and implement solutions to problems of toxic persistent pollutants and associated health risks.</p>"
+                },
+                "instance_sha256": "264d3a5dea705381b45bb43be47b86e580407e5865c8cc11d23caee00b449e3e"
+            }
+        ]
+    },
+    "cpt": []
+}

@@ -1,0 +1,15 @@
+staged_template_sha256=6cfb0177ad00d3b3e7f54ecb6d7ec3da9d99b99f2ad770a66c23df209ec4df9a
+remote_php_lint=PASS
+managed_render_images=3
+managed_render_1=Child wearing a mask near an industrial facility|eager|high
+managed_render_2=Child wearing a mask and holding a teddy bear|lazy|
+managed_render_3=Child coughing|lazy|
+fallback_render_images=3
+fallback_render_1=slide1.jpeg|Child wearing a mask near an industrial facility|eager|high
+fallback_render_2=slide2.jpeg|Child wearing a mask and holding a teddy bear|lazy|
+fallback_render_3=slide3.jpeg|Child coughing|lazy|
+missing_2370_render_images=2
+missing_2370_render_1=Child wearing a mask and holding a teddy bear|eager|high
+missing_2370_render_2=Child coughing|lazy|
+database_writes=0
+webroot_writes=0
