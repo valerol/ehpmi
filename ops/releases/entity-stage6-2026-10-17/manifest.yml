@@ -46,6 +46,9 @@ newsletter_debt: EH-D019_UNCHANGED_KNOWN_EXCEPTION
 production_writes: 0
 finalization_scope: LOCAL_ACCEPTANCE_EVIDENCE_AND_GIT_ONLY
 production_isolation_evidence: PRIOR_DEPLOYMENT_EVIDENCE_RETAINED_NOT_RERUN_AT_ACCEPTANCE
-implementation_commit: CONTAINING_STAGE6_ACCEPTANCE_COMMIT
+implementation_commit: 18bab0ecca90bc88ea73bbb138febf9b3b35ecd8
+evidence_commit: CONTAINING_PUSH_STATUS_COMMIT
 push_ref: origin/refactor/dev-2026-08-25
-push_status: PENDING_AFTER_LOCAL_COMMIT
+push_status: BLOCKED_HTTPS_AUTHENTICATION
+push_error: "could not read Username for 'https://github.com': Device not configured"
+local_finalization_checks: PASS
