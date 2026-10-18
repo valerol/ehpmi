@@ -53,8 +53,11 @@ manual:
   checklist: manual-acceptance.md
 newsletter_debt: EH-D019_OPEN_STAGE9_REGRESSION_ONLY
 domain_protocol_update: v0.6.5
-implementation_commit: PENDING_ACCEPTANCE_COMMIT
-push_status: PENDING_FINALIZATION
+implementation_commit: 2c3e39518ab7ec17fd5b3788b7567a8cc1f3ee6e
+push_status: PASS
+push_transport: DIRECT_SSH_STORED_HTTPS_ORIGIN_UNCHANGED
+push_ref: refs/heads/refactor/dev-2026-08-25
+push_evidence: git-outcome.md
 production_writes: 0
 cache_purge: NOT_REQUIRED_FRESH_BUNDLE_VERIFIED_IN_BROWSER
 subscriber_changes: 0
