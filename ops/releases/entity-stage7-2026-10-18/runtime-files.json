@@ -1,0 +1,26 @@
+{
+    "inc/page-resolver.php": {
+        "before": null,
+        "after": "7f817bb75c95257b5de1edadf473cf6797363dd7139455b089b79a8699b9b043"
+    },
+    "css/structural-regions.css": {
+        "before": null,
+        "after": "54e51f6f5ea6884176930d55be8e95dda8298afa572f471d9ddb34f5f3a3c556"
+    },
+    "functions.php": {
+        "before": "2aa65c30a5a54ae06efc7b0068f6fef6e58bd5017f450ab4c856cbcf83aa8ad7",
+        "after": "91db69c27f131feeb25923e403b541f91867d796aacea316168f0f8c2ea4ef68"
+    },
+    "template-parts/map.php": {
+        "before": "4e8c82dd54084341d56e24b3e4a047808167dec2a24e67b7cfc5314f5ff2413e",
+        "after": "583590256f9f433f57edeb034b6d1ff028425d78573f06509b05226c77f3150c"
+    },
+    "template-parts/contact-forms.php": {
+        "before": "eadbafd5f14a1406bdf033ae8f59839bc86c706bbea22349ac47ee4eb9c707d7",
+        "after": "90ffc745fde9a97e70e3b2056bdb178e52ac0282472d488cf2bbb73820193ab8"
+    },
+    "singular.php": {
+        "before": "3db612e6bf14873507bf578128761b0108a7cdd2f065a060364b4024ec4037fc",
+        "after": "2836e86dd1236b6f145891c0619dbe62c48a188f60aa96f8b53356a6b3557226"
+    }
+}

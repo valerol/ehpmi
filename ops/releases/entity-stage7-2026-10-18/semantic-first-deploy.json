@@ -1,0 +1,1506 @@
+[
+  {
+    "url": "https://dev.ehpmi.org/about/",
+    "status": 200,
+    "h1": 1,
+    "main": 1,
+    "headings": [
+      {
+        "level": 1,
+        "text": "Who we are"
+      }
+    ],
+    "emptyHeadings": 0,
+    "jumps": [],
+    "anchors": [],
+    "inlineStyles": 0,
+    "tables": [],
+    "iframes": [],
+    "customHtml": 0
+  },
+  {
+    "url": "https://dev.ehpmi.org/offices/",
+    "status": 200,
+    "h1": 1,
+    "main": 1,
+    "headings": [
+      {
+        "level": 1,
+        "text": "Countries"
+      }
+    ],
+    "emptyHeadings": 0,
+    "jumps": [],
+    "anchors": [],
+    "inlineStyles": 0,
+    "tables": [],
+    "iframes": [],
+    "customHtml": 0
+  },
+  {
+    "url": "https://dev.ehpmi.org/about/ehpmi/",
+    "status": 200,
+    "h1": 1,
+    "main": 1,
+    "headings": [
+      {
+        "level": 1,
+        "text": "About EHPMI"
+      },
+      {
+        "level": 2,
+        "text": "See also"
+      }
+    ],
+    "emptyHeadings": 0,
+    "jumps": [],
+    "anchors": [],
+    "inlineStyles": 2,
+    "tables": [],
+    "iframes": [],
+    "customHtml": 0
+  },
+  {
+    "url": "https://dev.ehpmi.org/about/mission-and-goals/",
+    "status": 200,
+    "h1": 1,
+    "main": 1,
+    "headings": [
+      {
+        "level": 1,
+        "text": "Mission and goals"
+      },
+      {
+        "level": 2,
+        "text": "See also"
+      }
+    ],
+    "emptyHeadings": 0,
+    "jumps": [],
+    "anchors": [],
+    "inlineStyles": 1,
+    "tables": [],
+    "iframes": [],
+    "customHtml": 0
+  },
+  {
+    "url": "https://dev.ehpmi.org/about/organization-structure/",
+    "status": 200,
+    "h1": 1,
+    "main": 1,
+    "headings": [
+      {
+        "level": 1,
+        "text": "Organization Structure"
+      },
+      {
+        "level": 2,
+        "text": "See also"
+      }
+    ],
+    "emptyHeadings": 0,
+    "jumps": [],
+    "anchors": [],
+    "inlineStyles": 0,
+    "tables": [],
+    "iframes": [],
+    "customHtml": 0
+  },
+  {
+    "url": "https://dev.ehpmi.org/about/staff/",
+    "status": 200,
+    "h1": 1,
+    "main": 1,
+    "headings": [
+      {
+        "level": 1,
+        "text": "Meet our team"
+      },
+      {
+        "level": 2,
+        "text": "Staff directory"
+      },
+      {
+        "level": 3,
+        "text": "Petr Sharov"
+      },
+      {
+        "level": 3,
+        "text": "Alena Temnikova"
+      },
+      {
+        "level": 3,
+        "text": "Olga Kuzminova"
+      },
+      {
+        "level": 3,
+        "text": "Aelita Sargsyan"
+      },
+      {
+        "level": 3,
+        "text": "Vardan Karyan"
+      },
+      {
+        "level": 3,
+        "text": "Lusine Taslakyan"
+      },
+      {
+        "level": 3,
+        "text": "Mustafina Alina"
+      },
+      {
+        "level": 3,
+        "text": "Rovshan Abbasov"
+      },
+      {
+        "level": 3,
+        "text": "Shahnaz Amanova"
+      },
+      {
+        "level": 3,
+        "text": "Khatuna Akhalaia"
+      },
+      {
+        "level": 3,
+        "text": "Mariami Jintcharadze"
+      },
+      {
+        "level": 3,
+        "text": "Kakha Rukhaia"
+      },
+      {
+        "level": 3,
+        "text": "Veriko Gulua"
+      },
+      {
+        "level": 3,
+        "text": "Aidar Kapassov"
+      },
+      {
+        "level": 3,
+        "text": "Zagirova Anastasia"
+      },
+      {
+        "level": 3,
+        "text": "Indira Zhakipova"
+      },
+      {
+        "level": 3,
+        "text": "Kuban Almerekov"
+      },
+      {
+        "level": 3,
+        "text": "Dr. Erdenesaikan Naidansuren"
+      },
+      {
+        "level": 3,
+        "text": "Umidjon Ulugov"
+      },
+      {
+        "level": 3,
+        "text": "Pham Van Son"
+      },
+      {
+        "level": 2,
+        "text": "See also"
+      }
+    ],
+    "emptyHeadings": 0,
+    "jumps": [],
+    "anchors": [],
+    "inlineStyles": 0,
+    "tables": [],
+    "iframes": [],
+    "customHtml": 0
+  },
+  {
+    "url": "https://dev.ehpmi.org/about/members/",
+    "status": 200,
+    "h1": 1,
+    "main": 1,
+    "headings": [
+      {
+        "level": 1,
+        "text": "Member Organizations"
+      },
+      {
+        "level": 2,
+        "text": "Organizations"
+      },
+      {
+        "level": 3,
+        "text": "Human Health Institute"
+      },
+      {
+        "level": 3,
+        "text": "Consortium Civil Society Organization Eco Life and Eco Life Consulting Co"
+      },
+      {
+        "level": 3,
+        "text": "Peshsaf"
+      },
+      {
+        "level": 3,
+        "text": "Civil Society Association ‘Ekois Bishkek’"
+      },
+      {
+        "level": 3,
+        "text": "Environment and Security Center of Mongolia (ESCM)"
+      },
+      {
+        "level": 3,
+        "text": "Environmental Research Center (ERC)"
+      },
+      {
+        "level": 3,
+        "text": "Vietnam Environmental Incident Response Center (SOS)"
+      },
+      {
+        "level": 2,
+        "text": "See also"
+      }
+    ],
+    "emptyHeadings": 0,
+    "jumps": [],
+    "anchors": [],
+    "inlineStyles": 8,
+    "tables": [],
+    "iframes": [],
+    "customHtml": 0
+  },
+  {
+    "url": "https://dev.ehpmi.org/about/contacts/",
+    "status": 200,
+    "h1": 1,
+    "main": 1,
+    "headings": [
+      {
+        "level": 1,
+        "text": "Contacts"
+      },
+      {
+        "level": 2,
+        "text": "Kyrgyzstan"
+      },
+      {
+        "level": 2,
+        "text": "Kazakhstan"
+      },
+      {
+        "level": 2,
+        "text": "Tajikistan"
+      },
+      {
+        "level": 2,
+        "text": "Georgia"
+      },
+      {
+        "level": 2,
+        "text": "Armenia"
+      },
+      {
+        "level": 2,
+        "text": "Azerbaijan"
+      },
+      {
+        "level": 2,
+        "text": "Mongolia"
+      },
+      {
+        "level": 2,
+        "text": "Ukraine"
+      },
+      {
+        "level": 2,
+        "text": "See also"
+      }
+    ],
+    "emptyHeadings": 0,
+    "jumps": [],
+    "anchors": [],
+    "inlineStyles": 0,
+    "tables": [],
+    "iframes": [],
+    "customHtml": 0
+  },
+  {
+    "url": "https://dev.ehpmi.org/newsletter/",
+    "status": 200,
+    "h1": 1,
+    "main": 1,
+    "headings": [
+      {
+        "level": 1,
+        "text": "Newsletter"
+      }
+    ],
+    "emptyHeadings": 0,
+    "jumps": [],
+    "anchors": [],
+    "inlineStyles": 2,
+    "tables": [],
+    "iframes": [],
+    "customHtml": 0
+  },
+  {
+    "url": "https://dev.ehpmi.org/offices/armenia/",
+    "status": 200,
+    "h1": 1,
+    "main": 1,
+    "headings": [
+      {
+        "level": 1,
+        "text": "Armenia"
+      },
+      {
+        "level": 2,
+        "text": "See also"
+      }
+    ],
+    "emptyHeadings": 0,
+    "jumps": [],
+    "anchors": [],
+    "inlineStyles": 0,
+    "tables": [],
+    "iframes": [],
+    "customHtml": 0
+  },
+  {
+    "url": "https://dev.ehpmi.org/offices/georgia/",
+    "status": 200,
+    "h1": 1,
+    "main": 1,
+    "headings": [
+      {
+        "level": 1,
+        "text": "Georgia"
+      },
+      {
+        "level": 2,
+        "text": "Land and forest degradation"
+      },
+      {
+        "level": 2,
+        "text": "Air pollution"
+      },
+      {
+        "level": 2,
+        "text": "Water resources and pollution"
+      },
+      {
+        "level": 2,
+        "text": "Black Sea"
+      },
+      {
+        "level": 2,
+        "text": "Waste management"
+      },
+      {
+        "level": 2,
+        "text": "See also"
+      }
+    ],
+    "emptyHeadings": 0,
+    "jumps": [],
+    "anchors": [],
+    "inlineStyles": 1,
+    "tables": [],
+    "iframes": [],
+    "customHtml": 0
+  },
+  {
+    "url": "https://dev.ehpmi.org/offices/kazakhstan/",
+    "status": 200,
+    "h1": 1,
+    "main": 1,
+    "headings": [
+      {
+        "level": 1,
+        "text": "Kazakhstan"
+      },
+      {
+        "level": 2,
+        "text": "Major environmental problems in the country"
+      },
+      {
+        "level": 2,
+        "text": "Implemented projects in Kazakhstan"
+      },
+      {
+        "level": 2,
+        "text": "Proposed future projects"
+      },
+      {
+        "level": 2,
+        "text": "See also"
+      }
+    ],
+    "emptyHeadings": 0,
+    "jumps": [],
+    "anchors": [],
+    "inlineStyles": 0,
+    "tables": [],
+    "iframes": [],
+    "customHtml": 0
+  },
+  {
+    "url": "https://dev.ehpmi.org/offices/kyrgyzstan/",
+    "status": 200,
+    "h1": 1,
+    "main": 1,
+    "headings": [
+      {
+        "level": 1,
+        "text": "Kyrgyzstan"
+      },
+      {
+        "level": 2,
+        "text": "Major environmental problems in the country"
+      },
+      {
+        "level": 2,
+        "text": "See also"
+      }
+    ],
+    "emptyHeadings": 0,
+    "jumps": [],
+    "anchors": [],
+    "inlineStyles": 1,
+    "tables": [],
+    "iframes": [],
+    "customHtml": 0
+  },
+  {
+    "url": "https://dev.ehpmi.org/offices/mongolia/",
+    "status": 200,
+    "h1": 1,
+    "main": 1,
+    "headings": [
+      {
+        "level": 1,
+        "text": "Mongolia"
+      },
+      {
+        "level": 2,
+        "text": "Major environmental problems in the country"
+      },
+      {
+        "level": 2,
+        "text": "See also"
+      }
+    ],
+    "emptyHeadings": 0,
+    "jumps": [],
+    "anchors": [],
+    "inlineStyles": 0,
+    "tables": [],
+    "iframes": [],
+    "customHtml": 0
+  },
+  {
+    "url": "https://dev.ehpmi.org/offices/tajikistan/",
+    "status": 200,
+    "h1": 1,
+    "main": 1,
+    "headings": [
+      {
+        "level": 1,
+        "text": "Tajikistan"
+      },
+      {
+        "level": 2,
+        "text": "Major environmental problems in the country"
+      },
+      {
+        "level": 2,
+        "text": "See also"
+      }
+    ],
+    "emptyHeadings": 0,
+    "jumps": [],
+    "anchors": [],
+    "inlineStyles": 0,
+    "tables": [],
+    "iframes": [],
+    "customHtml": 0
+  },
+  {
+    "url": "https://dev.ehpmi.org/offices/ukraine/",
+    "status": 200,
+    "h1": 1,
+    "main": 1,
+    "headings": [
+      {
+        "level": 1,
+        "text": "Ukraine"
+      },
+      {
+        "level": 2,
+        "text": "See also"
+      }
+    ],
+    "emptyHeadings": 0,
+    "jumps": [],
+    "anchors": [],
+    "inlineStyles": 0,
+    "tables": [],
+    "iframes": [],
+    "customHtml": 0
+  },
+  {
+    "url": "https://dev.ehpmi.org/offices/azerbaijan/",
+    "status": 200,
+    "h1": 1,
+    "main": 1,
+    "headings": [
+      {
+        "level": 1,
+        "text": "Azerbaijan"
+      },
+      {
+        "level": 2,
+        "text": "See also"
+      }
+    ],
+    "emptyHeadings": 0,
+    "jumps": [],
+    "anchors": [],
+    "inlineStyles": 0,
+    "tables": [],
+    "iframes": [],
+    "customHtml": 0
+  },
+  {
+    "url": "https://dev.ehpmi.org/about/partners/",
+    "status": 200,
+    "h1": 1,
+    "main": 1,
+    "headings": [
+      {
+        "level": 1,
+        "text": "Partners"
+      },
+      {
+        "level": 2,
+        "text": "Organizations"
+      },
+      {
+        "level": 3,
+        "text": "TerraGraphics International Foundation (TIFO)"
+      },
+      {
+        "level": 2,
+        "text": "See also"
+      }
+    ],
+    "emptyHeadings": 0,
+    "jumps": [],
+    "anchors": [],
+    "inlineStyles": 0,
+    "tables": [],
+    "iframes": [],
+    "customHtml": 0
+  },
+  {
+    "url": "https://dev.ehpmi.org/video/",
+    "status": 200,
+    "h1": 1,
+    "main": 1,
+    "headings": [
+      {
+        "level": 1,
+        "text": "Video"
+      }
+    ],
+    "emptyHeadings": 0,
+    "jumps": [],
+    "anchors": [],
+    "inlineStyles": 0,
+    "tables": [],
+    "iframes": [
+      {
+        "src": "https://www.youtube.com/embed/3ugcObko9M8?si=x9nJ5j2__yX6xGG-",
+        "title": "YouTube video player",
+        "loading": "auto",
+        "referrerpolicy": "strict-origin-when-cross-origin"
+      },
+      {
+        "src": "https://www.youtube.com/embed/7n_-DVgC__g?si=ljaMc5sMD0lyYBQ2&start=330",
+        "title": "YouTube video player",
+        "loading": "auto",
+        "referrerpolicy": ""
+      },
+      {
+        "src": "https://www.youtube.com/embed/yGMMu9rGgHE?si=fXyskhD_5QHBI6mL",
+        "title": "YouTube video player",
+        "loading": "auto",
+        "referrerpolicy": "strict-origin-when-cross-origin"
+      }
+    ],
+    "customHtml": 0
+  },
+  {
+    "url": "https://dev.ehpmi.org/offices/vietnam/",
+    "status": 200,
+    "h1": 1,
+    "main": 1,
+    "headings": [
+      {
+        "level": 1,
+        "text": "Vietnam"
+      },
+      {
+        "level": 2,
+        "text": "See also"
+      }
+    ],
+    "emptyHeadings": 0,
+    "jumps": [],
+    "anchors": [],
+    "inlineStyles": 0,
+    "tables": [],
+    "iframes": [],
+    "customHtml": 0
+  },
+  {
+    "url": "https://dev.ehpmi.org/video/persistent-organic-pollutants/",
+    "status": 200,
+    "h1": 1,
+    "main": 1,
+    "headings": [
+      {
+        "level": 1,
+        "text": "Persistent organic pollutants"
+      },
+      {
+        "level": 2,
+        "text": "See also"
+      }
+    ],
+    "emptyHeadings": 0,
+    "jumps": [],
+    "anchors": [],
+    "inlineStyles": 15,
+    "tables": [],
+    "iframes": [
+      {
+        "src": "https://www.youtube.com/embed/9NnqoSrfs_4?enablejsapi=1&autoplay=0&cc_load_policy=0&cc_lang_pref=&iv_load_policy=1&loop=0&rel=1&fs=1&playsinline=0&autohide=2&theme=dark&color=red&controls=1&disablekb=0&",
+        "title": "YouTube player",
+        "loading": "auto",
+        "referrerpolicy": "strict-origin-when-cross-origin"
+      }
+    ],
+    "customHtml": 0
+  },
+  {
+    "url": "https://dev.ehpmi.org/video/strengthening-health-systems-to-reduce-lead-exposure-kyrgyzstan/",
+    "status": 200,
+    "h1": 1,
+    "main": 1,
+    "headings": [
+      {
+        "level": 1,
+        "text": "Strengthening Health Systems to Reduce Lead Exposure (Kyrgyzstan)"
+      },
+      {
+        "level": 2,
+        "text": "See also"
+      }
+    ],
+    "emptyHeadings": 0,
+    "jumps": [],
+    "anchors": [],
+    "inlineStyles": 5,
+    "tables": [],
+    "iframes": [
+      {
+        "src": "https://www.youtube.com/embed/mtk5Bt-9rRI?enablejsapi=1&autoplay=0&cc_load_policy=0&cc_lang_pref=&iv_load_policy=1&loop=0&rel=1&fs=1&playsinline=0&autohide=2&theme=dark&color=red&controls=1&disablekb=0&",
+        "title": "YouTube player",
+        "loading": "auto",
+        "referrerpolicy": "strict-origin-when-cross-origin"
+      }
+    ],
+    "customHtml": 0
+  },
+  {
+    "url": "https://dev.ehpmi.org/projects/",
+    "status": 200,
+    "h1": 1,
+    "main": 1,
+    "headings": [
+      {
+        "level": 1,
+        "text": ""
+      },
+      {
+        "level": 2,
+        "text": "Detailed and Rapid Environmental Assessments of Sites Contaminated with Obsolete Pesticides in Tajikistan, 2023-2024"
+      },
+      {
+        "level": 2,
+        "text": "National Inventory of Sites Contaminated with Obsolete Pesticides in Kazakhstan"
+      },
+      {
+        "level": 2,
+        "text": "Preliminary Assessments of Sites Contaminated with Obsolete Pesticides in Khatlon region, Tajikistan in 2023"
+      },
+      {
+        "level": 2,
+        "text": "Regions and people for food safety: An EU-endorsed awareness initiative (Georgia)"
+      },
+      {
+        "level": 2,
+        "text": "NEW Partnership for Environmental Health Project"
+      },
+      {
+        "level": 2,
+        "text": "Sustainable Plastic Recycling in Mongolia (SPRIM)"
+      },
+      {
+        "level": 2,
+        "text": "Ekois-Bishkek works in the national project «Strengthening Health Systems to Reduce Lead Exposure» (Kyrgyzstan)"
+      },
+      {
+        "level": 2,
+        "text": "Peshsaf participates in the development of the Environmental Code of the Republic of Tajikistan"
+      },
+      {
+        "level": 2,
+        "text": "ESCM is implementing the project on Disaster Risk Management (Mongolia)"
+      },
+      {
+        "level": 2,
+        "text": "Cleanup of Toxic Persistent Organic Pollutants in Sumgait, Azerbaijan"
+      },
+      {
+        "level": 2,
+        "text": "Building the Capacity of Mongolian Non-State Actors to Promote Sustainable Livelihoods and Poverty Reduction in Rural Artisanal Gold Mining Areas"
+      },
+      {
+        "level": 2,
+        "text": "Lead Health Risk Reduction Project in Sovetskoe (Kan), Kyrgyzstan"
+      }
+    ],
+    "emptyHeadings": 1,
+    "jumps": [],
+    "anchors": [],
+    "inlineStyles": 0,
+    "tables": [],
+    "iframes": [],
+    "customHtml": 0
+  },
+  {
+    "url": "https://dev.ehpmi.org/blog/",
+    "status": 200,
+    "h1": 1,
+    "main": 1,
+    "headings": [
+      {
+        "level": 1,
+        "text": ""
+      },
+      {
+        "level": 2,
+        "text": "EHPMI Annual Workshop-2026 in Kyrgyzstan"
+      },
+      {
+        "level": 2,
+        "text": "Workshop in Astana on Lead Poisoning of Children in Kazakhstan"
+      },
+      {
+        "level": 2,
+        "text": "Discussion in Tbilisi of the Biggest Contaminated Area in Georgia"
+      }
+    ],
+    "emptyHeadings": 1,
+    "jumps": [],
+    "anchors": [],
+    "inlineStyles": 0,
+    "tables": [],
+    "iframes": [],
+    "customHtml": 0
+  },
+  {
+    "url": "https://dev.ehpmi.org/library/",
+    "status": 200,
+    "h1": 1,
+    "main": 1,
+    "headings": [
+      {
+        "level": 1,
+        "text": ""
+      },
+      {
+        "level": 2,
+        "text": "ESCM activities 2023-2024 for Hanoi workshop 20 Nov 2024"
+      },
+      {
+        "level": 2,
+        "text": "National Blood Lead Level Survey in Children Ages 2–5, Childhood Blood Lead Screening Guidelines"
+      },
+      {
+        "level": 2,
+        "text": "Lead Contamination of Environment in Rudnaya Pristan, Russia and associated Health Risks"
+      },
+      {
+        "level": 2,
+        "text": "Health and Pollution Action Plan for Azerbaijan"
+      },
+      {
+        "level": 2,
+        "text": "Health and Pollution Action Plan for Tajikistan"
+      },
+      {
+        "level": 2,
+        "text": "Poster “Medical Wastes” (in Russian)"
+      },
+      {
+        "level": 2,
+        "text": "Poster “Chemical Safety at Home” (in Russian)"
+      },
+      {
+        "level": 2,
+        "text": "Calendar for 2019/2020 with information about danger of pesticides"
+      },
+      {
+        "level": 2,
+        "text": "Booklet “What are pesticides and why are they dangerous for human health?” (in Russian)"
+      },
+      {
+        "level": 2,
+        "text": "Report on assessments of sites contaminated with obsolete pesticides in Tajikistan – Issue 3 (in Russian)"
+      },
+      {
+        "level": 2,
+        "text": "Report on assessments of sites contaminated with obsolete pesticides in Tajikistan – Issue 2 (in Russian)"
+      },
+      {
+        "level": 2,
+        "text": "Report on assessments of sites contaminated with obsolete pesticides in Tajikistan – Issue 1 (in Russian)"
+      }
+    ],
+    "emptyHeadings": 1,
+    "jumps": [],
+    "anchors": [],
+    "inlineStyles": 0,
+    "tables": [],
+    "iframes": [],
+    "customHtml": 0
+  },
+  {
+    "url": "https://dev.ehpmi.org/projects/current/",
+    "status": 200,
+    "h1": 1,
+    "main": 1,
+    "headings": [
+      {
+        "level": 1,
+        "text": ""
+      },
+      {
+        "level": 2,
+        "text": "Detailed and Rapid Environmental Assessments of Sites Contaminated with Obsolete Pesticides in Tajikistan, 2023-2024"
+      },
+      {
+        "level": 2,
+        "text": "National Inventory of Sites Contaminated with Obsolete Pesticides in Kazakhstan"
+      },
+      {
+        "level": 2,
+        "text": "Preliminary Assessments of Sites Contaminated with Obsolete Pesticides in Khatlon region, Tajikistan in 2023"
+      },
+      {
+        "level": 2,
+        "text": "Regions and people for food safety: An EU-endorsed awareness initiative (Georgia)"
+      },
+      {
+        "level": 2,
+        "text": "NEW Partnership for Environmental Health Project"
+      },
+      {
+        "level": 2,
+        "text": "Sustainable Plastic Recycling in Mongolia (SPRIM)"
+      },
+      {
+        "level": 2,
+        "text": "Ekois-Bishkek works in the national project «Strengthening Health Systems to Reduce Lead Exposure» (Kyrgyzstan)"
+      },
+      {
+        "level": 2,
+        "text": "Peshsaf participates in the development of the Environmental Code of the Republic of Tajikistan"
+      },
+      {
+        "level": 2,
+        "text": "ESCM is implementing the project on Disaster Risk Management (Mongolia)"
+      },
+      {
+        "level": 2,
+        "text": "Cleanup of Toxic Persistent Organic Pollutants in Sumgait, Azerbaijan"
+      },
+      {
+        "level": 2,
+        "text": "Building the Capacity of Mongolian Non-State Actors to Promote Sustainable Livelihoods and Poverty Reduction in Rural Artisanal Gold Mining Areas"
+      },
+      {
+        "level": 2,
+        "text": "Lead Health Risk Reduction Project in Sovetskoe (Kan), Kyrgyzstan"
+      }
+    ],
+    "emptyHeadings": 1,
+    "jumps": [],
+    "anchors": [],
+    "inlineStyles": 0,
+    "tables": [],
+    "iframes": [],
+    "customHtml": 0
+  },
+  {
+    "url": "https://dev.ehpmi.org/projects/past/",
+    "status": 200,
+    "h1": 1,
+    "main": 1,
+    "headings": [
+      {
+        "level": 1,
+        "text": ""
+      },
+      {
+        "level": 2,
+        "text": "Detailed and Rapid Environmental Assessments of Sites Contaminated with Obsolete Pesticides in Tajikistan, 2023-2024"
+      },
+      {
+        "level": 2,
+        "text": "National Inventory of Sites Contaminated with Obsolete Pesticides in Kazakhstan"
+      },
+      {
+        "level": 2,
+        "text": "Preliminary Assessments of Sites Contaminated with Obsolete Pesticides in Khatlon region, Tajikistan in 2023"
+      },
+      {
+        "level": 2,
+        "text": "Regions and people for food safety: An EU-endorsed awareness initiative (Georgia)"
+      },
+      {
+        "level": 2,
+        "text": "NEW Partnership for Environmental Health Project"
+      },
+      {
+        "level": 2,
+        "text": "Sustainable Plastic Recycling in Mongolia (SPRIM)"
+      },
+      {
+        "level": 2,
+        "text": "Ekois-Bishkek works in the national project «Strengthening Health Systems to Reduce Lead Exposure» (Kyrgyzstan)"
+      },
+      {
+        "level": 2,
+        "text": "Peshsaf participates in the development of the Environmental Code of the Republic of Tajikistan"
+      },
+      {
+        "level": 2,
+        "text": "ESCM is implementing the project on Disaster Risk Management (Mongolia)"
+      },
+      {
+        "level": 2,
+        "text": "Cleanup of Toxic Persistent Organic Pollutants in Sumgait, Azerbaijan"
+      },
+      {
+        "level": 2,
+        "text": "Building the Capacity of Mongolian Non-State Actors to Promote Sustainable Livelihoods and Poverty Reduction in Rural Artisanal Gold Mining Areas"
+      },
+      {
+        "level": 2,
+        "text": "Lead Health Risk Reduction Project in Sovetskoe (Kan), Kyrgyzstan"
+      }
+    ],
+    "emptyHeadings": 1,
+    "jumps": [],
+    "anchors": [],
+    "inlineStyles": 0,
+    "tables": [],
+    "iframes": [],
+    "customHtml": 0
+  },
+  {
+    "url": "https://dev.ehpmi.org/projects/potential/",
+    "status": 200,
+    "h1": 1,
+    "main": 1,
+    "headings": [
+      {
+        "level": 1,
+        "text": ""
+      },
+      {
+        "level": 2,
+        "text": "Detailed and Rapid Environmental Assessments of Sites Contaminated with Obsolete Pesticides in Tajikistan, 2023-2024"
+      },
+      {
+        "level": 2,
+        "text": "National Inventory of Sites Contaminated with Obsolete Pesticides in Kazakhstan"
+      },
+      {
+        "level": 2,
+        "text": "Preliminary Assessments of Sites Contaminated with Obsolete Pesticides in Khatlon region, Tajikistan in 2023"
+      },
+      {
+        "level": 2,
+        "text": "Regions and people for food safety: An EU-endorsed awareness initiative (Georgia)"
+      },
+      {
+        "level": 2,
+        "text": "NEW Partnership for Environmental Health Project"
+      },
+      {
+        "level": 2,
+        "text": "Sustainable Plastic Recycling in Mongolia (SPRIM)"
+      },
+      {
+        "level": 2,
+        "text": "Ekois-Bishkek works in the national project «Strengthening Health Systems to Reduce Lead Exposure» (Kyrgyzstan)"
+      },
+      {
+        "level": 2,
+        "text": "Peshsaf participates in the development of the Environmental Code of the Republic of Tajikistan"
+      },
+      {
+        "level": 2,
+        "text": "ESCM is implementing the project on Disaster Risk Management (Mongolia)"
+      },
+      {
+        "level": 2,
+        "text": "Cleanup of Toxic Persistent Organic Pollutants in Sumgait, Azerbaijan"
+      },
+      {
+        "level": 2,
+        "text": "Building the Capacity of Mongolian Non-State Actors to Promote Sustainable Livelihoods and Poverty Reduction in Rural Artisanal Gold Mining Areas"
+      },
+      {
+        "level": 2,
+        "text": "Lead Health Risk Reduction Project in Sovetskoe (Kan), Kyrgyzstan"
+      }
+    ],
+    "emptyHeadings": 1,
+    "jumps": [],
+    "anchors": [],
+    "inlineStyles": 0,
+    "tables": [],
+    "iframes": [],
+    "customHtml": 0
+  },
+  {
+    "url": "https://dev.ehpmi.org/blog/news/",
+    "status": 200,
+    "h1": 1,
+    "main": 1,
+    "headings": [
+      {
+        "level": 1,
+        "text": ""
+      },
+      {
+        "level": 2,
+        "text": "EHPMI Annual Workshop-2026 in Kyrgyzstan"
+      },
+      {
+        "level": 2,
+        "text": "Workshop in Astana on Lead Poisoning of Children in Kazakhstan"
+      },
+      {
+        "level": 2,
+        "text": "Discussion in Tbilisi of the Biggest Contaminated Area in Georgia"
+      },
+      {
+        "level": 2,
+        "text": "Field assessment of a contaminated site in Kutaisi, Georgia"
+      },
+      {
+        "level": 2,
+        "text": "Blood lead levels in preschool children in the Kyrgyz Republic"
+      },
+      {
+        "level": 2,
+        "text": "Lead Poisoning of Children in Shymkent and Proposed Solutions"
+      },
+      {
+        "level": 2,
+        "text": "EHPMI Workshop-2025"
+      },
+      {
+        "level": 2,
+        "text": "Cleanup of DDT burial in Settlement #1, part of FAO regional project, implemented by Peshsaf, Tajikistan"
+      },
+      {
+        "level": 2,
+        "text": "EHPMI Workshop-2024"
+      },
+      {
+        "level": 2,
+        "text": "Journey Through Mexico's Parks: Insights from the Field"
+      },
+      {
+        "level": 2,
+        "text": "International Workshop on Emerging Green Technologies for Pest and Pesticide Management in Kazakhstan"
+      },
+      {
+        "level": 2,
+        "text": "Environmental Research Centre of Khazar University has develop a strategic roadmap one waste management"
+      }
+    ],
+    "emptyHeadings": 1,
+    "jumps": [],
+    "anchors": [],
+    "inlineStyles": 0,
+    "tables": [],
+    "iframes": [],
+    "customHtml": 0
+  },
+  {
+    "url": "https://dev.ehpmi.org/library/action-plans/",
+    "status": 200,
+    "h1": 1,
+    "main": 1,
+    "headings": [
+      {
+        "level": 1,
+        "text": ""
+      },
+      {
+        "level": 2,
+        "text": "ESCM activities 2023-2024 for Hanoi workshop 20 Nov 2024"
+      },
+      {
+        "level": 2,
+        "text": "National Blood Lead Level Survey in Children Ages 2–5, Childhood Blood Lead Screening Guidelines"
+      },
+      {
+        "level": 2,
+        "text": "Lead Contamination of Environment in Rudnaya Pristan, Russia and associated Health Risks"
+      },
+      {
+        "level": 2,
+        "text": "Health and Pollution Action Plan for Azerbaijan"
+      },
+      {
+        "level": 2,
+        "text": "Health and Pollution Action Plan for Tajikistan"
+      },
+      {
+        "level": 2,
+        "text": "Poster “Medical Wastes” (in Russian)"
+      },
+      {
+        "level": 2,
+        "text": "Poster “Chemical Safety at Home” (in Russian)"
+      },
+      {
+        "level": 2,
+        "text": "Calendar for 2019/2020 with information about danger of pesticides"
+      },
+      {
+        "level": 2,
+        "text": "Booklet “What are pesticides and why are they dangerous for human health?” (in Russian)"
+      },
+      {
+        "level": 2,
+        "text": "Report on assessments of sites contaminated with obsolete pesticides in Tajikistan – Issue 3 (in Russian)"
+      },
+      {
+        "level": 2,
+        "text": "Report on assessments of sites contaminated with obsolete pesticides in Tajikistan – Issue 2 (in Russian)"
+      },
+      {
+        "level": 2,
+        "text": "Report on assessments of sites contaminated with obsolete pesticides in Tajikistan – Issue 1 (in Russian)"
+      }
+    ],
+    "emptyHeadings": 1,
+    "jumps": [],
+    "anchors": [],
+    "inlineStyles": 0,
+    "tables": [],
+    "iframes": [],
+    "customHtml": 0
+  },
+  {
+    "url": "https://dev.ehpmi.org/library/health-and-pollution/",
+    "status": 200,
+    "h1": 1,
+    "main": 1,
+    "headings": [
+      {
+        "level": 1,
+        "text": ""
+      },
+      {
+        "level": 2,
+        "text": "ESCM activities 2023-2024 for Hanoi workshop 20 Nov 2024"
+      },
+      {
+        "level": 2,
+        "text": "National Blood Lead Level Survey in Children Ages 2–5, Childhood Blood Lead Screening Guidelines"
+      },
+      {
+        "level": 2,
+        "text": "Lead Contamination of Environment in Rudnaya Pristan, Russia and associated Health Risks"
+      },
+      {
+        "level": 2,
+        "text": "Health and Pollution Action Plan for Azerbaijan"
+      },
+      {
+        "level": 2,
+        "text": "Health and Pollution Action Plan for Tajikistan"
+      },
+      {
+        "level": 2,
+        "text": "Poster “Medical Wastes” (in Russian)"
+      },
+      {
+        "level": 2,
+        "text": "Poster “Chemical Safety at Home” (in Russian)"
+      },
+      {
+        "level": 2,
+        "text": "Calendar for 2019/2020 with information about danger of pesticides"
+      },
+      {
+        "level": 2,
+        "text": "Booklet “What are pesticides and why are they dangerous for human health?” (in Russian)"
+      },
+      {
+        "level": 2,
+        "text": "Report on assessments of sites contaminated with obsolete pesticides in Tajikistan – Issue 3 (in Russian)"
+      },
+      {
+        "level": 2,
+        "text": "Report on assessments of sites contaminated with obsolete pesticides in Tajikistan – Issue 2 (in Russian)"
+      },
+      {
+        "level": 2,
+        "text": "Report on assessments of sites contaminated with obsolete pesticides in Tajikistan – Issue 1 (in Russian)"
+      }
+    ],
+    "emptyHeadings": 1,
+    "jumps": [],
+    "anchors": [],
+    "inlineStyles": 0,
+    "tables": [],
+    "iframes": [],
+    "customHtml": 0
+  },
+  {
+    "url": "https://dev.ehpmi.org/library/lead-health-risk-assessment/",
+    "status": 200,
+    "h1": 1,
+    "main": 1,
+    "headings": [
+      {
+        "level": 1,
+        "text": ""
+      },
+      {
+        "level": 2,
+        "text": "ESCM activities 2023-2024 for Hanoi workshop 20 Nov 2024"
+      },
+      {
+        "level": 2,
+        "text": "National Blood Lead Level Survey in Children Ages 2–5, Childhood Blood Lead Screening Guidelines"
+      },
+      {
+        "level": 2,
+        "text": "Lead Contamination of Environment in Rudnaya Pristan, Russia and associated Health Risks"
+      },
+      {
+        "level": 2,
+        "text": "Health and Pollution Action Plan for Azerbaijan"
+      },
+      {
+        "level": 2,
+        "text": "Health and Pollution Action Plan for Tajikistan"
+      },
+      {
+        "level": 2,
+        "text": "Poster “Medical Wastes” (in Russian)"
+      },
+      {
+        "level": 2,
+        "text": "Poster “Chemical Safety at Home” (in Russian)"
+      },
+      {
+        "level": 2,
+        "text": "Calendar for 2019/2020 with information about danger of pesticides"
+      },
+      {
+        "level": 2,
+        "text": "Booklet “What are pesticides and why are they dangerous for human health?” (in Russian)"
+      },
+      {
+        "level": 2,
+        "text": "Report on assessments of sites contaminated with obsolete pesticides in Tajikistan – Issue 3 (in Russian)"
+      },
+      {
+        "level": 2,
+        "text": "Report on assessments of sites contaminated with obsolete pesticides in Tajikistan – Issue 2 (in Russian)"
+      },
+      {
+        "level": 2,
+        "text": "Report on assessments of sites contaminated with obsolete pesticides in Tajikistan – Issue 1 (in Russian)"
+      }
+    ],
+    "emptyHeadings": 1,
+    "jumps": [],
+    "anchors": [],
+    "inlineStyles": 0,
+    "tables": [],
+    "iframes": [],
+    "customHtml": 0
+  },
+  {
+    "url": "https://dev.ehpmi.org/library/publications-and-co-authored-publications/",
+    "status": 200,
+    "h1": 1,
+    "main": 1,
+    "headings": [
+      {
+        "level": 1,
+        "text": "Publications and Co-authored Publications"
+      },
+      {
+        "level": 2,
+        "text": "ESCM activities 2023-2024 for Hanoi workshop 20 Nov 2024"
+      },
+      {
+        "level": 2,
+        "text": "National Blood Lead Level Survey in Children Ages 2–5, Childhood Blood Lead Screening Guidelines"
+      },
+      {
+        "level": 2,
+        "text": "Lead Contamination of Environment in Rudnaya Pristan, Russia and associated Health Risks"
+      },
+      {
+        "level": 2,
+        "text": "Health and Pollution Action Plan for Azerbaijan"
+      },
+      {
+        "level": 2,
+        "text": "Health and Pollution Action Plan for Tajikistan"
+      },
+      {
+        "level": 2,
+        "text": "Poster “Medical Wastes” (in Russian)"
+      },
+      {
+        "level": 2,
+        "text": "Poster “Chemical Safety at Home” (in Russian)"
+      },
+      {
+        "level": 2,
+        "text": "Calendar for 2019/2020 with information about danger of pesticides"
+      },
+      {
+        "level": 2,
+        "text": "Booklet “What are pesticides and why are they dangerous for human health?” (in Russian)"
+      },
+      {
+        "level": 2,
+        "text": "Report on assessments of sites contaminated with obsolete pesticides in Tajikistan – Issue 3 (in Russian)"
+      },
+      {
+        "level": 2,
+        "text": "Report on assessments of sites contaminated with obsolete pesticides in Tajikistan – Issue 2 (in Russian)"
+      },
+      {
+        "level": 2,
+        "text": "Report on assessments of sites contaminated with obsolete pesticides in Tajikistan – Issue 1 (in Russian)"
+      }
+    ],
+    "emptyHeadings": 0,
+    "jumps": [],
+    "anchors": [],
+    "inlineStyles": 0,
+    "tables": [],
+    "iframes": [],
+    "customHtml": 0
+  },
+  {
+    "url": "https://dev.ehpmi.org/library/videos/",
+    "status": 200,
+    "h1": 1,
+    "main": 1,
+    "headings": [
+      {
+        "level": 1,
+        "text": "Videos"
+      },
+      {
+        "level": 2,
+        "text": "ESCM activities 2023-2024 for Hanoi workshop 20 Nov 2024"
+      },
+      {
+        "level": 2,
+        "text": "National Blood Lead Level Survey in Children Ages 2–5, Childhood Blood Lead Screening Guidelines"
+      },
+      {
+        "level": 2,
+        "text": "Lead Contamination of Environment in Rudnaya Pristan, Russia and associated Health Risks"
+      },
+      {
+        "level": 2,
+        "text": "Health and Pollution Action Plan for Azerbaijan"
+      },
+      {
+        "level": 2,
+        "text": "Health and Pollution Action Plan for Tajikistan"
+      },
+      {
+        "level": 2,
+        "text": "Poster “Medical Wastes” (in Russian)"
+      },
+      {
+        "level": 2,
+        "text": "Poster “Chemical Safety at Home” (in Russian)"
+      },
+      {
+        "level": 2,
+        "text": "Calendar for 2019/2020 with information about danger of pesticides"
+      },
+      {
+        "level": 2,
+        "text": "Booklet “What are pesticides and why are they dangerous for human health?” (in Russian)"
+      },
+      {
+        "level": 2,
+        "text": "Report on assessments of sites contaminated with obsolete pesticides in Tajikistan – Issue 3 (in Russian)"
+      },
+      {
+        "level": 2,
+        "text": "Report on assessments of sites contaminated with obsolete pesticides in Tajikistan – Issue 2 (in Russian)"
+      },
+      {
+        "level": 2,
+        "text": "Report on assessments of sites contaminated with obsolete pesticides in Tajikistan – Issue 1 (in Russian)"
+      }
+    ],
+    "emptyHeadings": 0,
+    "jumps": [],
+    "anchors": [],
+    "inlineStyles": 0,
+    "tables": [],
+    "iframes": [
+      {
+        "src": "https://www.youtube.com/embed/KSAAFKrH3HQ",
+        "title": "YouTube video player",
+        "loading": "auto",
+        "referrerpolicy": ""
+      },
+      {
+        "src": "https://www.youtube.com/embed/6HyNyBJQqbo",
+        "title": "YouTube video player",
+        "loading": "auto",
+        "referrerpolicy": ""
+      }
+    ],
+    "customHtml": 0
+  }
+]

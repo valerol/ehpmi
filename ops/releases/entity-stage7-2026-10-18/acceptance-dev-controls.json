@@ -1,0 +1,62 @@
+{
+  "root": "/home2/nykvymmy/dev.ehpmi.org",
+  "database": "nykvymmy_ehpmidev",
+  "home": "https://dev.ehpmi.org",
+  "siteurl": "https://dev.ehpmi.org",
+  "wp_version": "7.1.3",
+  "records_hash": "c7f68751a6282d69730a8a9c2a432575e03df515e22040bb0e55cd759440cd6b",
+  "page_records_hash": "31f747ecf376a9ae2c316700c7bfce2ce3abfecb3b430314d553033f991847d7",
+  "widget_options_hash": "0a3dcb0bc27157555e7e852356163bcd845d17378c4c6c77687d91426cffd047",
+  "migration_markers": [
+    "ehpmi_stage7_applied"
+  ],
+  "fixture_2458": {
+    "ID": "2458",
+    "post_status": "trash",
+    "menu_order": "15",
+    "post_title": "Title: Stage 6 validation test reordered"
+  },
+  "newsletter_tables": {
+    "wp_newsletter": {
+      "count": 172,
+      "hash": "09ef2b861a3dc997582ef9cf00c99ff651318fa5f755e7590abbb38ab93ad7de"
+    },
+    "wp_newsletter_emails": {
+      "count": 0,
+      "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "wp_newsletter_logs": {
+      "count": 0,
+      "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "wp_newsletter_sent": {
+      "count": 0,
+      "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "wp_newsletter_stats": {
+      "count": 0,
+      "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "wp_newsletter_user_logs": {
+      "count": 198,
+      "hash": "d3dcb3c73a5eed778f50c582c582e73587bb2decbd0d0674eb550ded2d894442"
+    },
+    "wp_newsletter_user_meta": {
+      "count": 0,
+      "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    }
+  },
+  "files": {
+    "singular.php": "2836e86dd1236b6f145891c0619dbe62c48a188f60aa96f8b53356a6b3557226",
+    "functions.php": "91db69c27f131feeb25923e403b541f91867d796aacea316168f0f8c2ea4ef68",
+    "css/style.less": "04c94275b819d592a5419a713422c43bd6e8512c263eac470312d82dfeb9c450",
+    "css/style.css": "20f62ccf02d47fcaa619cb3409a799eb6495109d43715a1f18f178ab97701487",
+    "template-parts/map.php": "583590256f9f433f57edeb034b6d1ff028425d78573f06509b05226c77f3150c",
+    "template-parts/contact-forms.php": "90ffc745fde9a97e70e3b2056bdb178e52ac0282472d488cf2bbb73820193ab8",
+    "template-parts/newsletter.php": "4743abad4dc7f3a2d0d65e2d95a84718ef8511d5d709ea81d8bfaf14d0d12eaa",
+    "template-parts/slider.php": "a49587a77318ac022c81d9a2aa007fa51368862a2f13dfb53fc8972f23e58710",
+    "onload.js": "bde4017668dc2346a3f182ca196f306f868fe3e8b14a35e1004599e88a16aa29",
+    "footer.php": "05b7817fe501a3fb2d141062b4c6455ee6001ace2a4c3e1ac46bf21df9bf2afc"
+  },
+  "core_file": "fa6cbd112251c71568c1070e083e4583f1514ed6985c5e90458b0bd616e3d433"
+}

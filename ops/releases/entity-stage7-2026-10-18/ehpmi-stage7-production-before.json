@@ -1,0 +1,162 @@
+{
+    "root": "/home2/nykvymmy/public_html",
+    "database": "nykvymmy_ehpmi",
+    "home": "https://ehpmi.org",
+    "siteurl": "https://ehpmi.org",
+    "wp_version": "7.0.7",
+    "files": {
+        "singular.php": "c85d9dfbbb65f5a2ba46b995f08fc5492c2d801d66875af760a97088d311b040",
+        "functions.php": "4ffce96a0f96508fbdd21efc72694ab0745330e2b2e4ef038021de0897a1bd08",
+        "css/style.less": "2e1bb1a8fcc111bb9ecc9497a481eae56e14a2dec508e30044cc94991c5d04dd",
+        "css/style.css": "79b70807af46ba11443fe1d4b255bd780254b934593eebbd3a4c04fa62102983",
+        "template-parts/map.php": "dcffe100248e35d92eff6e4e57924008fa97a6d096b2e456c2bf6a8cccf163d8",
+        "template-parts/contact-forms.php": "eadbafd5f14a1406bdf033ae8f59839bc86c706bbea22349ac47ee4eb9c707d7",
+        "template-parts/newsletter.php": "4743abad4dc7f3a2d0d65e2d95a84718ef8511d5d709ea81d8bfaf14d0d12eaa",
+        "template-parts/slider.php": "ce65a04b8cf43162c29d8317f710e5ca37c9028729fb2fc04943e2676101f1ac",
+        "onload.js": "3b0df6ce2ad8e926fbabc744e12a776d38868f2c14ec3c6304d8709c731eea73",
+        "footer.php": "5e4f02fa62d477ef04049d5ae29082877d1f4ae09bb6076cc04c1acf94677e0e"
+    },
+    "core_file": null,
+    "counts": [
+        {
+            "post_type": "acf-field",
+            "post_status": "publish",
+            "count": "8"
+        },
+        {
+            "post_type": "acf-field-group",
+            "post_status": "publish",
+            "count": "4"
+        },
+        {
+            "post_type": "attachment",
+            "post_status": "inherit",
+            "count": "476"
+        },
+        {
+            "post_type": "custom_css",
+            "post_status": "publish",
+            "count": "2"
+        },
+        {
+            "post_type": "display_type",
+            "post_status": "draft",
+            "count": "7"
+        },
+        {
+            "post_type": "material",
+            "post_status": "publish",
+            "count": "19"
+        },
+        {
+            "post_type": "nav_menu_item",
+            "post_status": "publish",
+            "count": "39"
+        },
+        {
+            "post_type": "oembed_cache",
+            "post_status": "publish",
+            "count": "2"
+        },
+        {
+            "post_type": "page",
+            "post_status": "draft",
+            "count": "1"
+        },
+        {
+            "post_type": "page",
+            "post_status": "publish",
+            "count": "22"
+        },
+        {
+            "post_type": "partner",
+            "post_status": "publish",
+            "count": "7"
+        },
+        {
+            "post_type": "partner2",
+            "post_status": "publish",
+            "count": "1"
+        },
+        {
+            "post_type": "person",
+            "post_status": "publish",
+            "count": "1"
+        },
+        {
+            "post_type": "post",
+            "post_status": "publish",
+            "count": "47"
+        },
+        {
+            "post_type": "revision",
+            "post_status": "inherit",
+            "count": "37"
+        },
+        {
+            "post_type": "staff",
+            "post_status": "publish",
+            "count": "1"
+        },
+        {
+            "post_type": "staff_member",
+            "post_status": "publish",
+            "count": "20"
+        },
+        {
+            "post_type": "testimonial",
+            "post_status": "draft",
+            "count": "7"
+        },
+        {
+            "post_type": "wp_global_styles",
+            "post_status": "publish",
+            "count": "3"
+        },
+        {
+            "post_type": "wp_navigation",
+            "post_status": "publish",
+            "count": "1"
+        },
+        {
+            "post_type": "wpcf7_contact_form",
+            "post_status": "publish",
+            "count": "2"
+        }
+    ],
+    "records_hash": "e4f6ea6f0c52276c58d343b50cc698984c3e11b6964418d06fbf523bbea2c030",
+    "page_records_hash": "9048234c1a30dcf5f6341d95b17cd8fa0e5ccdffc6edb8d9fb6185bd50188f94",
+    "widget_options_hash": "f08f098280eb2fb055d1690888c659c38b02103fb45c534876dd6872009e6ef7",
+    "migration_markers": [],
+    "fixture_2458": null,
+    "newsletter_tables": {
+        "wp_newsletter": {
+            "count": 172,
+            "hash": "3be8702adf9bd12ba7975f4da969dd421103946224c7231449d29df63fa34cf5"
+        },
+        "wp_newsletter_emails": {
+            "count": 0,
+            "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "wp_newsletter_logs": {
+            "count": 0,
+            "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "wp_newsletter_sent": {
+            "count": 0,
+            "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "wp_newsletter_stats": {
+            "count": 0,
+            "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "wp_newsletter_user_logs": {
+            "count": 198,
+            "hash": "d3dcb3c73a5eed778f50c582c582e73587bb2decbd0d0674eb550ded2d894442"
+        },
+        "wp_newsletter_user_meta": {
+            "count": 0,
+            "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+    }
+}

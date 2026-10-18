@@ -1,0 +1,47 @@
+{
+    "mode": "capability-checked-internal-REST-save-reload",
+    "widgets": {
+        "2": {
+            "save_status": 200,
+            "reload_status": 200,
+            "sha256": "01d41974587717514ca1c78f4908383f68af9ba6b95e4ae8f4f83e1d9ed8a875",
+            "root_count": 1,
+            "inner_blocks": [
+                "core/heading",
+                "core/paragraph"
+            ],
+            "tail_present": true,
+            "admin_form_contains_tail": true,
+            "test_marker_removed": true
+        },
+        "3": {
+            "save_status": 200,
+            "reload_status": 200,
+            "sha256": "b8e62e6adab1413ea3138c15350de927b0896ec2648422e9a44ea6dd164dd5c4",
+            "root_count": 1,
+            "inner_blocks": [
+                "core/heading",
+                "core/paragraph"
+            ],
+            "tail_present": true,
+            "admin_form_contains_tail": true,
+            "test_marker_removed": true
+        },
+        "6": {
+            "save_status": 200,
+            "reload_status": 200,
+            "sha256": "0110a095d8ca5904c7711320f5f20208e5b68832fc0dd50441d756147c7ff333",
+            "root_count": 1,
+            "inner_blocks": [
+                "core/heading",
+                "core/html"
+            ],
+            "tail_present": true,
+            "admin_form_contains_tail": true,
+            "test_marker_removed": true
+        }
+    },
+    "sidebar_mapping_unchanged": true,
+    "widget_option_unchanged_after_save": true,
+    "result": "PASS"
+}

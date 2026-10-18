@@ -1,0 +1,10 @@
+{
+  "mode": "dry-run",
+  "expected": {
+    "pages": 2,
+    "iframes": 5,
+    "block_widgets": 3
+  },
+  "pages": [1480, 2389],
+  "widgets": [2, 3, 6]
+}

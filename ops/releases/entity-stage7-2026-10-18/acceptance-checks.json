@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "phase": "POST_OPERATOR_CONFIRMATION_READ_ONLY",
+  "acceptance_date": "2026-10-18",
+  "acceptance_timezone": "Asia/Makassar",
+  "checks": {
+    "devIdentity": true,
+    "devControlsUnchangedSinceRepair": true,
+    "fixture2458": true,
+    "subscribers172": true,
+    "subscriberTableHashesUnchanged": true,
+    "productionIdentity": true,
+    "productionControlsUnchanged": true,
+    "productionStage7MarkerAbsent": true
+  },
+  "runtimeWrites": 0,
+  "databaseWrites": 0,
+  "cacheWrites": 0,
+  "productionWrites": 0
+}

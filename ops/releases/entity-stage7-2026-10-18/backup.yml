@@ -1,0 +1,35 @@
+stage: 7
+environment: dev.ehpmi.org
+database: nykvymmy_ehpmidev
+created_utc: 2026-10-18T03:29:08Z
+remote_path: /home2/nykvymmy/backups/entity-stage7-2026-10-18/20261018T032908Z_nykvymmy_ehpmidev_pre-stage7.sql.gz
+local_verification_copy: /private/tmp/20261018T032908Z_nykvymmy_ehpmidev_pre-stage7.sql.gz
+bytes: 492911
+sha256: fbfd37912c33e23047b0e9973a0ad4713d27cc90665c8c892d4f75af0a2f40de
+remote_gzip_test: PASS
+local_gzip_test: PASS
+local_remote_sha256_match: PASS
+drive:
+  file_id: 1XzjF_bYjN3HaCfdwiM-AF90VOsaxTPNY
+  url: https://drive.google.com/file/d/1XzjF_bYjN3HaCfdwiM-AF90VOsaxTPNY/view?usp=drivesdk
+  parent_id: 1d0pVYifHrEsCJbH4Ox6ueqfyvQeGeYFj
+  name_read_back: 20261018T032908Z_nykvymmy_ehpmidev_pre-stage7.sql.gz
+  mime_read_back: application/gzip
+  bytes_read_back: 492911
+  metadata_readback: PASS
+rollback:
+  file_root: /home2/nykvymmy/backups/entity-stage7-2026-10-18/files
+  runtime_manifest: runtime-files.json
+  content_delta: /home2/nykvymmy/backups/entity-stage7-2026-10-18/content-before-v3.json
+  content_delta_sha256: 294821c90ad898a0bcad4f20d56899832e266b693856c118d4b3e512caa734f9
+  validated_preconditions: PASS
+  full_stage_rollback_executed: false
+corrective_backup:
+  remote_path: /home2/nykvymmy/backups/entity-stage7-2026-10-18/widget-content-incident/20261018T043956Z_nykvymmy_ehpmidev_pre-widget-content-repair.sql.gz
+  bytes: 493250
+  sha256: 8d8c399f3b7c5e262528fe56f35f486cc04bfc530de850bf3f1223a30fc465ad
+  remote_local_gzip_sha256: PASS
+  drive_file_id: 1tsmuvALB6UFZ2RzbZpRSGr0BPSxkteWu
+  drive_url: https://drive.google.com/file/d/1tsmuvALB6UFZ2RzbZpRSGr0BPSxkteWu/view?usp=drivesdk
+  drive_metadata_readback: PASS_NAME_MIME_BYTES_PARENT
+  incident_before_option: widget-content-incident/before-repair-widgets.json

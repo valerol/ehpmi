@@ -1,0 +1,807 @@
+{
+    "root": "/home2/nykvymmy/dev.ehpmi.org",
+    "database": "nykvymmy_ehpmidev",
+    "home": "https://dev.ehpmi.org",
+    "siteurl": "https://dev.ehpmi.org",
+    "wp_version": "7.1.3",
+    "files": {
+        "singular.php": "3db612e6bf14873507bf578128761b0108a7cdd2f065a060364b4024ec4037fc",
+        "functions.php": "2aa65c30a5a54ae06efc7b0068f6fef6e58bd5017f450ab4c856cbcf83aa8ad7",
+        "css/style.less": "04c94275b819d592a5419a713422c43bd6e8512c263eac470312d82dfeb9c450",
+        "css/style.css": "20f62ccf02d47fcaa619cb3409a799eb6495109d43715a1f18f178ab97701487",
+        "template-parts/map.php": "4e8c82dd54084341d56e24b3e4a047808167dec2a24e67b7cfc5314f5ff2413e",
+        "template-parts/contact-forms.php": "eadbafd5f14a1406bdf033ae8f59839bc86c706bbea22349ac47ee4eb9c707d7",
+        "template-parts/newsletter.php": "4743abad4dc7f3a2d0d65e2d95a84718ef8511d5d709ea81d8bfaf14d0d12eaa",
+        "template-parts/slider.php": "a49587a77318ac022c81d9a2aa007fa51368862a2f13dfb53fc8972f23e58710",
+        "onload.js": "bde4017668dc2346a3f182ca196f306f868fe3e8b14a35e1004599e88a16aa29",
+        "footer.php": "05b7817fe501a3fb2d141062b4c6455ee6001ace2a4c3e1ac46bf21df9bf2afc"
+    },
+    "core_file": "fa6cbd112251c71568c1070e083e4583f1514ed6985c5e90458b0bd616e3d433",
+    "counts": [
+        {
+            "post_type": "acf-field",
+            "post_status": "publish",
+            "count": "8"
+        },
+        {
+            "post_type": "acf-field-group",
+            "post_status": "publish",
+            "count": "4"
+        },
+        {
+            "post_type": "attachment",
+            "post_status": "inherit",
+            "count": "467"
+        },
+        {
+            "post_type": "custom_css",
+            "post_status": "publish",
+            "count": "2"
+        },
+        {
+            "post_type": "display_type",
+            "post_status": "draft",
+            "count": "7"
+        },
+        {
+            "post_type": "hero_slide",
+            "post_status": "publish",
+            "count": "3"
+        },
+        {
+            "post_type": "hero_slide",
+            "post_status": "trash",
+            "count": "1"
+        },
+        {
+            "post_type": "material",
+            "post_status": "publish",
+            "count": "19"
+        },
+        {
+            "post_type": "material",
+            "post_status": "trash",
+            "count": "1"
+        },
+        {
+            "post_type": "member",
+            "post_status": "publish",
+            "count": "7"
+        },
+        {
+            "post_type": "nav_menu_item",
+            "post_status": "publish",
+            "count": "39"
+        },
+        {
+            "post_type": "oembed_cache",
+            "post_status": "publish",
+            "count": "3"
+        },
+        {
+            "post_type": "page",
+            "post_status": "draft",
+            "count": "1"
+        },
+        {
+            "post_type": "page",
+            "post_status": "publish",
+            "count": "34"
+        },
+        {
+            "post_type": "partner",
+            "post_status": "publish",
+            "count": "1"
+        },
+        {
+            "post_type": "person",
+            "post_status": "publish",
+            "count": "1"
+        },
+        {
+            "post_type": "post",
+            "post_status": "auto-draft",
+            "count": "1"
+        },
+        {
+            "post_type": "post",
+            "post_status": "draft",
+            "count": "5"
+        },
+        {
+            "post_type": "post",
+            "post_status": "publish",
+            "count": "13"
+        },
+        {
+            "post_type": "project",
+            "post_status": "publish",
+            "count": "28"
+        },
+        {
+            "post_type": "revision",
+            "post_status": "inherit",
+            "count": "91"
+        },
+        {
+            "post_type": "staff",
+            "post_status": "publish",
+            "count": "1"
+        },
+        {
+            "post_type": "staff_member",
+            "post_status": "publish",
+            "count": "20"
+        },
+        {
+            "post_type": "testimonial",
+            "post_status": "draft",
+            "count": "7"
+        },
+        {
+            "post_type": "wp_global_styles",
+            "post_status": "publish",
+            "count": "3"
+        },
+        {
+            "post_type": "wp_navigation",
+            "post_status": "publish",
+            "count": "1"
+        },
+        {
+            "post_type": "wpcf7_contact_form",
+            "post_status": "publish",
+            "count": "2"
+        }
+    ],
+    "records_hash": "8a06526259c2da1eb560d6842e0c582ea029e0d9447244087550058cf0fe8e60",
+    "page_records_hash": "26a6dee368a56eedc3c8f3893401d5ae8ff897bf27deb4be56c94f0b822ceae3",
+    "widget_options_hash": "44e0bcba6c89fdbc66cc7ff1860c9a4d349aad2fcb82071592091cb74470515c",
+    "migration_markers": [],
+    "fixture_2458": {
+        "ID": "2458",
+        "post_status": "trash",
+        "menu_order": "15",
+        "post_title": "Title: Stage 6 validation test reordered"
+    },
+    "newsletter_tables": {
+        "wp_newsletter": {
+            "count": 172,
+            "hash": "09ef2b861a3dc997582ef9cf00c99ff651318fa5f755e7590abbb38ab93ad7de"
+        },
+        "wp_newsletter_emails": {
+            "count": 0,
+            "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "wp_newsletter_logs": {
+            "count": 0,
+            "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "wp_newsletter_sent": {
+            "count": 0,
+            "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "wp_newsletter_stats": {
+            "count": 0,
+            "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "wp_newsletter_user_logs": {
+            "count": 198,
+            "hash": "d3dcb3c73a5eed778f50c582c582e73587bb2decbd0d0674eb550ded2d894442"
+        },
+        "wp_newsletter_user_meta": {
+            "count": 0,
+            "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+    },
+    "pages": [
+        {
+            "ID": 13,
+            "title": "Who we are",
+            "slug": "about",
+            "parent": 0,
+            "order": 10,
+            "url": "https://dev.ehpmi.org/about/",
+            "content": "",
+            "meta": {
+                "_wp_page_template": [
+                    "default"
+                ]
+            }
+        },
+        {
+            "ID": 17,
+            "title": "Countries",
+            "slug": "offices",
+            "parent": 0,
+            "order": 30,
+            "url": "https://dev.ehpmi.org/offices/",
+            "content": "",
+            "meta": {
+                "_wp_page_template": [
+                    "default"
+                ]
+            }
+        },
+        {
+            "ID": 21,
+            "title": "About EHPMI",
+            "slug": "ehpmi",
+            "parent": 13,
+            "order": 10,
+            "url": "https://dev.ehpmi.org/about/ehpmi/",
+            "content": "<!-- wp:paragraph -->\n<p>The Environmental Health and Pollution Management Institute (EHPMI) is one of the few non-governmental non-profit organizations working on issues of impacts of environmental pollution on health of people in low- and middle-income countries. The organization was established to unite efforts of national teams of professionals, experts and nonprofit groups working in Eastern Europe and Central Asia on problems of toxic persistent pollutants and associated health risks.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:media-text {\"align\":\"wide\",\"mediaPosition\":\"right\",\"mediaId\":223,\"mediaType\":\"image\",\"mediaSizeSlug\":\"medium\",\"imageFill\":true,\"focalPoint\":{\"x\":0.40000000000000002220446049250313080847263336181640625,\"y\":0.5}} -->\n<div class=\"wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile is-image-fill-element\"><div class=\"wp-block-media-text__content\"><!-- wp:paragraph {\"placeholder\":\"Content\u2026\"} -->\n<p>EHPMI has active teams and operates in the following countries: Ukraine, Georgia, Armenia, Azerbaijan, Kazakhstan, Kyrgyzstan, Tajikistan, and Mongolia. The national teams have been present and worked in Eastern Europe and Central Asia region for over 15 years. With support of multiple donors EHPMI members implemented dozens of projects on investigating and solving problems of obsolete pesticides, heavy metals, and radioactive materials. These projects brought international expertise and helped building local capacity to identify, assess and cleanup highly contaminated areas; increased awareness of people about environmental health risks and ways to mitigate them; involved government agencies, scientific institutions, and industries in developing and implementing solutions to various environmental problems.</p>\n<!-- /wp:paragraph --></div><figure class=\"wp-block-media-text__media\"><img src=\"https://dev.ehpmi.org/wp-content/uploads/2022/09/photo_2022-09-27-20.07.59-650x433.jpeg\" alt=\"\" class=\"wp-image-223 size-medium\" style=\"object-position:40% 50%\"/></figure></div>\n<!-- /wp:media-text -->\n\n<!-- wp:media-text {\"align\":\"wide\",\"mediaId\":226,\"mediaType\":\"image\",\"mediaSizeSlug\":\"medium\",\"imageFill\":true,\"focalPoint\":{\"x\":0,\"y\":0.5}} -->\n<div class=\"wp-block-media-text alignwide is-stacked-on-mobile is-image-fill-element\"><figure class=\"wp-block-media-text__media\"><img src=\"https://dev.ehpmi.org/wp-content/uploads/2022/09/photo_2022-09-27-20.08.05-650x433.jpeg\" alt=\"\" class=\"wp-image-226 size-medium\" style=\"object-position:0% 50%\"/></figure><div class=\"wp-block-media-text__content\"><!-- wp:paragraph {\"placeholder\":\"Content\u2026\"} -->\n<p>EHPMI team in each country may be part of a national office or a national member organization. National member organizations are usually civil society organizations or research institutions that lead environmental health initiatives in their countries and often have their own action and/or information networks that include other local and national organizations. Each national member organization represents EHPMI in respective country and defines priorities of work and implements EHPMI projects in that country.&nbsp;</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>A civil society organization or a research/education institution may apply to become an EHPMI member organization if they are ready and have the capacity to work on environmental health issues at the national level. The Founders Board reviews applications and makes the decision whether or not to accept a new member organization.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p></p>\n<!-- /wp:paragraph --></div></div>\n<!-- /wp:media-text -->\n\n<!-- wp:paragraph -->\n<p></p>\n<!-- /wp:paragraph -->",
+            "meta": {
+                "_wp_page_template": [
+                    "default"
+                ]
+            }
+        },
+        {
+            "ID": 23,
+            "title": "Mission and goals",
+            "slug": "mission-and-goals",
+            "parent": 13,
+            "order": 20,
+            "url": "https://dev.ehpmi.org/about/mission-and-goals/",
+            "content": "<!-- wp:paragraph -->\n<p>Our mission is to protect health of people from toxic pollutants. In many countries millions of people live in highly contaminated areas and are exposed to multiple pollutants. In most cases people do not even know the sources of their illnesses and what is poisoning them every day. In industrial towns people breathe polluted air, inhale contaminated dust, and drink unsafe water. In rural areas people are poisoned by old and new pesticides that are found in soil, water and food. In some places people are exposed to high doses of undetected radiation. In all cases children suffer the most from exposure to toxic pollutants.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:columns {\"className\":\"is-style-ehpmi-photo-pair-3x2\"} --><div class=\"wp-block-columns is-style-ehpmi-photo-pair-3x2\"><!-- wp:column --><div class=\"wp-block-column\"><!-- wp:image {\"id\":229,\"sizeSlug\":\"medium\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-medium\"><img src=\"https://dev.ehpmi.org/wp-content/uploads/2022/09/photo_2022-09-27-21.15.25-650x433.jpeg\" alt=\"EHPMI team members inspecting an environmental field site.\" class=\"wp-image-229\"/></figure>\n<!-- /wp:image --></div><!-- /wp:column --><!-- wp:column --><div class=\"wp-block-column\"><!-- wp:image {\"id\":228,\"sizeSlug\":\"medium\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-medium\"><img src=\"https://dev.ehpmi.org/wp-content/uploads/2022/09/photo_2022-09-27-21.15.22-650x433.jpeg\" alt=\"EHPMI team members discussing conditions during a field visit.\" class=\"wp-image-228\"/></figure>\n<!-- /wp:image --></div><!-- /wp:column --></div><!-- /wp:columns -->\n\n<!-- wp:paragraph -->\n<p>These problems are most severe in low- and middle-income countries that lack resources and expertise to protect health of people. </p>\n<!-- /wp:paragraph -->\n\n<!-- wp:media-text {\"mediaPosition\":\"right\",\"mediaId\":231,\"mediaLink\":\"https://dev.ehpmi.org/about/mission-and-goals/attachment/photo_2022-09-27-21-15-28/\",\"mediaType\":\"image\",\"mediaSizeSlug\":\"medium\",\"imageFill\":true} -->\n<div class=\"wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile is-image-fill\"><div class=\"wp-block-media-text__content\"><!-- wp:paragraph -->\n<p><strong>Our goals:</strong></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list -->\n<ul><!-- wp:list-item -->\n<li>To introduce and implement in every country sustainable solutions to decrease and eliminate contact of people with toxic substances</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>To decrease environmental pollution and particularly emission of toxic and persistent substances that affect people\u2019s health</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>To promote awareness of decision makers and society about the health risks of persistent environmental pollutants.</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list --></div><figure class=\"wp-block-media-text__media\" style=\"background-image:url(https://dev.ehpmi.org/wp-content/uploads/2022/09/photo_2022-09-27-21.15.28-650x433.jpeg);background-position:50% 50%\"><img src=\"https://dev.ehpmi.org/wp-content/uploads/2022/09/photo_2022-09-27-21.15.28-650x433.jpeg\" alt=\"Kindergarten educators in animal costumes performing with children.\" class=\"wp-image-231 size-medium\"/></figure></div>\n<!-- /wp:media-text -->",
+            "meta": {
+                "_wp_page_template": [
+                    "default"
+                ]
+            }
+        },
+        {
+            "ID": 25,
+            "title": "Organization Structure",
+            "slug": "organization-structure",
+            "parent": 13,
+            "order": 30,
+            "url": "https://dev.ehpmi.org/about/organization-structure/",
+            "content": "<!-- wp:image {\"align\":\"center\",\"id\":320,\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"className\":\"is-style-ehpmi-wide\"} -->\n<figure class=\"wp-block-image aligncenter size-large no-shadow is-style-ehpmi-wide\"><img src=\"https://dev.ehpmi.org/wp-content/uploads/2022/09/Org_Chart_EHPMI-1320x689.png\" alt=\"EHPMI organizational chart showing the founders board, president, programme directors and country coordinators.\" class=\"wp-image-320\"/></figure>\n<!-- /wp:image -->",
+            "meta": {
+                "_wp_page_template": [
+                    "default"
+                ]
+            }
+        },
+        {
+            "ID": 27,
+            "title": "Meet our team",
+            "slug": "staff",
+            "parent": 13,
+            "order": 40,
+            "url": "https://dev.ehpmi.org/about/staff/",
+            "content": "",
+            "meta": {
+                "_wp_page_template": [
+                    "default"
+                ]
+            }
+        },
+        {
+            "ID": 29,
+            "title": "Member Organizations",
+            "slug": "members",
+            "parent": 13,
+            "order": 50,
+            "url": "https://dev.ehpmi.org/about/members/",
+            "content": "<!-- wp:paragraph -->\n<p>EHPMI operates in different countries and regions either directly, through national offices, or through national member organizations.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>National member organizations are usually civil society organizations or research institutions that lead environmental health initiatives in their countries and often have their own action and/or information networks that include other local and national organizations. Each national member organization represents EHPMI in respective country and defines priorities of work and implements EHPMI projects in that country.&nbsp;</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>A civil society organization or a research/education institution may apply to become an EHPMI member organization if they are ready and have the capacity to work on environmental health issues at the national level. The Founders Board reviews applications and makes the decision whether or not to accept a new member organization.</p>\n<!-- /wp:paragraph -->",
+            "meta": {
+                "_wp_page_template": [
+                    "default"
+                ]
+            }
+        },
+        {
+            "ID": 33,
+            "title": "Contacts",
+            "slug": "contacts",
+            "parent": 13,
+            "order": 70,
+            "url": "https://dev.ehpmi.org/about/contacts/",
+            "content": "<!-- wp:columns -->\n<div class=\"wp-block-columns\"><!-- wp:column {\"className\":\"contacts-column\"} -->\n<div class=\"wp-block-column contacts-column\"><!-- wp:heading -->\n<h2><strong>Kyrgyzstan</strong></h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p><strong>Civil Society Association \u201cEkois Bishkek\u201d&nbsp;</strong></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>Address:</strong> 1A/1 Akhunbaev str., Bishkek, Kyrgyzstan</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>Phone No:</strong> +996 772 291522</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:html -->\n<b>E-mail: </b><a href=\"mailto:indira%40e%68%70ni%2E%6Frg\">indira@ehpni.org</a>\n<!-- /wp:html -->\n\n<!-- wp:heading -->\n<h2><strong>Kazakhstan</strong></h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p><strong>Human Health Institute</strong></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>Address: </strong>Office 102, 33/1 Zheltoksan str. Nur-Sultan, Kazakhstan</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>Phone No:</strong> + 7 777 778 78 66</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:html -->\n<b>E-mail: </b><a href=\"mailto: aidar@ehpmi.org\"> aidar@ehpmi.org</a>\n<!-- /wp:html -->\n\n<!-- wp:heading -->\n<h2><strong>Tajikistan</strong></h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p><strong>Civil Society Organization \u201cPeshsaf\u201d&nbsp;</strong></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>Address:</strong> 23 A.Sino Street, Gissar, Republic of Tajikistan</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>Phone No: </strong>(+992) 77 8888753</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:html -->\n<b>E-mail: </b><a href=\"mailto:umed@eh%70mi%2Eorg\">umed@ehpmi.org</a>\n<!-- /wp:html --></div>\n<!-- /wp:column -->\n\n<!-- wp:column {\"className\":\"contacts-column\"} -->\n<div class=\"wp-block-column contacts-column\"><!-- wp:heading -->\n<h2><strong>Georgia</strong></h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p><strong>Consortium Eco Life&nbsp;</strong></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>Address:</strong> 3 Anna Politkovskaia str., Tbilisi, Georgia</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>Phone No:</strong> +995 599 98 98 16</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:html -->\n<b>E-mail: </b><a href=\"mailto:ak%68alaia@eh%70mi.%6Frg\">akhalaia@ehpmi.org</a>\n<!-- /wp:html -->\n\n<!-- wp:heading -->\n<h2><strong>Armenia</strong></h2>\n<!-- /wp:heading -->\n\n<!-- wp:html -->\n<b>E-mail: </b><a href=\"mailto:a%65%6Cita@eh%70mi.org\">aelita@ehpmi.org</a>\n<!-- /wp:html -->\n\n<!-- wp:heading -->\n<h2><strong>Azerbaijan</strong></h2>\n<!-- /wp:heading -->\n\n<!-- wp:html -->\n<b>E-mail: </b><a href=\"mailto: %72ovs%68%61%6E%40ehpmi.org\"> rovshan@ehpmi.org</a>\n<!-- /wp:html -->\n\n<!-- wp:heading -->\n<h2><strong>Mongolia</strong></h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p><strong>Environment and Security Center of Mongolia</strong></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>Address: </strong>Suite 11, Building I, Micro-district XIII, BZD, Ulaanbaatar, Mongolia</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>Phone: </strong>+ 976-11-459125</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:html -->\n<b>E-mail: </b><a href=\"mailto:e%72de%6Ee%40environ.mn \">erdene@environ.mn </a>\n<!-- /wp:html -->\n\n<!-- wp:heading -->\n<h2><strong>Ukraine</strong></h2>\n<!-- /wp:heading -->\n\n<!-- wp:html -->\n<b>E-mail: </b><a href=\"mailto:u%6B%72ai%6Ee@%65%68%70%6D%69%2Eorg\">ukraine@ehpmi.org</a>\n<!-- /wp:html --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->",
+            "meta": {
+                "_wp_page_template": [
+                    "default"
+                ]
+            }
+        },
+        {
+            "ID": 75,
+            "title": "Newsletter",
+            "slug": "newsletter",
+            "parent": 0,
+            "order": 0,
+            "url": "https://dev.ehpmi.org/newsletter/",
+            "content": "[newsletter]",
+            "meta": []
+        },
+        {
+            "ID": 327,
+            "title": "Armenia",
+            "slug": "armenia",
+            "parent": 17,
+            "order": 10,
+            "url": "https://dev.ehpmi.org/offices/armenia/",
+            "content": "<!-- wp:paragraph -->\n<p>Armenia is a small, upper-middle-income country located in the South Caucasus with a GDP of12.6 Billion USD. Armenia is mountainous country, most of its area is at the elevation above1,000 meters (3,300 feet) above the sea level. (Figure 1). The climate of Armenia is continental, with cold winters and hot summers. The precipitation is not abundant. The population of Armenia is approximately 3 million people. The country has 11 marzes (provinces) with diverse geographical features (plains, valleys, hills, and high mountains). The rural population is about 1 million people (about 37 % of total population).</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":675,\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"className\":\"is-style-ehpmi-wide\"} -->\n<figure class=\"wp-block-image size-large is-style-ehpmi-wide\"><img src=\"https://dev.ehpmi.org/wp-content/uploads/2022/11/Armenia-1320x834.jpg\" alt=\"Armenia\" class=\"wp-image-675\"/></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p><strong>Armenia has a number of environmental issues, including:</strong></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Contamination with toxic heavy metals from mining and ore processing activities. There are both legacy and active highly contaminated mining sites&nbsp;</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Hazardous waste - including industrial, electronic and chemical waste, is currently mixed with municipal waste, leading to toxic pollution of soil and water, long-term and composite damage to the environment</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>POPs \u2013 During the Soviet era Armenia had a developed agricultural production and was amongst the regions with intense pesticide application. The total area load of pesticides averaged 9-35.5 kg ha-1, exceeding the average levels of pesticide application. Organochlorine pesticides were widely applied in Armenia until the ban in 1980s.\u00a0</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:columns {\"className\":\"is-style-ehpmi-photo-pair-3x2\"} --><div class=\"wp-block-columns is-style-ehpmi-photo-pair-3x2\"><!-- wp:column --><div class=\"wp-block-column\"><!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"media\"} -->\n<figure class=\"wp-block-image size-large\"><a href=\"https://dev.ehpmi.org/wp-content/uploads/2022/11/DSC02468_2000.jpg\"><img src=\"https://dev.ehpmi.org/wp-content/uploads/2022/11/DSC02468_2000-650x433.jpg\" alt=\"Historic stone tower in a mountainous industrial landscape in Armenia.\"/></a></figure>\n<!-- /wp:image --></div><!-- /wp:column --><!-- wp:column --><div class=\"wp-block-column\"><!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"https://dev.ehpmi.org/wp-content/uploads/2022/11/DSC08705-650x433.jpg\" alt=\"Mining town and mountain landscape in Armenia.\"/></figure>\n<!-- /wp:image --></div><!-- /wp:column --></div><!-- /wp:columns -->\n\n<!-- wp:paragraph -->\n<p><strong>Implemented projects:</strong></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li><a href=\"https://dev.ehpmi.org/?post_type=post&amp;p=558\" data-type=\"URL\" data-id=\"https://dev.ehpmi.org/?post_type=post&amp;p=558\">Akhtala Monastery cleanup program</a>&nbsp;</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Toxic Sites Identification Program (TSIP) in Armenia (dumpsites)&nbsp;</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Preliminary and Deep Site Assessment in Abovyan dumpsite</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:paragraph -->\n<p><strong>Proposed future projects</strong>:</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Lead Health Risk Mitigation in Akhtala</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Lead Health Risk Assessment in Alaverdi</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Assessment of hazardous waste (arsenic graveyard) and planning reconstruction/cleanup in marz Lori</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Assessment of several areas contaminated with pesticides, cleanup</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:paragraph -->\n<p></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p></p>\n<!-- /wp:paragraph -->",
+            "meta": {
+                "leader": [
+                    ""
+                ],
+                "team": [
+                    "a:1:{i:0;s:3:\"166\";}"
+                ],
+                "member": [
+                    ""
+                ],
+                "point": [
+                    "3"
+                ]
+            }
+        },
+        {
+            "ID": 347,
+            "title": "Georgia",
+            "slug": "georgia",
+            "parent": 17,
+            "order": 20,
+            "url": "https://dev.ehpmi.org/offices/georgia/",
+            "content": "<!-- wp:paragraph -->\n<p>Georgia&nbsp;is a country at the intersection of&nbsp;Eastern Europe&nbsp;and&nbsp;Western Asia. It is part of the&nbsp;South Caucasus, bounded by the&nbsp;Black Sea&nbsp;to the west, by&nbsp;Russia&nbsp;to&nbsp;the north and east, by&nbsp;Turkey&nbsp;to&nbsp;the southwest, by&nbsp;Armenia&nbsp;to&nbsp;the south, and by&nbsp;Azerbaijan&nbsp;to&nbsp;the southeast. The country covers an area of 69,700 square kilometers (26,900&nbsp;sq&nbsp;mi), and has a population of 3.7 million people.&nbsp;Tbilisi&nbsp;is its capital as well as&nbsp;its largest city, home to roughly a third of the&nbsp;Georgian population.&nbsp;</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"className\":\"is-style-ehpmi-wide\"} -->\n<figure class=\"wp-block-image size-large is-style-ehpmi-wide\"><img src=\"https://dev.ehpmi.org/wp-content/uploads/2022/12/Georgia-1320x672.jpg\" alt=\"Map of Georgia.\"/></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p>Since the early 21st century visible positive developments have been observed in the economy of Georgia. In 2007, Georgia's&nbsp;real GDP&nbsp;growth rate reached 12 per cent, making Georgia one of the fastest-growing economies&nbsp;in Eastern Europe.Georgia has become more&nbsp;integrated&nbsp;into the global trading network: its 2015 imports and exports account for 50% and 21% of GDP respectively. Georgia's main imports are fuels, vehicles, machinery and parts, grain and other foods, pharmaceuticals. Main exports are vehicles, ferro-alloys, fertilizers, nuts, scrap metal, gold, copper ores.&nbsp;The World Bank dubbed Georgia \"the number one economic reformer in the world\" because it has in one year improved from rank 112th to 18th in terms of&nbsp;ease of doing business,&nbsp;and by 2020 further improved its position to 6th in the world.As of 2021, it ranked 12th in the world for&nbsp;economic freedom. In 2019, Georgia ranked 61st on the&nbsp;Human Development Index&nbsp;(HDI). Between 2000 and 2019, Georgia's HDI score improved by 17.7%.&nbsp;Of factors contributing to HDI,&nbsp;education&nbsp;had the most positive influenceas Georgia&nbsp;ranks in the top quintile&nbsp;in terms of education.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\"><strong>Land and forest degradation</strong></h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>The Georgian Ministry of Environment Protection and Agriculture rates 35% of its agricultural land as being degraded and 60% of agrarian land in Georgia is of low or middle production quality. Significant drivers of&nbsp;land degradation&nbsp;are&nbsp;overgrazing, unplanned&nbsp;urban sprawling, and&nbsp;deforestation. Georgia had a 2018&nbsp;Forest Landscape Integrity Index&nbsp;mean score of 7.79/10, ranking it 31st globally out of 172 countries.&nbsp;</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Soil erosion&nbsp;processes, although considered natural phenomena, are exacerbated by different kinds of&nbsp;unsustainable&nbsp;human activities. Some of these are unsustainable&nbsp;mining&nbsp;and construction (e.g.&nbsp;hydropower&nbsp;infrastructures like&nbsp;Shuakhevi Hydro Power Plant),&nbsp;uncontrolled logging, poorly regulated&nbsp;urbanization, industrial activities in&nbsp;riverbeds, and a lack of compliance with&nbsp;land use&nbsp;regulations and with environmental and hydrological standards.&nbsp;</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Due to the deterioration of land and the overlooked issues regarding the environment,&nbsp;flood control&nbsp;and determent of such periodical calamities caused by&nbsp;landslides&nbsp;and&nbsp;flash floods&nbsp;are imminent.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\"><strong>Air pollution</strong></h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Deterioration of&nbsp;air quality&nbsp;is one of the many consequences of increased economic activity that comes with urbanization. In the case of Georgia,&nbsp;air pollution&nbsp;mainly comes from the&nbsp;transportation, industrial, and energy sectors. The major ambient air pollutants monitored in Georgia include&nbsp;particulate matter&nbsp;(total suspended particulates [TSP]),&nbsp;carbon monoxide&nbsp;(CO),&nbsp;nitrogen oxides&nbsp;(NO2, NO), and&nbsp;sulfur dioxide&nbsp;(SO2).&nbsp;</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In Georgia the&nbsp;public transport&nbsp;system is not sufficiently developed. A significant proportion of the population uses&nbsp;private vehicles&nbsp;as the preferred mode of transport. The number of private vehicles has grown rapidly over the past decade and has almost doubled in the last five-year period. Traffic has increased followed by industrial sources. The country has seen a sharp rise in the number of old, dirty&nbsp;diesel vehicles&nbsp;on the road over the last decade and pollution testing is virtually non-existent. WHO&nbsp;and&nbsp;IEA&nbsp;provides a data that shows Georgia having the most deaths attributed to air pollution, compared to other countries.&nbsp;</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Until 2000, Georgia used&nbsp;leaded fuel&nbsp;in most of their transportation system. Soviet auto models can run on&nbsp;low octane&nbsp;gasoline; European models run superior around higher-octane gas. A way to increase a fuel's octane level is to add lead. Majority of road vehicles (total number of vehicles approx. 323614) in Georgia today both public and private is of 15\u201320 years old.&nbsp;Many older cars require leaded petrol because the lead lubricates and protects the soft valves. Georgia is importing increasing numbers of&nbsp;2nd hand European cars&nbsp;with catalytic converters and it imports a lot of low octane gas, which is at times manipulated through the addition of lead, to obtain higher octane/leaded gasoline. This in turn affects the composition of&nbsp;exhaust emissions, making its concentrations high in lead and&nbsp;benzene&nbsp;concentrations. August 14, 2018</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\"><strong>Water resources and pollution</strong></h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Georgia has plentiful water assets. Among the aggregate water assets of&nbsp;63&nbsp;trillion cubic metres (2.2\u00d71015&nbsp;cu&nbsp;ft)&nbsp;/year (long haul normal) just 1.6 billion m3/year or around 2% are being preoccupied.&nbsp;Around 66% of the disconnected water is utilized for inundated&nbsp;horticulture, and the other third for city and mechanical employments.&nbsp;</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Significant issues that lead to water pollution are&nbsp;surface water&nbsp;contamination&nbsp;by squanders and unreasonable water utilization. Water contamination is associated with human movement, such as industrial waste,&nbsp;municipal waste, waste from health centers, and surfaces waste from&nbsp;agri-production. Waste management problems are a big contributor to pollution in the country of Georgia.&nbsp;</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Areas along Georgia, around 310 kilometers of coastline, are starting to feel the effects of conduit&nbsp;waste water&nbsp;that is beginning from the development of more than 170 million people who live adjacent the various streams that energize the Black Sea.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\"><strong>Black Sea</strong></h2>\n<!-- /wp:heading -->\n\n<!-- wp:media-text {\"align\":\"wide\",\"mediaPosition\":\"right\",\"mediaId\":350,\"mediaLink\":\"https://dev.ehpmi.org/offices/georgia/attachment/black_sea_coast_georgia-1/\",\"mediaType\":\"image\",\"mediaWidth\":25,\"isStackedOnMobile\":false,\"imageFill\":false,\"focalPoint\":{\"x\":0.5100000000000000088817841970012523233890533447265625,\"y\":0.429999999999999993338661852249060757458209991455078125}} -->\n<div class=\"wp-block-media-text alignwide has-media-on-the-right\" style=\"grid-template-columns:auto 25%\"><div class=\"wp-block-media-text__content\"><!-- wp:paragraph {\"placeholder\":\"Content\u2026\"} -->\n<p>Located in the West of Georgia is the Black Sea. Zones along Georgia's just about 310 kilometers of coastline are beginning to feel the impacts of waterway waste, water that is starting from the movement of more than 170 million individuals who live nearby the numerous streams that encourage the Black Sea. This could result in loss in biological species, extinction, and negative impacts on human health. In Georgia, similar to the case in numerous nations, low public mindfulness and comprehension of the effect that anthropogenic exercises have on the earth has been a center driver of its commitment to the contaminated waters of the Black Sea.&nbsp;</p>\n<!-- /wp:paragraph --></div><figure class=\"wp-block-media-text__media\"><img src=\"https://dev.ehpmi.org/wp-content/uploads/2022/10/black_sea_coast_georgia-1.jpeg\" alt=\"Black Sea coast viewed from a wooded hillside in Georgia.\" class=\"wp-image-350 size-full\"/></figure></div>\n<!-- /wp:media-text -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\"><strong>Waste management</strong></h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>The effect of waste and chemical clutter led to one of the most prominent environmental problems in Georgia.&nbsp;Environmental pollution&nbsp;caused by&nbsp;littering&nbsp;of&nbsp;hazardous wastes&nbsp;and&nbsp;landfill&nbsp;abuse puts the country into habitual danger. Moreover, accumulated litter and disorderly management of trash aggravate the current situation of their domain. There are 63 registered landfills, which occupy more than 300 ha of which 203 ha are active landfills (MENRP 2012). Most of these landfill sites operate without proper measure, supervision by the government, and proper integration of&nbsp;waste collection&nbsp;system. Currently, the standardized collection of household wastes is only executed in big cities and district centers, disregarding garbage collection in other places, which further impairs the waste management issue of their country. In some settlements, particularly in villages, residents tend to solve their waste problems by dumping wastes in nearby ravines, along the roads or onto riverbanks.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Georgia's waste management problem results in different kinds of pollution and negatively affects the public's health. According to National Center for Disease Control, morbidity per 100,000 population from&nbsp;respiratory diseases&nbsp;has been on the rise.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>Implemented projects</strong>:</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Toxic Sites Identification Program (TSIP) in Georgia PECP project</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:paragraph -->\n<p><strong>Proposed future projects</strong>:</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Contaminate site deep assessment and remediation in former paint production plant - Litafoni Kutaisi Georgia; Rioni Rever which is affected by the contamination is one of the biggest river flowing into Black Sea this project can be considered as interesting ptoject for Black Sea Protection&nbsp;</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Contaminated site assessment and TSIP platform&nbsp;</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Climate smart approaches \u2014 awareness rising on sustainable usage of water resources&nbsp;</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->",
+            "meta": {
+                "leader": [
+                    ""
+                ],
+                "team": [
+                    "a:4:{i:0;s:3:\"261\";i:1;s:3:\"249\";i:2;s:3:\"246\";i:3;s:3:\"252\";}"
+                ],
+                "member": [
+                    "a:1:{i:0;s:3:\"118\";}"
+                ],
+                "point": [
+                    "2"
+                ]
+            }
+        },
+        {
+            "ID": 355,
+            "title": "Kazakhstan",
+            "slug": "kazakhstan",
+            "parent": 17,
+            "order": 30,
+            "url": "https://dev.ehpmi.org/offices/kazakhstan/",
+            "content": "<!-- wp:paragraph -->\n<p>The Republic of Kazakhstan is located in the central part of Eurasia, bordering China, Kyrgyzstan, Turkmenistan, Uzbekistan and Russia. Most of the country's territory consists of deserts \u2014 44% and semi\u2013deserts \u2014 14%. Steppes occupy 26% of the country's area, forests \u2014 5.5%. Kazakhstan is the world's largest landlocked country, the largest and northernmost Muslim-majority country by land area, and the ninth-largest country in the world with the area of 2,7 million square kilometers. It has a population of 19.4 million people, and one of the lowest population densities in the world, at fewer than 6 people per square kilometre. The country\u2019s GDP was 191 billion USD in 2021 (about 60% of whole Central Asia region). The Republic is divided into 17 regions and 3 cities of republican significance.&nbsp;</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"className\":\"is-style-ehpmi-wide\"} -->\n<figure class=\"wp-block-image size-large is-style-ehpmi-wide\"><img src=\"https://dev.ehpmi.org/wp-content/uploads/2022/11/Kazakhstan-1320x500.jpg\" alt=\"Map of Kazakhstan.\"/></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p>The remoteness from the oceans determines the \u201cextreme\u201d continental climate of the country, with hot summers and very cold winters. Indeed, Astana is the second coldest capital city in the world after Ulaanbaatar.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\"><strong>Major environmental problems in the country</strong></h2>\n<!-- /wp:heading -->\n\n<!-- wp:media-text {\"mediaPosition\":\"right\",\"mediaId\":698,\"mediaLink\":\"https://dev.ehpmi.org/offices/kazakhstan/attachment/mountains_kazakhstan-1/\",\"mediaType\":\"image\",\"mediaSizeSlug\":\"medium\",\"isStackedOnMobile\":false} -->\n<div class=\"wp-block-media-text has-media-on-the-right\"><div class=\"wp-block-media-text__content\"><!-- wp:paragraph {\"placeholder\":\"Content\u2026\"} -->\n<p><strong>Kazakhstan has many kinds of problems with environmental pollution, including:</strong></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list-item -->\n<li>air pollution from various sources;</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>radioactive contamination from uranium mining and testing nuclear weapons;</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>obsolete pesticides such as DDT and other organochlorines;&nbsp;</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>toxic heavy metals pollution of soil, water and air in numerous mining areas and centers of ore processing and metals production;&nbsp;</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>oil pollution of soil and Caspian Sea environment from oil and gas production;</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>water pollution from industry and agriculture.</li>\n<!-- /wp:list-item -->\n\n<!-- wp:paragraph -->\n<p>One example of radioactive contamination is the Semipalatinsk nuclear weapons testing site, where 456 nuclear tests were done. The radioactive elements from those tests still contaminate the environment, and people who live close to the site have rates of cancer.</p>\n<!-- /wp:paragraph --></div><figure class=\"wp-block-media-text__media\"><img src=\"https://dev.ehpmi.org/wp-content/uploads/2022/11/mountains_Kazakhstan-1-650x488.jpg\" alt=\"mountains Kazakhstan\" class=\"wp-image-698 size-medium\"/></figure></div>\n<!-- /wp:media-text -->\n\n<!-- wp:paragraph -->\n<p>Another famous environmental problem of Kazakhstan and Central Asia is the lowering of the water level of the Aral Sea. Formerly the fourth largest lake in the world with an area of 68,000 km2 (26,300 sq mi), the Aral Sea began shrinking in the 1960s after the water from rivers Syr Darya and Amu Darya were diverted to cotton production and other irrigation projects. By now the Aral Sea has reduced to about 10% of its original size and split into four lakes: the North Aral Sea, the eastern and western basins of the once far larger South Aral Sea, and the smaller intermediate Barsakelmes Lake. The fate of Aral Sea may repeat with the Lake Balkhash where the water level is also decreasing because of excessive use of water from feeding rivers.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:columns {\"className\":\"is-style-ehpmi-photo-pair-4x3\"} --><div class=\"wp-block-columns is-style-ehpmi-photo-pair-4x3\"><!-- wp:column --><div class=\"wp-block-column\"><!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"https://dev.ehpmi.org/wp-content/uploads/2022/11/air_pollution-650x488.jpg\" alt=\"Industrial smokestacks beside an urban street in Kazakhstan.\"/></figure>\n<!-- /wp:image --></div><!-- /wp:column --><!-- wp:column --><div class=\"wp-block-column\"><!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"https://dev.ehpmi.org/wp-content/uploads/2022/11/air_pollution2-650x488.jpg\" alt=\"Apartment buildings affected by industrial air pollution in Kazakhstan.\"/></figure>\n<!-- /wp:image --></div><!-- /wp:column --></div><!-- /wp:columns -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\"><strong>Implemented projects in Kazakhstan</strong></h2>\n<!-- /wp:heading -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li><em>Projects related to energy efficiency</em> \u2013 1 (holding a public environmental hearing on the topic: \"Energy-efficient, energy-saving environmentally friendly technologies\");</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><em>Projects on water bodies</em> \u2013 2 (study of the state of water sources in Akmola region; conducting research of drinking water quality management).</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><em>Environmental education projects</em> \u2013 7 (organization and holding of the 5th and 6th youth meetings of the ecological network of Central Asia; organization and holding of the 1st and 2nd youth environmental forum; holding a series of environmental actions ENERGY BOOM; environmental education of schoolchildren; studying the needs of the community in the field of preschool education);</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><em>Chemical safety projects</em> \u2013 4 (organizing National Youth environmental forums in Uzbekistan, Turkmenistan on chemical safety; assessment of the presence of lead in paint for household use; \"Clean Toys\"; Conducting an advocacy campaign to exclude mercury-containing products that pose the greatest danger to human health and the environment of Central Asian countries);</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><em>Additional projects</em>: pilot project on strategic environmental assessment; \"Clean air, air monitoring in Atbasar\"; public hearings on the reclamation of uranium tailings dumps; organization of a meeting of Central Asian experts in the field of international environmental policy; holding the \"Clean Coast\" campaign.</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\"><strong>Proposed future projects</strong></h2>\n<!-- /wp:heading -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Projects to reduce the risks associated with obsolete pesticides in Kazakhstan;</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Air monitoring, National Air Pollution Assessment;</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Food safety (testing for nitrates, nitrites, heavy metals);</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Reduction of impacts of lead on human health in industrial cities (Shymkent, Ust-Kamenogorsk, Ridder, Balkhash);</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Environmental education of teachers and children;</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Assessment of spices and baby food for heavy metal content.</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->",
+            "meta": {
+                "leader": [
+                    ""
+                ],
+                "team": [
+                    "a:1:{i:0;s:3:\"234\";}"
+                ],
+                "member": [
+                    "a:1:{i:0;s:3:\"119\";}"
+                ],
+                "point": [
+                    "5"
+                ]
+            }
+        },
+        {
+            "ID": 362,
+            "title": "Kyrgyzstan",
+            "slug": "kyrgyzstan",
+            "parent": 17,
+            "order": 40,
+            "url": "https://dev.ehpmi.org/offices/kyrgyzstan/",
+            "content": "<!-- wp:paragraph -->\n<p>Kyrgyzstan is a landlocked country in&nbsp;Central Asia, bordering&nbsp;Kazakhstan, China,&nbsp;Tajikistan&nbsp;and&nbsp;Uzbekistan. It is \u201cthe most\u201d landlocked state as it is farther away from the sea than any other country in the world. Also all Kyrgyzstan rivers flow into&nbsp;closed drainage systems, which waters do not reach the sea. Kyrgyzstan is a high lands country. The mountainous region of Tian Shan&nbsp;covers more than 80% of the country. For that reason Kyrgyzstan is often referred to as \"the Switzerland of Central Asia.\"&nbsp;</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"className\":\"is-style-ehpmi-wide\"} -->\n<figure class=\"wp-block-image size-large is-style-ehpmi-wide\"><img src=\"https://dev.ehpmi.org/wp-content/uploads/2023/02/Kyrgyzstan-1320x610.jpg\" alt=\"Map of Kyrgyzstan.\"/></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p>The official capital&nbsp;and&nbsp;the largest city&nbsp;is&nbsp;Bishkek with population of about 1 million people. The second biggest city of Kyrgyzstan is Osh (500,000 people), which is also called the southern capital.&nbsp;</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Kyrgyzstan's population is about 6.6 million people.&nbsp;The population of Kyrgyzstan is rather young. People under the age of 15 make more than 34% of total population. The country is mostly&nbsp;rural: only about one-third of the population live in urban areas. The average&nbsp;population density&nbsp;is 25 people per km<sup>2</sup>.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:columns {\"className\":\"is-style-ehpmi-photo-pair-3x2\"} --><div class=\"wp-block-columns is-style-ehpmi-photo-pair-3x2\"><!-- wp:column --><div class=\"wp-block-column\"><!-- wp:image {\"id\":844,\"sizeSlug\":\"medium\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-medium\"><img src=\"https://dev.ehpmi.org/wp-content/uploads/2023/02/IMG_1511-650x433.jpg\" alt=\"Forested mountain valley in Kyrgyzstan.\" class=\"wp-image-844\"/><figcaption class=\"wp-element-caption\"><br>\u0444\u043e\u0442\u043e: \u0412\u043b\u0430\u0434 \u0423\u0448\u0430\u043a\u043e\u0432</figcaption></figure>\n<!-- /wp:image --></div><!-- /wp:column --><!-- wp:column --><div class=\"wp-block-column\"><!-- wp:image {\"id\":843,\"sizeSlug\":\"medium\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-medium\"><img src=\"https://dev.ehpmi.org/wp-content/uploads/2023/02/P1010201-650x488.jpg\" alt=\"Shore of Issyk-Kul Lake with mountains in the distance.\" class=\"wp-image-843\"/><figcaption class=\"wp-element-caption\">OLYMPUS DIGITAL CAMERA</figcaption></figure>\n<!-- /wp:image --></div><!-- /wp:column --></div><!-- /wp:columns -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\"><strong>Major environmental problems in the country</strong></h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Kyrgyzstan has numerous environmental&nbsp;problems. The country is rich in all sorts of mineral deposits, including mercury, antimony, lead, zinc, copper, uranium, etc. The w<em>astes of the mining industry contaminated </em>fragile mountain environment in more than 300 locations. <em>It was assessed that there are over </em>250 million cubic meters of wastes at 92 currently inventoried mining sites. These wastes contain serve as the source of pollution, that in some cases contaminate populated areas and cause health problems related to toxic heavy metals and radioactive materials. Most of mining wastes are situated in river basins and since Kyrgyzstan is prone to natural disasters such as earthquakes and&nbsp;landslides, these wastes pose high risk of trans-boundary pollution.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:columns {\"className\":\"is-style-ehpmi-photo-pair-3x2\"} --><div class=\"wp-block-columns is-style-ehpmi-photo-pair-3x2\"><!-- wp:column --><div class=\"wp-block-column\"><!-- wp:image {\"id\":841,\"sizeSlug\":\"medium\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-medium\"><img src=\"https://dev.ehpmi.org/wp-content/uploads/2023/02/dom_83-650x363.jpg\" alt=\"Bishkek cityscape with snow-capped mountains in the distance.\" class=\"wp-image-841\"/><figcaption class=\"wp-element-caption\">\u0444\u043e\u0442\u043e: \u0412\u043b\u0430\u0434 \u0423\u0448\u0430\u043a\u043e\u0432</figcaption></figure>\n<!-- /wp:image --></div><!-- /wp:column --><!-- wp:column --><div class=\"wp-block-column\"><!-- wp:image {\"id\":842,\"scale\":\"cover\",\"sizeSlug\":\"medium\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-medium\"><img src=\"https://dev.ehpmi.org/wp-content/uploads/2023/02/DSC08269-650x339.jpg\" alt=\"Panoramic view of Issyk-Kul Lake and the surrounding mountains.\" class=\"wp-image-842\" style=\"object-fit:cover\"/><figcaption class=\"wp-element-caption\">\u0444\u043e\u0442\u043e: \u0412\u043b\u0430\u0434 \u0423\u0448\u0430\u043a\u043e\u0432</figcaption></figure>\n<!-- /wp:image --></div><!-- /wp:column --></div><!-- /wp:columns -->\n\n<!-- wp:paragraph -->\n<p>Another big national problem is contamination with obsolete pesticides in some location. The country does not have resources to clean up polluted areas and destroy remaining stocks of DDT, lindane, hexachlorinehexane, and other persistent organic pollutants (POPs).&nbsp;</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>Other national problems include: scarcity of water resources in some areas, water pollution, city air pollution, household solid waste management, degradation of natural ecosystems, and other.&nbsp;</em>Some global environmental problems also have a significant impact on the country, including: <strong><em>Global</em></strong> climate change,&nbsp;ozone layer depletion,&nbsp;desertification, and&nbsp;biodiversity loss.</p>\n<!-- /wp:paragraph -->",
+            "meta": {
+                "leader": [
+                    ""
+                ],
+                "team": [
+                    "a:1:{i:0;s:3:\"183\";}"
+                ],
+                "member": [
+                    "a:1:{i:0;s:3:\"116\";}"
+                ],
+                "point": [
+                    "7"
+                ]
+            }
+        },
+        {
+            "ID": 374,
+            "title": "Mongolia",
+            "slug": "mongolia",
+            "parent": 17,
+            "order": 50,
+            "url": "https://dev.ehpmi.org/offices/mongolia/",
+            "content": "<!-- wp:paragraph -->\n<p>Mongolia is located in the east Asia with area of 1.56 million km<sup>2</sup> and population of 3.5 million. Mongolia is a landlocked country bordered with China on the south and Russia on the north. Administratively, Mongolia is divided into the capital city, provinces and counties. </p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"className\":\"is-style-ehpmi-wide\"} -->\n<figure class=\"wp-block-image size-large is-style-ehpmi-wide\"><img src=\"https://dev.ehpmi.org/wp-content/uploads/2022/12/Mongolia-1320x505.jpg\" alt=\"Map of Mongolia.\"/></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p>The capital city, Ulaanbaatar, is the main administrative, political, economic and industrial centre with a population of approximately 1.4 million, which is nearly half of the country\u2019s total population. There are 21 provinces in Mongolia and each province consists of 13-27 counties.&nbsp;&nbsp;&nbsp;</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:columns {\"className\":\"is-style-ehpmi-photo-pair-3x2\"} --><div class=\"wp-block-columns is-style-ehpmi-photo-pair-3x2\"><!-- wp:column --><div class=\"wp-block-column\"><!-- wp:image {\"id\":624,\"sizeSlug\":\"medium\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-medium\"><img src=\"https://dev.ehpmi.org/wp-content/uploads/2022/11/3horse-650x434.jpg\" alt=\"Horses and a foal grazing on the Mongolian steppe.\" class=\"wp-image-624\"/></figure>\n<!-- /wp:image --></div><!-- /wp:column --><!-- wp:column --><div class=\"wp-block-column\"><!-- wp:image {\"id\":625,\"sizeSlug\":\"medium\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-medium\"><img src=\"https://dev.ehpmi.org/wp-content/uploads/2022/11/DSC03947_camel_girl-650x433.jpg\" alt=\"Camel rider crossing the Mongolian steppe.\" class=\"wp-image-625\"/></figure>\n<!-- /wp:image --></div><!-- /wp:column --></div><!-- /wp:columns -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\"><strong>Major environmental problems in the country</strong></h2>\n<!-- /wp:heading -->\n\n<!-- wp:media-text {\"mediaPosition\":\"right\",\"mediaId\":626,\"mediaLink\":\"https://dev.ehpmi.org/offices/mongolia/attachment/landscape_ice1000/\",\"mediaType\":\"image\",\"mediaSizeSlug\":\"medium\"} -->\n<div class=\"wp-block-media-text has-media-on-the-right is-stacked-on-mobile\"><div class=\"wp-block-media-text__content\"><!-- wp:paragraph {\"placeholder\":\"Content\u2026\"} -->\n<p>Mongolia\u2019s unique landscapes support rich natural resources and rural livelihoods. However, economic growth and a growing population, combined with impacts from climate change, are contributing to the decline of its natural resources, including forest and water; and causing air, soil, and water pollution.\u00a0The urban areas of the provincial and county centers generally have centralized heating, water supply, and wastewater infrastructures. The main energy source in these urban areas is raw coal, which is a potential source of lead, mercury, arsenic, chromium and other heavy metals, and possibly radiation (depending on the geological conditions of the coal deposits in Mongolia). Mining activities, tanneries and small-scale industrial plants such as steel ball forgery and coal processing appear to be the main sources of pollution in province centers.</p>\n<!-- /wp:paragraph --></div><figure class=\"wp-block-media-text__media\"><img src=\"https://dev.ehpmi.org/wp-content/uploads/2022/11/landscape_ice1000-650x434.jpg\" alt=\"Partly frozen stream in a mountain landscape in Mongolia.\" class=\"wp-image-626 size-medium\"/></figure></div>\n<!-- /wp:media-text -->",
+            "meta": {
+                "leader": [
+                    ""
+                ],
+                "team": [
+                    "a:1:{i:0;s:3:\"243\";}"
+                ],
+                "member": [
+                    "a:1:{i:0;s:3:\"103\";}"
+                ],
+                "point": [
+                    "6"
+                ]
+            }
+        },
+        {
+            "ID": 378,
+            "title": "Tajikistan",
+            "slug": "tajikistan",
+            "parent": 17,
+            "order": 60,
+            "url": "https://dev.ehpmi.org/offices/tajikistan/",
+            "content": "<!-- wp:paragraph -->\n<p><strong>Tajikistan</strong> officially the <strong>Republic of Tajikistan</strong>, is a landlocked country in Central Asia. It has an area of 143,100 km<sup> </sup>(55,300&nbsp;sq&nbsp;mi) and an estimated population of 10,000,000 people. Its capital and largest city is Dushanbe. It is bordered by Afghanistan to the south, Uzbekistan to the west, Kyrgyzstan to the north and China to the east. It is separated narrowly from Pakistan by Afghanistan's Wakhan Corridor. The traditional homelands of the Tajik people include present-day Tajikistan as well as parts of Afghanistan and Uzbekistan.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"className\":\"is-style-ehpmi-wide\"} -->\n<figure class=\"wp-block-image size-large is-style-ehpmi-wide\"><img src=\"https://dev.ehpmi.org/wp-content/uploads/2022/11/Tajikistan-1320x767.jpg\" alt=\"Map of Tajikistan.\"/></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p>The territory that now constitutes Tajikistan was previously home to several ancient cultures, including the city of Sarazm<sup> </sup>of the Neolithic and the Bronze Age and was later home to kingdoms ruled by people of different faiths and cultures, including the Oxus Valley Civilisation, Andronovo Culture, Buddhism, Nestorian Christianity, Hinduism, Zoroastrianism, Manichaeism and Islam. The area has been ruled by numerous empires and dynasties, including the Achaemenid Empire, Sasanian Empire, Hephthalite Empire, Samanid Empire and the Mongol Empire. After being ruled by the Timurid dynasty and the Khanate of Bukhara, the Timurid Renaissance flourished. The region was later conquered by the Russian Empire and subsequently by the Soviet Union. Within the Soviet Union, the country's modern borders were drawn when it was part of Uzbekistan as an autonomous republic before becoming a full-fledged Soviet republic in 1929.&nbsp;</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:columns {\"className\":\"is-style-ehpmi-photo-pair-3x2\"} --><div class=\"wp-block-columns is-style-ehpmi-photo-pair-3x2\"><!-- wp:column --><div class=\"wp-block-column\"><!-- wp:image {\"id\":629,\"sizeSlug\":\"medium\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-medium\"><img src=\"https://dev.ehpmi.org/wp-content/uploads/2022/11/DSC02053-650x433.jpg\" alt=\"Mountain river running through a valley in Tajikistan.\" class=\"wp-image-629\"/></figure>\n<!-- /wp:image --></div><!-- /wp:column --><!-- wp:column --><div class=\"wp-block-column\"><!-- wp:image {\"id\":628,\"sizeSlug\":\"medium\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-medium\"><img src=\"https://dev.ehpmi.org/wp-content/uploads/2022/11/DSC02129_mt_lake_2000-650x433.jpg\" alt=\"Mountain lake surrounded by rocky peaks in Tajikistan.\" class=\"wp-image-628\"/></figure>\n<!-- /wp:image --></div><!-- /wp:column --></div><!-- /wp:columns -->\n\n<!-- wp:paragraph -->\n<p>On 9 September 1991, Tajikistan became an independent sovereign nation as the Soviet Union disintegrated. A civil war was fought almost immediately after independence, lasting from 1992 to 1997. Since the end of the war, newly established political stability and foreign aid have allowed the country's economy to grow. The country has been led by President&nbsp;Emomali Rahmon since 1994.&nbsp;</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Tajikistan is a presidential republic consisting of four provinces. Most of Tajikistan's population belongs to the Tajik ethnic group, who speak the Tajik language \u2014 the first official language \u2014 making it one of the three Persian speaking countries alongside Afghanistan and Iran. Russian is used as the official inter-ethnic language. While the state is constitutionally secular, Islam is practiced by 98% of the population. In the Gorno-Badakhshan oblast, despite its sparse population, there is large linguistic diversity where Rushani, Shughni, Ishkashimi, Wakhi and Tajik are some of the languages spoken. Mountains cover more than 90% of the country. It is a developing country with a transitional economy that is highly dependent on remittances, aluminium and cotton production. Tajikistan is a member of the United Nations, CIS, OSCE, OIC, ECO, SCO and CSTO as well as a NATO PfP partner.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\"><strong>Major environmental problems in the country</strong></h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Tajikistan is a small mountainous land-locked Central Asian country with an economy that heavily depends, as a legacy of the soviet economy, on exports of cotton, aluminum and hydroelectricity that are three rather environmentally sensitive sectors, as well as on remittances from migrants living abroad. Environmental degradation and unsustainable use of natural resources are constraints to sustainable economic growth and poverty reduction. With more than half of its territory situated above 3,000 meters, the country is particularly vulnerable to natural disasters. The environmental challenges in the country, according to the recent National Environmental Action Plan (NEAP) is: </p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li>land degradation, including deforestation, degradation of pasturelands, arable and irrigated lands</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>lack of improved drinking water and water quality deterioration</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>waste pollution from agriculture and industry</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>deficiencies in sewerage system infrastructure and management</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>uncollected and untreated solid waste</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>environmental hazards and natural disasters caused by floods and drought</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>energy supply</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>lack of environmental education</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"https://dev.ehpmi.org/wp-content/uploads/2022/11/02_xrf_ludmila_umed_bek_said.jpg\" alt=\"Field team using an X-ray fluorescence analyzer inside an industrial building in Tajikistan.\"/></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p></p>\n<!-- /wp:paragraph -->",
+            "meta": {
+                "leader": [
+                    ""
+                ],
+                "team": [
+                    "a:1:{i:0;s:3:\"197\";}"
+                ],
+                "member": [
+                    "a:1:{i:0;s:3:\"117\";}"
+                ],
+                "point": [
+                    "8"
+                ]
+            }
+        },
+        {
+            "ID": 647,
+            "title": "Ukraine",
+            "slug": "ukraine",
+            "parent": 17,
+            "order": 70,
+            "url": "https://dev.ehpmi.org/offices/ukraine/",
+            "content": "<!-- wp:paragraph -->\n<p>Ukraine is an Eastern European country with total area of 603,700 km\u00b2 (46th place in the world). Ukraine borders with Belarus, Russia, Hungary, Romania, Moldova, Poland, and Slovakia. In the south, the country is washed by the Black Sea and the Azov Sea. The climate of Ukraine is moderately continental. Before February 2022, the population of Ukraine was more than 43 million people.&nbsp;</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"className\":\"is-style-ehpmi-wide\"} -->\n<figure class=\"wp-block-image size-large is-style-ehpmi-wide\"><img src=\"https://dev.ehpmi.org/wp-content/uploads/2022/12/Ukraine-1320x767.jpg\" alt=\"Map of Ukraine.\"/></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p>Ukraine has a favorable geographical position, plenty of natural resources and big labor potential, but the country\u2019s economic development has been slowed by geopolitical problems and government inefficiencies. During the Soviet time the industry and agriculture developed rapidly and it led to many pollution problems that remain today. </p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>The most severe environmental problems of Ukraine are:</strong></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li>air pollution: coal-burning industries in eastern Ukraine, thermal power plants, and transportation;</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>water pollution: chemical fertilizers and pesticides from agriculture, poorly treated or untreated sewage, etc.;</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>toxic heavy metals from mining and ore processing, both legacy and active highly contaminated mining areas;</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>hazardous wastes: industrial, electronic, and chemical wastes mix with solid municipal wastes;</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>radioactive contamination: Chornobyl exclusion zone and nearby areas contaminated by different short- and long-lived radioactive isotopes, particularly strontium-90 that can replace calcium in foods and accumulate in bones and teeth.</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:paragraph -->\n<p><strong>The ongoing military conflict added more environmental problems:</strong></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Disruption of water supply, drainage and sewage treatment systems led to increased pollution of rivers, lakes and groundwater;</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Large-scale spills of oil and petroleum products contaminated water and soil;&nbsp;</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Destruction of tailings, sludge storages, and landfills increases pollution;</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Destruction of coastal infrastructure of ports leads co pollution of seawater;</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Loss of fertile soil and degradation of steppe and forest ecosystems;</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Redistribution of radioactive contamination in Chornobyl zone;</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Mines, explosives, and military wastes containing toxic materials;</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:paragraph -->\n<p><strong>Potential projects:</strong></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>While currently it is not possible to do field work in the war zone areas in Eastern Ukraine, EHPMI conducts and plans activities outside military conflict areas or focus on innovations in environmental monitoring and remediation equipment developed by Ukrainian scientists. The list includes:</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list {\"ordered\":true} -->\n<ol class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Creation and test of mobile modular innovative equipment for destruction of DDT and other persistent organic pollutants;</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Development of new sensor detection systems for the Chornobyl exclusion zone to conduct aero gamma surveys in real-time mode on drones;</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Creation of mobiles water purification systems that can be used in the field for drinking water supply;</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Development of methodologies to evaluate environmental impacts of military actions;</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Development of air quality monitoring systems;</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Innovative technology for medical wastes disposal;</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Continued inventarization of contaminated sites.</li>\n<!-- /wp:list-item --></ol>\n<!-- /wp:list -->",
+            "meta": {
+                "leader": [
+                    ""
+                ],
+                "team": [
+                    ""
+                ],
+                "member": [
+                    ""
+                ],
+                "point": [
+                    "1"
+                ]
+            }
+        },
+        {
+            "ID": 656,
+            "title": "Azerbaijan",
+            "slug": "azerbaijan",
+            "parent": 17,
+            "order": 15,
+            "url": "https://dev.ehpmi.org/offices/azerbaijan/",
+            "content": "<!-- wp:paragraph -->\n<p>Azerbaijan is a country located in the eastern part of the South Caucasus, west of the Caspian Sea. Azerbaijan is not a big country with the total area of 86,600 km2. This country regained its independence in 1991 after the collapse of the Soviet Union. The territory of the country consists of mountains (60%) and plains. The Greater and Lesser Caucasus Mountains, as well as the Talysh Mountains, are located in the northern, eastern and southern regions of the country, respectively. Between these mountains, on the banks of the Kura and Araz rivers, there is a wide Kura-Araz plain. The Caucasus Mountains, rich in forests and various mountain landscapes, are considered the main natural wealth of the country. These mountains are rich in various springs and thermal waters. There are many relict and endemic species of plant and animals.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"className\":\"is-style-ehpmi-wide\"} -->\n<figure class=\"wp-block-image size-large is-style-ehpmi-wide\"><img src=\"https://dev.ehpmi.org/wp-content/uploads/2022/11/Azerbaijan-1320x703.jpg\" alt=\"Map of Azerbaijan.\"/></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p>Azerbaijan has abundant natural resources and great biological diversity. The list of main mineral resources includes oil, gas, iron ore, alunite, gold, copper, etc.&nbsp;</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The Caspian Sea is located in the eastern part of the country, and the total length of the coast of Azerbaijan is 830 km. The sea coast includes forest and semi-desert landscapes with many sand beaches. The sandy shores of the Caspian Sea and the healing muds of the Absheshron peninsula have been attracting people since ancient times.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:columns {\"className\":\"is-style-ehpmi-photo-pair-3x2\"} --><div class=\"wp-block-columns is-style-ehpmi-photo-pair-3x2\"><!-- wp:column --><div class=\"wp-block-column\"><!-- wp:image {\"id\":660,\"sizeSlug\":\"medium\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-medium\"><img src=\"https://dev.ehpmi.org/wp-content/uploads/2022/11/image3-650x434.jpeg\" alt=\"Mountain agricultural landscape in Azerbaijan.\" class=\"wp-image-660\"/></figure>\n<!-- /wp:image --></div><!-- /wp:column --><!-- wp:column --><div class=\"wp-block-column\"><!-- wp:image {\"id\":659,\"sizeSlug\":\"medium\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-medium\"><img src=\"https://dev.ehpmi.org/wp-content/uploads/2022/11/image1-2-650x434.jpeg\" alt=\"Goitered gazelle standing in shallow water in Azerbaijan.\" class=\"wp-image-659\"/></figure>\n<!-- /wp:image --></div><!-- /wp:column --></div><!-- /wp:columns -->\n\n<!-- wp:paragraph -->\n<p><strong>Major environmental problems in the country</strong></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:media-text {\"mediaPosition\":\"right\",\"mediaId\":661,\"mediaLink\":\"https://dev.ehpmi.org/offices/azerbaijan/attachment/image2/\",\"mediaType\":\"image\",\"mediaSizeSlug\":\"medium\"} -->\n<div class=\"wp-block-media-text has-media-on-the-right is-stacked-on-mobile\"><div class=\"wp-block-media-text__content\"><!-- wp:paragraph {\"placeholder\":\"Content\u2026\"} -->\n<p>There are many problems with environmental pollution in Azerbaijan, caused by long history of oil production and petrochemical industry, urbanization, and various Soviet legacy sources of pollution. The biggest problems with air, water and soil pollution exist is in the country's largest cities and densely populated areas. These areas mainly include Baku and Sumgait and other settlements in the Absheron Peninsula.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"placeholder\":\"Content\u2026\"} -->\n<p>In rural areas agriculture is the main source of pollution. Pesticides and other chemicals are extensively used. All types of POPs pesticides that were later banned by the Stockholm Convention were actively used in Azerbaijan until the early 1980s.&nbsp;</p>\n<!-- /wp:paragraph --></div><figure class=\"wp-block-media-text__media\"><img src=\"https://dev.ehpmi.org/wp-content/uploads/2022/11/image2-650x433.jpeg\" alt=\"Oil-contaminated water and shoreline in Azerbaijan.\" class=\"wp-image-661 size-medium\"/></figure></div>\n<!-- /wp:media-text -->\n\n<!-- wp:paragraph -->\n<p><strong>Implemented projects:</strong></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Ujar Remediaiton Project, removal of obsolete pesticides</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://dev.ehpmi.org/projects/past/cleanup-of-toxic-persistent-organic-pollutants-in-sumgait-azerbaijan/\" data-type=\"link\" data-id=\"https://dev.ehpmi.org/projects/past/cleanup-of-toxic-persistent-organic-pollutants-in-sumgait-azerbaijan/\">Sumgait cleanup of the coastal area from </a><a href=\"/projects/past/cleanup-of-toxic-persistent-organic-pollutants-in-sumgait-azerbaijan/\" data-type=\"link\" data-id=\"https://dev.ehpmi.org/projects/past/cleanup-of-toxic-persistent-organic-pollutants-in-sumgait-azerbaijan/\">persistent</a><a href=\"https://dev.ehpmi.org/projects/past/cleanup-of-toxic-persistent-organic-pollutants-in-sumgait-azerbaijan/\" data-type=\"link\" data-id=\"https://dev.ehpmi.org/projects/past/cleanup-of-toxic-persistent-organic-pollutants-in-sumgait-azerbaijan/\"> organic pollutants</a>&nbsp;</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Salyan cleanup of DDT and other pesticides&nbsp;</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Toxic Sites Identification Program (TSIP) in Azerbaijan&nbsp;</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:paragraph -->\n<p><strong>Proposed future projects</strong>:</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Lead Health Risk Identification and Reduction&nbsp;</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Remediation of oil contaminated areas on the Absheron Peninsula, including the pilot site near the Zykh Lake</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Improving air quality in Baku and Sumgait</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Reduction of pollution from old pesticide sources in rural areas and creation of new pesticide management schemes</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->",
+            "meta": {
+                "leader": [
+                    ""
+                ],
+                "team": [
+                    "a:1:{i:0;s:3:\"193\";}"
+                ],
+                "member": [
+                    "a:1:{i:0;s:4:\"1735\";}"
+                ],
+                "point": [
+                    "4"
+                ]
+            }
+        },
+        {
+            "ID": 1453,
+            "title": "Partners",
+            "slug": "partners",
+            "parent": 13,
+            "order": 60,
+            "url": "https://dev.ehpmi.org/about/partners/",
+            "content": "",
+            "meta": []
+        },
+        {
+            "ID": 1480,
+            "title": "Video",
+            "slug": "video",
+            "parent": 0,
+            "order": 20,
+            "url": "https://dev.ehpmi.org/video/",
+            "content": "<!-- wp:html -->\n<iframe width=\"800\" height=\"450\" src=\"https://www.youtube.com/embed/3ugcObko9M8?si=x9nJ5j2__yX6xGG-\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n<!-- /wp:html -->\n\n<!-- wp:html -->\n<iframe width=\"800\" height=\"450\" src=\"https://www.youtube.com/embed/7n_-DVgC__g?si=ljaMc5sMD0lyYBQ2&amp;start=330\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>\n<!-- /wp:html -->\n\n<!-- wp:html -->\n<iframe width=\"800\" height=\"450\" src=\"https://www.youtube.com/embed/yGMMu9rGgHE?si=fXyskhD_5QHBI6mL\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n<!-- /wp:html -->",
+            "meta": []
+        },
+        {
+            "ID": 1647,
+            "title": "Vietnam",
+            "slug": "vietnam",
+            "parent": 17,
+            "order": 80,
+            "url": "https://dev.ehpmi.org/offices/vietnam/",
+            "content": "",
+            "meta": {
+                "leader": [
+                    "1516"
+                ],
+                "team": [
+                    ""
+                ],
+                "member": [
+                    "a:1:{i:0;s:4:\"1493\";}"
+                ],
+                "point": [
+                    "9"
+                ]
+            }
+        },
+        {
+            "ID": 1841,
+            "title": "Persistent organic pollutants",
+            "slug": "persistent-organic-pollutants",
+            "parent": 1480,
+            "order": 0,
+            "url": "https://dev.ehpmi.org/video/persistent-organic-pollutants/",
+            "content": "<!-- wp:epyt/youtube {\"shortcode\":\"[embedyt] https://www.youtube.com/embed?listType=playlist\\u0026list=PLVFW9UYsySBc52eELo2WUJJh6wQPVaqwI\\u0026layout=gallery[/embedyt]\"} -->\n[embedyt] https://www.youtube.com/embed?listType=playlist&amp;list=PLVFW9UYsySBc52eELo2WUJJh6wQPVaqwI&amp;layout=gallery[/embedyt]\n<!-- /wp:epyt/youtube -->",
+            "meta": []
+        },
+        {
+            "ID": 1844,
+            "title": "Strengthening Health Systems to Reduce Lead Exposure (Kyrgyzstan)",
+            "slug": "strengthening-health-systems-to-reduce-lead-exposure-kyrgyzstan",
+            "parent": 1480,
+            "order": 0,
+            "url": "https://dev.ehpmi.org/video/strengthening-health-systems-to-reduce-lead-exposure-kyrgyzstan/",
+            "content": "<!-- wp:epyt/youtube {\"shortcode\":\"[embedyt] https://www.youtube.com/embed?listType=playlist\\u0026list=PLJ7dYdehOEmacVEhNgMnUDhfMMRyC7KFo\\u0026layout=gallery[/embedyt]\"} -->\n[embedyt] https://www.youtube.com/embed?listType=playlist&amp;list=PLJ7dYdehOEmacVEhNgMnUDhfMMRyC7KFo&amp;layout=gallery[/embedyt]\n<!-- /wp:epyt/youtube -->",
+            "meta": []
+        },
+        {
+            "ID": 2378,
+            "title": "What we do",
+            "slug": "projects",
+            "parent": 0,
+            "order": 0,
+            "url": "https://dev.ehpmi.org/projects/",
+            "content": "",
+            "meta": []
+        },
+        {
+            "ID": 2379,
+            "title": "Blog",
+            "slug": "blog",
+            "parent": 0,
+            "order": 0,
+            "url": "https://dev.ehpmi.org/blog/",
+            "content": "",
+            "meta": []
+        },
+        {
+            "ID": 2380,
+            "title": "Library",
+            "slug": "library",
+            "parent": 0,
+            "order": 0,
+            "url": "https://dev.ehpmi.org/library/",
+            "content": "",
+            "meta": []
+        },
+        {
+            "ID": 2381,
+            "title": "Current projects",
+            "slug": "current",
+            "parent": 2378,
+            "order": 0,
+            "url": "https://dev.ehpmi.org/projects/current/",
+            "content": "",
+            "meta": []
+        },
+        {
+            "ID": 2382,
+            "title": "Projects implemented by EHPMI team",
+            "slug": "past",
+            "parent": 2378,
+            "order": 0,
+            "url": "https://dev.ehpmi.org/projects/past/",
+            "content": "",
+            "meta": []
+        },
+        {
+            "ID": 2383,
+            "title": "Potential projects",
+            "slug": "potential",
+            "parent": 2378,
+            "order": 0,
+            "url": "https://dev.ehpmi.org/projects/potential/",
+            "content": "",
+            "meta": []
+        },
+        {
+            "ID": 2384,
+            "title": "News",
+            "slug": "news",
+            "parent": 2379,
+            "order": 0,
+            "url": "https://dev.ehpmi.org/blog/news/",
+            "content": "",
+            "meta": []
+        },
+        {
+            "ID": 2385,
+            "title": "Action plans",
+            "slug": "action-plans",
+            "parent": 2380,
+            "order": 0,
+            "url": "https://dev.ehpmi.org/library/action-plans/",
+            "content": "",
+            "meta": []
+        },
+        {
+            "ID": 2386,
+            "title": "Information about health and pollution",
+            "slug": "health-and-pollution",
+            "parent": 2380,
+            "order": 0,
+            "url": "https://dev.ehpmi.org/library/health-and-pollution/",
+            "content": "",
+            "meta": []
+        },
+        {
+            "ID": 2387,
+            "title": "Lead health risk assessment",
+            "slug": "lead-health-risk-assessment",
+            "parent": 2380,
+            "order": 0,
+            "url": "https://dev.ehpmi.org/library/lead-health-risk-assessment/",
+            "content": "",
+            "meta": []
+        },
+        {
+            "ID": 2388,
+            "title": "Publications and Co-authored Publications",
+            "slug": "publications-and-co-authored-publications",
+            "parent": 2380,
+            "order": 0,
+            "url": "https://dev.ehpmi.org/library/publications-and-co-authored-publications/",
+            "content": "<!-- wp:paragraph -->\n<p><a href=\"/wp-content/uploads/2024/03/Georgia2024.pdf\" data-type=\"link\" data-id=\"/wp-content/uploads/2024/03/Georgia2024.pdf\">Jenna E. Forsyth, Khatuna Akhalaia, Mariami Jintcharadze, Emily Nash, Petr Sharov, Alena Temnikova, Christlee Elmera (2024). Reductions in spice lead levels in the republic of Georgia: 2020\u20132022</a></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Spice adulteration using yellow lead chromate-based pigments has been documented as a growing global health concern. Spices from the Republic of Georgia with extremely high levels of lead, up to an order of magnitude higher than any other spices worldwide, have been implicated as sources of child lead poisoning. The objectives of this study were to 1) evaluate lead concentrations in spices sampled across the country of Georgia between 2020 and 2022, and 2) assess factors associated with spice adulteration, specifically the role of spice quality and regulatory enforcement. Spice samples were collected from 29 cities nationwide. The most populous cities were selected in each administrative region as well as those of importance to the spice supply chain. Sampling was carried out at the largest spice bazaars in each city. The regions of Adjara and Imereti were the focus of qualitative interviews conducted in 2021 with key businesspeople selling spices with very high and low levels of lead. The same cities and bazaars were visited at each of three sampling periods between 2020 and 2022. In total, 765 spice samples were collected. Lead concentrations in spices decreased over time, with a maximum of 14,233 \u03bcg/g in 2020 down to 36 \u03bcg/g in the final sampling round of 2022. A logistic regression determined that sampling round, region and spice type were associated with elevated lead in samples. Samples from Adjara and those containing marigold had the highest lead levels. Interviews with eighteen prominent spice vendors revealed difficulties sourcing sufficient quantities of high quality, brightly colored marigold, and concerns about adulteration. Interviews with two authorities from the National Food Authority highlighted the increased attention on regulating lead in spices since 2018. Continued monitoring and periodic regulatory enforcement may adequately disincentivize further adulteration with lead chromate in the spice industry in Georgia.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><a href=\"https://www.sciencedirect.com/science/article/abs/pii/S0013935124004080\">Environmental Research (2024) Vol. 250, ISSN 0013-9351</a></p>\n<!-- /wp:paragraph -->",
+            "meta": []
+        },
+        {
+            "ID": 2389,
+            "title": "Videos",
+            "slug": "videos",
+            "parent": 2380,
+            "order": 0,
+            "url": "https://dev.ehpmi.org/library/videos/",
+            "content": "<!-- wp:html -->\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/KSAAFKrH3HQ\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\"></iframe>\n<!-- /wp:html -->\n\n<!-- wp:html -->\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/6HyNyBJQqbo\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\"></iframe>\n<!-- /wp:html -->",
+            "meta": []
+        }
+    ],
+    "widgets": {
+        "slider-text": {
+            "block-2": {
+                "content": "<h1>Decrease Pollution \u2014 Protect Health</h1>\n<p>Our team unites efforts of  professionals, experts, and nonprofit groups working in Eastern Europe and Central Asia to find and implement solutions to problems of toxic persistent pollutants and associated health risks.</p>"
+            }
+        },
+        "map-text": {
+            "block-3": {
+                "content": "<h2>Our Geography</h2>\n<p>EHPMI has active teams and operates in the following countries: Ukraine, Georgia, Armenia, Azerbaijan, Kazakhstan, Kyrgyzstan, Tajikistan, Mongolia, and Vietnam. The national teams have been present and worked in Eastern Europe and Central Asia region for over 15 years.</p>"
+            }
+        },
+        "contact-form-1": {
+            "block-4": {
+                "content": "<!-- wp:contact-form-7/contact-form-selector {\"id\":77,\"hash\":\"dcc1ba6\",\"title\":\"Contact us\"} -->\n<div class=\"wp-block-contact-form-7-contact-form-selector\">[contact-form-7 id=\"dcc1ba6\" title=\"Contact us\"]</div>\n<!-- /wp:contact-form-7/contact-form-selector -->"
+            }
+        },
+        "contact-form-2": {
+            "block-5": {
+                "content": "<!-- wp:contact-form-7/contact-form-selector {\"id\":79,\"hash\":\"f37d06c\",\"title\":\"Be a volunteer\"} -->\n<div class=\"wp-block-contact-form-7-contact-form-selector\">[contact-form-7 id=\"f37d06c\" title=\"Be a volunteer\"]</div>\n<!-- /wp:contact-form-7/contact-form-selector -->"
+            }
+        },
+        "newsletter": {
+            "newsletterwidget-2": {
+                "title": "Get in Touch",
+                "text": "<div class=\"text\">Subscribe to our Newsletter to learn more about environmental health issues and receive updates on our projects</div>",
+                "lists_layout": "",
+                "lists_empty_label": "",
+                "lists_field_label": ""
+            }
+        },
+        "footer-text": {
+            "block-10": {
+                "content": "<!-- wp:search {\"label\":\"\",\"buttonText\":\"Search\"} /-->"
+            }
+        },
+        "footer-menu-1": {
+            "block-9": {
+                "content": "<!-- wp:code -->\n<pre class=\"wp-block-code\"><code></code></pre>\n<!-- /wp:code -->"
+            }
+        },
+        "footer-contacts": {
+            "block-6": {
+                "content": "<h3>Contact</h3>\n<p><i class=\"fas fa-home me-3\"></i>Georgia, Tbilisi, Vake district, Anna Politkovskaya street,</br>N3, building N21, office N4</p>\n<p><i class=\"fas fa-envelope me-3\"></i><a href=\"javascript:location='mailto:\\u0069\\u006e\\u0066\\u006f\\u0040\\u0065\\u0068\\u0070\\u006d\\u0069\\u002e\\u006f\\u0072\\u0067';void 0\"><script type=\"text/javascript\">document.write('\\u0069\\u006e\\u0066\\u006f\\u0040\\u0065\\u0068\\u0070\\u006d\\u0069\\u002e\\u006f\\u0072\\u0067')</script></a></p>\n<!--\n<p><i class=\"fas fa-phone me-3\"></i></p>-->"
+            }
+        },
+        "footer-social": {
+            "block-7": {
+                "content": "<!-- wp:social-links -->\n<ul class=\"wp-block-social-links\"><!-- wp:social-link {\"url\":\"https://www.instagram.com/ehpmi_official\",\"service\":\"instagram\"} /-->\n\n<!-- wp:social-link {\"url\":\"https://www.facebook.com/ehpmi.org\",\"service\":\"facebook\"} /-->\n\n<!-- wp:social-link {\"url\":\"https://twitter.com/ehpmi_org\",\"service\":\"twitter\"} /-->\n\n<!-- wp:social-link {\"url\":\"https://t.me/ehpmi\",\"service\":\"telegram\"} /--></ul>\n<!-- /wp:social-links -->"
+            }
+        },
+        "footer-copyright": {
+            "block-8": {
+                "content": "<a href=\"https://dev.ehpmi.org/\">ehpmi</a>"
+            }
+        }
+    },
+    "contact_forms": [
+        {
+            "ID": 79,
+            "title": "Be a volunteer",
+            "form": "<label> Your name\n    [text* your-name] </label>\n\n<label> Your email\n    [email* your-email] </label>\n\n<label> Subject\n    [text* your-subject] </label>\n\n<label> Your message (optional)\n    [textarea your-message] </label>\n\n[submit \"Submit\"]"
+        },
+        {
+            "ID": 77,
+            "title": "Contact us",
+            "form": "<label> Your name\n    [text* your-name akismet:author] </label>\n\n<label> Your email\n    [email* your-email akismet:author_email] </label>\n\n<label> Subject\n    [text* your-subject] </label>\n\n<label> Your message (optional)\n    [textarea your-message] </label>\n\n[submit \"Send\"]"
+        }
+    ],
+    "redirects_hash": "dcdbed3208688c6e785e77056428515e48814e9edc2b9030922115f7d8f09d33",
+    "plugins": {
+        "advanced-custom-fields/acf.php": {
+            "version": "6.8.9",
+            "active": true
+        },
+        "akismet/akismet.php": {
+            "version": "5.7.2",
+            "active": true
+        },
+        "breadcrumb-navxt/breadcrumb-navxt.php": {
+            "version": "7.5.2",
+            "active": true
+        },
+        "contact-form-7/wp-contact-form-7.php": {
+            "version": "6.1.7",
+            "active": true
+        },
+        "ehpmi-core/ehpmi-core.php": {
+            "version": "1.2.1",
+            "active": true
+        },
+        "youtube-embed-plus/youtube.php": {
+            "version": "14.2.6",
+            "active": true
+        },
+        "force-regenerate-thumbnails/force-regenerate-thumbnails.php": {
+            "version": "2.3.0",
+            "active": true
+        },
+        "newsletter/plugin.php": {
+            "version": "9.3.5",
+            "active": true
+        },
+        "real-media-library-lite/index.php": {
+            "version": "4.23.0",
+            "active": true
+        },
+        "wpcf7-recaptcha/wpcf7-recaptcha.php": {
+            "version": "1.5.0",
+            "active": true
+        },
+        "wp-optimize/wp-optimize.php": {
+            "version": "4.6.1",
+            "active": true
+        },
+        "wp-robots-txt/robots-txt.php": {
+            "version": "1.3.6",
+            "active": true
+        }
+    }
+}

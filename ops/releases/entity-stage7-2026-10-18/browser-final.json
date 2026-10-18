@@ -1,0 +1,1097 @@
+{
+  "visual": [
+    {
+      "url": "/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "mainH1": 1,
+      "newsletter": [
+        {
+          "text": "Get in Touch",
+          "x": 60,
+          "y": 5058.5625,
+          "w": 693.8125,
+          "h": 33.59375,
+          "display": "block",
+          "visibility": "visible",
+          "float": "none",
+          "maxWidth": "none"
+        },
+        {
+          "text": "Subscribe to our Newsletter to learn more about environmental health issues and receive updates on our projects",
+          "x": 60,
+          "y": 5100.15625,
+          "w": 693.8125,
+          "h": 48,
+          "display": "block",
+          "visibility": "visible",
+          "float": "none",
+          "maxWidth": "none"
+        },
+        {
+          "text": "Email",
+          "x": 801.8125,
+          "y": 5066.5625,
+          "w": 578.1875,
+          "h": 73.59375,
+          "display": "block",
+          "visibility": "visible",
+          "float": "none",
+          "maxWidth": "none"
+        },
+        {
+          "text": "",
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "display": "none",
+          "visibility": "visible",
+          "float": "none",
+          "maxWidth": "none"
+        },
+        {
+          "text": "",
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "display": "none",
+          "visibility": "visible",
+          "float": "none",
+          "maxWidth": "none"
+        },
+        {
+          "text": "Email",
+          "x": 801.8125,
+          "y": 5066.5625,
+          "w": 448.03125,
+          "h": 17,
+          "display": "block",
+          "visibility": "visible",
+          "float": "none",
+          "maxWidth": "none"
+        },
+        {
+          "text": "",
+          "x": 801.8125,
+          "y": 5089.15625,
+          "w": 448.03125,
+          "h": 51,
+          "display": "block",
+          "visibility": "visible",
+          "float": "none",
+          "maxWidth": "none"
+        },
+        {
+          "text": "",
+          "x": 1261.84375,
+          "y": 5090.171875,
+          "w": 118.15625,
+          "h": 49.984375,
+          "display": "block",
+          "visibility": "visible",
+          "float": "none",
+          "maxWidth": "none"
+        }
+      ],
+      "mapSummaries": [
+        {
+          "text": "Vietnam",
+          "ariaLabel": null
+        },
+        {
+          "text": "Azerbaijan",
+          "ariaLabel": null
+        },
+        {
+          "text": "Ukraine",
+          "ariaLabel": null
+        },
+        {
+          "text": "Tajikistan",
+          "ariaLabel": null
+        },
+        {
+          "text": "Mongolia",
+          "ariaLabel": null
+        },
+        {
+          "text": "Kyrgyzstan",
+          "ariaLabel": null
+        },
+        {
+          "text": "Kazakhstan",
+          "ariaLabel": null
+        },
+        {
+          "text": "Georgia",
+          "ariaLabel": null
+        },
+        {
+          "text": "Armenia",
+          "ariaLabel": null
+        }
+      ],
+      "forms": [
+        {
+          "action": "https://dev.ehpmi.org/?stage7=final-1792295185651#wpcf7-f77-o1",
+          "labels": [
+            {
+              "name": "your-name",
+              "labels": [
+                "Your name"
+              ],
+              "tabIndex": 0,
+              "required": "true"
+            },
+            {
+              "name": "your-email",
+              "labels": [
+                "Your email"
+              ],
+              "tabIndex": 0,
+              "required": "true"
+            },
+            {
+              "name": "your-subject",
+              "labels": [
+                "Subject"
+              ],
+              "tabIndex": 0,
+              "required": "true"
+            },
+            {
+              "name": "your-message",
+              "labels": [
+                "Your message (optional)"
+              ],
+              "tabIndex": 0,
+              "required": false
+            }
+          ],
+          "status": true
+        },
+        {
+          "action": "https://dev.ehpmi.org/wp-admin/admin-ajax.php?action=tnp&na=s",
+          "labels": [
+            {
+              "name": "ne",
+              "labels": [
+                "Email"
+              ],
+              "tabIndex": 0,
+              "required": true
+            }
+          ],
+          "status": false
+        }
+      ]
+    },
+    {
+      "url": "/about/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/offices/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [
+        {
+          "text": "Vietnam",
+          "ariaLabel": null
+        },
+        {
+          "text": "Azerbaijan",
+          "ariaLabel": null
+        },
+        {
+          "text": "Ukraine",
+          "ariaLabel": null
+        },
+        {
+          "text": "Tajikistan",
+          "ariaLabel": null
+        },
+        {
+          "text": "Mongolia",
+          "ariaLabel": null
+        },
+        {
+          "text": "Kyrgyzstan",
+          "ariaLabel": null
+        },
+        {
+          "text": "Kazakhstan",
+          "ariaLabel": null
+        },
+        {
+          "text": "Georgia",
+          "ariaLabel": null
+        },
+        {
+          "text": "Armenia",
+          "ariaLabel": null
+        }
+      ],
+      "forms": []
+    },
+    {
+      "url": "/about/ehpmi/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/about/mission-and-goals/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/about/organization-structure/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/about/staff/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/about/members/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/about/contacts/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/newsletter/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": [
+        {
+          "action": "https://dev.ehpmi.org/wp-admin/admin-ajax.php?action=tnp&na=s",
+          "labels": [
+            {
+              "name": "ne",
+              "labels": [
+                "Email"
+              ],
+              "tabIndex": 0,
+              "required": true
+            }
+          ],
+          "status": false
+        }
+      ]
+    },
+    {
+      "url": "/offices/armenia/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/offices/georgia/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/offices/kazakhstan/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/offices/kyrgyzstan/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/offices/mongolia/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/offices/tajikistan/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/offices/ukraine/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/offices/azerbaijan/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/about/partners/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/video/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/offices/vietnam/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/video/persistent-organic-pollutants/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/video/strengthening-health-systems-to-reduce-lead-exposure-kyrgyzstan/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/projects/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/blog/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/library/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/projects/current/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/projects/past/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/projects/potential/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/blog/news/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/library/action-plans/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/library/health-and-pollution/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/library/lead-health-risk-assessment/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/library/publications-and-co-authored-publications/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/library/videos/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/",
+      "width": 390,
+      "documentWidth": 390,
+      "mainH1": 1,
+      "newsletter": [
+        {
+          "text": "Get in Touch",
+          "x": 32,
+          "y": 7298.3125,
+          "w": 326,
+          "h": 27.765625,
+          "display": "block",
+          "visibility": "visible",
+          "float": "none",
+          "maxWidth": "none"
+        },
+        {
+          "text": "Subscribe to our Newsletter to learn more about environmental health issues and receive updates on our projects",
+          "x": 32,
+          "y": 7338.078125,
+          "w": 326,
+          "h": 72,
+          "display": "block",
+          "visibility": "visible",
+          "float": "none",
+          "maxWidth": "none"
+        },
+        {
+          "text": "Email",
+          "x": 32,
+          "y": 7422.078125,
+          "w": 326,
+          "h": 135.578125,
+          "display": "block",
+          "visibility": "visible",
+          "float": "none",
+          "maxWidth": "none"
+        },
+        {
+          "text": "",
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "display": "none",
+          "visibility": "visible",
+          "float": "none",
+          "maxWidth": "none"
+        },
+        {
+          "text": "",
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "display": "none",
+          "visibility": "visible",
+          "float": "none",
+          "maxWidth": "none"
+        },
+        {
+          "text": "Email",
+          "x": 32,
+          "y": 7422.078125,
+          "w": 326,
+          "h": 17,
+          "display": "block",
+          "visibility": "visible",
+          "float": "none",
+          "maxWidth": "none"
+        },
+        {
+          "text": "",
+          "x": 32,
+          "y": 7444.671875,
+          "w": 326,
+          "h": 51,
+          "display": "block",
+          "visibility": "visible",
+          "float": "none",
+          "maxWidth": "none"
+        },
+        {
+          "text": "",
+          "x": 32,
+          "y": 7507.671875,
+          "w": 326,
+          "h": 49.984375,
+          "display": "block",
+          "visibility": "visible",
+          "float": "none",
+          "maxWidth": "none"
+        }
+      ],
+      "mapSummaries": [
+        {
+          "text": "Vietnam",
+          "ariaLabel": null
+        },
+        {
+          "text": "Azerbaijan",
+          "ariaLabel": null
+        },
+        {
+          "text": "Ukraine",
+          "ariaLabel": null
+        },
+        {
+          "text": "Tajikistan",
+          "ariaLabel": null
+        },
+        {
+          "text": "Mongolia",
+          "ariaLabel": null
+        },
+        {
+          "text": "Kyrgyzstan",
+          "ariaLabel": null
+        },
+        {
+          "text": "Kazakhstan",
+          "ariaLabel": null
+        },
+        {
+          "text": "Georgia",
+          "ariaLabel": null
+        },
+        {
+          "text": "Armenia",
+          "ariaLabel": null
+        }
+      ],
+      "forms": [
+        {
+          "action": "https://dev.ehpmi.org/?stage7=final-1792295229913#wpcf7-f77-o1",
+          "labels": [
+            {
+              "name": "your-name",
+              "labels": [
+                "Your name"
+              ],
+              "tabIndex": 0,
+              "required": "true"
+            },
+            {
+              "name": "your-email",
+              "labels": [
+                "Your email"
+              ],
+              "tabIndex": 0,
+              "required": "true"
+            },
+            {
+              "name": "your-subject",
+              "labels": [
+                "Subject"
+              ],
+              "tabIndex": 0,
+              "required": "true"
+            },
+            {
+              "name": "your-message",
+              "labels": [
+                "Your message (optional)"
+              ],
+              "tabIndex": 0,
+              "required": false
+            }
+          ],
+          "status": true
+        },
+        {
+          "action": "https://dev.ehpmi.org/wp-admin/admin-ajax.php?action=tnp&na=s",
+          "labels": [
+            {
+              "name": "ne",
+              "labels": [
+                "Email"
+              ],
+              "tabIndex": 0,
+              "required": true
+            }
+          ],
+          "status": false
+        }
+      ]
+    },
+    {
+      "url": "/about/",
+      "width": 390,
+      "documentWidth": 390,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/offices/",
+      "width": 390,
+      "documentWidth": 390,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [
+        {
+          "text": "Vietnam",
+          "ariaLabel": null
+        },
+        {
+          "text": "Azerbaijan",
+          "ariaLabel": null
+        },
+        {
+          "text": "Ukraine",
+          "ariaLabel": null
+        },
+        {
+          "text": "Tajikistan",
+          "ariaLabel": null
+        },
+        {
+          "text": "Mongolia",
+          "ariaLabel": null
+        },
+        {
+          "text": "Kyrgyzstan",
+          "ariaLabel": null
+        },
+        {
+          "text": "Kazakhstan",
+          "ariaLabel": null
+        },
+        {
+          "text": "Georgia",
+          "ariaLabel": null
+        },
+        {
+          "text": "Armenia",
+          "ariaLabel": null
+        }
+      ],
+      "forms": []
+    },
+    {
+      "url": "/about/ehpmi/",
+      "width": 390,
+      "documentWidth": 390,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/about/mission-and-goals/",
+      "width": 390,
+      "documentWidth": 390,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/about/organization-structure/",
+      "width": 390,
+      "documentWidth": 390,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/about/staff/",
+      "width": 390,
+      "documentWidth": 390,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/about/members/",
+      "width": 390,
+      "documentWidth": 390,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/about/contacts/",
+      "width": 390,
+      "documentWidth": 390,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/newsletter/",
+      "width": 390,
+      "documentWidth": 390,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": [
+        {
+          "action": "https://dev.ehpmi.org/wp-admin/admin-ajax.php?action=tnp&na=s",
+          "labels": [
+            {
+              "name": "ne",
+              "labels": [
+                "Email"
+              ],
+              "tabIndex": 0,
+              "required": true
+            }
+          ],
+          "status": false
+        }
+      ]
+    },
+    {
+      "url": "/offices/armenia/",
+      "width": 390,
+      "documentWidth": 390,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/offices/georgia/",
+      "width": 390,
+      "documentWidth": 390,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/offices/kazakhstan/",
+      "width": 390,
+      "documentWidth": 390,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/offices/kyrgyzstan/",
+      "width": 390,
+      "documentWidth": 390,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/offices/mongolia/",
+      "width": 390,
+      "documentWidth": 390,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/offices/tajikistan/",
+      "width": 390,
+      "documentWidth": 390,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/offices/ukraine/",
+      "width": 390,
+      "documentWidth": 390,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/offices/azerbaijan/",
+      "width": 390,
+      "documentWidth": 390,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/about/partners/",
+      "width": 390,
+      "documentWidth": 390,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/video/",
+      "width": 390,
+      "documentWidth": 390,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/offices/vietnam/",
+      "width": 390,
+      "documentWidth": 390,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/video/persistent-organic-pollutants/",
+      "width": 390,
+      "documentWidth": 390,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/video/strengthening-health-systems-to-reduce-lead-exposure-kyrgyzstan/",
+      "width": 390,
+      "documentWidth": 390,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/projects/",
+      "width": 390,
+      "documentWidth": 390,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/blog/",
+      "width": 390,
+      "documentWidth": 390,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/library/",
+      "width": 390,
+      "documentWidth": 390,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/projects/current/",
+      "width": 390,
+      "documentWidth": 390,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/projects/past/",
+      "width": 390,
+      "documentWidth": 390,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/projects/potential/",
+      "width": 390,
+      "documentWidth": 390,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/blog/news/",
+      "width": 390,
+      "documentWidth": 390,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/library/action-plans/",
+      "width": 390,
+      "documentWidth": 390,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/library/health-and-pollution/",
+      "width": 390,
+      "documentWidth": 390,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/library/lead-health-risk-assessment/",
+      "width": 390,
+      "documentWidth": 390,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/library/publications-and-co-authored-publications/",
+      "width": 390,
+      "documentWidth": 390,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    },
+    {
+      "url": "/library/videos/",
+      "width": 390,
+      "documentWidth": 390,
+      "mainH1": 1,
+      "newsletter": null,
+      "mapSummaries": [],
+      "forms": []
+    }
+  ],
+  "postRequests": []
+}

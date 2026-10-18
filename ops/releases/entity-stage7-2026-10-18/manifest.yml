@@ -1,0 +1,81 @@
+stage: 7
+release: entity-stage7-2026-10-18
+status: ACCEPTED
+acceptance_date: 2026-10-18
+acceptance_timezone: Asia/Makassar
+acceptance_source: OPERATOR_DIRECT_CONFIRMATION
+acceptance_statement: "Hero, Map и Footer восстановлены на desktop и 390. Newsletter отображается корректно."
+acceptance_evidence: manual-acceptance.md
+environment: dev.ehpmi.org
+date: 2026-10-18
+baseline_commit: 55295474e7cf3f65a5f7919140559dd99f322311
+branch: refactor/dev-2026-08-25
+live_remote_baseline: 55295474e7cf3f65a5f7919140559dd99f322311
+code_source: canonical_Git_checkout_accepted_Stage7
+runtime_manifest: runtime-files.json
+runtime_files_changed: 6
+runtime_files_new: 2
+database:
+  pages_audited: 34
+  audit_pages_outside_news_project: 28
+  news_project_control_pages: 6
+  changed_page_ids: [1480, 2389]
+  managed_iframes_changed: 5
+  changed_block_widget_ids: [2, 3, 6]
+  retained_standard_revision_ids: [2459, 2460]
+  marker: ehpmi_stage7_applied
+  existing_records_outside_two_changed_pages: UNCHANGED
+  subscriber_table_counts_and_hashes: UNCHANGED
+  fixture_2458: TRASH_ORDER_15_UNCHANGED
+qa:
+  php_lint_local_remote: PASS
+  stage7_data_template_verifier: PASS
+  block_serialization_round_trip: PASS
+  pages_http_and_semantics: PASS_34_PAGES
+  main_h1_empty_heading_jump_anchor_defects: 0
+  desktop_mobile_browser_views: 70
+  browser_overflow_views: 0
+  listing_heading_card_sequence_parity: PASS_10_LISTINGS
+  map_country_names_and_keyboard: PASS_9_MARKERS
+  cf7_client_only_validation_labels_errors_tab_order: PASS
+  cf7_live_status_region_contract: PASS
+  cf7_mail_transport_and_submission: NOT_RUN_NOT_AUTHORIZED
+  newsletter_containment_visible_label_desktop_390: PASS
+  form_post_requests: 0
+  retained_stage3_stage4_verifiers: PASS
+  original_stage6_verifier: EXPECTED_HASH_ONLY_FAILURE_AFTER_AUTHORIZED_WIDGET_TRANSFORM
+  stage6_stage7_current_contract_verifier: PASS
+  production_isolation: PASS_READ_ONLY_CONTROL_HASHES_AND_RECORDS_UNCHANGED
+  rollback_validate_only: PASS
+manual:
+  authenticated_admin_edit_save_reload: PRIOR_OPERATOR_TEST_FAILED_COMPENSATED_INTERNAL_REST_SAVE_RELOAD_PASS
+  operator_desktop_390_visual_acceptance: PASS_OPERATOR_CONFIRMATION_RESTORED_HERO_MAP_FOOTER_AND_NEWSLETTER
+  checklist: manual-acceptance.md
+newsletter_debt: EH-D019_OPEN_STAGE9_REGRESSION_ONLY
+domain_protocol_update: v0.6.5
+implementation_commit: PENDING_ACCEPTANCE_COMMIT
+push_status: PENDING_FINALIZATION
+production_writes: 0
+cache_purge: NOT_REQUIRED_FRESH_BUNDLE_VERIFIED_IN_BROWSER
+subscriber_changes: 0
+mail_sends: 0
+widget_content_incident:
+  status: COMPENSATED_ACCEPTED_OPERATOR_VISUAL_CONFIRMATION
+  root_cause: MULTIPLE_TOP_LEVEL_BLOCKS_IN_ONE_WIDGET_EDITOR_SAVES_FIRST_ROOT_ONLY
+  trigger: OPERATOR_SAVE_FOLLOWING_OUR_UNSAFE_TEST_INSTRUCTION
+  affected_widget_ids: [2, 3, 6]
+  exact_pre_stage_restore: PASS
+  safe_structure: SINGLE_CORE_GROUP_WITH_TWO_CHILDREN
+  internal_widget_rest_save_reload: PASS_200_ALL_THREE
+  restored_body_text_desktop_390: PASS_SIX_VIEWS
+  test_class_removed: true
+  evidence: widget-content-incident/incident.md
+  new_post_or_revision_writes_by_repair: 0
+  observed_prior_manual_phase_revision_ids: [2461, 2462, 2463, 2464, 2465]
+  retained_page_1480_boolean_attribute_normalization: true
+acceptance_recheck:
+  mode: READ_ONLY_AFTER_OPERATOR_CONFIRMATION
+  stage7_and_rollback_validate_only: PASS
+  data_subscribers_fixture_production: PASS
+  evidence: acceptance-checks.json
+  runtime_database_cache_production_writes: 0

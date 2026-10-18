@@ -1,0 +1,41 @@
+{
+    "before_option_sha256": "174565e04658764f8c148ba4367f3292cb1a2fc2e7080bde71b0d72754bdfe05",
+    "widgets": {
+        "2": {
+            "incident_sha256": "41ba55ba02fbee27a53030ba9ba2a8f9abafae4c4c43edaf5ee09eecbb1c7023",
+            "pre_stage_sha256": "7fdfc4b3e788a2f79a34a4843783d5b291e105419284ca9a14b4bee08a701cc0",
+            "grouped_sha256": "01d41974587717514ca1c78f4908383f68af9ba6b95e4ae8f4f83e1d9ed8a875",
+            "root": "core/group",
+            "children": [
+                "core/heading",
+                "core/paragraph"
+            ]
+        },
+        "3": {
+            "incident_sha256": "da8c0c8c023b05a5950e437b63b0061838a00a99ffad72f6e7c8fa24119a6cf5",
+            "pre_stage_sha256": "3de3866db8ac589e83ecb833c471d8a9437afe49dab8ebfb7768e2c67deb70b4",
+            "grouped_sha256": "b8e62e6adab1413ea3138c15350de927b0896ec2648422e9a44ea6dd164dd5c4",
+            "root": "core/group",
+            "children": [
+                "core/heading",
+                "core/paragraph"
+            ]
+        },
+        "6": {
+            "incident_sha256": "e6a9f7f52d637ef8465ecb2582e27f5b9e6b3a8f5c248c23fb29f1ba8526a6bd",
+            "pre_stage_sha256": "23a07ab9526842cdb76ecce64a5c5f4fc529a6e2b9763463b30ec8d8fd2789da",
+            "grouped_sha256": "0110a095d8ca5904c7711320f5f20208e5b68832fc0dd50441d756147c7ff333",
+            "root": "core/group",
+            "children": [
+                "core/heading",
+                "core/html"
+            ]
+        }
+    },
+    "exact_pre_stage_restore": "PASS",
+    "grouped_delta_sha256": "294821c90ad898a0bcad4f20d56899832e266b693856c118d4b3e512caa734f9",
+    "sidebars_unchanged": true,
+    "serialized_db_option_valid": true,
+    "after_option_sha256": "3ef709e03d504c73cf7109cc4fc7b2f88f504eddad2b772614b96763bc8d0e11",
+    "result": "PASS"
+}

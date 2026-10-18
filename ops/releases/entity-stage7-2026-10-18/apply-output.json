@@ -1,0 +1,15 @@
+{
+  "mode": "apply",
+  "expected": {
+    "pages": 2,
+    "iframes": 5,
+    "block_widgets": 3
+  },
+  "pages": [1480, 2389],
+  "widgets": [2, 3, 6],
+  "changed_this_run": {
+    "pages": 2,
+    "widget_option": 0
+  },
+  "rollback_sha256": "323a0e489199096feb039b9f154e7f9b15fff79c2575ccd32719d83a4ab009b0"
+}

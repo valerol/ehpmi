@@ -1,0 +1,71 @@
+{
+    "widget_block": {
+        "2": {
+            "content": "<!-- wp:heading {\"level\":1,\"className\":\"stage7-round-trip-test\"} -->\n<h1 class=\"wp-block-heading stage7-round-trip-test\">Decrease Pollution \u2014 Protect Health</h1>\n<!-- /wp:heading -->"
+        },
+        "3": {
+            "content": "<!-- wp:heading {\"className\":\"stage7-round-trip-test\"} -->\n<h2 class=\"wp-block-heading stage7-round-trip-test\">Our Geography</h2>\n<!-- /wp:heading -->"
+        },
+        "4": {
+            "content": "<!-- wp:contact-form-7/contact-form-selector {\"id\":77,\"hash\":\"dcc1ba6\",\"title\":\"Contact us\"} -->\n<div class=\"wp-block-contact-form-7-contact-form-selector\">[contact-form-7 id=\"dcc1ba6\" title=\"Contact us\"]</div>\n<!-- /wp:contact-form-7/contact-form-selector -->"
+        },
+        "5": {
+            "content": "<!-- wp:contact-form-7/contact-form-selector {\"id\":79,\"hash\":\"f37d06c\",\"title\":\"Be a volunteer\"} -->\n<div class=\"wp-block-contact-form-7-contact-form-selector\">[contact-form-7 id=\"f37d06c\" title=\"Be a volunteer\"]</div>\n<!-- /wp:contact-form-7/contact-form-selector -->"
+        },
+        "6": {
+            "content": "<!-- wp:heading {\"className\":\"h3 stage7-round-trip-test\"} -->\n<h2 class=\"wp-block-heading h3 stage7-round-trip-test\">Contact</h2>\n<!-- /wp:heading -->"
+        },
+        "7": {
+            "content": "<!-- wp:social-links -->\n<ul class=\"wp-block-social-links\"><!-- wp:social-link {\"url\":\"https://www.instagram.com/ehpmi_official\",\"service\":\"instagram\"} /-->\n\n<!-- wp:social-link {\"url\":\"https://www.facebook.com/ehpmi.org\",\"service\":\"facebook\"} /-->\n\n<!-- wp:social-link {\"url\":\"https://twitter.com/ehpmi_org\",\"service\":\"twitter\"} /-->\n\n<!-- wp:social-link {\"url\":\"https://t.me/ehpmi\",\"service\":\"telegram\"} /--></ul>\n<!-- /wp:social-links -->"
+        },
+        "8": {
+            "content": "<a href=\"https://dev.ehpmi.org/\">ehpmi</a>"
+        },
+        "9": {
+            "content": "<!-- wp:code -->\n<pre class=\"wp-block-code\"><code></code></pre>\n<!-- /wp:code -->"
+        },
+        "10": {
+            "content": "<!-- wp:search {\"label\":\"\",\"buttonText\":\"Search\"} /-->"
+        },
+        "_multiwidget": 1
+    },
+    "sidebars_widgets": {
+        "wp_inactive_widgets": [
+            "nav_menu-2",
+            "nav_menu-3"
+        ],
+        "slider-text": [
+            "block-2"
+        ],
+        "map-text": [
+            "block-3"
+        ],
+        "newsletter": [
+            "newsletterwidget-2"
+        ],
+        "contact-form-1": [
+            "block-4"
+        ],
+        "contact-form-2": [
+            "block-5"
+        ],
+        "footer-text": [
+            "block-10"
+        ],
+        "footer-menu-1": [
+            "block-9"
+        ],
+        "footer-menu-2": [],
+        "footer-contacts": [
+            "block-6"
+        ],
+        "footer-social": [
+            "block-7"
+        ],
+        "footer-copyright": [
+            "block-8"
+        ],
+        "array_version": 3
+    },
+    "raw_option_sha256": "174565e04658764f8c148ba4367f3292cb1a2fc2e7080bde71b0d72754bdfe05"
+}

@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "failures": [],
+  "views": [
+    {
+      "region": "hero",
+      "width": 1440,
+      "expectedText": "Our team unites efforts of professionals, experts, and nonprofit groups working in Eastern Europe and Central Asia to find and implement solutions to problems of toxic persistent pollutants and associated health risks.",
+      "actualText": "Our team unites efforts of professionals, experts, and nonprofit groups working in Eastern Europe and Central Asia to find and implement solutions to problems of toxic persistent pollutants and associated health risks.",
+      "bodyTextMatches": true,
+      "visible": true,
+      "groupDisplay": "contents",
+      "allRegionText": "Decrease Pollution — Protect Health\n\nOur team unites efforts of professionals, experts, and nonprofit groups working in Eastern Europe and Central Asia to find and implement solutions to problems of toxic persistent pollutants and associated health risks.",
+      "overflow": false,
+      "testMarker": false
+    },
+    {
+      "region": "map",
+      "width": 1440,
+      "expectedText": "EHPMI has active teams and operates in the following countries: Ukraine, Georgia, Armenia, Azerbaijan, Kazakhstan, Kyrgyzstan, Tajikistan, Mongolia, and Vietnam. The national teams have been present and worked in Eastern Europe and Central Asia region for over 15 years.",
+      "actualText": "EHPMI has active teams and operates in the following countries: Ukraine, Georgia, Armenia, Azerbaijan, Kazakhstan, Kyrgyzstan, Tajikistan, Mongolia, and Vietnam. The national teams have been present and worked in Eastern Europe and Central Asia region for over 15 years.",
+      "bodyTextMatches": true,
+      "visible": true,
+      "groupDisplay": "contents",
+      "allRegionText": "Vietnam\nAzerbaijan\nUkraine\nTajikistan\nMongolia\nKyrgyzstan\nKazakhstan\nGeorgia\nArmenia\nOur Geography\n\nEHPMI has active teams and operates in the following countries: Ukraine, Georgia, Armenia, Azerbaijan, Kazakhstan, Kyrgyzstan, Tajikistan, Mongolia, and Vietnam. The national teams have been present and worked in Eastern Europe and Central Asia region for over 15 years.",
+      "overflow": false,
+      "testMarker": false
+    },
+    {
+      "region": "footer",
+      "width": 1440,
+      "expectedText": "Georgia, Tbilisi, Vake district, Anna Politkovskaya street,N3, building N21, office N4",
+      "actualText": "Georgia, Tbilisi, Vake district, Anna Politkovskaya street,N3, building N21, office N4",
+      "bodyTextMatches": true,
+      "visible": true,
+      "groupDisplay": "contents",
+      "allRegionText": "Search\nSearch\nContact\n\nGeorgia, Tbilisi, Vake district, Anna Politkovskaya street,\nN3, building N21, office N4\n\ninfo@ehpmi.org\n\n© 2022-2026 Copyright: ehpmi\n\nInstagram\nFacebook\nTwitter\nTelegram",
+      "overflow": false,
+      "testMarker": false
+    },
+    {
+      "region": "hero",
+      "width": 390,
+      "expectedText": "Our team unites efforts of professionals, experts, and nonprofit groups working in Eastern Europe and Central Asia to find and implement solutions to problems of toxic persistent pollutants and associated health risks.",
+      "actualText": "Our team unites efforts of professionals, experts, and nonprofit groups working in Eastern Europe and Central Asia to find and implement solutions to problems of toxic persistent pollutants and associated health risks.",
+      "bodyTextMatches": true,
+      "visible": true,
+      "groupDisplay": "contents",
+      "allRegionText": "Decrease Pollution — Protect Health\n\nOur team unites efforts of professionals, experts, and nonprofit groups working in Eastern Europe and Central Asia to find and implement solutions to problems of toxic persistent pollutants and associated health risks.",
+      "overflow": false,
+      "testMarker": false
+    },
+    {
+      "region": "map",
+      "width": 390,
+      "expectedText": "EHPMI has active teams and operates in the following countries: Ukraine, Georgia, Armenia, Azerbaijan, Kazakhstan, Kyrgyzstan, Tajikistan, Mongolia, and Vietnam. The national teams have been present and worked in Eastern Europe and Central Asia region for over 15 years.",
+      "actualText": "EHPMI has active teams and operates in the following countries: Ukraine, Georgia, Armenia, Azerbaijan, Kazakhstan, Kyrgyzstan, Tajikistan, Mongolia, and Vietnam. The national teams have been present and worked in Eastern Europe and Central Asia region for over 15 years.",
+      "bodyTextMatches": true,
+      "visible": true,
+      "groupDisplay": "contents",
+      "allRegionText": "Vietnam\nAzerbaijan\nUkraine\nTajikistan\nMongolia\nKyrgyzstan\nKazakhstan\nGeorgia\nArmenia\nOur Geography\n\nEHPMI has active teams and operates in the following countries: Ukraine, Georgia, Armenia, Azerbaijan, Kazakhstan, Kyrgyzstan, Tajikistan, Mongolia, and Vietnam. The national teams have been present and worked in Eastern Europe and Central Asia region for over 15 years.",
+      "overflow": false,
+      "testMarker": false
+    },
+    {
+      "region": "footer",
+      "width": 390,
+      "expectedText": "Georgia, Tbilisi, Vake district, Anna Politkovskaya street,N3, building N21, office N4",
+      "actualText": "Georgia, Tbilisi, Vake district, Anna Politkovskaya street,N3, building N21, office N4",
+      "bodyTextMatches": true,
+      "visible": true,
+      "groupDisplay": "contents",
+      "allRegionText": "Search\nSearch\nContact\n\nGeorgia, Tbilisi, Vake district, Anna Politkovskaya street,\nN3, building N21, office N4\n\ninfo@ehpmi.org\n\n© 2022-2026 Copyright: ehpmi\n\nInstagram\nFacebook\nTwitter\nTelegram",
+      "overflow": false,
+      "testMarker": false
+    }
+  ],
+  "postRequests": []
+}

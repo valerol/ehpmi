@@ -1,0 +1,78 @@
+/* Stage 7: contain the native Newsletter widget; preserve its Admin ownership. */
+.ehpmi-widget-content {
+    display: contents;
+}
+.newsletter .container {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+    gap: 0.5rem 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.newsletter .container > h2 {
+    grid-column: 1;
+    margin-bottom: 0;
+}
+.newsletter .text {
+    grid-column: 1;
+    max-width: none;
+    padding-right: 0;
+    float: none;
+}
+.newsletter .tnp-widget {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    width: 100%;
+    max-width: none;
+    float: none;
+    margin: 0;
+}
+.newsletter .tnp-widget form {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.75rem;
+}
+.newsletter .tnp-widget .tnp-field {
+    margin: 0;
+}
+.newsletter .tnp-widget .tnp-field-email {
+    flex: 1;
+    min-width: 0;
+}
+.newsletter .tnp-widget label {
+    display: block;
+    margin-bottom: 0.35rem;
+}
+.newsletter .tnp-widget input.tnp-email {
+    width: 100%;
+    min-width: 0;
+}
+.newsletter .tnp-widget input.tnp-submit {
+    width: auto;
+}
+.map .marker:focus-visible {
+    outline: 3px solid #435d2d;
+    outline-offset: 3px;
+}
+.footer .footer-nav .footer-nav-block h2.h3 {
+    font-size: 1.3rem;
+}
+@media (max-width: 1024px) {
+    .newsletter .container {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 0.75rem;
+    }
+    .newsletter .tnp-widget {
+        grid-column: 1;
+        grid-row: auto;
+    }
+}
+@media (max-width: 450px) {
+    .newsletter .tnp-widget form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .newsletter .tnp-widget input.tnp-submit {
+        width: 100%;
+    }
+}

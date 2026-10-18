@@ -1,6 +1,7 @@
 <?php
 
 require_once get_template_directory() . '/classes/class-menu-dropdown.php';
+require_once get_template_directory() . '/inc/page-resolver.php';
 
 /**
  * Return a cache-safe version for a theme asset.
@@ -29,6 +30,7 @@ function ehpmi_enqueue_assets() {
     wp_enqueue_style( 'ehpmi-bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css', array(), '5.1.3' );
     wp_enqueue_style( 'ehpmi-theme', get_stylesheet_uri(), array( 'ehpmi-bootstrap' ), ehpmi_asset_version( '/style.css' ) );
     wp_enqueue_style( 'ehpmi-site', get_theme_file_uri( '/css/style.css' ), array( 'ehpmi-theme' ), ehpmi_asset_version( '/css/style.css' ) );
+    wp_enqueue_style( 'ehpmi-regions', get_theme_file_uri( '/css/structural-regions.css' ), array( 'ehpmi-site' ), ehpmi_asset_version( '/css/structural-regions.css' ) );
 
     wp_enqueue_script( 'ehpmi-font-awesome', 'https://kit.fontawesome.com/51d28c3d4c.js', array(), null, false );
     wp_enqueue_script( 'ehpmi-bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js', array(), '5.1.3', true );
@@ -244,8 +246,8 @@ function register_custom_widget_area() {
             'name' => esc_html__( 'Newsletter', 'ehpmi' ),
             'before_widget' => '',
             'after_widget' => '',
-            'before_title' => '<h3>',
-            'after_title' => '</h3>'
+            'before_title' => '<h2 class="h3">',
+            'after_title' => '</h2>'
         )
     );
     register_sidebar(

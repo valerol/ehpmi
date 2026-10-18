@@ -1,0 +1,91 @@
+{
+  "status": "FAIL",
+  "failures": [
+    "map keyboard/name contract"
+  ],
+  "map": {
+    "openedByKeyboard": false,
+    "names": [
+      "Vietnam",
+      "Azerbaijan",
+      "Ukraine",
+      "Tajikistan",
+      "Mongolia",
+      "Kyrgyzstan",
+      "Kazakhstan",
+      "Georgia",
+      "Armenia"
+    ],
+    "link": "https://dev.ehpmi.org/offices/vietnam/"
+  },
+  "cf7": {
+    "status": "init",
+    "statusRegion": true,
+    "errors": [
+      {
+        "name": "your-name",
+        "labels": [
+          "Your name\nThe field is required."
+        ],
+        "describedBy": "wpcf7-f77-o1-ve-your-name",
+        "error": "The field is required."
+      },
+      {
+        "name": "your-email",
+        "labels": [
+          "Your email\nThe field is required."
+        ],
+        "describedBy": "wpcf7-f77-o1-ve-your-email",
+        "error": "The field is required."
+      },
+      {
+        "name": "your-subject",
+        "labels": [
+          "Subject\nThe field is required."
+        ],
+        "describedBy": "wpcf7-f77-o1-ve-your-subject",
+        "error": "The field is required."
+      }
+    ],
+    "tips": 3
+  },
+  "keyboard": [
+    {
+      "name": "your-name",
+      "type": "text"
+    },
+    {
+      "name": "your-email",
+      "type": "email"
+    },
+    {
+      "name": "your-subject",
+      "type": "text"
+    },
+    {
+      "name": "your-message",
+      "type": "textarea"
+    },
+    {
+      "name": "",
+      "type": "submit"
+    }
+  ],
+  "newsletter": [
+    {
+      "width": 1440,
+      "contained": true,
+      "labelVisible": true,
+      "overflow": false,
+      "heading": "Get in Touch"
+    },
+    {
+      "width": 390,
+      "contained": true,
+      "labelVisible": true,
+      "overflow": false,
+      "heading": "Get in Touch"
+    }
+  ],
+  "postRequests": []
+}

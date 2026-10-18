@@ -1,0 +1,170 @@
+{
+    "pages": {
+        "13": {
+            "role": "content",
+            "url": "https://dev.ehpmi.org/about/"
+        },
+        "17": {
+            "role": "map",
+            "url": "https://dev.ehpmi.org/offices/"
+        },
+        "21": {
+            "role": "content",
+            "url": "https://dev.ehpmi.org/about/ehpmi/"
+        },
+        "23": {
+            "role": "content",
+            "url": "https://dev.ehpmi.org/about/mission-and-goals/"
+        },
+        "25": {
+            "role": "content",
+            "url": "https://dev.ehpmi.org/about/organization-structure/"
+        },
+        "27": {
+            "role": "staff",
+            "url": "https://dev.ehpmi.org/about/staff/"
+        },
+        "29": {
+            "role": "member",
+            "url": "https://dev.ehpmi.org/about/members/"
+        },
+        "33": {
+            "role": "content",
+            "url": "https://dev.ehpmi.org/about/contacts/"
+        },
+        "75": {
+            "role": "content",
+            "url": "https://dev.ehpmi.org/newsletter/"
+        },
+        "327": {
+            "role": "country",
+            "url": "https://dev.ehpmi.org/offices/armenia/"
+        },
+        "347": {
+            "role": "country",
+            "url": "https://dev.ehpmi.org/offices/georgia/"
+        },
+        "355": {
+            "role": "country",
+            "url": "https://dev.ehpmi.org/offices/kazakhstan/"
+        },
+        "362": {
+            "role": "country",
+            "url": "https://dev.ehpmi.org/offices/kyrgyzstan/"
+        },
+        "374": {
+            "role": "country",
+            "url": "https://dev.ehpmi.org/offices/mongolia/"
+        },
+        "378": {
+            "role": "country",
+            "url": "https://dev.ehpmi.org/offices/tajikistan/"
+        },
+        "647": {
+            "role": "country",
+            "url": "https://dev.ehpmi.org/offices/ukraine/"
+        },
+        "656": {
+            "role": "country",
+            "url": "https://dev.ehpmi.org/offices/azerbaijan/"
+        },
+        "1453": {
+            "role": "partner",
+            "url": "https://dev.ehpmi.org/about/partners/"
+        },
+        "1480": {
+            "role": "content",
+            "url": "https://dev.ehpmi.org/video/"
+        },
+        "1647": {
+            "role": "country",
+            "url": "https://dev.ehpmi.org/offices/vietnam/"
+        },
+        "1841": {
+            "role": "content",
+            "url": "https://dev.ehpmi.org/video/persistent-organic-pollutants/"
+        },
+        "1844": {
+            "role": "content",
+            "url": "https://dev.ehpmi.org/video/strengthening-health-systems-to-reduce-lead-exposure-kyrgyzstan/"
+        },
+        "2378": {
+            "role": "projects",
+            "url": "https://dev.ehpmi.org/projects/"
+        },
+        "2379": {
+            "role": "blog",
+            "url": "https://dev.ehpmi.org/blog/"
+        },
+        "2380": {
+            "role": "library",
+            "url": "https://dev.ehpmi.org/library/"
+        },
+        "2381": {
+            "role": "projects",
+            "url": "https://dev.ehpmi.org/projects/current/"
+        },
+        "2382": {
+            "role": "projects",
+            "url": "https://dev.ehpmi.org/projects/past/"
+        },
+        "2383": {
+            "role": "projects",
+            "url": "https://dev.ehpmi.org/projects/potential/"
+        },
+        "2384": {
+            "role": "news",
+            "url": "https://dev.ehpmi.org/blog/news/"
+        },
+        "2385": {
+            "role": "library",
+            "url": "https://dev.ehpmi.org/library/action-plans/"
+        },
+        "2386": {
+            "role": "library",
+            "url": "https://dev.ehpmi.org/library/health-and-pollution/"
+        },
+        "2387": {
+            "role": "library",
+            "url": "https://dev.ehpmi.org/library/lead-health-risk-assessment/"
+        },
+        "2388": {
+            "role": "library",
+            "url": "https://dev.ehpmi.org/library/publications-and-co-authored-publications/"
+        },
+        "2389": {
+            "role": "library",
+            "url": "https://dev.ehpmi.org/library/videos/"
+        }
+    },
+    "blocks": {
+        "2": [
+            "core/group"
+        ],
+        "3": [
+            "core/group"
+        ],
+        "6": [
+            "core/group"
+        ]
+    },
+    "admin_boolean_attribute_normalization": [
+        1480
+    ],
+    "result": "PASS",
+    "failures": []
+}
+{
+    "status": "PASS",
+    "mode": "validate-only",
+    "files": 6,
+    "pages": [
+        1480,
+        2389
+    ],
+    "widgets": [
+        2,
+        3,
+        6
+    ]
+}

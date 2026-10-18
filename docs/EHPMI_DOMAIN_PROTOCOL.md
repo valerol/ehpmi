@@ -1,8 +1,8 @@
 # Доменный протокол EHPMI
 
-Версия: `v0.6.4`
+Версия: `v0.6.5`
 Статус: `DRAFT`  
-Дата снимка: `2026-10-16`
+Дата снимка: `2026-10-18`
 Уровень доменного применения: `D3`  
 Роль документа: нормативная проектно-доменная инструкция эксплуатации, передачи и восстановления сайта EHPMI
 
@@ -201,7 +201,7 @@
 
 1. Сохраняется hybrid PHP/Gutenberg architecture; Full Site Editing не внедряется.
 2. Gutenberg остаётся основным редактором `post`, `page` и `staff_member`.
-3. Sidebar regions сохраняются как PHP-точки вывода, но контент постепенно переводится на Core blocks.
+3. Sidebar regions сохраняются как PHP-точки вывода, но контент постепенно переводится на Core blocks. Один `widget_block` содержит один корневой block; несколько связанных Heading/Paragraph/HTML размещаются внутри одного Core Group. Установленный Widgets editor читает и сохраняет только первый root, поэтому несколько независимых roots внутри одного widget недопустимы. Slider/Map/Footer используют принятый Group contract; layout-neutral wrapper имеет `display:contents`.
 4. Контент hero, map intro, contacts и footer должен редактироваться из WordPress Admin.
 5. `testimonial` сохраняется как будущая функция: тип непубличный и не запрашивается публично, семь исторических записей остаются Draft, quotation хранится в editor, attribution — в структурированных name/role/organization fields, а homepage output выключен default-false activation filter. Публикация и активация требуют отдельного release/checklist.
 6. `member` означает Member Organizations; `partner` означает внешние Partner Organizations. Они остаются разными admin-managed типами данных и не имеют публичных single pages.
@@ -224,6 +224,7 @@
 23. Дата новости выводится элементом `<time datetime="...">`. Заголовки следуют порядку H1 → H2 → H3 без пустых уровней и скачков.
 24. Краткие сведения Project хранятся в группе ACF `Project facts`. `post_excerpt` остаётся кратким источником для карточек, но не вставляется Gutenberg-блоком в тело материала и не парсится шаблоном во время каждого запроса.
 25. Таблица данных содержит `caption`, `thead`, заголовочные `th` и `scope`; iframe карты содержит `title`, `loading="lazy"` и `referrerpolicy`.
+26. Структурные Pages разрешаются через `inc/page-resolver.php`, а `singular.php` владеет document loop и навигацией; WordPress/`ehpmi-core` сохраняют URL ownership. Пустые managed Pages получают screen-reader H1 без изменения принятого вида; директории имеют последовательную иерархию headings. Каждая native map summary получает имя своей Country Page. Contact fragment `#contact-us` принадлежит H2. Newsletter остаётся нативным widget с видимой Email label и проверенным containment на desktop/390 px.
 
 ## 6. Проектные правила
 
@@ -681,6 +682,7 @@ Production deployment допускается только если:
 | `EH-AC-13` | Library routing | Page intro и filtered Materials отображаются; Material legacy single ведёт одним `301` на файл |
 | `EH-AC-14` | Legacy URL contract | Category и flat URL ведут одним `301` на соответствующую Page; redirect loops и sitemap duplicates отсутствуют |
 | `EH-AC-15` | Semantic content structure | Один `main`/H1, article IDs/classes, именованные nav, последовательные headings, `time`, доступные iframe и таблицы; Project facts редактируются через ACF |
+| `EH-AC-16` | Widget content retention | Один root на `widget_block`; Group содержит все children; save/reload сохраняет полный текст/HTML, sidebar mapping и видимый frontend output |
 
 ### QA-D — восстановление
 
@@ -1052,7 +1054,7 @@ Rollback получает собственный recovery evidence. Возвра
 7. исправить инструкцию по реальным отклонениям;
 8. выпустить следующую версию protocol и PDF.
 
-## 19. Долги версии v0.6.4
+## 19. Долги версии v0.6.5
 
 | ID | Долг | Статус | Условие закрытия |
 |---|---|---|---|
@@ -1074,10 +1076,14 @@ Rollback получает собственный recovery evidence. Возвра
 | `EH-D016` | Gallery использовалась для одиночных изображений и пар, отсутствовал размерный контракт | CLOSED | 56 одиночных Gallery преобразованы в Image, 87 пар — в Columns; специализированные photo-pair styles `4:3`, `3:2`, `3:4` применены к project 761 и ещё 81 паре в остальных 44 материалах; responsive desktop/mobile QA и release verifiers пройдены на dev |
 | `EH-D017` | Семантическая структура записей и листингов зависела от generic template и дублирующих excerpt blocks | CLOSED | Dev release `html-structure-2026-09-04`: отдельные single templates, один main, article/time/nav landmarks, 28 ACF Project facts, 39 дублирующих блоков удалены, 17 карт и 2 таблицы исправлены; desktop/mobile frontend QA пройден |
 | `EH-D018` | WP-Optimize 4.6.1 выдаёт PHP warning при массовом `wp_update_post()` | OPEN | Обновление или локально проверенное исправление `class-wpo-cache-rules.php`: дата должна разбираться через `explode`, после чего CLI migration проходит без warning и frontend regression |
-| `EH-D019` | Homepage Newsletter form визуально сломан на desktop/390 px; происхождение дефекта не установлено | OPEN | В Stage 7 выполнены diagnosis и исправление Newsletter/widget region без реальной рассылки, а Stage 9 desktop/390 px regression подтверждает принятую форму; Stage 5 не менял Newsletter, form, widget, CSS или JS code |
+| `EH-D019` | Stage 7 Newsletter repair принят на desktop/390 px; остаётся интегрированная проверка Stage 9 | OPEN_STAGE9_REGRESSION | Stage 7 diagnosis/repair и прямое подтверждение оператора записаны в `ops/releases/entity-stage7-2026-10-18/`; реальная подписка/рассылка не выполнялась. Для закрытия нужен Stage 9 desktop/390 px regression принятой формы. Историческое происхождение дефекта не установлено; причинная связь со Stage 5 не заявляется |
 
 ## 20. Статус принятия
 
-Версия `v0.6.4` фиксирует также принятый Stage 5: Testimonials остаются непубличной, неактивированной функцией с семью Draft и структурированным будущим author contract. Визуальный дефект Newsletter, замеченный при Stage 5 QA, имеет неизвестное происхождение, не связан доказательствами со Stage 5 diff и вынесен в `EH-D019` для Stage 7/9. Версия не разрешает production deployment, не заявляет QA-D и не считает Real Media Library уже удалённым.
+Версия `v0.6.5` фиксирует принятый Stage 7 на dev поверх принятого Stage 6 baseline. 2026-10-18 (Asia/Makassar) оператор прямо подтвердил: «Hero, Map и Footer восстановлены на desktop и 390. Newsletter отображается корректно.» Дополнительные шаги браузерного Admin edit/save после ремонта из этой фразы не выводятся.
+
+Stage 7 включает Page resolver ownership, измеренные semantic/map/anchor/iframe исправления и Newsletter containment/label repair. Инцидент потери widget tails после предложенного нами теста сохранения сохранён в evidence: первоначально несколько top-level blocks были ошибочно записаны в один widget, тогда как Widgets editor сохраняет первый root. Точные исходные значения восстановлены, выполнен безопасный single-Group refactor и capability-checked REST save/reload; оператор подтвердил восстановленный frontend. Это компенсированный инцидент, а не утверждение, что исходные тексты отсутствовали. Полная хронология и acceptance находятся в `ops/releases/entity-stage7-2026-10-18/`.
+
+Принятый Stage 5 dormant Testimonial contract сохраняется: семь Draft, непубличный тип и default-false activation. `EH-D019` остаётся открыт только для Stage 9 integrated regression; `EH-D007`/`EH-D011` остаются общими recovery/Admin долгами. Production не изменён. Версия не разрешает production deployment, не заявляет QA-D и не считает Real Media Library уже удалённым; Stage 8 не начат.
 
 Следующая версия создаётся после очередного принятого этапа refactor. Версия `v1.0.0` допускается только после практической репетиции восстановления.

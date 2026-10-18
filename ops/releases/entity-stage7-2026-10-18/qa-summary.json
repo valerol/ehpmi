@@ -1,0 +1,144 @@
+{
+  "status": "ACCEPTED",
+  "baselineCommit": "55295474e7cf3f65a5f7919140559dd99f322311",
+  "pages": 34,
+  "auditedOutsideNewsProject": 28,
+  "semanticDefects": [],
+  "browserViews": 70,
+  "overflowViews": [],
+  "postRequests": [],
+  "changedExistingRecords": [
+    "1480",
+    "2389"
+  ],
+  "addedRecords": [
+    "2459",
+    "2460",
+    "2461",
+    "2462",
+    "2463",
+    "2464",
+    "2465"
+  ],
+  "newsletterTablesUnchanged": true,
+  "fixture2458Unchanged": true,
+  "productionControls": [
+    {
+      "key": "root",
+      "unchanged": true
+    },
+    {
+      "key": "database",
+      "unchanged": true
+    },
+    {
+      "key": "home",
+      "unchanged": true
+    },
+    {
+      "key": "siteurl",
+      "unchanged": true
+    },
+    {
+      "key": "records_hash",
+      "unchanged": true
+    },
+    {
+      "key": "page_records_hash",
+      "unchanged": true
+    },
+    {
+      "key": "widget_options_hash",
+      "unchanged": true
+    },
+    {
+      "key": "core_file",
+      "unchanged": true
+    },
+    {
+      "key": "files",
+      "unchanged": true
+    },
+    {
+      "key": "migration_markers",
+      "unchanged": true
+    },
+    {
+      "key": "newsletter_tables",
+      "unchanged": true
+    }
+  ],
+  "listingParity": [
+    {
+      "url": "/projects/",
+      "identicalHeadingsAndCards": true
+    },
+    {
+      "url": "/projects/current/",
+      "identicalHeadingsAndCards": true
+    },
+    {
+      "url": "/projects/past/",
+      "identicalHeadingsAndCards": true
+    },
+    {
+      "url": "/projects/potential/",
+      "identicalHeadingsAndCards": true
+    },
+    {
+      "url": "/blog/",
+      "identicalHeadingsAndCards": true
+    },
+    {
+      "url": "/blog/news/",
+      "identicalHeadingsAndCards": true
+    },
+    {
+      "url": "/library/",
+      "identicalHeadingsAndCards": true
+    },
+    {
+      "url": "/library/action-plans/",
+      "identicalHeadingsAndCards": true
+    },
+    {
+      "url": "/library/health-and-pollution/",
+      "identicalHeadingsAndCards": true
+    },
+    {
+      "url": "/library/lead-health-risk-assessment/",
+      "identicalHeadingsAndCards": true
+    }
+  ],
+  "interactionStatus": "PASS",
+  "widgetContentIncident": {
+    "status": "COMPENSATED_ACCEPTED_OPERATOR_VISUAL_CONFIRMATION",
+    "repairResult": "PASS",
+    "exactPreStageRestore": "PASS",
+    "restSaveReload": "PASS",
+    "restoredTextBrowser": "PASS",
+    "repairPostRecordsUnchanged": true,
+    "subscriberTablesUnchanged": true,
+    "fixture2458Unchanged": true,
+    "productionUnchanged": true
+  },
+  "initialImplementationRevisionIds": [
+    "2459",
+    "2460"
+  ],
+  "priorManualPhaseAdditionalRevisionIds": [
+    "2461",
+    "2462",
+    "2463",
+    "2464",
+    "2465"
+  ],
+  "acceptance": {
+    "date": "2026-10-18",
+    "timezone": "Asia/Makassar",
+    "source": "OPERATOR_DIRECT_CONFIRMATION",
+    "statement": "Hero, Map и Footer восстановлены на desktop и 390. Newsletter отображается корректно.",
+    "postConfirmationReadOnlyChecks": "PASS",
+    "additionalPostRepairBrowserAdminDetails": "NOT_INFERRED"
+  }
+}

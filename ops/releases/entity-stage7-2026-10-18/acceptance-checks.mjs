@@ -1,0 +1,15 @@
+import fs from 'node:fs';
+import path from 'node:path';
+const base=path.dirname(new URL(import.meta.url).pathname);
+const read=name=>JSON.parse(fs.readFileSync(path.join(base,name),'utf8'));
+const dev=read('acceptance-dev-controls.json');
+const prior=read('widget-content-incident/ehpmi-stage7-widgets-repaired-final.json');
+const prod=read('acceptance-production-controls.json');
+const initialProd=read('ehpmi-stage7-production-before.json');
+const same=(a,b)=>JSON.stringify(a)===JSON.stringify(b);
+const keys=['root','database','home','siteurl','records_hash','page_records_hash','widget_options_hash','files','core_file','migration_markers','newsletter_tables'];
+const checks={devIdentity:dev.root==='/home2/nykvymmy/dev.ehpmi.org'&&dev.database==='nykvymmy_ehpmidev'&&dev.home==='https://dev.ehpmi.org',devControlsUnchangedSinceRepair:keys.every(key=>same(dev[key],prior[key])),fixture2458:dev.fixture_2458?.post_status==='trash'&&dev.fixture_2458?.menu_order==='15',subscribers172:dev.newsletter_tables.wp_newsletter.count===172,subscriberTableHashesUnchanged:same(dev.newsletter_tables,prior.newsletter_tables),productionIdentity:prod.root==='/home2/nykvymmy/public_html'&&prod.database==='nykvymmy_ehpmi'&&prod.home==='https://ehpmi.org',productionControlsUnchanged:keys.every(key=>same(prod[key],initialProd[key])),productionStage7MarkerAbsent:prod.migration_markers.length===0};
+if(Object.values(checks).some(value=>!value))throw Error(JSON.stringify(checks));
+const report={status:'PASS',phase:'POST_OPERATOR_CONFIRMATION_READ_ONLY',acceptance_date:'2026-10-18',acceptance_timezone:'Asia/Makassar',checks,runtimeWrites:0,databaseWrites:0,cacheWrites:0,productionWrites:0};
+fs.writeFileSync(path.join(base,'acceptance-checks.json'),JSON.stringify(report,null,2)+'\n');
+console.log(JSON.stringify(report,null,2));

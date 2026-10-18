@@ -1,6 +1,6 @@
 # EHPMI entity refactoring plan
 
-Status: `PLANNED`  
+Status: `IN_PROGRESS`
 Target: `dev.ehpmi.org` only  
 Starting code baseline: commit `96bdc1b` on `refactor/dev-2026-08-25`  
 Production: outside scope until a separately approved release
@@ -117,12 +117,15 @@ Acceptance: slide order and fallback are deterministic, alt behavior is intentio
 
 ## Stage 7 — Structural Pages, map, contact and widget regions
 
+Status: `ACCEPTED` on dev, 2026-10-18 (Asia/Makassar). Evidence: `ops/releases/entity-stage7-2026-10-18/`. The widget-save truncation incident was compensated with exact pre-stage restoration, a single Core Group root per widget and verified REST save/reload. Operator confirmation covers restored Hero/Map/Footer desktop/390 and correct Newsletter appearance. No additional post-repair browser Admin steps are inferred. `EH-D019` remains open for Stage 9 integrated regression; Stage 8 is not started by this acceptance.
+
 1. Audit all published Pages not covered by the News/Project structure release for heading hierarchy, duplicate H1, empty headings, Custom HTML, inline styles, tables, embeds and obsolete anchors.
 2. Do not mass-convert Classic/Custom HTML blocks; migrate only measured patterns with reversible transforms.
 3. Split the slug/parent dispatch in `singular.php` into explicit Page templates or small resolver functions while preserving URLs.
 4. Replace `<a name="...">` anchors with IDs on the owning heading/section.
 5. Give the map a meaningful accessibility contract and every marker summary an accessible country name.
 6. Review Slider text, Map text, Contact, Newsletter and Footer widget regions; retain PHP output points while moving content to Core blocks only where Admin editing becomes clearer. Diagnose and repair the visually broken homepage Newsletter form recorded as `EH-D019`; Stage 5 established no causal link and deliberately made no form/widget/CSS change.
+   A `widget_block` must have one root. Put related heading/body blocks inside a single Core Group and verify complete content retention through the Widgets save/reload path; generic multi-root parse/serialize parity alone is insufficient.
 7. Verify Contact Form 7 labels, errors, status messages and keyboard order without sending test mail unless separately authorized.
 8. Test every affected Page and homepage section at desktop/mobile widths.
 
