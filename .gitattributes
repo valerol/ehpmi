@@ -1,0 +1,2 @@
+# Preserve the exact pinned upstream license bytes, including its one trailing space.
+wp-content/themes/ehpmi/assets/vendor/overpass/OFL.txt -whitespace

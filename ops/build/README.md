@@ -14,3 +14,5 @@ npm run check
 The theme ships the same Bootstrap release and the same Font Awesome Free release observed in the accepted pre-stage runtime, including v4/v5 compatibility faces, WOFF2 and TTF files. Licenses are retained beside each dependency. No npm tooling or Node runtime is required on the WordPress server; deploy the checked-in theme assets.
 
 The local WP-Optimize 4.6.1 date fix is separate from this frontend build. Its exact upstream and patched hashes and patch path are in `ops/plugins.yml`. During recovery, verify the upstream hash before applying `ops/patches/wp-optimize-4.6.1-date.patch`, then require the patched hash. Plugin upgrades must review or retire this patch explicitly.
+
+The pinned upstream Overpass license is preserved byte for byte, including its one trailing space. `.gitattributes` excludes only that exact vendor license from whitespace checking; project source files retain the normal checks.
