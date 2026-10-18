@@ -1,0 +1,27 @@
+{
+    "mode": "READ_ONLY_CAPABILITY_CHECKED_MEDIA_REST_GET",
+    "media": {
+        "147": {
+            "status": 200,
+            "alt": "Logo of Human Health Institute",
+            "source_url": "https://dev.ehpmi.org/wp-content/uploads/2022/08/human-health-institute.jpg"
+        },
+        "212": {
+            "status": 200,
+            "alt": "Portrait of Aelita Sargsyan",
+            "source_url": "https://dev.ehpmi.org/wp-content/uploads/2022/09/Aelita.jpg"
+        },
+        "484": {
+            "status": 200,
+            "alt": "Cover of Children\u2019s book: My Book of Health \u2014 with Monkey Hero (in English)",
+            "source_url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-17.19.19.png"
+        },
+        "2371": {
+            "status": 200,
+            "alt": "Child wearing a mask and holding a teddy bear",
+            "source_url": "https://dev.ehpmi.org/wp-content/uploads/2026/08/slide2.jpeg"
+        }
+    },
+    "status": "PASS",
+    "writes": 0
+}

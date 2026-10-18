@@ -1,0 +1,26 @@
+import fs from 'node:fs';
+const dir='/private/tmp/ehpmi-stage8-work';const inv=JSON.parse(fs.readFileSync(dir+'/ehpmi-stage8-dev-before.json'));const media=JSON.parse(fs.readFileSync(dir+'/media-classification-initial.json'));const ps=new Map(inv.posts.map(p=>[+p.ID,p]));
+const decode=s=>s.replace(/&amp;/g,'&').replace(/&quot;/g,'"').replace(/&#0?39;|&apos;/g,"'").replace(/&nbsp;/g,' ').trim();
+const changes=[],unknown=[];
+const reviewed={223:'EHPMI team members examining a handheld testing instrument',226:'EHPMI team members standing together outdoors',463:'Building and mountain landscape in Akhtala, Armenia',620:'Rocky valley and hills in Armenia',665:'Map of Azerbaijan showing major cities and borders',672:'Map of Tajikistan showing major cities and borders',694:'Map of Kazakhstan showing major cities and borders',747:'Map of Mongolia showing major cities and borders',751:'Map of Georgia showing major cities and borders',754:'Map of Ukraine showing major cities and borders',839:'Map of Kyrgyzstan showing major cities and borders',1721:'Children gathered in an outdoor playground in Kyrgyzstan',1722:'Participants at a meeting on the Environmental Code of Tajikistan'};
+for(const a of media){
+ a.classification=a.classification==='orphaned-candidate'?'orphaned':a.classification;
+ a.classification_basis=a.classification==='orphaned'?'No current content, media-field or widget/theme-option reference in audited scope; retained without deletion.':a.classification==='administrative'?'Referenced only by unpublished dormant Testimonial records; retained.':'Published content or media-owner relationship.';
+ if([67,70,99].includes(a.ID)){a.classification='administrative';a.classification_basis='Legacy source of the Stage 6 cloned Hero assets; recovery provenance only.';}
+ a.usage_classification=a.classification;
+ a.semantic_classification=a.classification==='orphaned'?'orphaned':'meaningful';
+ a.publication_gate=a.classification==='administrative'?'Preserve unpublished/provenance use; verify contextual alt before any future public use.':a.classification==='orphaned'?'Retain without deletion; assign owner and contextual alt before reuse.':'Current published owner verified.';
+ if(!a.mime.startsWith('image/')){a.role='download';a.alt_requirement='not_applicable';continue;}
+ if(a.ID===210){a.role='site-icon';a.alt_requirement='not_applicable_link_icon';continue;}
+ if(a.classification!=='meaningful'){a.role=a.classification==='administrative'?'unpublished-reference':'unused-retained';a.alt_requirement='not_rendered_reassess_before_publication';continue;}
+ a.alt_requirement='meaningful';a.role='content-image';
+ const ownerRef=a.references.find(x=>x.kind==='meta'&&['member','partner','staff_member','material','hero_slide'].includes(x.type));const owner=ps.get(ownerRef?.owner);
+ let alt=a.alt,basis=alt?'Existing accepted metadata':'';
+ if(!alt&&owner){const name=decode(owner.post_title);if(owner.post_type==='staff_member'){alt='Portrait of '+name;a.role='portrait';}else if(['member','partner'].includes(owner.post_type)){alt=(ownerRef.key==='additional_image'?'Additional information for ':'Logo of ')+name;a.role=ownerRef.key==='additional_image'?'additional-image':'logo';}else if(owner.post_type==='material'){alt=(ownerRef.key==='file'?'Publication: ':'Cover of ')+name;a.role=ownerRef.key==='file'?'publication-image':'publication-cover';}basis='Verified owner title and media relationship';}
+ if(!alt){for(const ref of a.references.filter(x=>x.kind==='content')){const p=ps.get(ref.owner);for(const match of p.post_content.matchAll(/<img\b[^>]*>/gi)){const tag=match[0];if(!tag.includes('wp-image-'+a.ID)&&!tag.includes(a.file)&&!tag.includes(a.file.replace(/-scaled(?=\.)/,'')))continue;const matchAlt=tag.match(/\balt\s*=\s*"([^"]*)"/i)||tag.match(/\balt\s*=\s*'([^']*)'/i);if(matchAlt?.[1].trim()){alt=decode(matchAlt[1]);basis='Existing contextual alt in published owner '+p.ID;break;}}if(alt)break;}}
+ if(!alt&&reviewed[a.ID]){alt=reviewed[a.ID];basis='Visual inspection and verified published owner context';}
+ if(a.ID===1498&&!a.alt){alt='QR codes for Vietnam Environmental Incident Response Center (SOS) online resources';basis='Verified QR media role and owning organization';}
+ if(!alt){unknown.push({ID:a.ID,file:a.file,owners:a.references.map(x=>({id:x.owner,title:ps.get(x.owner)?.post_title})),url:inv.attachments.find(x=>x.ID===a.ID).url});continue;}
+ if(!a.alt){const src=inv.attachments.find(x=>x.ID===a.ID),folder=src.file.substring(0,src.file.lastIndexOf('/')+1);changes.push({ID:a.ID,before:'',before_exists:inv.meta.some(m=>+m.post_id===a.ID&&m.meta_key==='_wp_attachment_image_alt'),after:alt,basis,sync_body_alt:!!reviewed[a.ID],source_files:[src.file,...Object.values(src.metadata?.sizes||{}).map(s=>folder+s.file),...(src.metadata?.original_image?[folder+src.metadata.original_image]:[])]});}a.proposed_alt=alt;a.alt_basis=basis;
+}
+fs.writeFileSync(dir+'/alt-plan.json',JSON.stringify(changes,null,2)+'\n');fs.writeFileSync(dir+'/media-classification.json',JSON.stringify(media,null,2)+'\n');fs.writeFileSync(dir+'/alt-unknown.json',JSON.stringify(unknown,null,2)+'\n');console.log(JSON.stringify({changes:changes.length,unknown},null,2));

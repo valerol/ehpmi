@@ -1,0 +1,30 @@
+{
+    "mode": "dry-run",
+    "expected_alt_updates": 63,
+    "alt_updates": 0,
+    "body_posts": [],
+    "plugin_files_deleted": 0,
+    "uploads_moved": 0,
+    "planned_body_posts": {
+        "1690": {
+            "images": 1,
+            "before_sha256": "21cbbbedc4ba610db3028998ffc396769f91d12d85ab46b691fc12b196b093fd",
+            "after_sha256": "f6958bdd518e78f36336569c37ddbf400e4616ca709bd7556586a56ed6be6c52"
+        },
+        "1692": {
+            "images": 1,
+            "before_sha256": "74c866ff4fa6217658d6099706e7d51cac4fae5ed7300f014559af64fa70da45",
+            "after_sha256": "98e4aaf8c2f4ef51cf25492c5f54c637291f6d7ae5bc49f4042d6965d397c4da"
+        },
+        "461": {
+            "images": 1,
+            "before_sha256": "cf421a646f58efbf37fe8ba5507bc2744c0741188d77ce46ad611d02f28e35fc",
+            "after_sha256": "53ddce39857970dce1ea74776ba9e69acadf73b0753c462ff9a3b9d9862a18ca"
+        },
+        "21": {
+            "images": 2,
+            "before_sha256": "fde2dbe9dcc5fadd2b2a986258c42b200d07defadb184dab09b0ca382b3579d9",
+            "after_sha256": "7ac4a64de184d59f199b942af5a2b1fb22084c0ea15375b859cc02ce0456960d"
+        }
+    }
+}

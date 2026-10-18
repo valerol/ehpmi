@@ -1,0 +1,93 @@
+{
+    "status": "PASS",
+    "failures": [],
+    "identity": {
+        "abspath": "/home2/nykvymmy/dev.ehpmi.org/",
+        "database": "nykvymmy_ehpmidev",
+        "home": "https://dev.ehpmi.org/"
+    },
+    "slides": [
+        {
+            "id": 2370,
+            "status": "publish",
+            "menu_order": 10,
+            "title": "Child wearing a mask near an industrial facility",
+            "attachment_id": 2369,
+            "alt": "Child wearing a mask near an industrial facility",
+            "file_exists": true,
+            "file_sha256": "6ae313df6e94420cf9aaeba494eb5ae1890e065d3f90969f82a19fbd28646155"
+        },
+        {
+            "id": 2372,
+            "status": "publish",
+            "menu_order": 20,
+            "title": "Child wearing a mask and holding a teddy bear",
+            "attachment_id": 2371,
+            "alt": "Child wearing a mask and holding a teddy bear",
+            "file_exists": true,
+            "file_sha256": "c34cf654207dd3412a91c27376af9f75297a1665deb007d03440c48fbd2086bf"
+        },
+        {
+            "id": 2374,
+            "status": "publish",
+            "menu_order": 30,
+            "title": "Child coughing",
+            "attachment_id": 2373,
+            "alt": "Child coughing",
+            "file_exists": true,
+            "file_sha256": "2f3cc0a836f9642e9454b46e6c1220739dbe0fc8579e4189a8a39c9c563946a3"
+        }
+    ],
+    "source_checks": {
+        "no_title_alt": true,
+        "no_generic_fallback": true,
+        "attachment_alt": true,
+        "menu_order_id": true,
+        "file_guard": true,
+        "desktop_picture_source": true,
+        "data_uri_placeholder": true,
+        "desktop_carousel_marker": true,
+        "no_automatic_bootstrap_ride": true,
+        "general_init_excludes_hero": true,
+        "responsive_carousel_lifecycle": true
+    },
+    "managed_images": [
+        {
+            "alt": "Child wearing a mask near an industrial facility",
+            "loading": "eager",
+            "fetchpriority": "high"
+        },
+        {
+            "alt": "Child wearing a mask and holding a teddy bear",
+            "loading": "lazy",
+            "fetchpriority": ""
+        },
+        {
+            "alt": "Child coughing",
+            "loading": "lazy",
+            "fetchpriority": ""
+        }
+    ],
+    "fallback_images": [
+        {
+            "alt": "Child wearing a mask near an industrial facility",
+            "loading": "eager",
+            "fetchpriority": "high"
+        },
+        {
+            "alt": "Child wearing a mask and holding a teddy bear",
+            "loading": "lazy",
+            "fetchpriority": ""
+        },
+        {
+            "alt": "Child coughing",
+            "loading": "lazy",
+            "fetchpriority": ""
+        }
+    ],
+    "slider_text_widgets": [
+        "block-2"
+    ],
+    "slider_text_hash": "67abadc588fd2d1d5aacf2f97f815dcdb21c9584e02bfdd6e5aa5cbe38e52169",
+    "template_sha256": "a49587a77318ac022c81d9a2aa007fa51368862a2f13dfb53fc8972f23e58710"
+}

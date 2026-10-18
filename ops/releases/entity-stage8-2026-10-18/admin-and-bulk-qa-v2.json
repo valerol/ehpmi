@@ -1,0 +1,42 @@
+{
+    "mode": "capability-checked-internal-native-media-REST-save-reload",
+    "media": {
+        "147": {
+            "save": 200,
+            "reload": 200,
+            "alt": "Logo of Human Health Institute",
+            "native_library_data": true,
+            "timestamps_restored": true
+        },
+        "212": {
+            "save": 200,
+            "reload": 200,
+            "alt": "Portrait of Aelita Sargsyan",
+            "native_library_data": true,
+            "timestamps_restored": true
+        },
+        "484": {
+            "save": 200,
+            "reload": 200,
+            "alt": "Cover of Children\u2019s book: My Book of Health \u2014 with Monkey Hero (in English)",
+            "native_library_data": true,
+            "timestamps_restored": true
+        },
+        "2371": {
+            "save": 200,
+            "reload": 200,
+            "alt": "Child wearing a mask and holding a teddy bear",
+            "native_library_data": true,
+            "timestamps_restored": true
+        }
+    },
+    "bulk_posts": [
+        1524,
+        1676,
+        1731,
+        1733,
+        1858
+    ],
+    "wp_optimize_warnings": [],
+    "status": "PASS"
+}

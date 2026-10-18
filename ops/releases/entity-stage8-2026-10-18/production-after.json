@@ -1,0 +1,105 @@
+{
+    "root": "/home2/nykvymmy/public_html",
+    "database": "nykvymmy_ehpmi",
+    "home": "https://ehpmi.org",
+    "siteurl": "https://ehpmi.org",
+    "php": "8.5.11",
+    "wp": "7.0.7",
+    "records_hash": "dc14c18c90b0403d7154c1f4ad0ab28553c7d20b8d4d901633fd9a12570adf6f",
+    "content_hash": "bfd48931e993ee1960d25758cd9cd7376e96375bd38ee5ea805ec35d29a2ae26",
+    "widgets_hash": "f08f098280eb2fb055d1690888c659c38b02103fb45c534876dd6872009e6ef7",
+    "fixture": null,
+    "markers": [],
+    "newsletter": {
+        "wp_newsletter": {
+            "count": 172,
+            "hash": "3be8702adf9bd12ba7975f4da969dd421103946224c7231449d29df63fa34cf5"
+        },
+        "wp_newsletter_emails": {
+            "count": 0,
+            "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "wp_newsletter_logs": {
+            "count": 0,
+            "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "wp_newsletter_sent": {
+            "count": 0,
+            "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "wp_newsletter_stats": {
+            "count": 0,
+            "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "wp_newsletter_user_logs": {
+            "count": 198,
+            "hash": "d3dcb3c73a5eed778f50c582c582e73587bb2decbd0d0674eb550ded2d894442"
+        },
+        "wp_newsletter_user_meta": {
+            "count": 0,
+            "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+    },
+    "files": {
+        "functions.php": "4ffce96a0f96508fbdd21efc72694ab0745330e2b2e4ef038021de0897a1bd08",
+        "css/style.less": "2e1bb1a8fcc111bb9ecc9497a481eae56e14a2dec508e30044cc94991c5d04dd",
+        "css/style.css": "79b70807af46ba11443fe1d4b255bd780254b934593eebbd3a4c04fa62102983",
+        "css/structural-regions.css": false,
+        "onload.js": "3b0df6ce2ad8e926fbabc744e12a776d38868f2c14ec3c6304d8709c731eea73"
+    },
+    "core": false,
+    "plugins": {
+        "advanced-custom-fields/acf.php": {
+            "version": "6.7.0",
+            "active": true
+        },
+        "akismet/akismet.php": {
+            "version": "5.6",
+            "active": true
+        },
+        "breadcrumb-navxt/breadcrumb-navxt.php": {
+            "version": "7.5.1",
+            "active": true
+        },
+        "contact-form-7/wp-contact-form-7.php": {
+            "version": "6.1.4",
+            "active": true
+        },
+        "youtube-embed-plus/youtube.php": {
+            "version": "14.2.5",
+            "active": true
+        },
+        "force-regenerate-thumbnails/force-regenerate-thumbnails.php": {
+            "version": "2.2.2",
+            "active": true
+        },
+        "allow-html-in-category-descriptions/html-in-category-descriptions.php": {
+            "version": "1.2.4",
+            "active": true
+        },
+        "newsletter/plugin.php": {
+            "version": "9.1.1",
+            "active": true
+        },
+        "real-media-library-lite/index.php": {
+            "version": "4.22.62",
+            "active": true
+        },
+        "wpcf7-recaptcha/wpcf7-recaptcha.php": {
+            "version": "1.4.9",
+            "active": true
+        },
+        "remove-category-url/remove-category-url.php": {
+            "version": "1.2.0",
+            "active": true
+        },
+        "wp-optimize/wp-optimize.php": {
+            "version": "4.5.3",
+            "active": true
+        },
+        "wp-robots-txt/robots-txt.php": {
+            "version": "1.3.5",
+            "active": true
+        }
+    }
+}

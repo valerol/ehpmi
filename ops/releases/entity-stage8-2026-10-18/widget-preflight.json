@@ -1,0 +1,11 @@
+{
+    "2": {
+        "content": "<!-- wp:group {\"className\":\"ehpmi-widget-content\"} -->\n<div class=\"wp-block-group ehpmi-widget-content\"><!-- wp:heading {\"level\":1} -->\n<h1 class=\"wp-block-heading\">Decrease Pollution \u2014 Protect Health</h1>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Our team unites efforts of professionals, experts, and nonprofit groups working in Eastern Europe and Central Asia to find and implement solutions to problems of toxic persistent pollutants and associated health risks.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->"
+    },
+    "3": {
+        "content": "<!-- wp:group {\"className\":\"ehpmi-widget-content\"} -->\n<div class=\"wp-block-group ehpmi-widget-content\"><!-- wp:heading {\"level\":2} -->\n<h2 class=\"wp-block-heading\">Our Geography</h2>\n<!-- /wp:heading -->\n<!-- wp:paragraph -->\n<p>EHPMI has active teams and operates in the following countries: Ukraine, Georgia, Armenia, Azerbaijan, Kazakhstan, Kyrgyzstan, Tajikistan, Mongolia, and Vietnam. The national teams have been present and worked in Eastern Europe and Central Asia region for over 15 years.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->"
+    },
+    "6": {
+        "content": "<!-- wp:group {\"className\":\"ehpmi-widget-content\"} -->\n<div class=\"wp-block-group ehpmi-widget-content\"><!-- wp:heading {\"className\":\"h3\"} -->\n<h2 class=\"wp-block-heading h3\">Contact</h2>\n<!-- /wp:heading -->\n\n<!-- wp:html -->\n\n<p><i class=\"fas fa-home me-3\"></i>Georgia, Tbilisi, Vake district, Anna Politkovskaya street,<br>N3, building N21, office N4</p>\n<p><i class=\"fas fa-envelope me-3\"></i><a href=\"javascript:location='mailto:\\u0069\\u006e\\u0066\\u006f\\u0040\\u0065\\u0068\\u0070\\u006d\\u0069\\u002e\\u006f\\u0072\\u0067';void 0\"><script type=\"text/javascript\">document.write('\\u0069\\u006e\\u0066\\u006f\\u0040\\u0065\\u0068\\u0070\\u006d\\u0069\\u002e\\u006f\\u0072\\u0067')</script></a></p>\n<!--\n<p><i class=\"fas fa-phone me-3\"></i></p>-->\n<!-- /wp:html --></div>\n<!-- /wp:group -->"
+    }
+}

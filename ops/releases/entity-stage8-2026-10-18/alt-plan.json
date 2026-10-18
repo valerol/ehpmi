@@ -1,0 +1,875 @@
+[
+  {
+    "ID": 147,
+    "before": "",
+    "before_exists": false,
+    "after": "Logo of Human Health Institute",
+    "basis": "Verified owner title and media relationship",
+    "sync_body_alt": false,
+    "source_files": [
+      "2022/08/human-health-institute.jpg",
+      "2022/08/human-health-institute-650x650.jpg",
+      "2022/08/human-health-institute-530x530.jpg"
+    ]
+  },
+  {
+    "ID": 148,
+    "before": "",
+    "before_exists": false,
+    "after": "Logo of Consortium Civil Society Organization Eco Life and Eco Life Consulting Co",
+    "basis": "Verified owner title and media relationship",
+    "sync_body_alt": false,
+    "source_files": [
+      "2022/08/eco-life.jpg",
+      "2022/08/eco-life-650x650.jpg",
+      "2022/08/eco-life-530x530.jpg"
+    ]
+  },
+  {
+    "ID": 151,
+    "before": "",
+    "before_exists": false,
+    "after": "Logo of Environment and Security Center of Mongolia (ESCM)",
+    "basis": "Verified owner title and media relationship",
+    "sync_body_alt": false,
+    "source_files": [
+      "2022/08/escm.jpg",
+      "2022/08/escm-650x650.jpg",
+      "2022/08/escm-530x530.jpg"
+    ]
+  },
+  {
+    "ID": 212,
+    "before": "",
+    "before_exists": false,
+    "after": "Portrait of Aelita Sargsyan",
+    "basis": "Verified owner title and media relationship",
+    "sync_body_alt": false,
+    "source_files": [
+      "2022/09/Aelita.jpg"
+    ]
+  },
+  {
+    "ID": 214,
+    "before": "",
+    "before_exists": false,
+    "after": "Portrait of Alena Temnikova",
+    "basis": "Verified owner title and media relationship",
+    "sync_body_alt": false,
+    "source_files": [
+      "2022/09/Alena.jpg"
+    ]
+  },
+  {
+    "ID": 216,
+    "before": "",
+    "before_exists": false,
+    "after": "Portrait of Indira Zhakipova",
+    "basis": "Verified owner title and media relationship",
+    "sync_body_alt": false,
+    "source_files": [
+      "2022/09/Indira.jpg"
+    ]
+  },
+  {
+    "ID": 217,
+    "before": "",
+    "before_exists": false,
+    "after": "Portrait of Petr Sharov",
+    "basis": "Verified owner title and media relationship",
+    "sync_body_alt": false,
+    "source_files": [
+      "2022/09/Petr.jpg"
+    ]
+  },
+  {
+    "ID": 221,
+    "before": "",
+    "before_exists": false,
+    "after": "Portrait of Umidjon Ulugov",
+    "basis": "Verified owner title and media relationship",
+    "sync_body_alt": false,
+    "source_files": [
+      "2022/09/Umed.jpg"
+    ]
+  },
+  {
+    "ID": 223,
+    "before": "",
+    "before_exists": false,
+    "after": "EHPMI team members examining a handheld testing instrument",
+    "basis": "Visual inspection and verified published owner context",
+    "sync_body_alt": true,
+    "source_files": [
+      "2022/09/photo_2022-09-27-20.07.59.jpeg",
+      "2022/09/photo_2022-09-27-20.07.59-650x433.jpeg",
+      "2022/09/photo_2022-09-27-20.07.59-530x530.jpeg",
+      "2022/09/photo_2022-09-27-20.07.59-768x512.jpeg"
+    ]
+  },
+  {
+    "ID": 226,
+    "before": "",
+    "before_exists": false,
+    "after": "EHPMI team members standing together outdoors",
+    "basis": "Visual inspection and verified published owner context",
+    "sync_body_alt": true,
+    "source_files": [
+      "2022/09/photo_2022-09-27-20.08.05.jpeg",
+      "2022/09/photo_2022-09-27-20.08.05-650x433.jpeg",
+      "2022/09/photo_2022-09-27-20.08.05-530x530.jpeg",
+      "2022/09/photo_2022-09-27-20.08.05-768x512.jpeg"
+    ]
+  },
+  {
+    "ID": 273,
+    "before": "",
+    "before_exists": false,
+    "after": "Portrait of Aidar Kapassov",
+    "basis": "Verified owner title and media relationship",
+    "sync_body_alt": false,
+    "source_files": [
+      "2022/09/Aidar.jpg"
+    ]
+  },
+  {
+    "ID": 275,
+    "before": "",
+    "before_exists": false,
+    "after": "Portrait of Zagirova Anastasia",
+    "basis": "Verified owner title and media relationship",
+    "sync_body_alt": false,
+    "source_files": [
+      "2022/09/Anastasia.jpeg"
+    ]
+  },
+  {
+    "ID": 276,
+    "before": "",
+    "before_exists": false,
+    "after": "Portrait of Dr. Erdenesaikan Naidansuren",
+    "basis": "Verified owner title and media relationship",
+    "sync_body_alt": false,
+    "source_files": [
+      "2022/09/Erdene.jpg"
+    ]
+  },
+  {
+    "ID": 278,
+    "before": "",
+    "before_exists": false,
+    "after": "Portrait of Kakha Rukhaia",
+    "basis": "Verified owner title and media relationship",
+    "sync_body_alt": false,
+    "source_files": [
+      "2022/09/Kakha.jpg"
+    ]
+  },
+  {
+    "ID": 279,
+    "before": "",
+    "before_exists": false,
+    "after": "Portrait of Khatuna Akhalaia",
+    "basis": "Verified owner title and media relationship",
+    "sync_body_alt": false,
+    "source_files": [
+      "2022/09/Khatuna.jpg"
+    ]
+  },
+  {
+    "ID": 280,
+    "before": "",
+    "before_exists": false,
+    "after": "Portrait of Mariami Jintcharadze",
+    "basis": "Verified owner title and media relationship",
+    "sync_body_alt": false,
+    "source_files": [
+      "2022/09/Mariami.jpg"
+    ]
+  },
+  {
+    "ID": 283,
+    "before": "",
+    "before_exists": false,
+    "after": "Portrait of Veriko Gulua",
+    "basis": "Verified owner title and media relationship",
+    "sync_body_alt": false,
+    "source_files": [
+      "2022/09/Veriko.jpg"
+    ]
+  },
+  {
+    "ID": 290,
+    "before": "",
+    "before_exists": false,
+    "after": "Portrait of Mustafina Alina",
+    "basis": "Verified owner title and media relationship",
+    "sync_body_alt": false,
+    "source_files": [
+      "2022/09/Alina.jpg"
+    ]
+  },
+  {
+    "ID": 463,
+    "before": "",
+    "before_exists": false,
+    "after": "Building and mountain landscape in Akhtala, Armenia",
+    "basis": "Visual inspection and verified published owner context",
+    "sync_body_alt": true,
+    "source_files": [
+      "2022/11/Screenshot-2022-11-11-at-21.36.44.png",
+      "2022/11/Screenshot-2022-11-11-at-21.36.44-650x430.png",
+      "2022/11/Screenshot-2022-11-11-at-21.36.44-530x530.png",
+      "2022/11/Screenshot-2022-11-11-at-21.36.44-768x508.png"
+    ]
+  },
+  {
+    "ID": 484,
+    "before": "",
+    "before_exists": false,
+    "after": "Cover of Children’s book: My Book of Health — with Monkey Hero (in English)",
+    "basis": "Verified owner title and media relationship",
+    "sync_body_alt": false,
+    "source_files": [
+      "2022/11/Screenshot-2022-11-14-at-17.19.19.png",
+      "2022/11/Screenshot-2022-11-14-at-17.19.19-650x470.png",
+      "2022/11/Screenshot-2022-11-14-at-17.19.19-1320x955.png",
+      "2022/11/Screenshot-2022-11-14-at-17.19.19-530x530.png",
+      "2022/11/Screenshot-2022-11-14-at-17.19.19-768x556.png",
+      "2022/11/Screenshot-2022-11-14-at-17.19.19-1536x1111.png",
+      "2022/11/Screenshot-2022-11-14-at-17.19.19-2048x1482.png"
+    ]
+  },
+  {
+    "ID": 486,
+    "before": "",
+    "before_exists": false,
+    "after": "Publication: Booklet about lead chromate in spices (in English)",
+    "basis": "Verified owner title and media relationship",
+    "sync_body_alt": false,
+    "source_files": [
+      "2022/11/booklet-about-lead-chromate-in-spices-en-scaled.jpg",
+      "2022/11/booklet-about-lead-chromate-in-spices-en-650x222.jpg",
+      "2022/11/booklet-about-lead-chromate-in-spices-en-1320x451.jpg",
+      "2022/11/booklet-about-lead-chromate-in-spices-en-530x530.jpg",
+      "2022/11/booklet-about-lead-chromate-in-spices-en-768x262.jpg",
+      "2022/11/booklet-about-lead-chromate-in-spices-en-1536x525.jpg",
+      "2022/11/booklet-about-lead-chromate-in-spices-en-2048x699.jpg",
+      "2022/11/booklet-about-lead-chromate-in-spices-en.jpg"
+    ]
+  },
+  {
+    "ID": 487,
+    "before": "",
+    "before_exists": false,
+    "after": "Cover of Booklet about lead chromate in spices (in English)",
+    "basis": "Verified owner title and media relationship",
+    "sync_body_alt": false,
+    "source_files": [
+      "2022/11/Screenshot-2022-11-14-at-18.19.04.png",
+      "2022/11/Screenshot-2022-11-14-at-18.19.04-650x431.png",
+      "2022/11/Screenshot-2022-11-14-at-18.19.04-530x530.png",
+      "2022/11/Screenshot-2022-11-14-at-18.19.04-768x510.png"
+    ]
+  },
+  {
+    "ID": 489,
+    "before": "",
+    "before_exists": false,
+    "after": "Publication: Booklet about lead chromate in spices (in Russian)",
+    "basis": "Verified owner title and media relationship",
+    "sync_body_alt": false,
+    "source_files": [
+      "2022/11/booklet-about-lead-chromate-in-spices-ru-scaled.jpg",
+      "2022/11/booklet-about-lead-chromate-in-spices-ru-650x223.jpg",
+      "2022/11/booklet-about-lead-chromate-in-spices-ru-1320x453.jpg",
+      "2022/11/booklet-about-lead-chromate-in-spices-ru-530x530.jpg",
+      "2022/11/booklet-about-lead-chromate-in-spices-ru-768x263.jpg",
+      "2022/11/booklet-about-lead-chromate-in-spices-ru-1536x527.jpg",
+      "2022/11/booklet-about-lead-chromate-in-spices-ru-2048x702.jpg",
+      "2022/11/booklet-about-lead-chromate-in-spices-ru.jpg"
+    ]
+  },
+  {
+    "ID": 490,
+    "before": "",
+    "before_exists": false,
+    "after": "Cover of Booklet about lead chromate in spices (in Russian)",
+    "basis": "Verified owner title and media relationship",
+    "sync_body_alt": false,
+    "source_files": [
+      "2022/11/Screenshot-2022-11-14-at-18.31.04.png",
+      "2022/11/Screenshot-2022-11-14-at-18.31.04-650x421.png",
+      "2022/11/Screenshot-2022-11-14-at-18.31.04-530x530.png",
+      "2022/11/Screenshot-2022-11-14-at-18.31.04-768x498.png"
+    ]
+  },
+  {
+    "ID": 492,
+    "before": "",
+    "before_exists": false,
+    "after": "Publication: Booklet about lead chromate in spices (in Georgian)",
+    "basis": "Verified owner title and media relationship",
+    "sync_body_alt": false,
+    "source_files": [
+      "2022/11/booklet-about-lead-chromate-in-spices-ge-scaled.jpg",
+      "2022/11/booklet-about-lead-chromate-in-spices-ge-650x223.jpg",
+      "2022/11/booklet-about-lead-chromate-in-spices-ge-1320x453.jpg",
+      "2022/11/booklet-about-lead-chromate-in-spices-ge-530x530.jpg",
+      "2022/11/booklet-about-lead-chromate-in-spices-ge-768x263.jpg",
+      "2022/11/booklet-about-lead-chromate-in-spices-ge-1536x527.jpg",
+      "2022/11/booklet-about-lead-chromate-in-spices-ge-2048x702.jpg",
+      "2022/11/booklet-about-lead-chromate-in-spices-ge.jpg"
+    ]
+  },
+  {
+    "ID": 493,
+    "before": "",
+    "before_exists": false,
+    "after": "Cover of Booklet about lead chromate in spices (in Georgian)",
+    "basis": "Verified owner title and media relationship",
+    "sync_body_alt": false,
+    "source_files": [
+      "2022/11/Screenshot-2022-11-14-at-18.54.11.png",
+      "2022/11/Screenshot-2022-11-14-at-18.54.11-650x422.png",
+      "2022/11/Screenshot-2022-11-14-at-18.54.11-530x530.png",
+      "2022/11/Screenshot-2022-11-14-at-18.54.11-768x498.png"
+    ]
+  },
+  {
+    "ID": 506,
+    "before": "",
+    "before_exists": false,
+    "after": "Cover of Report on assessments of sites contaminated with obsolete pesticides in Tajikistan – Issue 1 (in Russian)",
+    "basis": "Verified owner title and media relationship",
+    "sync_body_alt": false,
+    "source_files": [
+      "2022/11/Screenshot-2022-11-14-at-19.02.58.png",
+      "2022/11/Screenshot-2022-11-14-at-19.02.58-650x411.png",
+      "2022/11/Screenshot-2022-11-14-at-19.02.58-1320x835.png",
+      "2022/11/Screenshot-2022-11-14-at-19.02.58-530x530.png",
+      "2022/11/Screenshot-2022-11-14-at-19.02.58-768x486.png",
+      "2022/11/Screenshot-2022-11-14-at-19.02.58-1536x972.png"
+    ]
+  },
+  {
+    "ID": 509,
+    "before": "",
+    "before_exists": false,
+    "after": "Cover of Report on assessments of sites contaminated with obsolete pesticides in Tajikistan – Issue 2 (in Russian)",
+    "basis": "Verified owner title and media relationship",
+    "sync_body_alt": false,
+    "source_files": [
+      "2022/11/Screenshot-2022-11-14-at-19.04.12.png",
+      "2022/11/Screenshot-2022-11-14-at-19.04.12-650x495.png",
+      "2022/11/Screenshot-2022-11-14-at-19.04.12-1320x1004.png",
+      "2022/11/Screenshot-2022-11-14-at-19.04.12-530x530.png",
+      "2022/11/Screenshot-2022-11-14-at-19.04.12-768x584.png",
+      "2022/11/Screenshot-2022-11-14-at-19.04.12-1536x1169.png",
+      "2022/11/Screenshot-2022-11-14-at-19.04.12-2048x1558.png"
+    ]
+  },
+  {
+    "ID": 512,
+    "before": "",
+    "before_exists": false,
+    "after": "Cover of Report on assessments of sites contaminated with obsolete pesticides in Tajikistan – Issue 3 (in Russian)",
+    "basis": "Verified owner title and media relationship",
+    "sync_body_alt": false,
+    "source_files": [
+      "2022/11/Screenshot-2022-11-14-at-19.05.34.png",
+      "2022/11/Screenshot-2022-11-14-at-19.05.34-650x462.png",
+      "2022/11/Screenshot-2022-11-14-at-19.05.34-1320x938.png",
+      "2022/11/Screenshot-2022-11-14-at-19.05.34-530x530.png",
+      "2022/11/Screenshot-2022-11-14-at-19.05.34-768x546.png",
+      "2022/11/Screenshot-2022-11-14-at-19.05.34-1536x1092.png",
+      "2022/11/Screenshot-2022-11-14-at-19.05.34-2048x1456.png"
+    ]
+  },
+  {
+    "ID": 515,
+    "before": "",
+    "before_exists": false,
+    "after": "Cover of Booklet “What are pesticides and why are they dangerous for human health?” (in Russian)",
+    "basis": "Verified owner title and media relationship",
+    "sync_body_alt": false,
+    "source_files": [
+      "2022/11/Screenshot-2022-11-14-at-19.07.00.png",
+      "2022/11/Screenshot-2022-11-14-at-19.07.00-650x455.png",
+      "2022/11/Screenshot-2022-11-14-at-19.07.00-530x524.png"
+    ]
+  },
+  {
+    "ID": 517,
+    "before": "",
+    "before_exists": false,
+    "after": "Publication: Calendar for 2019/2020 with information about danger of pesticides",
+    "basis": "Verified owner title and media relationship",
+    "sync_body_alt": false,
+    "source_files": [
+      "2022/11/calendar-for-2019-2020-with-information-about-danger-of-pesticides.jpg",
+      "2022/11/calendar-for-2019-2020-with-information-about-danger-of-pesticides-650x899.jpg",
+      "2022/11/calendar-for-2019-2020-with-information-about-danger-of-pesticides-530x530.jpg",
+      "2022/11/calendar-for-2019-2020-with-information-about-danger-of-pesticides-768x1062.jpg",
+      "2022/11/calendar-for-2019-2020-with-information-about-danger-of-pesticides-1111x1536.jpg"
+    ]
+  },
+  {
+    "ID": 518,
+    "before": "",
+    "before_exists": false,
+    "after": "Cover of Calendar for 2019/2020 with information about danger of pesticides",
+    "basis": "Verified owner title and media relationship",
+    "sync_body_alt": false,
+    "source_files": [
+      "2022/11/Screenshot-2022-11-14-at-19.08.21.png",
+      "2022/11/Screenshot-2022-11-14-at-19.08.21-650x384.png",
+      "2022/11/Screenshot-2022-11-14-at-19.08.21-530x472.png",
+      "2022/11/Screenshot-2022-11-14-at-19.08.21-768x453.png"
+    ]
+  },
+  {
+    "ID": 521,
+    "before": "",
+    "before_exists": false,
+    "after": "Publication: Poster “Chemical Safety at Home” (in Russian)",
+    "basis": "Verified owner title and media relationship",
+    "sync_body_alt": false,
+    "source_files": [
+      "2022/11/poster-chemical-safety-at-home-ru-scaled.jpg",
+      "2022/11/poster-chemical-safety-at-home-ru-650x459.jpg",
+      "2022/11/poster-chemical-safety-at-home-ru-1320x933.jpg",
+      "2022/11/poster-chemical-safety-at-home-ru-530x530.jpg",
+      "2022/11/poster-chemical-safety-at-home-ru-768x543.jpg",
+      "2022/11/poster-chemical-safety-at-home-ru-1536x1085.jpg",
+      "2022/11/poster-chemical-safety-at-home-ru-2048x1447.jpg",
+      "2022/11/poster-chemical-safety-at-home-ru.jpg"
+    ]
+  },
+  {
+    "ID": 522,
+    "before": "",
+    "before_exists": false,
+    "after": "Cover of Poster “Chemical Safety at Home” (in Russian)",
+    "basis": "Verified owner title and media relationship",
+    "sync_body_alt": false,
+    "source_files": [
+      "2022/11/Screenshot-2022-11-14-at-19.12.35.png",
+      "2022/11/Screenshot-2022-11-14-at-19.12.35-650x333.png",
+      "2022/11/Screenshot-2022-11-14-at-19.12.35-530x530.png",
+      "2022/11/Screenshot-2022-11-14-at-19.12.35-768x394.png"
+    ]
+  },
+  {
+    "ID": 524,
+    "before": "",
+    "before_exists": false,
+    "after": "Publication: Poster “Medical Wastes” (in Russian)",
+    "basis": "Verified owner title and media relationship",
+    "sync_body_alt": false,
+    "source_files": [
+      "2022/11/poster-medical-wastes-ru-scaled.jpg",
+      "2022/11/poster-medical-wastes-ru-650x460.jpg",
+      "2022/11/poster-medical-wastes-ru-1320x933.jpg",
+      "2022/11/poster-medical-wastes-ru-530x530.jpg",
+      "2022/11/poster-medical-wastes-ru-768x543.jpg",
+      "2022/11/poster-medical-wastes-ru-1536x1086.jpg",
+      "2022/11/poster-medical-wastes-ru-2048x1448.jpg",
+      "2022/11/poster-medical-wastes-ru.jpg"
+    ]
+  },
+  {
+    "ID": 525,
+    "before": "",
+    "before_exists": false,
+    "after": "Cover of Poster “Medical Wastes” (in Russian)",
+    "basis": "Verified owner title and media relationship",
+    "sync_body_alt": false,
+    "source_files": [
+      "2022/11/Screenshot-2022-11-14-at-19.14.22.png",
+      "2022/11/Screenshot-2022-11-14-at-19.14.22-650x315.png",
+      "2022/11/Screenshot-2022-11-14-at-19.14.22-530x454.png",
+      "2022/11/Screenshot-2022-11-14-at-19.14.22-768x373.png"
+    ]
+  },
+  {
+    "ID": 528,
+    "before": "",
+    "before_exists": false,
+    "after": "Cover of Health and Pollution Action Plan for Tajikistan",
+    "basis": "Verified owner title and media relationship",
+    "sync_body_alt": false,
+    "source_files": [
+      "2022/11/Screenshot-2022-11-14-at-19.16.55.png",
+      "2022/11/Screenshot-2022-11-14-at-19.16.55-650x340.png",
+      "2022/11/Screenshot-2022-11-14-at-19.16.55-530x530.png",
+      "2022/11/Screenshot-2022-11-14-at-19.16.55-768x402.png"
+    ]
+  },
+  {
+    "ID": 531,
+    "before": "",
+    "before_exists": false,
+    "after": "Cover of Health and Pollution Action Plan for Azerbaijan",
+    "basis": "Verified owner title and media relationship",
+    "sync_body_alt": false,
+    "source_files": [
+      "2022/11/Screenshot-2022-11-14-at-19.17.52.png",
+      "2022/11/Screenshot-2022-11-14-at-19.17.52-650x432.png",
+      "2022/11/Screenshot-2022-11-14-at-19.17.52-530x530.png",
+      "2022/11/Screenshot-2022-11-14-at-19.17.52-768x511.png"
+    ]
+  },
+  {
+    "ID": 557,
+    "before": "",
+    "before_exists": false,
+    "after": "Portrait of Lusine Taslakyan",
+    "basis": "Verified owner title and media relationship",
+    "sync_body_alt": false,
+    "source_files": [
+      "2022/09/lusine_taslakyan.png"
+    ]
+  },
+  {
+    "ID": 612,
+    "before": "",
+    "before_exists": false,
+    "after": "Logo of Peshsaf",
+    "basis": "Verified owner title and media relationship",
+    "sync_body_alt": false,
+    "source_files": [
+      "2022/08/peshsaf.jpeg",
+      "2022/08/peshsaf-650x650.jpeg",
+      "2022/08/peshsaf-530x530.jpeg"
+    ]
+  },
+  {
+    "ID": 613,
+    "before": "",
+    "before_exists": false,
+    "after": "Logo of Civil Society Association ‘Ekois Bishkek’",
+    "basis": "Verified owner title and media relationship",
+    "sync_body_alt": false,
+    "source_files": [
+      "2022/08/ecois.jpeg",
+      "2022/08/ecois-650x650.jpeg",
+      "2022/08/ecois-530x530.jpeg"
+    ]
+  },
+  {
+    "ID": 620,
+    "before": "",
+    "before_exists": false,
+    "after": "Rocky valley and hills in Armenia",
+    "basis": "Visual inspection and verified published owner context",
+    "sync_body_alt": true,
+    "source_files": [
+      "2022/11/DSC02468_2000.jpg",
+      "2022/11/DSC02468_2000-650x433.jpg",
+      "2022/11/DSC02468_2000-1320x880.jpg",
+      "2022/11/DSC02468_2000-530x530.jpg",
+      "2022/11/DSC02468_2000-768x512.jpg",
+      "2022/11/DSC02468_2000-1536x1024.jpg"
+    ]
+  },
+  {
+    "ID": 633,
+    "before": "",
+    "before_exists": false,
+    "after": "Field team using an X-ray fluorescence analyzer inside an industrial building in Tajikistan.",
+    "basis": "Existing contextual alt in published owner 378",
+    "sync_body_alt": false,
+    "source_files": [
+      "2022/11/02_xrf_ludmila_umed_bek_said.jpg",
+      "2022/11/02_xrf_ludmila_umed_bek_said-650x433.jpg",
+      "2022/11/02_xrf_ludmila_umed_bek_said-1320x880.jpg",
+      "2022/11/02_xrf_ludmila_umed_bek_said-530x530.jpg",
+      "2022/11/02_xrf_ludmila_umed_bek_said-768x512.jpg",
+      "2022/11/02_xrf_ludmila_umed_bek_said-1536x1024.jpg"
+    ]
+  },
+  {
+    "ID": 665,
+    "before": "",
+    "before_exists": false,
+    "after": "Map of Azerbaijan showing major cities and borders",
+    "basis": "Visual inspection and verified published owner context",
+    "sync_body_alt": true,
+    "source_files": [
+      "2022/11/Azerbaijan-scaled.jpg",
+      "2022/11/Azerbaijan-650x346.jpg",
+      "2022/11/Azerbaijan-1320x703.jpg",
+      "2022/11/Azerbaijan-530x530.jpg",
+      "2022/11/Azerbaijan-768x409.jpg",
+      "2022/11/Azerbaijan-1536x818.jpg",
+      "2022/11/Azerbaijan-2048x1091.jpg",
+      "2022/11/Azerbaijan.jpg"
+    ]
+  },
+  {
+    "ID": 672,
+    "before": "",
+    "before_exists": false,
+    "after": "Map of Tajikistan showing major cities and borders",
+    "basis": "Visual inspection and verified published owner context",
+    "sync_body_alt": true,
+    "source_files": [
+      "2022/11/Tajikistan-scaled.jpg",
+      "2022/11/Tajikistan-650x378.jpg",
+      "2022/11/Tajikistan-1320x767.jpg",
+      "2022/11/Tajikistan-530x530.jpg",
+      "2022/11/Tajikistan-768x447.jpg",
+      "2022/11/Tajikistan-1536x893.jpg",
+      "2022/11/Tajikistan-2048x1191.jpg",
+      "2022/11/Tajikistan.jpg"
+    ]
+  },
+  {
+    "ID": 694,
+    "before": "",
+    "before_exists": false,
+    "after": "Map of Kazakhstan showing major cities and borders",
+    "basis": "Visual inspection and verified published owner context",
+    "sync_body_alt": true,
+    "source_files": [
+      "2022/11/Kazakhstan-scaled.jpg",
+      "2022/11/Kazakhstan-650x246.jpg",
+      "2022/11/Kazakhstan-1320x500.jpg",
+      "2022/11/Kazakhstan-530x530.jpg",
+      "2022/11/Kazakhstan-768x291.jpg",
+      "2022/11/Kazakhstan-1536x582.jpg",
+      "2022/11/Kazakhstan-2048x776.jpg",
+      "2022/11/Kazakhstan.jpg"
+    ]
+  },
+  {
+    "ID": 747,
+    "before": "",
+    "before_exists": false,
+    "after": "Map of Mongolia showing major cities and borders",
+    "basis": "Visual inspection and verified published owner context",
+    "sync_body_alt": true,
+    "source_files": [
+      "2022/12/Mongolia-scaled.jpg",
+      "2022/12/Mongolia-650x249.jpg",
+      "2022/12/Mongolia-1320x505.jpg",
+      "2022/12/Mongolia-530x530.jpg",
+      "2022/12/Mongolia-768x294.jpg",
+      "2022/12/Mongolia-1536x588.jpg",
+      "2022/12/Mongolia-2048x784.jpg",
+      "2022/12/Mongolia.jpg"
+    ]
+  },
+  {
+    "ID": 751,
+    "before": "",
+    "before_exists": false,
+    "after": "Map of Georgia showing major cities and borders",
+    "basis": "Visual inspection and verified published owner context",
+    "sync_body_alt": true,
+    "source_files": [
+      "2022/12/Georgia.jpg",
+      "2022/12/Georgia-650x331.jpg",
+      "2022/12/Georgia-1320x672.jpg",
+      "2022/12/Georgia-530x530.jpg",
+      "2022/12/Georgia-768x391.jpg",
+      "2022/12/Georgia-1536x782.jpg",
+      "2022/12/Georgia-2048x1043.jpg"
+    ]
+  },
+  {
+    "ID": 754,
+    "before": "",
+    "before_exists": false,
+    "after": "Map of Ukraine showing major cities and borders",
+    "basis": "Visual inspection and verified published owner context",
+    "sync_body_alt": true,
+    "source_files": [
+      "2022/12/Ukraine-scaled.jpg",
+      "2022/12/Ukraine-650x378.jpg",
+      "2022/12/Ukraine-1320x767.jpg",
+      "2022/12/Ukraine-530x530.jpg",
+      "2022/12/Ukraine-768x447.jpg",
+      "2022/12/Ukraine-1536x893.jpg",
+      "2022/12/Ukraine-2048x1191.jpg",
+      "2022/12/Ukraine.jpg"
+    ]
+  },
+  {
+    "ID": 759,
+    "before": "",
+    "before_exists": false,
+    "after": "Portrait of Vardan Karyan",
+    "basis": "Verified owner title and media relationship",
+    "sync_body_alt": false,
+    "source_files": [
+      "2023/01/Vardan.jpg"
+    ]
+  },
+  {
+    "ID": 839,
+    "before": "",
+    "before_exists": false,
+    "after": "Map of Kyrgyzstan showing major cities and borders",
+    "basis": "Visual inspection and verified published owner context",
+    "sync_body_alt": true,
+    "source_files": [
+      "2023/02/Kyrgyzstan-scaled.jpg",
+      "2023/02/Kyrgyzstan-650x300.jpg",
+      "2023/02/Kyrgyzstan-1320x610.jpg",
+      "2023/02/Kyrgyzstan-530x530.jpg",
+      "2023/02/Kyrgyzstan-768x355.jpg",
+      "2023/02/Kyrgyzstan-1536x710.jpg",
+      "2023/02/Kyrgyzstan-2048x946.jpg",
+      "2023/02/Kyrgyzstan.jpg"
+    ]
+  },
+  {
+    "ID": 912,
+    "before": "",
+    "before_exists": false,
+    "after": "Portrait of Shahnaz Amanova",
+    "basis": "Verified owner title and media relationship",
+    "sync_body_alt": false,
+    "source_files": [
+      "2023/03/Amanova.jpg"
+    ]
+  },
+  {
+    "ID": 1099,
+    "before": "",
+    "before_exists": false,
+    "after": "Portrait of Rovshan Abbasov",
+    "basis": "Verified owner title and media relationship",
+    "sync_body_alt": false,
+    "source_files": [
+      "2022/09/photo_2023-05-09-19.13.23.jpeg"
+    ]
+  },
+  {
+    "ID": 1456,
+    "before": "",
+    "before_exists": false,
+    "after": "Logo of TerraGraphics International Foundation (TIFO)",
+    "basis": "Verified owner title and media relationship",
+    "sync_body_alt": false,
+    "source_files": [
+      "2023/09/terragraphics.png",
+      "2023/09/terragraphics-650x298.png",
+      "2023/09/terragraphics-530x382.png",
+      "2023/09/terragraphics-768x352.png"
+    ]
+  },
+  {
+    "ID": 1498,
+    "before": "",
+    "before_exists": false,
+    "after": "QR codes for Vietnam Environmental Incident Response Center (SOS) online resources",
+    "basis": "Verified QR media role and owning organization",
+    "sync_body_alt": false,
+    "source_files": [
+      "2022/08/QR_SOS_app_web_youtube_fb.png"
+    ]
+  },
+  {
+    "ID": 1535,
+    "before": "",
+    "before_exists": false,
+    "after": "Cover of Lead health risk information book for parents and teachers (in Kyrgyz)",
+    "basis": "Verified owner title and media relationship",
+    "sync_body_alt": false,
+    "source_files": [
+      "2022/11/lead_health_risk_information_book_for_parents_and_teachers.jpg"
+    ]
+  },
+  {
+    "ID": 1721,
+    "before": "",
+    "before_exists": false,
+    "after": "Children gathered in an outdoor playground in Kyrgyzstan",
+    "basis": "Visual inspection and verified published owner context",
+    "sync_body_alt": true,
+    "source_files": [
+      "2024/05/1-2.jpg",
+      "2024/05/1-2-650x433.jpg",
+      "2024/05/1-2-530x530.jpg",
+      "2024/05/1-2-768x512.jpg"
+    ]
+  },
+  {
+    "ID": 1722,
+    "before": "",
+    "before_exists": false,
+    "after": "Participants at a meeting on the Environmental Code of Tajikistan",
+    "basis": "Visual inspection and verified published owner context",
+    "sync_body_alt": true,
+    "source_files": [
+      "2024/05/2-2.jpg",
+      "2024/05/2-2-650x487.jpg",
+      "2024/05/2-2-530x530.jpg",
+      "2024/05/2-2-768x576.jpg"
+    ]
+  },
+  {
+    "ID": 1743,
+    "before": "",
+    "before_exists": false,
+    "after": "Cover of National Blood Lead Level Survey in Children Ages 2–5, Childhood Blood Lead Screening Guidelines",
+    "basis": "Verified owner title and media relationship",
+    "sync_body_alt": false,
+    "source_files": [
+      "2024/05/childhood_blood_lead_screening-1.jpg",
+      "2024/05/childhood_blood_lead_screening-1-650x611.jpg",
+      "2024/05/childhood_blood_lead_screening-1-530x530.jpg",
+      "2024/05/childhood_blood_lead_screening-1-768x722.jpg"
+    ]
+  },
+  {
+    "ID": 1854,
+    "before": "",
+    "before_exists": false,
+    "after": "Cover of ESCM activities 2023-2024 for Hanoi workshop 20 Nov 2024",
+    "basis": "Verified owner title and media relationship",
+    "sync_body_alt": false,
+    "source_files": [
+      "2024/12/image_2024-12-10_19-41-04.png",
+      "2024/12/image_2024-12-10_19-41-04-530x480.png"
+    ]
+  },
+  {
+    "ID": 1882,
+    "before": "",
+    "before_exists": false,
+    "after": "Portrait of Olga Kuzminova",
+    "basis": "Verified owner title and media relationship",
+    "sync_body_alt": false,
+    "source_files": [
+      "2025/03/olga.jpg"
+    ]
+  },
+  {
+    "ID": 1885,
+    "before": "",
+    "before_exists": false,
+    "after": "Cover of Children’s book: How Barsbek and His Friends Defeated the Lead Danger? (in both Russian and Kyrgyz)",
+    "basis": "Verified owner title and media relationship",
+    "sync_body_alt": false,
+    "source_files": [
+      "2025/03/Screenshot-2022-11-14-at-19.09.37-650x492-1.png",
+      "2025/03/Screenshot-2022-11-14-at-19.09.37-650x492-1-530x492.png"
+    ]
+  },
+  {
+    "ID": 1887,
+    "before": "",
+    "before_exists": false,
+    "after": "Cover of Lead Contamination of Environment in Rudnaya Pristan, Russia and associated Health Risks",
+    "basis": "Verified owner title and media relationship",
+    "sync_body_alt": false,
+    "source_files": [
+      "2022/11/Screenshot-2022-11-14-at-19.20.50-650x485-1.png",
+      "2022/11/Screenshot-2022-11-14-at-19.20.50-650x485-1-530x485.png"
+    ]
+  }
+]

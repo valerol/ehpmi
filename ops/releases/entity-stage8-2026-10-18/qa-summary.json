@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "checks": {
+    "production_all_controls_equal": true,
+    "newsletter_all_counts_hashes_equal": true,
+    "widgets_byte_hash_equal": true,
+    "fixture_trash_order15": true,
+    "all_467_attachment_files_exist": true,
+    "all_362_meaningful_public_images_have_metadata_alt": true,
+    "alt_changes_exactly_63": true,
+    "metadata_values_outside_alt_unchanged": true,
+    "body_changes_exactly_21_461_1690_1692": true,
+    "all_20_views_one_h1_main_no_overflow": true,
+    "all_20_heading_text_geometry_equal": true,
+    "no_targeted_cdn_requests": true,
+    "no_browser_js_errors": true,
+    "no_form_submissions": true,
+    "newsletter_desktop_390": true
+  },
+  "failures": [],
+  "attachment_classifications": {
+    "published_owner": 379,
+    "administrative_unpublished_provenance": 10,
+    "orphaned_retained": 78
+  },
+  "semantic_classifications": {
+    "meaningful": 389,
+    "orphaned": 78,
+    "unclassified": 0
+  },
+  "body_ids": [
+    21,
+    461,
+    1690,
+    1692
+  ],
+  "alt_updates": 63,
+  "body_alt_updates": 5,
+  "production_writes": 0,
+  "mail_sends": 0
+}

@@ -1,0 +1,13 @@
+{
+    "status": "PASS",
+    "deleted_utc": "2026-10-18T09:14:05+00:00",
+    "operator_authorization": "Удалить RML plugin files на dev",
+    "path": "/home2/nykvymmy/dev.ehpmi.org/wp-content/plugins/real-media-library-lite",
+    "files_removed": 296,
+    "disk_kib_before": 6584,
+    "target_absent": true,
+    "production_plugin_control": "UNCHANGED",
+    "uploads_deleted": 0,
+    "rml_tables_deleted": 0,
+    "recovery_archive": "/home2/nykvymmy/backups/entity-stage8-2026-10-18/rml-plugin-before.tar.gz"
+}

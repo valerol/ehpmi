@@ -1,0 +1,120 @@
+[
+  null,
+  {
+    "region": "map",
+    "width": 1440,
+    "text": "Vietnam\nAzerbaijan\nUkraine\nTajikistan\nMongolia\nKyrgyzstan\nKazakhstan\nGeorgia\nArmenia\nOur Geography\n\nEHPMI has active teams and operates in the following countries: Ukraine, Georgia, Armenia, Azerbaijan, Kazakhstan, Kyrgyzstan, Tajikistan, Mongolia, and Vietnam. The national teams have been present and worked in Eastern Europe and Central Asia region for over 15 years.",
+    "icons": [],
+    "overflow": false
+  },
+  {
+    "region": "newsletter",
+    "width": 1440,
+    "text": "Get in Touch\nSubscribe to our Newsletter to learn more about environmental health issues and receive updates on our projects\nEmail",
+    "icons": [],
+    "overflow": false
+  },
+  {
+    "region": "footer",
+    "width": 1440,
+    "text": "Search\nSearch\nContact\n\nGeorgia, Tbilisi, Vake district, Anna Politkovskaya street,\nN3, building N21, office N4\n\ninfo@ehpmi.org\n\n© 2022-2026 Copyright: ehpmi\n\nInstagram\nFacebook\nTwitter\nTelegram",
+    "icons": [
+      {
+        "class": "fas fa-home me-3",
+        "before": "\"\"",
+        "font": "\"Font Awesome 6 Free\"",
+        "width": 18
+      },
+      {
+        "class": "fas fa-envelope me-3",
+        "before": "\"\"",
+        "font": "\"Font Awesome 6 Free\"",
+        "width": 16
+      },
+      {
+        "class": null,
+        "before": "none",
+        "font": "Overpass, Arial, sans-serif",
+        "width": 24
+      },
+      {
+        "class": null,
+        "before": "none",
+        "font": "Overpass, Arial, sans-serif",
+        "width": 24
+      },
+      {
+        "class": null,
+        "before": "none",
+        "font": "Overpass, Arial, sans-serif",
+        "width": 24
+      },
+      {
+        "class": null,
+        "before": "none",
+        "font": "Overpass, Arial, sans-serif",
+        "width": 24
+      }
+    ],
+    "overflow": false
+  },
+  null,
+  {
+    "region": "map",
+    "width": 390,
+    "text": "Vietnam\nAzerbaijan\nUkraine\nTajikistan\nMongolia\nKyrgyzstan\nKazakhstan\nGeorgia\nArmenia\nOur Geography\n\nEHPMI has active teams and operates in the following countries: Ukraine, Georgia, Armenia, Azerbaijan, Kazakhstan, Kyrgyzstan, Tajikistan, Mongolia, and Vietnam. The national teams have been present and worked in Eastern Europe and Central Asia region for over 15 years.",
+    "icons": [],
+    "overflow": false
+  },
+  {
+    "region": "newsletter",
+    "width": 390,
+    "text": "Get in Touch\nSubscribe to our Newsletter to learn more about environmental health issues and receive updates on our projects\nEmail",
+    "icons": [],
+    "overflow": false
+  },
+  {
+    "region": "footer",
+    "width": 390,
+    "text": "Search\nSearch\nContact\n\nGeorgia, Tbilisi, Vake district, Anna Politkovskaya street,\nN3, building N21, office N4\n\ninfo@ehpmi.org\n\n© 2022-2026 Copyright: ehpmi\n\nInstagram\nFacebook\nTwitter\nTelegram",
+    "icons": [
+      {
+        "class": "fas fa-home me-3",
+        "before": "\"\"",
+        "font": "\"Font Awesome 6 Free\"",
+        "width": 18
+      },
+      {
+        "class": "fas fa-envelope me-3",
+        "before": "\"\"",
+        "font": "\"Font Awesome 6 Free\"",
+        "width": 16
+      },
+      {
+        "class": null,
+        "before": "none",
+        "font": "Overpass, Arial, sans-serif",
+        "width": 24
+      },
+      {
+        "class": null,
+        "before": "none",
+        "font": "Overpass, Arial, sans-serif",
+        "width": 24
+      },
+      {
+        "class": null,
+        "before": "none",
+        "font": "Overpass, Arial, sans-serif",
+        "width": 24
+      },
+      {
+        "class": null,
+        "before": "none",
+        "font": "Overpass, Arial, sans-serif",
+        "width": 24
+      }
+    ],
+    "overflow": false
+  }
+]

@@ -1,0 +1,16 @@
+{
+    "alt_updates": 63,
+    "body_posts": [
+        1690,
+        1692,
+        461,
+        21
+    ],
+    "rml": {
+        "folders": 31,
+        "relations": 401
+    },
+    "attachment_count": 467,
+    "status": "PASS",
+    "failures": []
+}

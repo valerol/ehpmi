@@ -1,0 +1,4352 @@
+{
+  "views": [
+    {
+      "url": "/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "title": "Environmental Health & Pollution Management Institute (EHPMI)",
+      "h1": 1,
+      "main": 1,
+      "fonts": "loaded",
+      "headings": [
+        {
+          "text": "Decrease Pollution — Protect Health",
+          "tag": "H1",
+          "x": 108,
+          "y": 304.6875,
+          "width": 504,
+          "height": 96
+        },
+        {
+          "text": "Our Geography",
+          "tag": "H2",
+          "x": 840,
+          "y": 794.796875,
+          "width": 492,
+          "height": 38.390625
+        },
+        {
+          "text": "Latest from EHPMI",
+          "tag": "H2",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "text": "EHPMI Annual Workshop-2026 in Kyrgyzstan",
+          "tag": "H3",
+          "x": 40,
+          "y": 1581.203125,
+          "width": 324,
+          "height": 57.59375
+        },
+        {
+          "text": "Workshop in Astana on Lead Poisoning of Children in Kazakhstan",
+          "tag": "H3",
+          "x": 458,
+          "y": 1566.796875,
+          "width": 324,
+          "height": 86.390625
+        },
+        {
+          "text": "Discussion in Tbilisi of the Biggest Contaminated Area in Georgia",
+          "tag": "H3",
+          "x": 876,
+          "y": 1566.796875,
+          "width": 324,
+          "height": 86.390625
+        },
+        {
+          "text": "Field assessment of a contaminated site in Kutaisi, Georgia",
+          "tag": "H3",
+          "x": 1294,
+          "y": 1566.796875,
+          "width": 324,
+          "height": 86.390625
+        },
+        {
+          "text": "Blood lead levels in preschool children in the Kyrgyz Republic",
+          "tag": "H3",
+          "x": 1712,
+          "y": 1566.796875,
+          "width": 324,
+          "height": 86.390625
+        },
+        {
+          "text": "Lead Poisoning of Children in Shymkent and Proposed Solutions",
+          "tag": "H3",
+          "x": 2130,
+          "y": 1566.796875,
+          "width": 324,
+          "height": 86.390625
+        },
+        {
+          "text": "EHPMI Workshop-2025",
+          "tag": "H3",
+          "x": 2548,
+          "y": 1595.59375,
+          "width": 324,
+          "height": 28.796875
+        },
+        {
+          "text": "Cleanup of DDT burial in Settlement #1, part of FAO regional project, implemented by Peshsaf, Tajikistan",
+          "tag": "H3",
+          "x": 2966,
+          "y": 1538,
+          "width": 324,
+          "height": 143.984375
+        },
+        {
+          "text": "EHPMI Workshop-2024",
+          "tag": "H3",
+          "x": 3384,
+          "y": 1595.59375,
+          "width": 324,
+          "height": 28.796875
+        },
+        {
+          "text": "Journey Through Mexico's Parks: Insights from the Field",
+          "tag": "H3",
+          "x": 3802,
+          "y": 1581.203125,
+          "width": 324,
+          "height": 57.59375
+        },
+        {
+          "text": "International Workshop on Emerging Green Technologies for Pest and Pesticide Management in Kazakhstan",
+          "tag": "H3",
+          "x": 4220,
+          "y": 1538,
+          "width": 324,
+          "height": 143.984375
+        },
+        {
+          "text": "Environmental Research Centre of Khazar University has develop a strategic roadmap one waste management",
+          "tag": "H3",
+          "x": 4638,
+          "y": 1538,
+          "width": 324,
+          "height": 143.984375
+        },
+        {
+          "text": "Press-cafe in Bishkek: \"Lead Poisoning of Children!”",
+          "tag": "H3",
+          "x": 5056,
+          "y": 1581.203125,
+          "width": 324,
+          "height": 57.59375
+        },
+        {
+          "text": "Our Projects",
+          "tag": "H2",
+          "x": -100,
+          "y": 1919,
+          "width": 1440,
+          "height": 48
+        },
+        {
+          "text": "Detailed and Rapid Environmental Assessments of Sites Contaminated with Obsolete Pesticides in Tajikistan, 2023-2024",
+          "tag": "H3",
+          "x": 520,
+          "y": 2056.609375,
+          "width": 728,
+          "height": 100.78125
+        },
+        {
+          "text": "National Inventory of Sites Contaminated with Obsolete Pesticides in Kazakhstan",
+          "tag": "H3",
+          "x": 520,
+          "y": 2599,
+          "width": 728,
+          "height": 67.1875
+        },
+        {
+          "text": "Preliminary Assessments of Sites Contaminated with Obsolete Pesticides in Khatlon region, Tajikistan in 2023",
+          "tag": "H3",
+          "x": 520,
+          "y": 3260.59375,
+          "width": 728,
+          "height": 67.1875
+        },
+        {
+          "text": "Member Organizations",
+          "tag": "H2",
+          "x": 0,
+          "y": 3874.1875,
+          "width": 1440,
+          "height": 48
+        },
+        {
+          "text": "Contact us",
+          "tag": "H2",
+          "x": 367.59375,
+          "y": 4240.1875,
+          "width": 504.796875,
+          "height": 38.390625
+        },
+        {
+          "text": "Get in Touch",
+          "tag": "H2",
+          "x": 60,
+          "y": 5058.5625,
+          "width": 693.8125,
+          "height": 33.59375
+        }
+      ],
+      "images": [
+        {
+          "src": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/logo.svg",
+          "alt": "Environmental Health & Pollution Management Institute (EHPMI)",
+          "complete": true,
+          "naturalWidth": 300
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2026/08/slide2.jpeg",
+          "alt": "Child wearing a mask and holding a teddy bear",
+          "complete": true,
+          "naturalWidth": 800
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/map9-01.webp",
+          "alt": "Map of Eastern Europe and Asia showing EHPMI country offices",
+          "complete": true,
+          "naturalWidth": 1804
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2026/08/featured-ehpmi-workshop-2026-kyrgyzstan-530x530.webp",
+          "alt": "EHPMI Annual Workshop-2026 in Kyrgyzstan",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2026/04/2026-04-08-astana-3-530x530.jpg",
+          "alt": "Workshop in Astana on Lead Poisoning of Children in Kazakhstan",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2026/04/2026-04-11-Tbilisi-3-530x530.jpeg",
+          "alt": "Discussion in Tbilisi of the Biggest Contaminated Area in Georgia",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2025/12/2025_12_21_Kutaisi_Litafoni-2-530x530.jpg",
+          "alt": "Kutaisi contaminated-site field assessment team group portrait.",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2025/12/1-530x530.jpg",
+          "alt": "Blood lead levels in preschool children in the Kyrgyz Republic",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2025/11/shimkent-round-table-3-530x530.jpg",
+          "alt": "Shimkent round table (EHPMI)",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2025/06/8-530x530.jpg",
+          "alt": "EHPMI Workshop-2025",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2025/06/cleanup-of-ddt-1-530x530.jpg",
+          "alt": "Project staff providing protective equipment to a resident before the DDT cleanup.",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2025/01/workshop-2024-1-530x530.jpg",
+          "alt": "Workshop 2024",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2024/06/6-1-530x520.jpg",
+          "alt": "The Ecological Forest National Park",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2024/06/IMG_2617-530x530.jpg",
+          "alt": "International Workshop on Emerging Green Technologies for Pest and Pesticide Management in Kazakhstan",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2024/05/et5-530x530.jpg",
+          "alt": "Speaker presenting a waste-management strategy at Khazar University.",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2023/12/svinec6-530x530.jpg",
+          "alt": "Press-cafe in Bishkek: \"Lead Poisoning of Children!”",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2025/05/dareaoscwopit-prev-530x530.jpg",
+          "alt": "Sheep in a livestock enclosure at a site assessed for pesticide contamination in Tajikistan.",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2025/05/nioscwopik-1-530x517.jpg",
+          "alt": "Training participants discussing a field-assessment exercise in Kazakhstan.",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2025/04/1-530x530.jpg",
+          "alt": "Sampling of soil contaminated by pesticides in Yakkatut Village, Tajikistan, Environmental Health and Pollution Management Institute, EHPMI, Peshsaf",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/08/human-health-institute.jpg",
+          "alt": "Logo of Human Health Institute",
+          "complete": true,
+          "naturalWidth": 730
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/08/eco-life.jpg",
+          "alt": "Logo of Consortium Civil Society Organization Eco Life and Eco Life Consulting Co",
+          "complete": true,
+          "naturalWidth": 730
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/08/peshsaf.jpeg",
+          "alt": "Logo of Peshsaf",
+          "complete": true,
+          "naturalWidth": 730
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/08/ecois.jpeg",
+          "alt": "Logo of Civil Society Association ‘Ekois Bishkek’",
+          "complete": true,
+          "naturalWidth": 730
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/08/escm.jpg",
+          "alt": "Logo of Environment and Security Center of Mongolia (ESCM)",
+          "complete": true,
+          "naturalWidth": 730
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2024/05/erc.png",
+          "alt": "Environmental Research Center (ERC)",
+          "complete": true,
+          "naturalWidth": 600
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2023/12/Logo_SOS-1536x1536.jpg",
+          "alt": "Vietnam Environmental Incident Response Center (SOS)",
+          "complete": true,
+          "naturalWidth": 1439
+        }
+      ],
+      "newsletter": {
+        "label": true,
+        "contained": true
+      },
+      "regions": [
+        "Our Geography\n\n\nEHPMI has active teams and operates in the following countries: Ukraine, Georgia, Armenia, Azerbaijan, Kazakhstan, Kyrgyzstan, Tajikistan, Mongolia, and Vietnam. The national teams have been present and worked in Eastern Europe and Central Asia region for over 15 years."
+      ],
+      "icons": [
+        {
+          "class": "fas fa-home me-3",
+          "icon": null,
+          "width": 18
+        },
+        {
+          "class": "fas fa-envelope me-3",
+          "icon": null,
+          "width": 16
+        }
+      ],
+      "assets": [
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-f2656fd5.min.css",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-dbe71793.min.js",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-71e10d27.min.js",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-c9912e16.min.js"
+      ]
+    },
+    {
+      "url": "/about/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "title": "Who we are – Environmental Health & Pollution Management Institute (EHPMI)",
+      "h1": 1,
+      "main": 1,
+      "fonts": "loaded",
+      "headings": [
+        {
+          "text": "Who we are",
+          "tag": "H1",
+          "x": -1,
+          "y": 499,
+          "width": 1,
+          "height": 1
+        }
+      ],
+      "images": [
+        {
+          "src": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/logo.svg",
+          "alt": "Environmental Health & Pollution Management Institute (EHPMI)",
+          "complete": true,
+          "naturalWidth": 300
+        }
+      ],
+      "newsletter": null,
+      "regions": [],
+      "icons": [
+        {
+          "class": "fas fa-home me-3",
+          "icon": null,
+          "width": 18
+        },
+        {
+          "class": "fas fa-envelope me-3",
+          "icon": null,
+          "width": 16
+        }
+      ],
+      "assets": [
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-f2656fd5.min.css",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-dbe71793.min.js",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-71e10d27.min.js",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-d9df257f.min.js"
+      ]
+    },
+    {
+      "url": "/about/staff/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "title": "Meet our team – Environmental Health & Pollution Management Institute (EHPMI)",
+      "h1": 1,
+      "main": 1,
+      "fonts": "loaded",
+      "headings": [
+        {
+          "text": "Meet our team",
+          "tag": "H1",
+          "x": -1,
+          "y": 285,
+          "width": 1,
+          "height": 1
+        },
+        {
+          "text": "Staff directory",
+          "tag": "H2",
+          "x": -1,
+          "y": 285,
+          "width": 1,
+          "height": 1
+        },
+        {
+          "text": "Petr Sharov",
+          "tag": "H3",
+          "x": 84,
+          "y": 741.546875,
+          "width": 311.546875,
+          "height": 33.59375
+        },
+        {
+          "text": "Alena Temnikova",
+          "tag": "H3",
+          "x": 564.234375,
+          "y": 741.546875,
+          "width": 311.546875,
+          "height": 33.59375
+        },
+        {
+          "text": "Olga Kuzminova",
+          "tag": "H3",
+          "x": 1044.453125,
+          "y": 741.546875,
+          "width": 311.546875,
+          "height": 33.59375
+        },
+        {
+          "text": "Aelita Sargsyan",
+          "tag": "H3",
+          "x": 84,
+          "y": 1280.6875,
+          "width": 311.546875,
+          "height": 33.59375
+        },
+        {
+          "text": "Vardan Karyan",
+          "tag": "H3",
+          "x": 564.234375,
+          "y": 1280.6875,
+          "width": 311.546875,
+          "height": 33.59375
+        },
+        {
+          "text": "Lusine Taslakyan",
+          "tag": "H3",
+          "x": 1044.453125,
+          "y": 1280.6875,
+          "width": 311.546875,
+          "height": 33.59375
+        },
+        {
+          "text": "Mustafina Alina",
+          "tag": "H3",
+          "x": 84,
+          "y": 1853.828125,
+          "width": 311.546875,
+          "height": 33.59375
+        },
+        {
+          "text": "Rovshan Abbasov",
+          "tag": "H3",
+          "x": 564.234375,
+          "y": 1853.828125,
+          "width": 311.546875,
+          "height": 33.59375
+        },
+        {
+          "text": "Shahnaz Amanova",
+          "tag": "H3",
+          "x": 1044.453125,
+          "y": 1853.828125,
+          "width": 311.546875,
+          "height": 33.59375
+        },
+        {
+          "text": "Khatuna Akhalaia",
+          "tag": "H3",
+          "x": 84,
+          "y": 2393.859375,
+          "width": 311.546875,
+          "height": 33.59375
+        },
+        {
+          "text": "Mariami Jintcharadze",
+          "tag": "H3",
+          "x": 564.234375,
+          "y": 2392.96875,
+          "width": 311.546875,
+          "height": 33.59375
+        },
+        {
+          "text": "Kakha Rukhaia",
+          "tag": "H3",
+          "x": 1044.453125,
+          "y": 2392.96875,
+          "width": 311.546875,
+          "height": 33.59375
+        },
+        {
+          "text": "Veriko Gulua",
+          "tag": "H3",
+          "x": 84,
+          "y": 2933.890625,
+          "width": 311.546875,
+          "height": 33.59375
+        },
+        {
+          "text": "Aidar Kapassov",
+          "tag": "H3",
+          "x": 564.234375,
+          "y": 2933,
+          "width": 311.546875,
+          "height": 33.59375
+        },
+        {
+          "text": "Zagirova Anastasia",
+          "tag": "H3",
+          "x": 1044.453125,
+          "y": 2933,
+          "width": 311.546875,
+          "height": 33.59375
+        },
+        {
+          "text": "Indira Zhakipova",
+          "tag": "H3",
+          "x": 84,
+          "y": 3473.03125,
+          "width": 311.546875,
+          "height": 33.59375
+        },
+        {
+          "text": "Kuban Almerekov",
+          "tag": "H3",
+          "x": 564.234375,
+          "y": 3473.03125,
+          "width": 311.546875,
+          "height": 33.59375
+        },
+        {
+          "text": "Dr. Erdenesaikan Naidansuren",
+          "tag": "H3",
+          "x": 1044.453125,
+          "y": 3473.03125,
+          "width": 311.546875,
+          "height": 67.1875
+        },
+        {
+          "text": "Umidjon Ulugov",
+          "tag": "H3",
+          "x": 84,
+          "y": 4046.171875,
+          "width": 311.546875,
+          "height": 33.59375
+        },
+        {
+          "text": "Pham Van Son",
+          "tag": "H3",
+          "x": 1044.453125,
+          "y": 4047.0625,
+          "width": 311.546875,
+          "height": 33.59375
+        },
+        {
+          "text": "See also",
+          "tag": "H2",
+          "x": 0,
+          "y": 4259.765625,
+          "width": 1440,
+          "height": 48.390625
+        }
+      ],
+      "images": [
+        {
+          "src": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/logo.svg",
+          "alt": "Environmental Health & Pollution Management Institute (EHPMI)",
+          "complete": true,
+          "naturalWidth": 300
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/09/Petr.jpg",
+          "alt": "Portrait of Petr Sharov",
+          "complete": true,
+          "naturalWidth": 400
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/09/Alena.jpg",
+          "alt": "Portrait of Alena Temnikova",
+          "complete": true,
+          "naturalWidth": 400
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2025/03/olga.jpg",
+          "alt": "Portrait of Olga Kuzminova",
+          "complete": true,
+          "naturalWidth": 400
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/09/Aelita.jpg",
+          "alt": "Portrait of Aelita Sargsyan",
+          "complete": true,
+          "naturalWidth": 400
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2023/01/Vardan.jpg",
+          "alt": "Portrait of Vardan Karyan",
+          "complete": true,
+          "naturalWidth": 400
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/09/lusine_taslakyan.png",
+          "alt": "Portrait of Lusine Taslakyan",
+          "complete": true,
+          "naturalWidth": 400
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/09/Alina.jpg",
+          "alt": "Portrait of Mustafina Alina",
+          "complete": true,
+          "naturalWidth": 400
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/09/photo_2023-05-09-19.13.23.jpeg",
+          "alt": "Portrait of Rovshan Abbasov",
+          "complete": true,
+          "naturalWidth": 400
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2023/03/Amanova.jpg",
+          "alt": "Portrait of Shahnaz Amanova",
+          "complete": true,
+          "naturalWidth": 400
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/09/Khatuna.jpg",
+          "alt": "Portrait of Khatuna Akhalaia",
+          "complete": true,
+          "naturalWidth": 400
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/09/Mariami.jpg",
+          "alt": "Portrait of Mariami Jintcharadze",
+          "complete": true,
+          "naturalWidth": 400
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/09/Kakha.jpg",
+          "alt": "Portrait of Kakha Rukhaia",
+          "complete": true,
+          "naturalWidth": 400
+        },
+        {
+          "src": "",
+          "alt": "Portrait of Veriko Gulua",
+          "complete": false,
+          "naturalWidth": 0
+        },
+        {
+          "src": "",
+          "alt": "Portrait of Aidar Kapassov",
+          "complete": false,
+          "naturalWidth": 0
+        },
+        {
+          "src": "",
+          "alt": "Portrait of Zagirova Anastasia",
+          "complete": false,
+          "naturalWidth": 0
+        },
+        {
+          "src": "",
+          "alt": "Portrait of Indira Zhakipova",
+          "complete": false,
+          "naturalWidth": 0
+        },
+        {
+          "src": "",
+          "alt": "Kuban Almerekov",
+          "complete": false,
+          "naturalWidth": 0
+        },
+        {
+          "src": "",
+          "alt": "Portrait of Dr. Erdenesaikan Naidansuren",
+          "complete": false,
+          "naturalWidth": 0
+        },
+        {
+          "src": "",
+          "alt": "Portrait of Umidjon Ulugov",
+          "complete": false,
+          "naturalWidth": 0
+        },
+        {
+          "src": "",
+          "alt": "Pham Van Son, Vietnam Country Coordinator",
+          "complete": false,
+          "naturalWidth": 0
+        }
+      ],
+      "newsletter": null,
+      "regions": [],
+      "icons": [
+        {
+          "class": "fas fa-home me-3",
+          "icon": null,
+          "width": 18
+        },
+        {
+          "class": "fas fa-envelope me-3",
+          "icon": null,
+          "width": 16
+        }
+      ],
+      "assets": [
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-f2656fd5.min.css",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-dbe71793.min.js",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-71e10d27.min.js",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-d9df257f.min.js"
+      ]
+    },
+    {
+      "url": "/about/members/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "title": "Member Organizations – Environmental Health & Pollution Management Institute (EHPMI)",
+      "h1": 1,
+      "main": 1,
+      "fonts": "loaded",
+      "headings": [
+        {
+          "text": "Member Organizations",
+          "tag": "H1",
+          "x": 60,
+          "y": 358,
+          "width": 1320,
+          "height": 48
+        },
+        {
+          "text": "Organizations",
+          "tag": "H2",
+          "x": -1,
+          "y": 763,
+          "width": 1,
+          "height": 1
+        },
+        {
+          "text": "Human Health Institute",
+          "tag": "H3",
+          "x": 408,
+          "y": 844,
+          "width": 972,
+          "height": 33.59375
+        },
+        {
+          "text": "Consortium Civil Society Organization Eco Life and Eco Life Consulting Co",
+          "tag": "H3",
+          "x": 408,
+          "y": 1358.390625,
+          "width": 972,
+          "height": 33.59375
+        },
+        {
+          "text": "Peshsaf",
+          "tag": "H3",
+          "x": 408,
+          "y": 1895.96875,
+          "width": 972,
+          "height": 33.59375
+        },
+        {
+          "text": "Civil Society Association ‘Ekois Bishkek’",
+          "tag": "H3",
+          "x": 408,
+          "y": 2410.359375,
+          "width": 972,
+          "height": 33.59375
+        },
+        {
+          "text": "Environment and Security Center of Mongolia (ESCM)",
+          "tag": "H3",
+          "x": 408,
+          "y": 3955.109375,
+          "width": 972,
+          "height": 33.59375
+        },
+        {
+          "text": "Environmental Research Center (ERC)",
+          "tag": "H3",
+          "x": 408,
+          "y": 4927.5,
+          "width": 972,
+          "height": 33.59375
+        },
+        {
+          "text": "Vietnam Environmental Incident Response Center (SOS)",
+          "tag": "H3",
+          "x": 408,
+          "y": 5923.078125,
+          "width": 972,
+          "height": 33.59375
+        },
+        {
+          "text": "See also",
+          "tag": "H2",
+          "x": 0,
+          "y": 6759.234375,
+          "width": 1440,
+          "height": 48.390625
+        }
+      ],
+      "images": [
+        {
+          "src": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/logo.svg",
+          "alt": "Environmental Health & Pollution Management Institute (EHPMI)",
+          "complete": true,
+          "naturalWidth": 300
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/08/human-health-institute.jpg",
+          "alt": "Logo of Human Health Institute",
+          "complete": true,
+          "naturalWidth": 300
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/08/eco-life.jpg",
+          "alt": "Logo of Consortium Civil Society Organization Eco Life and Eco Life Consulting Co",
+          "complete": true,
+          "naturalWidth": 300
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/08/peshsaf.jpeg",
+          "alt": "Logo of Peshsaf",
+          "complete": true,
+          "naturalWidth": 300
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/08/ecois.jpeg",
+          "alt": "Logo of Civil Society Association ‘Ekois Bishkek’",
+          "complete": true,
+          "naturalWidth": 300
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/08/escm.jpg",
+          "alt": "Logo of Environment and Security Center of Mongolia (ESCM)",
+          "complete": true,
+          "naturalWidth": 300
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2024/05/erc.png",
+          "alt": "Environmental Research Center (ERC)",
+          "complete": true,
+          "naturalWidth": 600
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2023/12/Logo_SOS-1536x1536.jpg",
+          "alt": "Vietnam Environmental Incident Response Center (SOS)",
+          "complete": true,
+          "naturalWidth": 300
+        },
+        {
+          "src": "",
+          "alt": "QR codes for Vietnam Environmental Incident Response Center (SOS) online resources",
+          "complete": false,
+          "naturalWidth": 0
+        }
+      ],
+      "newsletter": null,
+      "regions": [],
+      "icons": [
+        {
+          "class": "fas fa-home me-3",
+          "icon": null,
+          "width": 18
+        },
+        {
+          "class": "fas fa-envelope me-3",
+          "icon": null,
+          "width": 16
+        }
+      ],
+      "assets": [
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-f2656fd5.min.css",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-dbe71793.min.js",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-71e10d27.min.js",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-d9df257f.min.js"
+      ]
+    },
+    {
+      "url": "/about/partners/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "title": "Partners – Environmental Health & Pollution Management Institute (EHPMI)",
+      "h1": 1,
+      "main": 1,
+      "fonts": "loaded",
+      "headings": [
+        {
+          "text": "Partners",
+          "tag": "H1",
+          "x": -1,
+          "y": 285,
+          "width": 1,
+          "height": 1
+        },
+        {
+          "text": "Organizations",
+          "tag": "H2",
+          "x": -1,
+          "y": 285,
+          "width": 1,
+          "height": 1
+        },
+        {
+          "text": "TerraGraphics International Foundation (TIFO)",
+          "tag": "H3",
+          "x": 408,
+          "y": 366,
+          "width": 972,
+          "height": 33.59375
+        },
+        {
+          "text": "See also",
+          "tag": "H2",
+          "x": 0,
+          "y": 1139.546875,
+          "width": 1440,
+          "height": 48.390625
+        }
+      ],
+      "images": [
+        {
+          "src": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/logo.svg",
+          "alt": "Environmental Health & Pollution Management Institute (EHPMI)",
+          "complete": true,
+          "naturalWidth": 300
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2023/09/terragraphics-650x298.png",
+          "alt": "Logo of TerraGraphics International Foundation (TIFO)",
+          "complete": true,
+          "naturalWidth": 299
+        }
+      ],
+      "newsletter": null,
+      "regions": [],
+      "icons": [
+        {
+          "class": "fas fa-home me-3",
+          "icon": null,
+          "width": 18
+        },
+        {
+          "class": "fas fa-envelope me-3",
+          "icon": null,
+          "width": 16
+        }
+      ],
+      "assets": [
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-f2656fd5.min.css",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-dbe71793.min.js",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-71e10d27.min.js",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-d9df257f.min.js"
+      ]
+    },
+    {
+      "url": "/offices/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "title": "Countries – Environmental Health & Pollution Management Institute (EHPMI)",
+      "h1": 1,
+      "main": 1,
+      "fonts": "loaded",
+      "headings": [
+        {
+          "text": "Countries",
+          "tag": "H1",
+          "x": -1,
+          "y": 499,
+          "width": 1,
+          "height": 1
+        }
+      ],
+      "images": [
+        {
+          "src": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/logo.svg",
+          "alt": "Environmental Health & Pollution Management Institute (EHPMI)",
+          "complete": true,
+          "naturalWidth": 300
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/map9-01.webp",
+          "alt": "Map of Eastern Europe and Asia showing EHPMI country offices",
+          "complete": true,
+          "naturalWidth": 1804
+        }
+      ],
+      "newsletter": null,
+      "regions": [],
+      "icons": [
+        {
+          "class": "fas fa-home me-3",
+          "icon": null,
+          "width": 18
+        },
+        {
+          "class": "fas fa-envelope me-3",
+          "icon": null,
+          "width": 16
+        }
+      ],
+      "assets": [
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-f2656fd5.min.css",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-dbe71793.min.js",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-71e10d27.min.js",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-d9df257f.min.js"
+      ]
+    },
+    {
+      "url": "/offices/vietnam/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "title": "Vietnam – Environmental Health & Pollution Management Institute (EHPMI)",
+      "h1": 1,
+      "main": 1,
+      "fonts": "loaded",
+      "headings": [
+        {
+          "text": "Vietnam",
+          "tag": "H1",
+          "x": -1,
+          "y": 285,
+          "width": 1,
+          "height": 1
+        },
+        {
+          "text": "Pham Van Son",
+          "tag": "H2",
+          "x": 0,
+          "y": 358,
+          "width": 1440,
+          "height": 48
+        },
+        {
+          "text": "Vietnam Environmental Incident Response Center (SOS)",
+          "tag": "H3",
+          "x": 408,
+          "y": 1001,
+          "width": 972,
+          "height": 33.59375
+        },
+        {
+          "text": "See also",
+          "tag": "H2",
+          "x": 0,
+          "y": 1837.15625,
+          "width": 1440,
+          "height": 48.390625
+        }
+      ],
+      "images": [
+        {
+          "src": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/logo.svg",
+          "alt": "Environmental Health & Pollution Management Institute (EHPMI)",
+          "complete": true,
+          "naturalWidth": 300
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2023/12/Pham_Van_Son.jpg",
+          "alt": "Pham Van Son, Vietnam Country Coordinator",
+          "complete": true,
+          "naturalWidth": 400
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2023/12/Logo_SOS-1536x1536.jpg",
+          "alt": "Vietnam Environmental Incident Response Center (SOS)",
+          "complete": true,
+          "naturalWidth": 300
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/08/QR_SOS_app_web_youtube_fb.png",
+          "alt": "QR codes for Vietnam Environmental Incident Response Center (SOS) online resources",
+          "complete": true,
+          "naturalWidth": 360
+        }
+      ],
+      "newsletter": null,
+      "regions": [],
+      "icons": [
+        {
+          "class": "fas fa-home me-3",
+          "icon": null,
+          "width": 18
+        },
+        {
+          "class": "fas fa-envelope me-3",
+          "icon": null,
+          "width": 16
+        }
+      ],
+      "assets": [
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-f2656fd5.min.css",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-dbe71793.min.js",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-71e10d27.min.js",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-d9df257f.min.js"
+      ]
+    },
+    {
+      "url": "/what-we-do/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "title": "Page not found – Environmental Health & Pollution Management Institute (EHPMI)",
+      "h1": 1,
+      "main": 1,
+      "fonts": "loaded",
+      "headings": [
+        {
+          "text": "Page not found",
+          "tag": "H1",
+          "x": 60,
+          "y": 334,
+          "width": 1320,
+          "height": 48
+        }
+      ],
+      "images": [
+        {
+          "src": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/logo.svg",
+          "alt": "Environmental Health & Pollution Management Institute (EHPMI)",
+          "complete": true,
+          "naturalWidth": 300
+        }
+      ],
+      "newsletter": null,
+      "regions": [],
+      "icons": [
+        {
+          "class": "fas fa-home me-3",
+          "icon": null,
+          "width": 18
+        },
+        {
+          "class": "fas fa-envelope me-3",
+          "icon": null,
+          "width": 16
+        }
+      ],
+      "assets": [
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-f2656fd5.min.css",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-dbe71793.min.js",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-71e10d27.min.js",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-d9df257f.min.js"
+      ]
+    },
+    {
+      "url": "/library/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "title": "Library – Environmental Health & Pollution Management Institute (EHPMI)",
+      "h1": 1,
+      "main": 1,
+      "fonts": "loaded",
+      "headings": [
+        {
+          "text": "Library",
+          "tag": "H1",
+          "x": 0,
+          "y": 358,
+          "width": 1440,
+          "height": 48
+        },
+        {
+          "text": "ESCM activities 2023-2024 for Hanoi workshop 20 Nov 2024",
+          "tag": "H2",
+          "x": 284,
+          "y": 478,
+          "width": 426,
+          "height": 56.125
+        },
+        {
+          "text": "National Blood Lead Level Survey in Children Ages 2–5, Childhood Blood Lead Screening Guidelines",
+          "tag": "H2",
+          "x": 954,
+          "y": 478,
+          "width": 426,
+          "height": 84.1875
+        },
+        {
+          "text": "Lead Contamination of Environment in Rudnaya Pristan, Russia and associated Health Risks",
+          "tag": "H2",
+          "x": 284,
+          "y": 744.328125,
+          "width": 426,
+          "height": 84.1875
+        },
+        {
+          "text": "Health and Pollution Action Plan for Azerbaijan",
+          "tag": "H2",
+          "x": 954,
+          "y": 744.328125,
+          "width": 426,
+          "height": 56.125
+        },
+        {
+          "text": "Health and Pollution Action Plan for Tajikistan",
+          "tag": "H2",
+          "x": 284,
+          "y": 1010.390625,
+          "width": 426,
+          "height": 56.125
+        },
+        {
+          "text": "Poster “Medical Wastes” (in Russian)",
+          "tag": "H2",
+          "x": 954,
+          "y": 1010.390625,
+          "width": 345.546875,
+          "height": 28.0625
+        },
+        {
+          "text": "Poster “Chemical Safety at Home” (in Russian)",
+          "tag": "H2",
+          "x": 284,
+          "y": 1276.390625,
+          "width": 426,
+          "height": 56.125
+        },
+        {
+          "text": "Calendar for 2019/2020 with information about danger of pesticides",
+          "tag": "H2",
+          "x": 954,
+          "y": 1276.390625,
+          "width": 426,
+          "height": 56.125
+        },
+        {
+          "text": "Booklet “What are pesticides and why are they dangerous for human health?” (in Russian)",
+          "tag": "H2",
+          "x": 284,
+          "y": 1542.390625,
+          "width": 426,
+          "height": 84.1875
+        },
+        {
+          "text": "Report on assessments of sites contaminated with obsolete pesticides in Tajikistan – Issue 3 (in Russian)",
+          "tag": "H2",
+          "x": 954,
+          "y": 1542.390625,
+          "width": 426,
+          "height": 84.1875
+        },
+        {
+          "text": "Report on assessments of sites contaminated with obsolete pesticides in Tajikistan – Issue 2 (in Russian)",
+          "tag": "H2",
+          "x": 284,
+          "y": 1808.65625,
+          "width": 426,
+          "height": 84.1875
+        },
+        {
+          "text": "Report on assessments of sites contaminated with obsolete pesticides in Tajikistan – Issue 1 (in Russian)",
+          "tag": "H2",
+          "x": 954,
+          "y": 1808.65625,
+          "width": 426,
+          "height": 84.1875
+        }
+      ],
+      "images": [
+        {
+          "src": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/logo.svg",
+          "alt": "Environmental Health & Pollution Management Institute (EHPMI)",
+          "complete": true,
+          "naturalWidth": 300
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2024/12/image_2024-12-10_19-41-04-530x480.png",
+          "alt": "",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2024/05/childhood_blood_lead_screening-1-530x530.jpg",
+          "alt": "",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.20.50-650x485-1-530x485.png",
+          "alt": "",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.17.52-530x530.png",
+          "alt": "",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.16.55-530x530.png",
+          "alt": "",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.14.22-530x454.png",
+          "alt": "",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.12.35-530x530.png",
+          "alt": "",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.08.21-530x472.png",
+          "alt": "",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.07.00-530x524.png",
+          "alt": "",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.05.34-530x530.png",
+          "alt": "",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.04.12-530x530.png",
+          "alt": "",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.02.58-530x530.png",
+          "alt": "",
+          "complete": true,
+          "naturalWidth": 530
+        }
+      ],
+      "newsletter": null,
+      "regions": [],
+      "icons": [
+        {
+          "class": "fas fa-home me-3",
+          "icon": null,
+          "width": 18
+        },
+        {
+          "class": "fas fa-envelope me-3",
+          "icon": null,
+          "width": 16
+        }
+      ],
+      "assets": [
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-f2656fd5.min.css",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-dbe71793.min.js",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-71e10d27.min.js",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-d9df257f.min.js"
+      ]
+    },
+    {
+      "url": "/blog/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "title": "Blog – Environmental Health & Pollution Management Institute (EHPMI)",
+      "h1": 1,
+      "main": 1,
+      "fonts": "loaded",
+      "headings": [
+        {
+          "text": "Blog",
+          "tag": "H1",
+          "x": 0,
+          "y": 358,
+          "width": 1440,
+          "height": 48
+        },
+        {
+          "text": "EHPMI Annual Workshop-2026 in Kyrgyzstan",
+          "tag": "H2",
+          "x": 108.21875,
+          "y": 853.546875,
+          "width": 343.546875,
+          "height": 67.1875
+        },
+        {
+          "text": "Workshop in Astana on Lead Poisoning of Children in Kazakhstan",
+          "tag": "H2",
+          "x": 548.21875,
+          "y": 904.75,
+          "width": 343.546875,
+          "height": 100.78125
+        },
+        {
+          "text": "Discussion in Tbilisi of the Biggest Contaminated Area in Georgia",
+          "tag": "H2",
+          "x": 988.21875,
+          "y": 887.75,
+          "width": 343.546875,
+          "height": 100.78125
+        }
+      ],
+      "images": [
+        {
+          "src": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/logo.svg",
+          "alt": "Environmental Health & Pollution Management Institute (EHPMI)",
+          "complete": true,
+          "naturalWidth": 300
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2026/08/featured-ehpmi-workshop-2026-kyrgyzstan-530x530.webp",
+          "alt": "EHPMI Annual Workshop-2026 in Kyrgyzstan",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2026/04/2026-04-08-astana-3-530x530.jpg",
+          "alt": "Workshop in Astana on Lead Poisoning of Children in Kazakhstan",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2026/04/2026-04-11-Tbilisi-3-530x530.jpeg",
+          "alt": "Discussion in Tbilisi of the Biggest Contaminated Area in Georgia",
+          "complete": true,
+          "naturalWidth": 530
+        }
+      ],
+      "newsletter": null,
+      "regions": [],
+      "icons": [
+        {
+          "class": "fas fa-home me-3",
+          "icon": null,
+          "width": 18
+        },
+        {
+          "class": "fas fa-envelope me-3",
+          "icon": null,
+          "width": 16
+        }
+      ],
+      "assets": [
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-f2656fd5.min.css",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-dbe71793.min.js",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-71e10d27.min.js",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-d9df257f.min.js"
+      ]
+    },
+    {
+      "url": "/",
+      "width": 390,
+      "documentWidth": 390,
+      "title": "Environmental Health & Pollution Management Institute (EHPMI)",
+      "h1": 1,
+      "main": 1,
+      "fonts": "loaded",
+      "headings": [
+        {
+          "text": "Decrease Pollution — Protect Health",
+          "tag": "H1",
+          "x": 40,
+          "y": 165.96875,
+          "width": 310,
+          "height": 66.8125
+        },
+        {
+          "text": "Our Geography",
+          "tag": "H2",
+          "x": 32,
+          "y": 574.78125,
+          "width": 326,
+          "height": 29.640625
+        },
+        {
+          "text": "Latest from EHPMI",
+          "tag": "H2",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "text": "EHPMI Annual Workshop-2026 in Kyrgyzstan",
+          "tag": "H3",
+          "x": 80,
+          "y": 1546.578125,
+          "width": 230,
+          "height": 86.390625
+        },
+        {
+          "text": "Workshop in Astana on Lead Poisoning of Children in Kazakhstan",
+          "tag": "H3",
+          "x": 404,
+          "y": 1532.1875,
+          "width": 230,
+          "height": 115.1875
+        },
+        {
+          "text": "Discussion in Tbilisi of the Biggest Contaminated Area in Georgia",
+          "tag": "H3",
+          "x": 728,
+          "y": 1532.1875,
+          "width": 230,
+          "height": 115.1875
+        },
+        {
+          "text": "Field assessment of a contaminated site in Kutaisi, Georgia",
+          "tag": "H3",
+          "x": 1052,
+          "y": 1546.578125,
+          "width": 230,
+          "height": 86.390625
+        },
+        {
+          "text": "Blood lead levels in preschool children in the Kyrgyz Republic",
+          "tag": "H3",
+          "x": 1376,
+          "y": 1546.578125,
+          "width": 230,
+          "height": 86.390625
+        },
+        {
+          "text": "Lead Poisoning of Children in Shymkent and Proposed Solutions",
+          "tag": "H3",
+          "x": 1700,
+          "y": 1532.1875,
+          "width": 230,
+          "height": 115.1875
+        },
+        {
+          "text": "EHPMI Workshop-2025",
+          "tag": "H3",
+          "x": 2024,
+          "y": 1560.984375,
+          "width": 230,
+          "height": 57.59375
+        },
+        {
+          "text": "Cleanup of DDT burial in Settlement #1, part of FAO regional project, implemented by Peshsaf, Tajikistan",
+          "tag": "H3",
+          "x": 2348,
+          "y": 1503.390625,
+          "width": 230,
+          "height": 172.78125
+        },
+        {
+          "text": "EHPMI Workshop-2024",
+          "tag": "H3",
+          "x": 2672,
+          "y": 1560.984375,
+          "width": 230,
+          "height": 57.59375
+        },
+        {
+          "text": "Journey Through Mexico's Parks: Insights from the Field",
+          "tag": "H3",
+          "x": 2996,
+          "y": 1532.1875,
+          "width": 230,
+          "height": 115.1875
+        },
+        {
+          "text": "International Workshop on Emerging Green Technologies for Pest and Pesticide Management in Kazakhstan",
+          "tag": "H3",
+          "x": 3320,
+          "y": 1489,
+          "width": 230,
+          "height": 201.578125
+        },
+        {
+          "text": "Environmental Research Centre of Khazar University has develop a strategic roadmap one waste management",
+          "tag": "H3",
+          "x": 3644,
+          "y": 1489,
+          "width": 230,
+          "height": 201.578125
+        },
+        {
+          "text": "Press-cafe in Bishkek: \"Lead Poisoning of Children!”",
+          "tag": "H3",
+          "x": 3968,
+          "y": 1532.1875,
+          "width": 230,
+          "height": 115.1875
+        },
+        {
+          "text": "Our Projects",
+          "tag": "H2",
+          "x": 0,
+          "y": 1898.78125,
+          "width": 390,
+          "height": 28.796875
+        },
+        {
+          "text": "Detailed and Rapid Environmental Assessments of Sites Contaminated with Obsolete Pesticides in Tajikistan, 2023-2024",
+          "tag": "H3",
+          "x": 48,
+          "y": 2341.578125,
+          "width": 294,
+          "height": 201.5625
+        },
+        {
+          "text": "National Inventory of Sites Contaminated with Obsolete Pesticides in Kazakhstan",
+          "tag": "H3",
+          "x": 48,
+          "y": 3606.359375,
+          "width": 294,
+          "height": 167.96875
+        },
+        {
+          "text": "Preliminary Assessments of Sites Contaminated with Obsolete Pesticides in Khatlon region, Tajikistan in 2023",
+          "tag": "H3",
+          "x": 48,
+          "y": 5118.328125,
+          "width": 294,
+          "height": 201.5625
+        },
+        {
+          "text": "Member Organizations",
+          "tag": "H2",
+          "x": 0,
+          "y": 6157.890625,
+          "width": 390,
+          "height": 28.796875
+        },
+        {
+          "text": "Contact us",
+          "tag": "H2",
+          "x": 40,
+          "y": 6480.6875,
+          "width": 310,
+          "height": 29.640625
+        },
+        {
+          "text": "Get in Touch",
+          "tag": "H2",
+          "x": 32,
+          "y": 7298.3125,
+          "width": 326,
+          "height": 27.765625
+        }
+      ],
+      "images": [
+        {
+          "src": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/logo.svg",
+          "alt": "Environmental Health & Pollution Management Institute (EHPMI)",
+          "complete": true,
+          "naturalWidth": 300
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/map9-01.webp",
+          "alt": "Map of Eastern Europe and Asia showing EHPMI country offices",
+          "complete": true,
+          "naturalWidth": 1804
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2026/08/featured-ehpmi-workshop-2026-kyrgyzstan-530x530.webp",
+          "alt": "EHPMI Annual Workshop-2026 in Kyrgyzstan",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2026/04/2026-04-08-astana-3-530x530.jpg",
+          "alt": "Workshop in Astana on Lead Poisoning of Children in Kazakhstan",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2026/04/2026-04-11-Tbilisi-3-530x530.jpeg",
+          "alt": "Discussion in Tbilisi of the Biggest Contaminated Area in Georgia",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2025/12/2025_12_21_Kutaisi_Litafoni-2-530x530.jpg",
+          "alt": "Kutaisi contaminated-site field assessment team group portrait.",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2025/12/1-530x530.jpg",
+          "alt": "Blood lead levels in preschool children in the Kyrgyz Republic",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2025/11/shimkent-round-table-3-530x530.jpg",
+          "alt": "Shimkent round table (EHPMI)",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2025/06/8-530x530.jpg",
+          "alt": "EHPMI Workshop-2025",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2025/06/cleanup-of-ddt-1-530x530.jpg",
+          "alt": "Project staff providing protective equipment to a resident before the DDT cleanup.",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2025/01/workshop-2024-1-530x530.jpg",
+          "alt": "Workshop 2024",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2024/06/6-1-530x520.jpg",
+          "alt": "The Ecological Forest National Park",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2024/06/IMG_2617-530x530.jpg",
+          "alt": "International Workshop on Emerging Green Technologies for Pest and Pesticide Management in Kazakhstan",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2024/05/et5-530x530.jpg",
+          "alt": "Speaker presenting a waste-management strategy at Khazar University.",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2023/12/svinec6-530x530.jpg",
+          "alt": "Press-cafe in Bishkek: \"Lead Poisoning of Children!”",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2025/05/dareaoscwopit-prev-530x530.jpg",
+          "alt": "Sheep in a livestock enclosure at a site assessed for pesticide contamination in Tajikistan.",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2025/05/nioscwopik-1-530x517.jpg",
+          "alt": "Training participants discussing a field-assessment exercise in Kazakhstan.",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2025/04/1-530x530.jpg",
+          "alt": "Sampling of soil contaminated by pesticides in Yakkatut Village, Tajikistan, Environmental Health and Pollution Management Institute, EHPMI, Peshsaf",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/08/human-health-institute.jpg",
+          "alt": "Logo of Human Health Institute",
+          "complete": true,
+          "naturalWidth": 390
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/08/eco-life.jpg",
+          "alt": "Logo of Consortium Civil Society Organization Eco Life and Eco Life Consulting Co",
+          "complete": true,
+          "naturalWidth": 390
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/08/peshsaf.jpeg",
+          "alt": "Logo of Peshsaf",
+          "complete": true,
+          "naturalWidth": 390
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/08/ecois.jpeg",
+          "alt": "Logo of Civil Society Association ‘Ekois Bishkek’",
+          "complete": true,
+          "naturalWidth": 390
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/08/escm.jpg",
+          "alt": "Logo of Environment and Security Center of Mongolia (ESCM)",
+          "complete": true,
+          "naturalWidth": 390
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2024/05/erc.png",
+          "alt": "Environmental Research Center (ERC)",
+          "complete": true,
+          "naturalWidth": 600
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2023/12/Logo_SOS-1536x1536.jpg",
+          "alt": "Vietnam Environmental Incident Response Center (SOS)",
+          "complete": true,
+          "naturalWidth": 390
+        }
+      ],
+      "newsletter": {
+        "label": true,
+        "contained": true
+      },
+      "regions": [
+        "Our Geography\n\n\nEHPMI has active teams and operates in the following countries: Ukraine, Georgia, Armenia, Azerbaijan, Kazakhstan, Kyrgyzstan, Tajikistan, Mongolia, and Vietnam. The national teams have been present and worked in Eastern Europe and Central Asia region for over 15 years."
+      ],
+      "icons": [
+        {
+          "class": "fas fa-home me-3",
+          "icon": null,
+          "width": 18
+        },
+        {
+          "class": "fas fa-envelope me-3",
+          "icon": null,
+          "width": 16
+        }
+      ],
+      "assets": [
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-f2656fd5.min.css",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-dbe71793.min.js",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-71e10d27.min.js",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-c9912e16.min.js"
+      ]
+    },
+    {
+      "url": "/about/",
+      "width": 390,
+      "documentWidth": 390,
+      "title": "Who we are – Environmental Health & Pollution Management Institute (EHPMI)",
+      "h1": 1,
+      "main": 1,
+      "fonts": "loaded",
+      "headings": [
+        {
+          "text": "Who we are",
+          "tag": "H1",
+          "x": -1,
+          "y": 522.96875,
+          "width": 1,
+          "height": 1
+        }
+      ],
+      "images": [
+        {
+          "src": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/logo.svg",
+          "alt": "Environmental Health & Pollution Management Institute (EHPMI)",
+          "complete": true,
+          "naturalWidth": 300
+        }
+      ],
+      "newsletter": null,
+      "regions": [],
+      "icons": [
+        {
+          "class": "fas fa-home me-3",
+          "icon": null,
+          "width": 18
+        },
+        {
+          "class": "fas fa-envelope me-3",
+          "icon": null,
+          "width": 16
+        }
+      ],
+      "assets": [
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-f2656fd5.min.css",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-dbe71793.min.js",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-71e10d27.min.js",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-d9df257f.min.js"
+      ]
+    },
+    {
+      "url": "/about/staff/",
+      "width": 390,
+      "documentWidth": 390,
+      "title": "Meet our team – Environmental Health & Pollution Management Institute (EHPMI)",
+      "h1": 1,
+      "main": 1,
+      "fonts": "loaded",
+      "headings": [
+        {
+          "text": "Meet our team",
+          "tag": "H1",
+          "x": -1,
+          "y": 172.96875,
+          "width": 1,
+          "height": 1
+        },
+        {
+          "text": "Staff directory",
+          "tag": "H2",
+          "x": -1,
+          "y": 172.96875,
+          "width": 1,
+          "height": 1
+        },
+        {
+          "text": "Petr Sharov",
+          "tag": "H3",
+          "x": 40,
+          "y": 627.96875,
+          "width": 310,
+          "height": 27.765625
+        },
+        {
+          "text": "Alena Temnikova",
+          "tag": "H3",
+          "x": 40,
+          "y": 1159.734375,
+          "width": 310,
+          "height": 27.765625
+        },
+        {
+          "text": "Olga Kuzminova",
+          "tag": "H3",
+          "x": 40,
+          "y": 1691.5,
+          "width": 310,
+          "height": 27.765625
+        },
+        {
+          "text": "Aelita Sargsyan",
+          "tag": "H3",
+          "x": 40,
+          "y": 2223.265625,
+          "width": 310,
+          "height": 27.765625
+        },
+        {
+          "text": "Vardan Karyan",
+          "tag": "H3",
+          "x": 40,
+          "y": 2789.03125,
+          "width": 310,
+          "height": 27.765625
+        },
+        {
+          "text": "Lusine Taslakyan",
+          "tag": "H3",
+          "x": 40,
+          "y": 3354.796875,
+          "width": 310,
+          "height": 27.765625
+        },
+        {
+          "text": "Mustafina Alina",
+          "tag": "H3",
+          "x": 40,
+          "y": 3886.5625,
+          "width": 310,
+          "height": 27.765625
+        },
+        {
+          "text": "Rovshan Abbasov",
+          "tag": "H3",
+          "x": 40,
+          "y": 4418.328125,
+          "width": 310,
+          "height": 27.765625
+        },
+        {
+          "text": "Shahnaz Amanova",
+          "tag": "H3",
+          "x": 40,
+          "y": 4950.09375,
+          "width": 310,
+          "height": 27.765625
+        },
+        {
+          "text": "Khatuna Akhalaia",
+          "tag": "H3",
+          "x": 40,
+          "y": 5482.75,
+          "width": 310,
+          "height": 27.765625
+        },
+        {
+          "text": "Mariami Jintcharadze",
+          "tag": "H3",
+          "x": 40,
+          "y": 6014.515625,
+          "width": 310,
+          "height": 27.765625
+        },
+        {
+          "text": "Kakha Rukhaia",
+          "tag": "H3",
+          "x": 40,
+          "y": 6546.28125,
+          "width": 310,
+          "height": 27.765625
+        },
+        {
+          "text": "Veriko Gulua",
+          "tag": "H3",
+          "x": 40,
+          "y": 7078.9375,
+          "width": 310,
+          "height": 27.765625
+        },
+        {
+          "text": "Aidar Kapassov",
+          "tag": "H3",
+          "x": 40,
+          "y": 7610.703125,
+          "width": 310,
+          "height": 27.765625
+        },
+        {
+          "text": "Zagirova Anastasia",
+          "tag": "H3",
+          "x": 40,
+          "y": 8142.46875,
+          "width": 310,
+          "height": 27.765625
+        },
+        {
+          "text": "Indira Zhakipova",
+          "tag": "H3",
+          "x": 40,
+          "y": 8674.234375,
+          "width": 310,
+          "height": 27.765625
+        },
+        {
+          "text": "Kuban Almerekov",
+          "tag": "H3",
+          "x": 40,
+          "y": 9240,
+          "width": 310,
+          "height": 27.765625
+        },
+        {
+          "text": "Dr. Erdenesaikan Naidansuren",
+          "tag": "H3",
+          "x": 40,
+          "y": 9805.765625,
+          "width": 310,
+          "height": 55.53125
+        },
+        {
+          "text": "Umidjon Ulugov",
+          "tag": "H3",
+          "x": 40,
+          "y": 10365.296875,
+          "width": 310,
+          "height": 27.765625
+        },
+        {
+          "text": "Pham Van Son",
+          "tag": "H3",
+          "x": 40,
+          "y": 10931.953125,
+          "width": 310,
+          "height": 27.765625
+        },
+        {
+          "text": "See also",
+          "tag": "H2",
+          "x": 0,
+          "y": 11073.71875,
+          "width": 390,
+          "height": 39.640625
+        }
+      ],
+      "images": [
+        {
+          "src": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/logo.svg",
+          "alt": "Environmental Health & Pollution Management Institute (EHPMI)",
+          "complete": true,
+          "naturalWidth": 300
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/09/Petr.jpg",
+          "alt": "Portrait of Petr Sharov",
+          "complete": true,
+          "naturalWidth": 400
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/09/Alena.jpg",
+          "alt": "Portrait of Alena Temnikova",
+          "complete": true,
+          "naturalWidth": 400
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2025/03/olga.jpg",
+          "alt": "Portrait of Olga Kuzminova",
+          "complete": true,
+          "naturalWidth": 400
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/09/Aelita.jpg",
+          "alt": "Portrait of Aelita Sargsyan",
+          "complete": true,
+          "naturalWidth": 400
+        },
+        {
+          "src": "",
+          "alt": "Portrait of Vardan Karyan",
+          "complete": false,
+          "naturalWidth": 0
+        },
+        {
+          "src": "",
+          "alt": "Portrait of Lusine Taslakyan",
+          "complete": false,
+          "naturalWidth": 0
+        },
+        {
+          "src": "",
+          "alt": "Portrait of Mustafina Alina",
+          "complete": false,
+          "naturalWidth": 0
+        },
+        {
+          "src": "",
+          "alt": "Portrait of Rovshan Abbasov",
+          "complete": false,
+          "naturalWidth": 0
+        },
+        {
+          "src": "",
+          "alt": "Portrait of Shahnaz Amanova",
+          "complete": false,
+          "naturalWidth": 0
+        },
+        {
+          "src": "",
+          "alt": "Portrait of Khatuna Akhalaia",
+          "complete": false,
+          "naturalWidth": 0
+        },
+        {
+          "src": "",
+          "alt": "Portrait of Mariami Jintcharadze",
+          "complete": false,
+          "naturalWidth": 0
+        },
+        {
+          "src": "",
+          "alt": "Portrait of Kakha Rukhaia",
+          "complete": false,
+          "naturalWidth": 0
+        },
+        {
+          "src": "",
+          "alt": "Portrait of Veriko Gulua",
+          "complete": false,
+          "naturalWidth": 0
+        },
+        {
+          "src": "",
+          "alt": "Portrait of Aidar Kapassov",
+          "complete": false,
+          "naturalWidth": 0
+        },
+        {
+          "src": "",
+          "alt": "Portrait of Zagirova Anastasia",
+          "complete": false,
+          "naturalWidth": 0
+        },
+        {
+          "src": "",
+          "alt": "Portrait of Indira Zhakipova",
+          "complete": false,
+          "naturalWidth": 0
+        },
+        {
+          "src": "",
+          "alt": "Kuban Almerekov",
+          "complete": false,
+          "naturalWidth": 0
+        },
+        {
+          "src": "",
+          "alt": "Portrait of Dr. Erdenesaikan Naidansuren",
+          "complete": false,
+          "naturalWidth": 0
+        },
+        {
+          "src": "",
+          "alt": "Portrait of Umidjon Ulugov",
+          "complete": false,
+          "naturalWidth": 0
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2023/12/Pham_Van_Son.jpg",
+          "alt": "Pham Van Son, Vietnam Country Coordinator",
+          "complete": true,
+          "naturalWidth": 400
+        }
+      ],
+      "newsletter": null,
+      "regions": [],
+      "icons": [
+        {
+          "class": "fas fa-home me-3",
+          "icon": null,
+          "width": 18
+        },
+        {
+          "class": "fas fa-envelope me-3",
+          "icon": null,
+          "width": 16
+        }
+      ],
+      "assets": [
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-f2656fd5.min.css",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-dbe71793.min.js",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-71e10d27.min.js",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-d9df257f.min.js"
+      ]
+    },
+    {
+      "url": "/about/members/",
+      "width": 390,
+      "documentWidth": 390,
+      "title": "Member Organizations – Environmental Health & Pollution Management Institute (EHPMI)",
+      "h1": 1,
+      "main": 1,
+      "fonts": "loaded",
+      "headings": [
+        {
+          "text": "Member Organizations",
+          "tag": "H1",
+          "x": 16,
+          "y": 245.96875,
+          "width": 358,
+          "height": 33.40625
+        },
+        {
+          "text": "Organizations",
+          "tag": "H2",
+          "x": -1,
+          "y": 1248.375,
+          "width": 1,
+          "height": 1
+        },
+        {
+          "text": "Human Health Institute",
+          "tag": "H3",
+          "x": 16,
+          "y": 1651.765625,
+          "width": 358,
+          "height": 27.765625
+        },
+        {
+          "text": "Consortium Civil Society Organization Eco Life and Eco Life Consulting Co",
+          "tag": "H3",
+          "x": 16,
+          "y": 2916.3125,
+          "width": 358,
+          "height": 83.296875
+        },
+        {
+          "text": "Peshsaf",
+          "tag": "H3",
+          "x": 16,
+          "y": 4531.15625,
+          "width": 358,
+          "height": 27.765625
+        },
+        {
+          "text": "Civil Society Association ‘Ekois Bishkek’",
+          "tag": "H3",
+          "x": 16,
+          "y": 5700.90625,
+          "width": 358,
+          "height": 55.53125
+        },
+        {
+          "text": "Environment and Security Center of Mongolia (ESCM)",
+          "tag": "H3",
+          "x": 16,
+          "y": 10035.5,
+          "width": 358,
+          "height": 55.53125
+        },
+        {
+          "text": "Environmental Research Center (ERC)",
+          "tag": "H3",
+          "x": 16,
+          "y": 12472.21875,
+          "width": 358,
+          "height": 55.53125
+        },
+        {
+          "text": "Vietnam Environmental Incident Response Center (SOS)",
+          "tag": "H3",
+          "x": 16,
+          "y": 15549.0625,
+          "width": 358,
+          "height": 55.53125
+        },
+        {
+          "text": "See also",
+          "tag": "H2",
+          "x": 0,
+          "y": 17298.59375,
+          "width": 390,
+          "height": 39.640625
+        }
+      ],
+      "images": [
+        {
+          "src": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/logo.svg",
+          "alt": "Environmental Health & Pollution Management Institute (EHPMI)",
+          "complete": true,
+          "naturalWidth": 300
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/08/human-health-institute.jpg",
+          "alt": "Logo of Human Health Institute",
+          "complete": true,
+          "naturalWidth": 300
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/08/eco-life.jpg",
+          "alt": "Logo of Consortium Civil Society Organization Eco Life and Eco Life Consulting Co",
+          "complete": true,
+          "naturalWidth": 300
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/08/peshsaf.jpeg",
+          "alt": "Logo of Peshsaf",
+          "complete": true,
+          "naturalWidth": 300
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/08/ecois.jpeg",
+          "alt": "Logo of Civil Society Association ‘Ekois Bishkek’",
+          "complete": true,
+          "naturalWidth": 300
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/08/escm.jpg",
+          "alt": "Logo of Environment and Security Center of Mongolia (ESCM)",
+          "complete": true,
+          "naturalWidth": 300
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2024/05/erc.png",
+          "alt": "Environmental Research Center (ERC)",
+          "complete": true,
+          "naturalWidth": 600
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2023/12/Logo_SOS-1536x1536.jpg",
+          "alt": "Vietnam Environmental Incident Response Center (SOS)",
+          "complete": true,
+          "naturalWidth": 300
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/08/QR_SOS_app_web_youtube_fb.png",
+          "alt": "QR codes for Vietnam Environmental Incident Response Center (SOS) online resources",
+          "complete": true,
+          "naturalWidth": 360
+        }
+      ],
+      "newsletter": null,
+      "regions": [],
+      "icons": [
+        {
+          "class": "fas fa-home me-3",
+          "icon": null,
+          "width": 18
+        },
+        {
+          "class": "fas fa-envelope me-3",
+          "icon": null,
+          "width": 16
+        }
+      ],
+      "assets": [
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-f2656fd5.min.css",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-dbe71793.min.js",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-71e10d27.min.js",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-d9df257f.min.js"
+      ]
+    },
+    {
+      "url": "/about/partners/",
+      "width": 390,
+      "documentWidth": 390,
+      "title": "Partners – Environmental Health & Pollution Management Institute (EHPMI)",
+      "h1": 1,
+      "main": 1,
+      "fonts": "loaded",
+      "headings": [
+        {
+          "text": "Partners",
+          "tag": "H1",
+          "x": -1,
+          "y": 172.96875,
+          "width": 1,
+          "height": 1
+        },
+        {
+          "text": "Organizations",
+          "tag": "H2",
+          "x": -1,
+          "y": 172.96875,
+          "width": 1,
+          "height": 1
+        },
+        {
+          "text": "TerraGraphics International Foundation (TIFO)",
+          "tag": "H3",
+          "x": 16,
+          "y": 413.765625,
+          "width": 358,
+          "height": 55.53125
+        },
+        {
+          "text": "See also",
+          "tag": "H2",
+          "x": 0,
+          "y": 1988.765625,
+          "width": 390,
+          "height": 39.640625
+        }
+      ],
+      "images": [
+        {
+          "src": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/logo.svg",
+          "alt": "Environmental Health & Pollution Management Institute (EHPMI)",
+          "complete": true,
+          "naturalWidth": 300
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2023/09/terragraphics-650x298.png",
+          "alt": "Logo of TerraGraphics International Foundation (TIFO)",
+          "complete": true,
+          "naturalWidth": 299
+        }
+      ],
+      "newsletter": null,
+      "regions": [],
+      "icons": [
+        {
+          "class": "fas fa-home me-3",
+          "icon": null,
+          "width": 18
+        },
+        {
+          "class": "fas fa-envelope me-3",
+          "icon": null,
+          "width": 16
+        }
+      ],
+      "assets": [
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-f2656fd5.min.css",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-dbe71793.min.js",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-71e10d27.min.js",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-d9df257f.min.js"
+      ]
+    },
+    {
+      "url": "/offices/",
+      "width": 390,
+      "documentWidth": 390,
+      "title": "Countries – Environmental Health & Pollution Management Institute (EHPMI)",
+      "h1": 1,
+      "main": 1,
+      "fonts": "loaded",
+      "headings": [
+        {
+          "text": "Countries",
+          "tag": "H1",
+          "x": -1,
+          "y": 590.96875,
+          "width": 1,
+          "height": 1
+        }
+      ],
+      "images": [
+        {
+          "src": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/logo.svg",
+          "alt": "Environmental Health & Pollution Management Institute (EHPMI)",
+          "complete": true,
+          "naturalWidth": 300
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/map9-01.webp",
+          "alt": "Map of Eastern Europe and Asia showing EHPMI country offices",
+          "complete": true,
+          "naturalWidth": 1804
+        }
+      ],
+      "newsletter": null,
+      "regions": [],
+      "icons": [
+        {
+          "class": "fas fa-home me-3",
+          "icon": null,
+          "width": 18
+        },
+        {
+          "class": "fas fa-envelope me-3",
+          "icon": null,
+          "width": 16
+        }
+      ],
+      "assets": [
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-f2656fd5.min.css",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-dbe71793.min.js",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-71e10d27.min.js",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-d9df257f.min.js"
+      ]
+    },
+    {
+      "url": "/offices/vietnam/",
+      "width": 390,
+      "documentWidth": 390,
+      "title": "Vietnam – Environmental Health & Pollution Management Institute (EHPMI)",
+      "h1": 1,
+      "main": 1,
+      "fonts": "loaded",
+      "headings": [
+        {
+          "text": "Vietnam",
+          "tag": "H1",
+          "x": -1,
+          "y": 172.96875,
+          "width": 1,
+          "height": 1
+        },
+        {
+          "text": "Pham Van Son",
+          "tag": "H2",
+          "x": 0,
+          "y": 245.96875,
+          "width": 390,
+          "height": 28.796875
+        },
+        {
+          "text": "Vietnam Environmental Incident Response Center (SOS)",
+          "tag": "H3",
+          "x": 16,
+          "y": 2293,
+          "width": 358,
+          "height": 55.53125
+        },
+        {
+          "text": "See also",
+          "tag": "H2",
+          "x": 0,
+          "y": 4042.53125,
+          "width": 390,
+          "height": 39.640625
+        }
+      ],
+      "images": [
+        {
+          "src": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/logo.svg",
+          "alt": "Environmental Health & Pollution Management Institute (EHPMI)",
+          "complete": true,
+          "naturalWidth": 300
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2023/12/Pham_Van_Son.jpg",
+          "alt": "Pham Van Son, Vietnam Country Coordinator",
+          "complete": true,
+          "naturalWidth": 400
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2023/12/Logo_SOS-1536x1536.jpg",
+          "alt": "Vietnam Environmental Incident Response Center (SOS)",
+          "complete": true,
+          "naturalWidth": 300
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/08/QR_SOS_app_web_youtube_fb.png",
+          "alt": "QR codes for Vietnam Environmental Incident Response Center (SOS) online resources",
+          "complete": true,
+          "naturalWidth": 360
+        }
+      ],
+      "newsletter": null,
+      "regions": [],
+      "icons": [
+        {
+          "class": "fas fa-home me-3",
+          "icon": null,
+          "width": 18
+        },
+        {
+          "class": "fas fa-envelope me-3",
+          "icon": null,
+          "width": 16
+        }
+      ],
+      "assets": [
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-f2656fd5.min.css",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-dbe71793.min.js",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-71e10d27.min.js",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-d9df257f.min.js"
+      ]
+    },
+    {
+      "url": "/what-we-do/",
+      "width": 390,
+      "documentWidth": 390,
+      "title": "Page not found – Environmental Health & Pollution Management Institute (EHPMI)",
+      "h1": 1,
+      "main": 1,
+      "fonts": "loaded",
+      "headings": [
+        {
+          "text": "Page not found",
+          "tag": "H1",
+          "x": 16,
+          "y": 221.96875,
+          "width": 358,
+          "height": 33.40625
+        }
+      ],
+      "images": [
+        {
+          "src": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/logo.svg",
+          "alt": "Environmental Health & Pollution Management Institute (EHPMI)",
+          "complete": true,
+          "naturalWidth": 300
+        }
+      ],
+      "newsletter": null,
+      "regions": [],
+      "icons": [
+        {
+          "class": "fas fa-home me-3",
+          "icon": null,
+          "width": 18
+        },
+        {
+          "class": "fas fa-envelope me-3",
+          "icon": null,
+          "width": 16
+        }
+      ],
+      "assets": [
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-f2656fd5.min.css",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-dbe71793.min.js",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-71e10d27.min.js",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-d9df257f.min.js"
+      ]
+    },
+    {
+      "url": "/library/",
+      "width": 390,
+      "documentWidth": 390,
+      "title": "Library – Environmental Health & Pollution Management Institute (EHPMI)",
+      "h1": 1,
+      "main": 1,
+      "fonts": "loaded",
+      "headings": [
+        {
+          "text": "Library",
+          "tag": "H1",
+          "x": 0,
+          "y": 245.96875,
+          "width": 390,
+          "height": 33.40625
+        },
+        {
+          "text": "ESCM activities 2023-2024 for Hanoi workshop 20 Nov 2024",
+          "tag": "H2",
+          "x": 16,
+          "y": 591.375,
+          "width": 358,
+          "height": 56.125
+        },
+        {
+          "text": "National Blood Lead Level Survey in Children Ages 2–5, Childhood Blood Lead Screening Guidelines",
+          "tag": "H2",
+          "x": 16,
+          "y": 1059.5,
+          "width": 358,
+          "height": 84.1875
+        },
+        {
+          "text": "Lead Contamination of Environment in Rudnaya Pristan, Russia and associated Health Risks",
+          "tag": "H2",
+          "x": 16,
+          "y": 1555.6875,
+          "width": 358,
+          "height": 84.1875
+        },
+        {
+          "text": "Health and Pollution Action Plan for Azerbaijan",
+          "tag": "H2",
+          "x": 16,
+          "y": 2051.875,
+          "width": 358,
+          "height": 56.125
+        },
+        {
+          "text": "Health and Pollution Action Plan for Tajikistan",
+          "tag": "H2",
+          "x": 16,
+          "y": 2520,
+          "width": 358,
+          "height": 56.125
+        },
+        {
+          "text": "Poster “Medical Wastes” (in Russian)",
+          "tag": "H2",
+          "x": 22.21875,
+          "y": 2988.125,
+          "width": 345.546875,
+          "height": 28.0625
+        },
+        {
+          "text": "Poster “Chemical Safety at Home” (in Russian)",
+          "tag": "H2",
+          "x": 16,
+          "y": 3428.1875,
+          "width": 358,
+          "height": 56.125
+        },
+        {
+          "text": "Calendar for 2019/2020 with information about danger of pesticides",
+          "tag": "H2",
+          "x": 16,
+          "y": 3896.3125,
+          "width": 358,
+          "height": 84.1875
+        },
+        {
+          "text": "Booklet “What are pesticides and why are they dangerous for human health?” (in Russian)",
+          "tag": "H2",
+          "x": 16,
+          "y": 4392.5,
+          "width": 358,
+          "height": 84.1875
+        },
+        {
+          "text": "Report on assessments of sites contaminated with obsolete pesticides in Tajikistan – Issue 3 (in Russian)",
+          "tag": "H2",
+          "x": 16,
+          "y": 4888.6875,
+          "width": 358,
+          "height": 112.25
+        },
+        {
+          "text": "Report on assessments of sites contaminated with obsolete pesticides in Tajikistan – Issue 2 (in Russian)",
+          "tag": "H2",
+          "x": 16,
+          "y": 5412.9375,
+          "width": 358,
+          "height": 112.25
+        },
+        {
+          "text": "Report on assessments of sites contaminated with obsolete pesticides in Tajikistan – Issue 1 (in Russian)",
+          "tag": "H2",
+          "x": 16,
+          "y": 5937.1875,
+          "width": 358,
+          "height": 112.25
+        }
+      ],
+      "images": [
+        {
+          "src": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/logo.svg",
+          "alt": "Environmental Health & Pollution Management Institute (EHPMI)",
+          "complete": true,
+          "naturalWidth": 300
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2024/12/image_2024-12-10_19-41-04-530x480.png",
+          "alt": "",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2024/05/childhood_blood_lead_screening-1-530x530.jpg",
+          "alt": "",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.20.50-650x485-1-530x485.png",
+          "alt": "",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.17.52-530x530.png",
+          "alt": "",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.16.55-530x530.png",
+          "alt": "",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.14.22-530x454.png",
+          "alt": "",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.12.35-530x530.png",
+          "alt": "",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.08.21-530x472.png",
+          "alt": "",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.07.00-530x524.png",
+          "alt": "",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.05.34-530x530.png",
+          "alt": "",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.04.12-530x530.png",
+          "alt": "",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.02.58-530x530.png",
+          "alt": "",
+          "complete": true,
+          "naturalWidth": 530
+        }
+      ],
+      "newsletter": null,
+      "regions": [],
+      "icons": [
+        {
+          "class": "fas fa-home me-3",
+          "icon": null,
+          "width": 18
+        },
+        {
+          "class": "fas fa-envelope me-3",
+          "icon": null,
+          "width": 16
+        }
+      ],
+      "assets": [
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-f2656fd5.min.css",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-dbe71793.min.js",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-71e10d27.min.js",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-d9df257f.min.js"
+      ]
+    },
+    {
+      "url": "/blog/",
+      "width": 390,
+      "documentWidth": 390,
+      "title": "Blog – Environmental Health & Pollution Management Institute (EHPMI)",
+      "h1": 1,
+      "main": 1,
+      "fonts": "loaded",
+      "headings": [
+        {
+          "text": "Blog",
+          "tag": "H1",
+          "x": 0,
+          "y": 197.96875,
+          "width": 390,
+          "height": 33.40625
+        },
+        {
+          "text": "EHPMI Annual Workshop-2026 in Kyrgyzstan",
+          "tag": "H2",
+          "x": 56,
+          "y": 613.375,
+          "width": 278,
+          "height": 100.78125
+        },
+        {
+          "text": "Workshop in Astana on Lead Poisoning of Children in Kazakhstan",
+          "tag": "H2",
+          "x": 56,
+          "y": 1762.15625,
+          "width": 278,
+          "height": 134.375
+        },
+        {
+          "text": "Discussion in Tbilisi of the Biggest Contaminated Area in Georgia",
+          "tag": "H2",
+          "x": 56,
+          "y": 2808.53125,
+          "width": 278,
+          "height": 134.375
+        }
+      ],
+      "images": [
+        {
+          "src": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/logo.svg",
+          "alt": "Environmental Health & Pollution Management Institute (EHPMI)",
+          "complete": true,
+          "naturalWidth": 300
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2026/08/featured-ehpmi-workshop-2026-kyrgyzstan-530x530.webp",
+          "alt": "EHPMI Annual Workshop-2026 in Kyrgyzstan",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2026/04/2026-04-08-astana-3-530x530.jpg",
+          "alt": "Workshop in Astana on Lead Poisoning of Children in Kazakhstan",
+          "complete": true,
+          "naturalWidth": 530
+        },
+        {
+          "src": "https://dev.ehpmi.org/wp-content/uploads/2026/04/2026-04-11-Tbilisi-3-530x530.jpeg",
+          "alt": "Discussion in Tbilisi of the Biggest Contaminated Area in Georgia",
+          "complete": true,
+          "naturalWidth": 530
+        }
+      ],
+      "newsletter": null,
+      "regions": [],
+      "icons": [
+        {
+          "class": "fas fa-home me-3",
+          "icon": null,
+          "width": 18
+        },
+        {
+          "class": "fas fa-envelope me-3",
+          "icon": null,
+          "width": 16
+        }
+      ],
+      "assets": [
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-f2656fd5.min.css",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-dbe71793.min.js",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-71e10d27.min.js",
+        "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-d9df257f.min.js"
+      ]
+    }
+  ],
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/?stage8=after"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-f2656fd5.min.css"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-dbe71793.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/logo.svg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/map9-01.webp"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2026/08/featured-ehpmi-workshop-2026-kyrgyzstan-530x530.webp"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2026/04/2026-04-08-astana-3-530x530.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2026/04/2026-04-11-Tbilisi-3-530x530.jpeg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2025/12/2025_12_21_Kutaisi_Litafoni-2-530x530.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2025/12/1-530x530.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2025/11/shimkent-round-table-3-530x530.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2025/06/8-530x530.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2025/06/cleanup-of-ddt-1-530x530.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2025/01/workshop-2024-1-530x530.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2024/06/6-1-530x520.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2024/06/IMG_2617-530x530.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2024/05/et5-530x530.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2023/12/svinec6-530x530.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2025/05/dareaoscwopit-prev-530x530.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2025/05/nioscwopik-1-530x517.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2025/04/1-530x530.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/08/human-health-institute.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/08/eco-life.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/08/peshsaf.jpeg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/08/ecois.jpeg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/08/escm.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2024/05/erc.png"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2023/12/Logo_SOS-1536x1536.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-71e10d27.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-c9912e16.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2026/08/slide1.jpeg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/marker.svg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/overpass/qFdH35WCmI96Ajtm81GlU9vgwBcI.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/fontawesome/webfonts/fa-brands-400.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/overpass/qFdB35WCmI96Ajtm81GgY9nqxzUKg1o.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-json/contact-form-7/v1/contact-forms/77/feedback/schema"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2026/08/slide2.jpeg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/about/?stage8=after"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-f2656fd5.min.css"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-dbe71793.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/logo.svg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-71e10d27.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-d9df257f.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/overpass/qFdB35WCmI96Ajtm81GgY9nqxzUKg1o.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/overpass/qFdH35WCmI96Ajtm81GlU9vgwBcI.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/fontawesome/webfonts/fa-brands-400.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/about/staff/?stage8=after"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-f2656fd5.min.css"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-dbe71793.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/logo.svg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/09/Petr.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-71e10d27.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-d9df257f.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/overpass/qFdB35WCmI96Ajtm81GgY9nqxzUKg1o.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/overpass/qFdH35WCmI96Ajtm81GlU9vgwBcI.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/fontawesome/webfonts/fa-brands-400.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/09/Alena.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2025/03/olga.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/09/Aelita.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2023/01/Vardan.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/09/lusine_taslakyan.png"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/09/Alina.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/09/photo_2023-05-09-19.13.23.jpeg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2023/03/Amanova.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/09/Khatuna.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/09/Mariami.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/09/Kakha.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/about/members/?stage8=after"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-f2656fd5.min.css"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-dbe71793.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/logo.svg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/08/human-health-institute.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/08/eco-life.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/08/peshsaf.jpeg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/08/ecois.jpeg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/overpass/qFdB35WCmI96Ajtm81GgY9nqxzUKg1o.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/overpass/qFdH35WCmI96Ajtm81GlU9vgwBcI.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/fontawesome/webfonts/fa-brands-400.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/08/escm.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2024/05/erc.png"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2023/12/Logo_SOS-1536x1536.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-71e10d27.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-d9df257f.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/about/partners/?stage8=after"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-f2656fd5.min.css"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-dbe71793.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/logo.svg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-71e10d27.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-d9df257f.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/overpass/qFdB35WCmI96Ajtm81GgY9nqxzUKg1o.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/overpass/qFdH35WCmI96Ajtm81GlU9vgwBcI.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/fontawesome/webfonts/fa-brands-400.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2023/09/terragraphics-650x298.png"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/offices/?stage8=after"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-f2656fd5.min.css"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-dbe71793.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/logo.svg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/map9-01.webp"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-71e10d27.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-d9df257f.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/overpass/qFdB35WCmI96Ajtm81GgY9nqxzUKg1o.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/overpass/qFdH35WCmI96Ajtm81GlU9vgwBcI.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/fontawesome/webfonts/fa-brands-400.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/marker.svg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/offices/vietnam/?stage8=after"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-f2656fd5.min.css"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-dbe71793.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/logo.svg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2023/12/Pham_Van_Son.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-71e10d27.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-d9df257f.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2023/12/Logo_SOS-1536x1536.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/overpass/qFdB35WCmI96Ajtm81GgY9nqxzUKg1o.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/overpass/qFdH35WCmI96Ajtm81GlU9vgwBcI.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/fontawesome/webfonts/fa-brands-400.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/08/QR_SOS_app_web_youtube_fb.png"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/what-we-do/?stage8=after"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-f2656fd5.min.css"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-dbe71793.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/logo.svg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-71e10d27.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-d9df257f.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/overpass/qFdB35WCmI96Ajtm81GgY9nqxzUKg1o.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/overpass/qFdH35WCmI96Ajtm81GlU9vgwBcI.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/fontawesome/webfonts/fa-brands-400.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/library/?stage8=after"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-f2656fd5.min.css"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-dbe71793.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/logo.svg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2024/12/image_2024-12-10_19-41-04-530x480.png"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.14.22-530x454.png"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-71e10d27.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-d9df257f.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/overpass/qFdB35WCmI96Ajtm81GgY9nqxzUKg1o.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/overpass/qFdH35WCmI96Ajtm81GlU9vgwBcI.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/fontawesome/webfonts/fa-brands-400.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2024/05/childhood_blood_lead_screening-1-530x530.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.20.50-650x485-1-530x485.png"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.17.52-530x530.png"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.16.55-530x530.png"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.12.35-530x530.png"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.08.21-530x472.png"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.07.00-530x524.png"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.05.34-530x530.png"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.04.12-530x530.png"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.02.58-530x530.png"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/blog/?stage8=after"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-f2656fd5.min.css"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-dbe71793.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/logo.svg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2026/08/featured-ehpmi-workshop-2026-kyrgyzstan-530x530.webp"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-71e10d27.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-d9df257f.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2026/04/2026-04-08-astana-3-530x530.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2026/04/2026-04-11-Tbilisi-3-530x530.jpeg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/overpass/qFdB35WCmI96Ajtm81GgY9nqxzUKg1o.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/overpass/qFdH35WCmI96Ajtm81GlU9vgwBcI.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/fontawesome/webfonts/fa-brands-400.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/?stage8=after"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-f2656fd5.min.css"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-dbe71793.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/logo.svg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/map9-01.webp"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2026/08/featured-ehpmi-workshop-2026-kyrgyzstan-530x530.webp"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2026/04/2026-04-08-astana-3-530x530.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2026/04/2026-04-11-Tbilisi-3-530x530.jpeg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2025/12/2025_12_21_Kutaisi_Litafoni-2-530x530.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2025/12/1-530x530.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2025/11/shimkent-round-table-3-530x530.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2025/06/8-530x530.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2025/06/cleanup-of-ddt-1-530x530.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2025/01/workshop-2024-1-530x530.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2024/06/6-1-530x520.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2024/06/IMG_2617-530x530.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2024/05/et5-530x530.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/overpass/qFdB35WCmI96Ajtm81GgY9nqxzUKg1o.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/overpass/qFdH35WCmI96Ajtm81GlU9vgwBcI.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/fontawesome/webfonts/fa-brands-400.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/marker.svg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2023/12/svinec6-530x530.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2025/05/dareaoscwopit-prev-530x530.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2025/05/nioscwopik-1-530x517.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2025/04/1-530x530.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/08/human-health-institute.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/08/eco-life.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/08/peshsaf.jpeg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/08/ecois.jpeg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/08/escm.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2024/05/erc.png"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2023/12/Logo_SOS-1536x1536.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-71e10d27.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-c9912e16.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/08/human-health-institute-530x530.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/08/eco-life-530x530.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/08/peshsaf-530x530.jpeg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/08/ecois-530x530.jpeg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/08/escm-530x530.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2023/12/Logo_SOS-530x530.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-json/contact-form-7/v1/contact-forms/77/feedback/schema"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/about/?stage8=after"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-f2656fd5.min.css"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-dbe71793.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/logo.svg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-71e10d27.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-d9df257f.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/overpass/qFdB35WCmI96Ajtm81GgY9nqxzUKg1o.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/overpass/qFdH35WCmI96Ajtm81GlU9vgwBcI.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/fontawesome/webfonts/fa-brands-400.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/about/staff/?stage8=after"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-f2656fd5.min.css"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-dbe71793.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/logo.svg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/09/Petr.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-71e10d27.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-d9df257f.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2023/12/Pham_Van_Son.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/overpass/qFdB35WCmI96Ajtm81GgY9nqxzUKg1o.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/overpass/qFdH35WCmI96Ajtm81GlU9vgwBcI.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/fontawesome/webfonts/fa-brands-400.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/09/Alena.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2025/03/olga.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/09/Aelita.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/about/members/?stage8=after"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-f2656fd5.min.css"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-dbe71793.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/logo.svg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/08/human-health-institute.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/08/eco-life.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/08/peshsaf.jpeg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/08/ecois.jpeg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/overpass/qFdB35WCmI96Ajtm81GgY9nqxzUKg1o.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/overpass/qFdH35WCmI96Ajtm81GlU9vgwBcI.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/fontawesome/webfonts/fa-brands-400.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/08/escm.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2024/05/erc.png"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2023/12/Logo_SOS-1536x1536.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/08/QR_SOS_app_web_youtube_fb.png"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-71e10d27.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-d9df257f.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/about/partners/?stage8=after"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-f2656fd5.min.css"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-dbe71793.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/logo.svg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-71e10d27.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-d9df257f.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2023/09/terragraphics-650x298.png"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/overpass/qFdB35WCmI96Ajtm81GgY9nqxzUKg1o.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/overpass/qFdH35WCmI96Ajtm81GlU9vgwBcI.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/fontawesome/webfonts/fa-brands-400.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/offices/?stage8=after"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-f2656fd5.min.css"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-dbe71793.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/logo.svg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/map9-01.webp"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-71e10d27.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-d9df257f.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/overpass/qFdB35WCmI96Ajtm81GgY9nqxzUKg1o.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/overpass/qFdH35WCmI96Ajtm81GlU9vgwBcI.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/fontawesome/webfonts/fa-brands-400.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/marker.svg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/offices/vietnam/?stage8=after"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-f2656fd5.min.css"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-dbe71793.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/logo.svg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2023/12/Pham_Van_Son.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-71e10d27.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-d9df257f.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2023/12/Logo_SOS-1536x1536.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/08/QR_SOS_app_web_youtube_fb.png"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/overpass/qFdB35WCmI96Ajtm81GgY9nqxzUKg1o.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/overpass/qFdH35WCmI96Ajtm81GlU9vgwBcI.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/fontawesome/webfonts/fa-brands-400.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/what-we-do/?stage8=after"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-f2656fd5.min.css"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-dbe71793.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/logo.svg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-71e10d27.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-d9df257f.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/overpass/qFdB35WCmI96Ajtm81GgY9nqxzUKg1o.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/overpass/qFdH35WCmI96Ajtm81GlU9vgwBcI.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/fontawesome/webfonts/fa-brands-400.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/library/?stage8=after"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-f2656fd5.min.css"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-dbe71793.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/logo.svg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2024/12/image_2024-12-10_19-41-04-530x480.png"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.14.22-530x454.png"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-71e10d27.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-d9df257f.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2024/05/childhood_blood_lead_screening-1-530x530.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.20.50-650x485-1-530x485.png"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.17.52-530x530.png"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.16.55-530x530.png"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.12.35-530x530.png"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.08.21-530x472.png"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.07.00-530x524.png"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.05.34-530x530.png"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.04.12-530x530.png"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-19.02.58-530x530.png"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/overpass/qFdB35WCmI96Ajtm81GgY9nqxzUKg1o.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/overpass/qFdH35WCmI96Ajtm81GlU9vgwBcI.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/fontawesome/webfonts/fa-brands-400.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/blog/?stage8=after"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-f2656fd5.min.css"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-header-dbe71793.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/images/logo.svg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2026/08/featured-ehpmi-workshop-2026-kyrgyzstan-530x530.webp"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-71e10d27.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/cache/wpo-minify/1792298948/assets/wpo-minify-footer-d9df257f.min.js"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2026/04/2026-04-08-astana-3-530x530.jpg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2026/04/2026-04-11-Tbilisi-3-530x530.jpeg"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/overpass/qFdB35WCmI96Ajtm81GgY9nqxzUKg1o.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/overpass/qFdH35WCmI96Ajtm81GlU9vgwBcI.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/fontawesome/webfonts/fa-brands-400.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "https://dev.ehpmi.org/wp-content/themes/ehpmi/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2"
+    }
+  ],
+  "errors": [],
+  "postRequests": []
+}

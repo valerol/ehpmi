@@ -133,6 +133,8 @@ Acceptance: Page templates have stable ownership, measured semantic defects are 
 
 ## Stage 8 — Cross-entity media and build dependencies
 
+Status: `ACCEPTED`, 2026-10-18 (Asia/Makassar). Evidence: `ops/releases/entity-stage8-2026-10-18/`. Stage 8A exports the exact 31-folder/401-relation map, classifies all 467 retained attachments, fills 63 meaningful alt metadata values and five empty body alts in four records, and fixes/retests the WP-Optimize date warning. Stage 8B verifies self-hosted Bootstrap 5.1.3, Font Awesome Free 6.7.2 and exact Overpass v19 assets; LESS 4.2.2 reproduces accepted CSS byte for byte. The operator directly confirmed homepage, actual Projects and About/EHPMI visual QA at desktop/390 and the native Media Library UI. After separate explicit authorization, exactly the dev RML plugin directory (296 files, 6584 KiB) was deleted; export, database tables and uploads remain retained. Post-deletion checks pass. Stage 9 has not started.
+
 This stage closes supporting debts after entity markup and fields have stabilized.
 
 1. Export the Real Media Library map of 31 folders and 401 relations.

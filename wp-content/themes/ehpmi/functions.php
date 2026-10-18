@@ -23,17 +23,21 @@ function ehpmi_asset_version( $relative_path ) {
 function ehpmi_enqueue_assets() {
     wp_enqueue_style(
         'ehpmi-fonts',
-        'https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap',
+        get_theme_file_uri( '/assets/vendor/overpass/overpass.css' ),
         array(),
-        null
+        '19'
     );
-    wp_enqueue_style( 'ehpmi-bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css', array(), '5.1.3' );
+    wp_enqueue_style( 'ehpmi-bootstrap', get_theme_file_uri( '/assets/vendor/bootstrap/bootstrap.min.css' ), array(), '5.1.3' );
     wp_enqueue_style( 'ehpmi-theme', get_stylesheet_uri(), array( 'ehpmi-bootstrap' ), ehpmi_asset_version( '/style.css' ) );
     wp_enqueue_style( 'ehpmi-site', get_theme_file_uri( '/css/style.css' ), array( 'ehpmi-theme' ), ehpmi_asset_version( '/css/style.css' ) );
     wp_enqueue_style( 'ehpmi-regions', get_theme_file_uri( '/css/structural-regions.css' ), array( 'ehpmi-site' ), ehpmi_asset_version( '/css/structural-regions.css' ) );
 
-    wp_enqueue_script( 'ehpmi-font-awesome', 'https://kit.fontawesome.com/51d28c3d4c.js', array(), null, false );
-    wp_enqueue_script( 'ehpmi-bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js', array(), '5.1.3', true );
+    // Match the accepted kit's free 6.7.2 fonts and compatibility faces locally.
+    wp_enqueue_style( 'ehpmi-font-awesome', get_theme_file_uri( '/assets/vendor/fontawesome/css/all.min.css' ), array(), '6.7.2' );
+    foreach ( array( 'v4-shims', 'v4-font-face', 'v5-font-face' ) as $compatibility ) {
+        wp_enqueue_style( 'ehpmi-font-awesome-' . $compatibility, get_theme_file_uri( '/assets/vendor/fontawesome/css/' . $compatibility . '.min.css' ), array( 'ehpmi-font-awesome' ), '6.7.2' );
+    }
+    wp_enqueue_script( 'ehpmi-bootstrap', get_theme_file_uri( '/assets/vendor/bootstrap/bootstrap.bundle.min.js' ), array(), '5.1.3', true );
     wp_enqueue_script(
         'ehpmi-site',
         get_theme_file_uri( '/onload.js' ),
@@ -77,9 +81,6 @@ add_filter( 'style_loader_tag', 'ehpmi_style_loader_tag', 10, 2 );
  */
 function ehpmi_script_loader_tag( $tag, $handle ) {
     $attributes = array(
-        'ehpmi-font-awesome' => array(
-            'crossorigin' => 'anonymous',
-        ),
         'ehpmi-bootstrap' => array(
             'integrity'   => 'sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p',
             'crossorigin' => 'anonymous',
@@ -102,24 +103,6 @@ function ehpmi_script_loader_tag( $tag, $handle ) {
     return $processor->get_updated_html();
 }
 add_filter( 'script_loader_tag', 'ehpmi_script_loader_tag', 10, 2 );
-
-/**
- * Preserve the font connection hints that used to be hardcoded in header.php.
- */
-function ehpmi_resource_hints( $urls, $relation_type ) {
-    if ( 'preconnect' !== $relation_type ) {
-        return $urls;
-    }
-
-    $urls[] = 'https://fonts.googleapis.com';
-    $urls[] = array(
-        'href'        => 'https://fonts.gstatic.com',
-        'crossorigin' => 'anonymous',
-    );
-
-    return $urls;
-}
-add_filter( 'wp_resource_hints', 'ehpmi_resource_hints', 10, 2 );
 
 /**
  * Keep ACF field-group structure in Git for deterministic deployments.

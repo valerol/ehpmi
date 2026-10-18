@@ -1,0 +1,111 @@
+stage: 8
+release: entity-stage8-2026-10-18
+status: ACCEPTED
+acceptance_date: 2026-10-18
+acceptance_timezone: Asia/Makassar
+acceptance_source: OPERATOR_DIRECT_CONFIRMATION
+acceptance_evidence: manual-acceptance.md
+environment: dev.ehpmi.org
+date: 2026-10-18
+baseline_commit: 68f6ce2a7d3c9a359e7df8014ab922682b403415
+branch: refactor/dev-2026-08-25
+remote_baseline_verified_before_changes: 68f6ce2a7d3c9a359e7df8014ab922682b403415
+code_source: canonical_Git_checkout_accepted_Stage7
+implementation_commit: RECORDED_IN_GIT_OUTCOME
+push_status: PENDING_AUTHORIZED_ACCEPTED_STAGE8_PUSH
+subreleases:
+  media_and_plugin_dependencies: STAGE_8A_VERIFIED
+  frontend_assets: assets-visual-release/manifest.yml
+database:
+  attachment_count: 467
+  meaningful_public_media: 379
+  administrative_unpublished_provenance_media: 10
+  orphaned_retained_media: 78
+  semantic_classification_meaningful: 389
+  semantic_classification_orphaned: 78
+  unclassified_media: 0
+  meaningful_public_images_with_metadata_alt: 362
+  site_icon_non_img_exception: 210
+  alt_metadata_updates: 63
+  body_alt_updates: 5
+  changed_body_record_ids: [21, 461, 1690, 1692]
+  marker: ehpmi_stage8_media_applied
+  existing_other_body_identity_and_meta_values: UNCHANGED
+  widget_options: BYTE_HASH_UNCHANGED
+  subscriber_rows: 172
+  all_newsletter_table_counts_and_hashes: UNCHANGED
+  fixture_2458: TRASH_ORDER_15_UNCHANGED
+real_media_library:
+  version: 4.23.0
+  activation: inactive
+  folders_exported: 31
+  relations_exported: 401
+  database_tables_and_rows: RETAINED_UNCHANGED
+  plugin_files: 0
+  plugin_files_before_deletion: 296
+  plugin_disk_usage_kib_before_deletion: 6584
+  plugin_files_deleted: 296
+  deletion_gate: PASS_EXPLICIT_OPERATOR_AUTHORIZATION_AND_GUARDED_DELETION
+  deletion_utc: 2026-10-18T09:14:05Z
+  deletion_path: /home2/nykvymmy/dev.ehpmi.org/wp-content/plugins/real-media-library-lite
+  recovery_archive: /home2/nykvymmy/backups/entity-stage8-2026-10-18/rml-plugin-before.tar.gz
+  deletion_evidence: rml-file-deletion/rml-file-deletion.json
+  upload_moves_or_renames: 0
+wp_optimize:
+  version: 4.6.1
+  local_patch: ../../patches/wp-optimize-4.6.1-date.patch
+  upstream_sha256: 2626d9eae8054e2c95b3e913cd248ab010b142373163b754399a2260b3c9ff4f
+  patched_sha256: fc52f550d41c8506a55fe8d7bd65b37bfbbc2c59e8fb7165d223ad3ea4eda682
+  ordinary_cli_post_updates_without_warning: 5
+  qa_only_modification_timestamps: RESTORED
+build:
+  less: 4.2.2
+  command: npm run build:css
+  verification: npm ci --ignore-scripts && npm run check
+  css_byte_parity: PASS
+  accepted_css_sha256: 20f62ccf02d47fcaa619cb3409a799eb6495109d43715a1f18f178ab97701487
+qa:
+  stage8_data_and_metadata: PASS
+  rollback_preconditions: PASS_VALIDATE_ONLY
+  retained_stage3_stage4_stage5: PASS
+  retained_stage6_current_widget_contract: PASS
+  retained_stage7_current_alt_and_widget_contract: PASS
+  native_media_library_records: PASS_467
+  capability_checked_internal_media_REST_save_reload: PASS_FOUR_REPRESENTATIVES
+  authenticated_browser_admin_UI: PASS_OPERATOR_CONFIRMATION_GRID_ORIGINALS_AND_ALT_VISIBILITY
+  before_after_public_views: 18
+  retained_404_fallback_views: 2
+  heading_geometry_parity: PASS_18_PUBLIC_PLUS_2_FALLBACK_VIEWS
+  actual_projects_listing_visual: PASS_OPERATOR_DESKTOP_390_CONFIRMATION
+  actual_about_ehpmi_visual: PASS_OPERATOR_DESKTOP_390_CONFIRMATION
+  post_delete_http_home_projects_about_media: PASS
+  hero_before_after_screenshots: CAPTURED_AND_INSPECTED
+  hero_region_raw_metrics: NULL_OLD_SELECTOR_DOCUMENTED
+  map_footer_text_and_icon_metrics: PASS_DESKTOP_390
+  newsletter_visible_label_and_containment: PASS_DESKTOP_390
+  map_keyboard_cf7_client_validation_and_tab_order: PASS
+  target_CDN_requests_after: 0
+  browser_JS_errors: 0
+  form_submissions: 0
+  production_isolation: PASS_ALL_PRE_POST_CONTROLS_IDENTICAL
+  post_delete_regression: PASS_NATIVE_MEDIA_REST_ASSETS_RETAINED_STAGES_3_TO_8
+  post_delete_production_isolation: PASS_ALL_ORIGINAL_CONTROLS_IDENTICAL
+  post_delete_summary: rml-file-deletion/summary.json
+manual_gate: manual-acceptance.md
+debts:
+  EH-D009: CLOSED
+  EH-D010: CLOSED
+  EH-D014: CLOSED
+  EH-D015: CLOSED
+  EH-D018: CLOSED
+  EH-D019: RETAINED_STAGE9_INTEGRATED_REGRESSION
+domain_protocol: v0.6.6
+production_writes: 0
+subscriber_changes: 0
+mail_sends: 0
+stage9_started: false
+evidence_transport:
+  original_server_body_plan_and_apply_receipt: RETAINED_IN_BACKUP_DIRECTORY
+  local_body_plan: RECONSTRUCTED_FROM_VERIFIED_SQL_AND_PRE_POST_INVENTORY
+  local_apply_receipt: TRANSCRIBED_COMPLETED_DEPLOY_TOOL_RESPONSE
+  final_SSH_URL_lookup: INTERRUPTED_AFTER_ESCALATION_WAIT_NO_ADDITIONAL_WRITE

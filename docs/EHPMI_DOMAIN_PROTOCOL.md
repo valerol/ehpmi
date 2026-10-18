@@ -1,6 +1,6 @@
 # Доменный протокол EHPMI
 
-Версия: `v0.6.5`
+Версия: `v0.6.6`
 Статус: `DRAFT`  
 Дата снимка: `2026-10-18`
 Уровень доменного применения: `D3`  
@@ -225,6 +225,9 @@
 24. Краткие сведения Project хранятся в группе ACF `Project facts`. `post_excerpt` остаётся кратким источником для карточек, но не вставляется Gutenberg-блоком в тело материала и не парсится шаблоном во время каждого запроса.
 25. Таблица данных содержит `caption`, `thead`, заголовочные `th` и `scope`; iframe карты содержит `title`, `loading="lazy"` и `referrerpolicy`.
 26. Структурные Pages разрешаются через `inc/page-resolver.php`, а `singular.php` владеет document loop и навигацией; WordPress/`ehpmi-core` сохраняют URL ownership. Пустые managed Pages получают screen-reader H1 без изменения принятого вида; директории имеют последовательную иерархию headings. Каждая native map summary получает имя своей Country Page. Contact fragment `#contact-us` принадлежит H2. Newsletter остаётся нативным widget с видимой Email label и проверенным containment на desktop/390 px.
+27. Принятый Stage 8 на dev фиксирует локальные Bootstrap `5.1.3`, Font Awesome Free `6.7.2` с compatibility faces и Overpass `v19`; полные source/hash/license сведения находятся в `ops/build/vendor-assets.json`. `npm ci --ignore-scripts` и `npm run check` проверяют воспроизводимые зависимости и byte-for-byte LESS/CSS parity. WordPress server не требует Node runtime.
+28. Stage 8 деактивировал Real Media Library и после отдельного явного разрешения Owner удалил только dev plugin directory: 296 файлов, 6584 KiB. Экспортированы 31 папка и 401 связь; таблицы, связи, 467 attachments и все upload paths сохранены. Все attachments классифицированы: 379 имеют текущие публичные связи, 10 зарезервированы для administrative/unpublished/provenance use, 78 не имеют текущего владельца в проверенном scope и сохраняются без удаления. Для 362 смысловых изображений с текущим публичным контекстом metadata alt непустой; site icon имеет отдельный non-img contract. Administrative media проходят новую проверку alt перед будущей публикацией. RML исключён из текущих recovery dependencies; проверенный plugin archive сохранён только для отдельно запрошенного rollback.
+29. WP-Optimize `4.6.1` на dev имеет локальный hash-guarded patch `ops/patches/wp-optimize-4.6.1-date.patch`: строка даты разбирается через `explode('-', $post_date)` до `list()`. Пять обычных CLI `wp_update_post()` и frontend regression проходят без WP-Optimize warning; exact upstream/patched SHA-256 записаны в `ops/plugins.yml`. Новый upstream version требует повторного рассмотрения patch, а не слепого применения. Stage 8 принят Owner 2026-10-18 (Asia/Makassar), включая desktop/390 homepage, Projects, About/EHPMI и native Media Library UI; Stage 9 не начинался.
 
 ## 6. Проектные правила
 
@@ -585,25 +588,25 @@ Backup считается сохранённым только после:
 
 Текущая проверенная версия WordPress Core на dev: `7.1`. Backup, QA и процедура возврата на `7.0.4` зафиксированы в `ops/releases/wordpress-core-7.1-2026-08-30/`.
 
-Обычные plugins не копируются в backup. Они переустанавливаются по manifest.
+Обычные plugins не копируются в backup. Они переустанавливаются по manifest. Для отдельно разрешённого удаления RML сохранён точечный rollback archive; запись `removed` пропускается при восстановлении текущего выпуска и не означает обязательную установку RML.
 
-Проверенный dev manifest после media-layout refactor `2026-09-01`:
+Проверенный dev manifest после принятого Stage 8 `2026-10-18` (полные restore policies и patch hashes: `ops/plugins.yml`):
 
 | Plugin slug | Version | State/source |
 |---|---:|---|
-| `ehpmi-core` | 1.1.0 | active; Git repository |
+| `ehpmi-core` | 1.2.1 | active; Git repository |
 | `advanced-custom-fields` | 6.8.9 | active; WordPress.org |
 | `akismet` | 5.7.2 | active; WordPress.org |
 | `breadcrumb-navxt` | 7.5.2 | active; WordPress.org |
 | `contact-form-7` | 6.1.7 | active; WordPress.org |
 | `youtube-embed-plus` | 14.2.6 | active; WordPress.org |
 | `force-regenerate-thumbnails` | 2.3.0 | active; WordPress.org |
-| `allow-html-in-category-descriptions` | 1.2.5 | inactive; rollback history |
+| `allow-html-in-category-descriptions` | 1.2.5 | absent from installed-plugin preflight; historical rollback dependency, not deleted by Stage 8 |
 | `newsletter` | 9.3.5 | active; WordPress.org |
-| `real-media-library-lite` | 4.23.0 | active on dev; temporary migration dependency, not recovery architecture |
+| `real-media-library-lite` | 4.23.0 | removed on dev with explicit authorization; verified archive for rollback only |
 | `wpcf7-recaptcha` | 1.5.0 | active; WordPress.org |
-| `remove-category-url` | 1.2.4 | inactive; rollback history |
-| `wp-optimize` | 4.6.1 | active; WordPress.org |
+| `remove-category-url` | 1.2.4 | absent from installed-plugin preflight; historical rollback dependency, not deleted by Stage 8 |
+| `wp-optimize` | 4.6.1 | active; WordPress.org plus accepted hash-guarded date parsing patch |
 | `wp-robots-txt` | 1.3.6 | active; WordPress.org |
 
 `wp-content/mu-plugins/sso.php` версии 0.5 является hosting-specific integration и не переносится автоматически на новый hosting.
@@ -1066,24 +1069,28 @@ Rollback получает собственный recovery evidence. Возвра
 | `EH-D006` | Первый Drive backup package не создан | CLOSED | DB, 52 media parts, manifests и checksums загружены; Drive readback прошёл |
 | `EH-D007` | Recovery rehearsal не выполнена | OPEN | QA-D PASS и recovery evidence |
 | `EH-D008` | Production release procedure не испытана | OPEN | Первый принятый release с rollback evidence |
-| `EH-D009` | Внешние Google Fonts, Bootstrap и Font Awesome ещё загружаются через CDN | OPEN | Локальные либо воспроизводимо собираемые assets с visual QA |
-| `EH-D010` | Для LESS/CSS нет воспроизводимой build configuration | OPEN | Зафиксированный build command и совпадающий compiled CSS |
+| `EH-D009` | Внешние Google Fonts, Bootstrap и Font Awesome ещё загружаются через CDN | CLOSED | Stage 8B: 28 локальных hash-pinned files, licenses, zero targeted CDN requests, desktop/390 geometry parity; operator visual acceptance 2026-10-18 |
+| `EH-D010` | Для LESS/CSS нет воспроизводимой build configuration | CLOSED | Stage 8: lockfile, LESS 4.2.2, npm build/check commands и byte-for-byte parity с принятым CSS; принят 2026-10-18 |
 | `EH-D011` | Authenticated Admin edit/save round-trip не выполнен | OPEN | Проверено сохранение Hero, Member, Partner, Material, Project facts и block widgets без изменения production |
 | `EH-D012` | Миграция organization content model | CLOSED | Dev содержит 7 `member`, 1 `partner`, 0 `partner2`; ACF, templates и Materials проверены в `ops/releases/content-model-2026-08-31/` |
 | `EH-D013` | Category-based routing и зависимость от Remove Category URL | CLOSED | Dev использует Pages + `project`/private taxonomies, 141 явный redirect и стабильные breadcrumb roots; evidence находится в `ops/releases/routing-refactor-2026-08-31/` |
-| `EH-D014` | Real Media Library ещё активен на dev | OPEN | Экспортирована карта 31 папки/401 связи; создан DB backup; выполнены dev deactivation, reference scan, frontend/admin QA и отдельно подтверждённое удаление plugin files; обновлён manifest |
-| `EH-D015` | Alt metadata вне проверенного scope опубликованных материалов ещё не классифицированы полностью | OPEN | Для остальных 44 материалов проверены 270 content images и 258 уникальных attachments; для закрытия долга нужно отдельно классифицировать неиспользуемые attachments и иные административные media как meaningful, decorative или orphaned |
+| `EH-D014` | Вывод Real Media Library с dev | CLOSED | Stage 8 export 31/401, DB backup + Drive readback, deactivation, reference scan, frontend/native Media Library/REST QA; после отдельного разрешения Owner удалён точный dev plugin directory (296 files), post-delete checks пройдены; DB tables/export/uploads и production сохранены |
+| `EH-D015` | Alt metadata вне проверенного scope опубликованных материалов ещё не классифицированы полностью | CLOSED | Stage 8: все 467 attachments классифицированы; 63 metadata alt и 5 body alt заполнены; 362 meaningful public images имеют metadata alt, site icon исключён по роли; administrative/unused media сохранены с publication gates; operator Media UI acceptance 2026-10-18 |
 | `EH-D016` | Gallery использовалась для одиночных изображений и пар, отсутствовал размерный контракт | CLOSED | 56 одиночных Gallery преобразованы в Image, 87 пар — в Columns; специализированные photo-pair styles `4:3`, `3:2`, `3:4` применены к project 761 и ещё 81 паре в остальных 44 материалах; responsive desktop/mobile QA и release verifiers пройдены на dev |
 | `EH-D017` | Семантическая структура записей и листингов зависела от generic template и дублирующих excerpt blocks | CLOSED | Dev release `html-structure-2026-09-04`: отдельные single templates, один main, article/time/nav landmarks, 28 ACF Project facts, 39 дублирующих блоков удалены, 17 карт и 2 таблицы исправлены; desktop/mobile frontend QA пройден |
-| `EH-D018` | WP-Optimize 4.6.1 выдаёт PHP warning при массовом `wp_update_post()` | OPEN | Обновление или локально проверенное исправление `class-wpo-cache-rules.php`: дата должна разбираться через `explode`, после чего CLI migration проходит без warning и frontend regression |
+| `EH-D018` | WP-Optimize 4.6.1 выдаёт PHP warning при массовом `wp_update_post()` | CLOSED | Stage 8: minimal explode patch, upstream/patched hashes, 5 обычных CLI updates без warning и frontend regression; QA-only timestamps восстановлены; принят 2026-10-18 |
 | `EH-D019` | Stage 7 Newsletter repair принят на desktop/390 px; остаётся интегрированная проверка Stage 9 | OPEN_STAGE9_REGRESSION | Stage 7 diagnosis/repair и прямое подтверждение оператора записаны в `ops/releases/entity-stage7-2026-10-18/`; реальная подписка/рассылка не выполнялась. Для закрытия нужен Stage 9 desktop/390 px regression принятой формы. Историческое происхождение дефекта не установлено; причинная связь со Stage 5 не заявляется |
 
 ## 20. Статус принятия
+
+Текущая принятая версия `v0.6.6` фиксирует завершённый Stage 8 на dev, 2026-10-18 (Asia/Makassar). Оператор прямо подтвердил desktop/390 visual QA для homepage, Projects и About/EHPMI и native Media Library UI. После отдельного разрешения удалён только dev RML plugin directory (296 файлов/6584 KiB); post-delete проверки Stages 3–8, Media REST/data, файлов/alt, 31/401 RML rows, 172 subscribers, fixture 2458, public HTTP и production isolation пройдены. `EH-D009`, `EH-D010`, `EH-D014`, `EH-D015`, `EH-D018` закрыты. Evidence: `ops/releases/entity-stage8-2026-10-18/`. Stage 9 не начинался; QA-D остаётся NOT PASSED, production deployment не разрешён.
+
+### 20.1. Принятый предыдущий Stage 7
 
 Версия `v0.6.5` фиксирует принятый Stage 7 на dev поверх принятого Stage 6 baseline. 2026-10-18 (Asia/Makassar) оператор прямо подтвердил: «Hero, Map и Footer восстановлены на desktop и 390. Newsletter отображается корректно.» Дополнительные шаги браузерного Admin edit/save после ремонта из этой фразы не выводятся.
 
 Stage 7 включает Page resolver ownership, измеренные semantic/map/anchor/iframe исправления и Newsletter containment/label repair. Инцидент потери widget tails после предложенного нами теста сохранения сохранён в evidence: первоначально несколько top-level blocks были ошибочно записаны в один widget, тогда как Widgets editor сохраняет первый root. Точные исходные значения восстановлены, выполнен безопасный single-Group refactor и capability-checked REST save/reload; оператор подтвердил восстановленный frontend. Это компенсированный инцидент, а не утверждение, что исходные тексты отсутствовали. Полная хронология и acceptance находятся в `ops/releases/entity-stage7-2026-10-18/`.
 
-Принятый Stage 5 dormant Testimonial contract сохраняется: семь Draft, непубличный тип и default-false activation. `EH-D019` остаётся открыт только для Stage 9 integrated regression; `EH-D007`/`EH-D011` остаются общими recovery/Admin долгами. Production не изменён. Версия не разрешает production deployment, не заявляет QA-D и не считает Real Media Library уже удалённым; Stage 8 не начат.
+Принятый Stage 5 dormant Testimonial contract сохраняется: семь Draft, непубличный тип и default-false activation. `EH-D019` остаётся открыт только для Stage 9 integrated regression; `EH-D007`/`EH-D011` остаются общими recovery/Admin долгами. Production не изменён. Ограничения production deployment и QA-D сохраняются в `v0.6.6`; выполненное позже отдельное удаление RML зафиксировано в принятом Stage 8 выше.
 
 Следующая версия создаётся после очередного принятого этапа refactor. Версия `v1.0.0` допускается только после практической репетиции восстановления.

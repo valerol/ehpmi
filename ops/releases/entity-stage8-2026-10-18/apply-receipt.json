@@ -1,0 +1,10 @@
+{
+  "provenance": "Recorded from the completed deploy-media.sh SSH tool response; original media-apply.json remains in the server backup. Its later local download was interrupted.",
+  "mode": "apply",
+  "expected_alt_updates": 63,
+  "alt_updates": 63,
+  "body_posts": {"1690": 1, "1692": 1, "461": 1, "21": 2},
+  "plugin_files_deleted": 0,
+  "uploads_moved": 0,
+  "status": "PASS"
+}

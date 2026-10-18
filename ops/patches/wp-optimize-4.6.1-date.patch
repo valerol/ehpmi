@@ -1,0 +1,11 @@
+--- a/cache/class-wpo-cache-rules.php
++++ b/cache/class-wpo-cache-rules.php
+@@ -236,7 +236,7 @@
+ 			
+ 			// delete all archive pages for post.
+ 			$post_date = get_post_time('Y-m-j', false, $post_id);
+-			list($year, $month, $day) = $post_date;
++			list($year, $month, $day) = explode('-', $post_date);
+ 
+ 			$archive_links = array(
+ 				get_year_link($year),

@@ -1,0 +1,33 @@
+stage: 8
+environment: dev.ehpmi.org
+database: nykvymmy_ehpmidev
+created_utc: 2026-10-18T05:25:53Z
+remote_path: /home2/nykvymmy/backups/entity-stage8-2026-10-18/20261018T052553Z_nykvymmy_ehpmidev_pre-stage8.sql.gz
+local_verification_copy: /private/tmp/ehpmi-stage8-work/20261018T052553Z_nykvymmy_ehpmidev_pre-stage8.sql.gz
+bytes: 493867
+sha256: 2b8c7ee05d8383ee728f6d5470f796cdf9485adf1b65bb286ed60e6780508307
+remote_gzip_test: PASS
+local_gzip_test: PASS
+local_remote_sha256_match: PASS
+drive:
+  file_id: 174wORjr9AW7gJdjKMeOmClTh2ywYP1QS
+  url: https://drive.google.com/file/d/174wORjr9AW7gJdjKMeOmClTh2ywYP1QS/view?usp=drivesdk
+  parent_id: 1d0pVYifHrEsCJbH4Ox6ueqfyvQeGeYFj
+  name_read_back: 20261018T052553Z_nykvymmy_ehpmidev_pre-stage8.sql.gz
+  mime_read_back: application/gzip
+  bytes_read_back: 493867
+  metadata_readback: PASS_NAME_MIME_BYTES_PARENT
+rollback:
+  preceding_commit: 68f6ce2a7d3c9a359e7df8014ab922682b403415
+  root: /home2/nykvymmy/backups/entity-stage8-2026-10-18
+  functions_copy: files/functions.php
+  functions_sha256: 91db69c27f131feeb25923e403b541f91867d796aacea316168f0f8c2ea4ef68
+  wp_optimize_copy: files/class-wpo-cache-rules.php
+  wp_optimize_sha256: 2626d9eae8054e2c95b3e913cd248ab010b142373163b754399a2260b3c9ff4f
+  rml_plugin_archive: rml-plugin-before.tar.gz
+  rml_plugin_archive_sha256: e7c0ebd3d77205987a2d4256fa36dbdf308efe75ecc7efbcdcc14f0b211531ca
+  rml_plugin_archive_role: RECOVERY_SOURCE_FOR_AUTHORIZED_296_FILE_DELETION
+  plugin_restore_required_before_data_rollback: true
+  data_delta: alt-plan.json_and_body-plan.json
+  validate_only: PASS
+  full_rollback_executed: false

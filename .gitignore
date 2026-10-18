@@ -36,3 +36,6 @@ Thumbs.db
 *.env
 *.key
 *.pem
+
+# Reproducible frontend build dependencies (lockfile is tracked)
+/node_modules/

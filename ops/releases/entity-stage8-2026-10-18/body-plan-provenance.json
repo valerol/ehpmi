@@ -1,0 +1,16 @@
+{
+  "provenance": "Reconstructed locally after evidence download was interrupted; original server body-plan.json remains in the stage backup.",
+  "body_sources": [
+    "pre-stage read-only inventory",
+    "post-stage read-only inventory"
+  ],
+  "timestamp_source": "verified pre-stage SQL archive",
+  "record_ids": [
+    21,
+    461,
+    1690,
+    1692
+  ],
+  "byte_identity_to_original_server_json": "NOT_CLAIMED",
+  "semantic_before_after_values_verified": true
+}

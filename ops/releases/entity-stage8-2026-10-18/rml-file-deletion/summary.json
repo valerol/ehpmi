@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "checks": {
+    "production_all_controls_unchanged": true,
+    "RML_absent_from_installed_plugin_list": true,
+    "newsletter_all_table_counts_hashes_unchanged": true,
+    "subscribers172": true,
+    "fixture_trash15": true,
+    "attachments467_files_exist": true,
+    "meaningful_public_alt362": true,
+    "widgets_unchanged": true,
+    "body_content_unchanged_by_deletion": true,
+    "folder31_relation401": true,
+    "RML_rows_unchanged": true,
+    "post-delete-stage8.json": true,
+    "post-delete-native-assets.json": true,
+    "post-delete-media-rest.json": true,
+    "post-delete-stage6.json": true,
+    "post-delete-stage7.json": true,
+    "post-delete-stage3.txt": true,
+    "post-delete-stage4.txt": true,
+    "post-delete-stage5.txt": true,
+    "HTTP_home": true,
+    "HTTP_projects": true,
+    "HTTP_about": true
+  },
+  "failures": [],
+  "public_urls": [
+    {
+      "url": "https://dev.ehpmi.org/",
+      "status": 200,
+      "h1": 1,
+      "main": 1,
+      "html_sha256": "db62dab42ea9d006583a3edaad9f6026395dbe3cd1c925d229c0c5fed7d2797d"
+    },
+    {
+      "url": "https://dev.ehpmi.org/projects/",
+      "status": 200,
+      "h1": 1,
+      "main": 1,
+      "html_sha256": "8706b0223df4590e2eaf6d04c4c60cbc722730c03f5e5f171893e348e681cd25"
+    },
+    {
+      "url": "https://dev.ehpmi.org/about/ehpmi/",
+      "status": 200,
+      "h1": 1,
+      "main": 1,
+      "html_sha256": "590d8f99871029f8fc16ade90f1c9accb32b8407615a1b505b5ba44b9f30b10b"
+    },
+    {
+      "url": "https://dev.ehpmi.org/wp-content/uploads/2022/08/human-health-institute.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "content_length": 52252
+    }
+  ],
+  "deletion_writes_to_database": 0,
+  "production_writes": 0,
+  "uploads_deleted": 0,
+  "stage9_started": false
+}

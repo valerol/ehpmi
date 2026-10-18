@@ -1,0 +1,9 @@
+{
+    "mode": "validate-rollback",
+    "expected_alt_updates": 63,
+    "alt_updates": 0,
+    "body_posts": [],
+    "plugin_files_deleted": 0,
+    "uploads_moved": 0,
+    "status": "PASS"
+}

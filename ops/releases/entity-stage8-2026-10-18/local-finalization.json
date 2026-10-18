@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "phase": "INITIAL_LOCAL_HANDOFF_BEFORE_OPERATOR_ACCEPTANCE_AND_RML_DELETION",
+  "scope": "Bounded local finalization after the interrupted read-only SSH lookup; no further server or GitHub calls",
+  "canonical_repository": "/Users/lera/Codex/EHPMI/repository",
+  "head": "68f6ce2a7d3c9a359e7df8014ab922682b403415",
+  "branch": "refactor/dev-2026-08-25",
+  "prepared_files_verified_equal_to_canonical_before_this_report": 103,
+  "canonical_missing_files": [],
+  "canonical_differing_files": [],
+  "reconstructed_body_delta_hashes_match_original_dry_run": true,
+  "payload_validation": {"json": 27, "php": 9, "javascript": 6, "yaml": 4, "result": "PASS"},
+  "npm_clean_install_and_check_in_prepared_copy": "PASS",
+  "canonical_vendor_asset_hashes": "PASS_28",
+  "canonical_functions_php_lint": "PASS",
+  "canonical_git_diff_whitespace": "PASS",
+  "commit": "NOT_CREATED",
+  "push": "NOT_RUN",
+  "stage9": "NOT_STARTED",
+  "RML_plugin_deletion": "NOT_PERFORMED"
+}

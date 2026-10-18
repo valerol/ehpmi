@@ -1,0 +1,201 @@
+{
+  "font_css_request": "https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap",
+  "files": [
+    {
+      "path": "bootstrap/bootstrap.min.css",
+      "source": "npm:bootstrap@5.1.3/dist/css/bootstrap.min.css",
+      "version": "5.1.3",
+      "bytes": 163873,
+      "sha256": "62f74b1cf824a89f03554c638e719594c309b4d8a627a758928c0516fa7890ab"
+    },
+    {
+      "path": "bootstrap/bootstrap.bundle.min.js",
+      "source": "npm:bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js",
+      "version": "5.1.3",
+      "bytes": 78129,
+      "sha256": "f5210fa3e7f0245a4c51eb7f280092c0ef99fdd28c45e17dab8cc5854fdf4fd3"
+    },
+    {
+      "path": "bootstrap/LICENSE",
+      "source": "npm:bootstrap@5.1.3/LICENSE",
+      "version": "5.1.3",
+      "bytes": 1131,
+      "sha256": "5b30317c9c35bb6f05101c501de866cc6852ab9b655dcf5941733f6644c3ebd0"
+    },
+    {
+      "path": "fontawesome/css/all.min.css",
+      "source": "npm:@fortawesome/fontawesome-free@6.7.2/css/all.min.css",
+      "version": "6.7.2",
+      "bytes": 73890,
+      "sha256": "74005d7c17d4a02f2f25404ec0655d9bc2fdaa53166874c87d7b7eec69d9088a"
+    },
+    {
+      "path": "fontawesome/css/v4-shims.min.css",
+      "source": "npm:@fortawesome/fontawesome-free@6.7.2/css/v4-shims.min.css",
+      "version": "6.7.2",
+      "bytes": 21211,
+      "sha256": "6650a50d8591259400ed356b424ff4fe633bc0d1fc7be58e17c78fbb1312a707"
+    },
+    {
+      "path": "fontawesome/css/v4-font-face.min.css",
+      "source": "npm:@fortawesome/fontawesome-free@6.7.2/css/v4-font-face.min.css",
+      "version": "6.7.2",
+      "bytes": 1736,
+      "sha256": "16d8cd93d174e111c7da9d229ab85eb899d3397d5c30532db49ddf8b3a4e80bb"
+    },
+    {
+      "path": "fontawesome/css/v5-font-face.min.css",
+      "source": "npm:@fortawesome/fontawesome-free@6.7.2/css/v5-font-face.min.css",
+      "version": "6.7.2",
+      "bytes": 794,
+      "sha256": "e60e583ce71ef95d09f8816d1431ffe9fb364f029f558daf7f7acf785a5818e7"
+    },
+    {
+      "path": "fontawesome/LICENSE.txt",
+      "source": "npm:@fortawesome/fontawesome-free@6.7.2/LICENSE.txt",
+      "version": "6.7.2",
+      "bytes": 7427,
+      "sha256": "9b914eae88817d63b576eab5aafde7068c7a1abae125d7cdfb034f1da43a9afc"
+    },
+    {
+      "path": "fontawesome/webfonts/fa-brands-400.woff2",
+      "source": "npm:@fortawesome/fontawesome-free@6.7.2/webfonts/fa-brands-400.woff2",
+      "version": "6.7.2",
+      "bytes": 118684,
+      "sha256": "d7236a19bf23cbb2027280e8f51dc99d6c45976a2ed60de73382b034b18a2b68"
+    },
+    {
+      "path": "fontawesome/webfonts/fa-regular-400.woff2",
+      "source": "npm:@fortawesome/fontawesome-free@6.7.2/webfonts/fa-regular-400.woff2",
+      "version": "6.7.2",
+      "bytes": 25472,
+      "sha256": "e3456d1283b9d75337a773dfd147bf908fd02c01b4bf48576d8603a69b13cbe5"
+    },
+    {
+      "path": "fontawesome/webfonts/fa-solid-900.woff2",
+      "source": "npm:@fortawesome/fontawesome-free@6.7.2/webfonts/fa-solid-900.woff2",
+      "version": "6.7.2",
+      "bytes": 158220,
+      "sha256": "aa75998623a391e61c6901794ace832e3ecdd288b56d608f21bea0411acc0b8e"
+    },
+    {
+      "path": "fontawesome/webfonts/fa-v4compatibility.woff2",
+      "source": "npm:@fortawesome/fontawesome-free@6.7.2/webfonts/fa-v4compatibility.woff2",
+      "version": "6.7.2",
+      "bytes": 4796,
+      "sha256": "0ce9033c69dc714f5f45ef9bf17d55e4c46bcdfad6799a4e92b38e7781bf86bd"
+    },
+    {
+      "path": "fontawesome/webfonts/fa-brands-400.ttf",
+      "source": "npm:@fortawesome/fontawesome-free@6.7.2/webfonts/fa-brands-400.ttf",
+      "version": "6.7.2",
+      "bytes": 210792,
+      "sha256": "808443ae6c8204395add8543da8a90a60b9376fb0f87ed8e8ea37d109596d805"
+    },
+    {
+      "path": "fontawesome/webfonts/fa-regular-400.ttf",
+      "source": "npm:@fortawesome/fontawesome-free@6.7.2/webfonts/fa-regular-400.ttf",
+      "version": "6.7.2",
+      "bytes": 68064,
+      "sha256": "54cf6086f7bb21f9d072ad494a19b4681fa516dd0a14cee52da01d3651a913a3"
+    },
+    {
+      "path": "fontawesome/webfonts/fa-solid-900.ttf",
+      "source": "npm:@fortawesome/fontawesome-free@6.7.2/webfonts/fa-solid-900.ttf",
+      "version": "6.7.2",
+      "bytes": 426112,
+      "sha256": "d2f0593540b0e33ba6de255a54f272d466e31144806956bea8cfdbf7edffc9bd"
+    },
+    {
+      "path": "fontawesome/webfonts/fa-v4compatibility.ttf",
+      "source": "npm:@fortawesome/fontawesome-free@6.7.2/webfonts/fa-v4compatibility.ttf",
+      "version": "6.7.2",
+      "bytes": 10836,
+      "sha256": "30f6abf6baa425825828793d6dfad1fb63765d0e5abaa7af6feafb9bfcece5a0"
+    },
+    {
+      "path": "overpass/qFdB35WCmI96Ajtm81GgY9TqxzUKg1oCNQ.woff2",
+      "source": "https://fonts.gstatic.com/s/overpass/v19/qFdB35WCmI96Ajtm81GgY9TqxzUKg1oCNQ.woff2",
+      "version": "v19",
+      "bytes": 16628,
+      "sha256": "41adfc4cec3f7a1b4b6ea0dc60b51a8ed06bf40ef550b1248ac66ab0c3387c7a"
+    },
+    {
+      "path": "overpass/qFdB35WCmI96Ajtm81GgY93qxzUKg1oCNQ.woff2",
+      "source": "https://fonts.gstatic.com/s/overpass/v19/qFdB35WCmI96Ajtm81GgY93qxzUKg1oCNQ.woff2",
+      "version": "v19",
+      "bytes": 23380,
+      "sha256": "5088e1404c7775e03dc63bbe02b50533e48c9786d36d0ef03b269e82edd54e54"
+    },
+    {
+      "path": "overpass/qFdB35WCmI96Ajtm81GgY9bqxzUKg1oCNQ.woff2",
+      "source": "https://fonts.gstatic.com/s/overpass/v19/qFdB35WCmI96Ajtm81GgY9bqxzUKg1oCNQ.woff2",
+      "version": "v19",
+      "bytes": 8864,
+      "sha256": "f6ea2a921a99c599195f10b983322e175e8d480bf31df64e49df8d3fe1f72503"
+    },
+    {
+      "path": "overpass/qFdB35WCmI96Ajtm81GgY9fqxzUKg1oCNQ.woff2",
+      "source": "https://fonts.gstatic.com/s/overpass/v19/qFdB35WCmI96Ajtm81GgY9fqxzUKg1oCNQ.woff2",
+      "version": "v19",
+      "bytes": 48956,
+      "sha256": "259f5da96388bd9fa0d98befdb5129dafd292368ba518850a1cc87705af9f6fe"
+    },
+    {
+      "path": "overpass/qFdB35WCmI96Ajtm81GgY9nqxzUKg1o.woff2",
+      "source": "https://fonts.gstatic.com/s/overpass/v19/qFdB35WCmI96Ajtm81GgY9nqxzUKg1o.woff2",
+      "version": "v19",
+      "bytes": 40744,
+      "sha256": "b396f5e72a253be753d32a8550eeb2ba4ddc50ddd5389d352844a7f212498205"
+    },
+    {
+      "path": "overpass/qFdH35WCmI96Ajtm81GoU9vgwBcIs1s.woff2",
+      "source": "https://fonts.gstatic.com/s/overpass/v19/qFdH35WCmI96Ajtm81GoU9vgwBcIs1s.woff2",
+      "version": "v19",
+      "bytes": 16852,
+      "sha256": "60eb5e7d1c64afddbe751de484077e224d27302278efbd5f8adfe9573a012cdb"
+    },
+    {
+      "path": "overpass/qFdH35WCmI96Ajtm81GhU9vgwBcIs1s.woff2",
+      "source": "https://fonts.gstatic.com/s/overpass/v19/qFdH35WCmI96Ajtm81GhU9vgwBcIs1s.woff2",
+      "version": "v19",
+      "bytes": 27560,
+      "sha256": "de9a845cfd3c590b44c295720ce4d988e9d54e4545d9aff7653955fd0d3e0699"
+    },
+    {
+      "path": "overpass/qFdH35WCmI96Ajtm81GqU9vgwBcIs1s.woff2",
+      "source": "https://fonts.gstatic.com/s/overpass/v19/qFdH35WCmI96Ajtm81GqU9vgwBcIs1s.woff2",
+      "version": "v19",
+      "bytes": 8348,
+      "sha256": "4eaf373a78cbaccb9f8554e68bfec7d11e809f9e7cac150096eb7b46dc158ca0"
+    },
+    {
+      "path": "overpass/qFdH35WCmI96Ajtm81GrU9vgwBcIs1s.woff2",
+      "source": "https://fonts.gstatic.com/s/overpass/v19/qFdH35WCmI96Ajtm81GrU9vgwBcIs1s.woff2",
+      "version": "v19",
+      "bytes": 46148,
+      "sha256": "c16cd70422ea3337aeee5a7ff377c8af4fb639786b903abc933275f493ca497c"
+    },
+    {
+      "path": "overpass/qFdH35WCmI96Ajtm81GlU9vgwBcI.woff2",
+      "source": "https://fonts.gstatic.com/s/overpass/v19/qFdH35WCmI96Ajtm81GlU9vgwBcI.woff2",
+      "version": "v19",
+      "bytes": 39260,
+      "sha256": "3d4945e84023b8c32d4ea3f6413c80a0bfc284e2cf924f02093897fdad9dafbd"
+    },
+    {
+      "path": "overpass/overpass.css",
+      "source": "Google Fonts CSS2 response (Chrome user agent), exact v19 font URLs",
+      "version": "v19",
+      "bytes": 30483,
+      "sha256": "74ff5562d37a73fc25abd72efd3df2ee94571fcd121f870d26dfc1afd55799ad"
+    },
+    {
+      "path": "overpass/OFL.txt",
+      "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/overpass/OFL.txt",
+      "version": "OFL-1.1",
+      "bytes": 4392,
+      "sha256": "86e5ff25c701ec446d20b1a85b02ee6d36de8503a7288a4c948f5459809af1f0"
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+Warning: hash_file(/home2/nykvymmy/public_html/wp-content/themes/ehpmi/css/structural-regions.css): Failed to open stream: No such file or directory in phar:///usr/local/bin/wp/vendor/wp-cli/eval-command/src/EvalFile_Command.php(85) : eval()'d code on line 11
+Warning: hash_file(/home2/nykvymmy/public_html/wp-content/plugins/ehpmi-core/ehpmi-core.php): Failed to open stream: No such file or directory in phar:///usr/local/bin/wp/vendor/wp-cli/eval-command/src/EvalFile_Command.php(85) : eval()'d code on line 12
