@@ -11,8 +11,12 @@ baseline_commit: 68f6ce2a7d3c9a359e7df8014ab922682b403415
 branch: refactor/dev-2026-08-25
 remote_baseline_verified_before_changes: 68f6ce2a7d3c9a359e7df8014ab922682b403415
 code_source: canonical_Git_checkout_accepted_Stage7
-implementation_commit: RECORDED_IN_GIT_OUTCOME
-push_status: PENDING_AUTHORIZED_ACCEPTED_STAGE8_PUSH
+implementation_commit: f0408f1a06e5cf7e301809582a3955bb8062fb45
+build_metadata_commit: d2ad6fa9d2d0c2d4cf9dcbf25c6fdf12267d503b
+push_status: PASS
+push_transport: DIRECT_SSH_STORED_HTTPS_ORIGIN_UNCHANGED
+push_ref: refs/heads/refactor/dev-2026-08-25
+push_evidence: git-outcome.md
 subreleases:
   media_and_plugin_dependencies: STAGE_8A_VERIFIED
   frontend_assets: assets-visual-release/manifest.yml
